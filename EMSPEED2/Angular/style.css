@@ -1,0 +1,18 @@
+﻿div#nav {
+width: 20%;
+height: 600px;
+float: left;
+background: gray;
+}
+
+div#maincontent {
+width: 80%
+float: right;
+background: white;
+}
+
+.gridStyle {
+    border: 1px solid rgb(212,212,212);
+    width: 400px; 
+    height: 300px
+}

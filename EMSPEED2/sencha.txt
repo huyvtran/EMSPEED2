@@ -1,0 +1,38 @@
+﻿sencha generate workspace ./SenchaWorkspace
+sencha -sdk D:\sencha\ext-5.0.0.970 generate app EMSPEEDExt5 ./SenchaWorkspace/EMSPEEDExt5
+sencha generate package -type code EMSPEED
+sencha -sdk D:\sencha\touch-2.3.2 generate app EMSPEEDTouch ./SENCHAWorkspace/EMSPEEDTouch
+sencha -sdk D:\sencha\ext-5.0.0.970 generate app ExecDashboard ./SenchaWorkspace/ExecDashboard 
+sencha -sdk D:\sencha\touch-2.3.2 generate app mjgApp ./SENCHAWorkspace/mjgApp
+
+sencha -sdk D:\sencha\touch-2.3.2 generate app TouchTest ./SENCHAWorkspace/TouchTest
+sencha -sdk D:\sencha\ext-5.0.0.970 generate app Ext5Test ./SenchaWorkspace/Ext5Test 
+
+sencha generate view someview.SomeView
+
+sencha -sdk D:\sencha\ext-5.0.0.970 generate app yelpextplorer2 ./SenchaWorkspace/yelpextplorer2 
+
+sencha -sdk D:\sencha\ext-5.0.0.970 generate app jiraTime ./SenchaWorkspace/jiraTime 
+sencha -sdk D:\sencha\ext-5.0.0.970 generate app jiraTimesheet ./SenchaWorkspace/jiraTimesheet 
+
+sencha -sdk D:\sencha\ext-5.0.0.970 generate app ExtPathTest ./
+
+sencha -sdk D:\sencha\touch-2.3.2 generate app MSTemplateVideo ./SENCHAWorkspace/MSTemplateVideo
+
+sencha -sdk D:\sencha\ext-5.0.1.1054 generate app Ext1054 ./Ext1054
+
+sencha -sdk D:\sencha\ext-5.0.0.970 generate app ExtJs5YouTube ./SenchaWorkspace/ExtJs5YouTube 
+sencha generate view main.North
+sencha generate view navigation.Navigation
+sencha generate view center.Center
+sencha generate view main.East
+sencha generate view main.South
+
+sencha generate view player.Player
+sencha generate view videolist.VideoList
+
+
+
+
+
+

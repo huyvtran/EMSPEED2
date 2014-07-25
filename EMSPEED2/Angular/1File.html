@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html ng-app="app">
+<head>
+    <title>01</title>
+    <script src="angular.js"></script>
+    <script src="angular-route.js"></script>
+
+    <script type="text/javascript">
+        angular.module('app', []);
+
+        angular.module('app').controller('controller1', function ($scope) {
+            $scope.name = 'controller1';
+        });
+
+    </script>
+
+
+</head>
+<body>
+
+    <div ng-controller="controller1">
+        {{name}}
+    </div>
+
+</body>
+</html>
+

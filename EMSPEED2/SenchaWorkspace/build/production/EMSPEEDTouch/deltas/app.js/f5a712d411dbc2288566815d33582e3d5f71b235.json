@@ -1,0 +1,1 @@
+["function _6d48badfbda2d1415bb7a10b74fcb16cb0f2ad48",50,554532,"emspeed1x.azurewebsites.net/sites/97366",554623,26143,"xt.MessageBox\",\"EMSPEEDTouch.com",580798,609,"Ext.Msg.confirm(\"Application Update\",",581421,88,",function(a){if(a===\"yes\"){window.location.reload()}})}});"]

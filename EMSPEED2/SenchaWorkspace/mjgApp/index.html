@@ -1,0 +1,1010 @@
+﻿<!DOCTYPE html>
+<html manifest="" lang="en-US" ng-app>
+<head>
+    <meta charset="UTF-8">
+    <title>mjgApp</title>
+
+    <script src="https://mjgapp.azure-mobile.net/client/MobileServices.Web-1.0.0.min.js"></script>
+
+    <script>
+        function AccomplishCtrl($scope) {
+            $scope.accomplishments = [
+                { text: '- BS Business Administration, University Of Illinois, May 1984' },
+                { text: '- Microsoft Regional Director in the Midwest District' },
+                { text: '- Developing web applications for the past 10 years' },
+                { text: '- Speaker at numerous conferences, including Microsoft TechEd' },
+                { text: '- Founder/Partner, The Bismarck Group, Chicago, IL' },
+                { text: '- Partner, The Information Management Group, Chicago, IL' }
+            ];
+        }
+    </script>
+
+
+    <script>
+    function v2pocbuild() {
+        window.open('http://emspeed2.azurewebsites.net/SenchaWorkspace/Build/Production/EMSPEEDTouch/', 'demo1', 'height=568,width=320,left=50,top=50,titlebar=no,toolbar=no,menubar=no,location=no,directories=no,status=no')
+    }
+
+    function mjguitester() {
+        var h = screen.height - 200;
+        var w = screen.width - 100;
+        window.open('http://emspeed1x.azurewebsites.net/sites/97366/Portal.aspx', 'demo2', 'height=' + h + ',width=' + w + ',left=50,top=50,titlebar=no,toolbar=no,menubar=no,location=no,directories=no,status=no')
+    }
+
+    function mjguitester2() {
+        var h = screen.height - 200;
+        var w = screen.width - 100;
+        window.open('http://emspeed2.azurewebsites.net/SenchaWorkspace/Build/Production/EMSPEEDExt5/', 'demo3', 'height=' + h + ',width=' + w + ',left=50,top=50,titlebar=no,toolbar=no,menubar=no,location=no,directories=no,status=no')
+    }
+    </script>
+
+
+
+    <style type="text/css">
+        /**
+         * Example of an initial loading indicator.
+         * It is recommended to keep this as minimal as possible to provide instant feedback
+         * while other resources are still being loaded for the first time
+         */
+        html, body {
+        height: 100%;
+            background-color: #1985D0;
+        }
+
+        #appLoadingIndicator {
+        position: absolute;
+        top: 50%;
+            margin-top: -15px;
+            text-align: center;
+            width: 100%;
+            height: 30px;
+            -webkit-animation-name: appLoadingIndicator;
+            -webkit-animation-duration: 0.5s;
+            -webkit-animation-iteration-count: infinite;
+            -webkit-animation-direction: linear;
+        }
+
+            #appLoadingIndicator > * {
+                background-color: #FFFFFF;
+    display: inline-block;
+    height: 30px;
+    -webkit-border-radius: 15px;
+    margin: 0 5px;
+    width: 30px;
+    opacity: 0.8;
+    }
+
+        @-webkit-keyframes appLoadingIndicator {
+            0% {
+                opacity: 0.8;
+        }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0.8;
+    }
+    }
+    </style>
+
+    <!-- The line below must be kept intact for Sencha Command to build your application -->
+    <script id="microloader" type="text/javascript" src=".sencha/app/microloader/development.js"></script>
+
+
+
+</head>
+<body>
+    <div id="appLoadingIndicator">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+
+    <!--mjg styles-->
+    <style>
+        .launch {
+            margin: 5px 0px 0px 0px;
+            z-index: 2000;
+            height: 40px;
+            position: relative;
+        }
+
+
+        .lnk {
+            text-decoration: underline;
+        }
+
+        a:link {
+            color: #000000;
+        }
+        /* unvisited link */
+        a:visited {
+            color: #000000;
+        }
+        /* visited link */
+        a:hover {
+            color: #000000;
+        }
+        /* mouse over link */
+        a:active {
+            color: #000000;
+        }
+
+
+        .x-layout-card-item {
+            background: white;
+        }
+
+        .x-button-label {
+            font-family: Arial;
+        }
+
+        .myName {
+            display: table-cell;
+            text-align: left;
+            color: #146BA8;
+            font-style: italic;
+        }
+
+        .myHeading {
+            color: #146BA8;
+            font-style: italic;
+            font-weight: bold;
+            margin: 10px 0px 0px 0px;
+        }
+
+        .mySwipe {
+            display: table-cell;
+            text-align: right;
+            font-weight: bold;
+            color: red;
+        }
+
+        .myBody {
+            margin: 5px 0px 0px 0px;
+        }
+
+        .f8 {
+            font-size: 8px;
+            font-family: Arial;
+        }
+
+        .f9 {
+            font-size: 8px;
+            font-family: Arial;
+        }
+
+        .f10 {
+            font-size: 10px;
+            font-family: Arial;
+        }
+
+        .f12 {
+            font-size: 12px;
+            font-family: Arial;
+        }
+
+        .f14 {
+            font-size: 14px;
+            font-family: Arial;
+        }
+
+        .f16 {
+            font-size: 16px;
+            font-family: Arial;
+        }
+
+        .f18 {
+            font-size: 18px;
+            font-family: Arial;
+        }
+
+        .f20 {
+            font-size: 20px;
+            font-family: Arial;
+        }
+
+        .f22 {
+            font-size: 22px;
+            font-family: Arial;
+        }
+
+        .f24 {
+            font-size: 24px;
+            font-family: Arial;
+        }
+
+        .f26 {
+            font-size: 26px;
+            font-family: Arial;
+        }
+
+        .f28 {
+            font-size: 28px;
+            font-family: Arial;
+        }
+
+        .f30 {
+            font-size: 30px;
+            font-family: Arial;
+        }
+
+        .f32 {
+            font-size: 32px;
+            font-family: Arial;
+        }
+
+        .f34 {
+            font-size: 34px;
+            font-family: Arial;
+        }
+
+        .f36 {
+            font-size: 36px;
+            font-family: Arial;
+        }
+
+        .f38 {
+            font-size: 38px;
+            font-family: Arial;
+        }
+
+        .f40 {
+            font-size: 40px;
+            font-family: Arial;
+        }
+    </style>
+
+    <div id="fliparea" style="display: none;">
+
+        <header class="main-title">
+            <div class=" f40 myname">
+                Marc Gusmano
+            </div>
+            <div class="f18">Senior HTML5 and Microsoft SharePoint Architect</div>
+            <div class="f16 myBody" style="margin: 20px 0px 0px 0px;">
+                Senior Manager with Hitachi Consulting 
+                with 30 years of experence in the software services industry.
+            </div>
+            <div class="f16 myBody" style="margin: 20px 0px 0px 0px;">
+                Extensively involved with custom HTML5 browser and mobile development projects, typically combining knowledge of the underlying
+                Microsoft SharePoint architecture with experience building HTML5 Single Page Applications; working on the requirements,
+                design and development and implementation of custom solutions.
+            </div>
+            <div ng-controller="AccomplishCtrl" class="f14 myBody" style="margin: 20px 0px 0px 0px;">
+                <ul>
+                    <li ng-repeat="accomplishment in accomplishments">
+                        {{accomplishment.text}}
+                    </li>
+                </ul>
+            </div>
+            <div class="f14 myBody" style="font-style: italic; color: #146BA8; margin: 20px 0px 0px 0px;">
+                "I have a passion for building outstanding software, especially leading edge, user-centric applications.
+                I love to delight my clients, and have a track record of doing exactly that.
+                I enjoy working for Hitachi Consulting, it is an innovative, driven company who understands the balance of working hard and enjoying life..."
+            </div>
+
+            <div class="f12 myBody" style="margin: 20px 0px 0px 0px;" id="info">
+            </div>
+
+            <div class="f24 myBody" style="color:red;margin:20px 0px 0px 0px;" id="theBrowser"></div>
+        </header>
+
+        <div id="flip" class="container">
+
+            <div class="f-page f-cover">
+                <div class="cover-elements">
+                    <h1 class="f18">Swipe or drag</h1>
+                    <h1 class="f18">to flip pages</h1>
+                    <div>
+                        <div style="width:135px;height:135px;background-color:#FFFFFF;padding:5px 5px 5px 5px;" id="qrcode"></div>
+                        <div class="f12" style="width:125px;color: white;text-align:center;">use QR code to scan</div>
+                        <div class="f12" style="width: 125px; color: white; text-align: center;">to phone or iPad</div>
+                    </div>
+                    <div class="f-cover-story f16"><span>Projects Summary</span>Marc Gusmano<div>&nbsp</div></div>
+                </div>
+                <div class="f-cover-flip f24">&lt; Flip</div>
+            </div>
+
+            <!--p1-->
+            <div class="f-page">
+                <div class="f-title">
+                    <a>Marc Gusmano</a>
+                    <h2>Projects at Hitachi Consulting</h2>
+                    <a>Previous Projects</a>
+                </div>
+                <div class="box w-100 h-100 box-b-l box-b-r box-img-right" id="buttonMobile">
+                    <div class="img-cont" back="mobile" style="cursor:default;background-image: url(resources/images/mobile.png); "></div>
+                    <div class="f22">Large Oil and Gas Provider - Houston, TX</div>
+                    <div class="f20">Senior HTML5/Mobile Architect - April 2013 to present</div>
+                    <div class="f20 myBody">
+                        Architected and implemented a project management mobile web application. Included initial effort to implement for responsive design (from mobile to desktop).
+                    </div>
+
+                    <div class="f18 myBody">
+                        Tools: <a target="_blank" class="lnk" href="https://www.atlassian.com/software/jira">Jira (requirements, tasks, ticketing)</a>, <a target="_blank" class="lnk" href="http://git-scm.com/">Git (version control)</a>, Continuous Integration (internal tool)
+                        <br />Browser: <a target="_blank" class="lnk" href="http://www.sencha.com/products/touch/">Sencha Touch 2.3</a>, <a target="_blank" class="lnk" href="http://jquery.com/">JQuery 1.9.1</a>, <a target="_blank" class="lnk" href="http://www.bryntum.com/products/siesta/">Siesta (testing)</a>, <a target="_blank" class="lnk" href="http://phonegap.com/">PhoneGap</a>
+                        <br />Server: <a target="_blank" class="lnk" href="http://msdn.microsoft.com/en-us/library/ms171868(v=vs.110).aspx">Microsoft .NET Framework 4.5 in C#</a>, <a target="_blank" class="lnk" href="http://msdn.microsoft.com/en-us/library/ms731082(v=vs.110).aspx">Microsoft Windows Communication Foundation (WCF)</a>, <a target="_blank" class="lnk" href="https://www.microsoft.com/en-us/sqlserver/default.aspx">SQL Server</a>, <a target="_blank" class="lnk" href="http://www.asp.net/web-api">ASP.NET MVC/WebAPI</a>
+                    </div>
+                    <div class="f20 myBody">
+                        <div id="qrcodeMobile"></div>
+                        <div class="f12">use QR code to scan to phone or iPad</div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!--p1-->
+            <div class="f-page">
+                <div class="f-title">
+                    <a>Marc Gusmano</a>
+                    <h2>Projects at Hitachi Consulting</h2>
+                    <a>Previous Projects</a>
+                </div>
+                <div class="box w-100 h-100 box-b-l box-b-r box-img-right" id="buttonEMSPEED12">
+                    <div class="img-cont" back="EMSPEED12" style="cursor: default; background-image: url(resources/images/EMSPEED12.png); "></div>
+                    <div class="f22">Large Oil and Gas Provider - Houston, TX</div>
+                    <div class="f20">Senior HTML5 Architect - June 2012 to present</div>
+                    <div class="f20 myBody">
+                        Architected and implemented a Web-based project management.  Built as a 100% browser-based 'Single Page Application' with HTML5, JavaScript, AJAX and CSS3.
+                    </div>
+                    <div class="f18 myBody">
+                        Tools: <a target="_blank" class="lnk" href="https://www.atlassian.com/software/jira">Jira (requirements, task management, ticketing)</a>, <a target="_blank" class="lnk" href="http://mercurial.selenic.com/">Mercurial (version control)</a>
+                        <br />Browser: <a target="_blank" class="lnk" href="http://www.sencha.com/products/extjs/">Sencha ExtJS 4.2</a>, <a target="_blank" class="lnk" href="http://jquery.com/">JQuery 1.9.1</a>, <a target="_blank" class="lnk" href="http://www.bryntum.com/products/siesta/">Siesta (testing)</a> ,
+                        <br />Server: <a target="_blank" class="lnk" href="http://msdn.microsoft.com/en-us/library/ms171868(v=vs.110).aspx">Microsoft .NET Framework 4.5 in C#</a>, <a target="_blank" class="lnk" href="http://msdn.microsoft.com/en-us/library/ms731082(v=vs.110).aspx">Microsoft WCF/Entity Framework/LINQ</a>, <a target="_blank" class="lnk" href="https://www.microsoft.com/en-us/sqlserver/default.aspx">SQL Server</a>
+                    </div>
+                    <div class="f20 myBody">
+                        <div style="margin:20px 0px 20px 0px;" id="qrcodeEMSPEED12"></div>
+                        <div class="f12">use QR code to scan to phone or iPad</div>
+                    </div>
+                </div>
+            </div>
+
+            <!--p2-->
+            <div class="f-page">
+                <div class="f-title">
+                    <a class="f14">Marc Gusmano</a>
+                    <h2>Projects at Hitachi Consulting</h2>
+                    <a class="f14">Projects Summary</a>
+                </div>
+                <div class="box w-10 h-50 box-b-l box-b-r">
+                </div>
+                <div class="box w-90 h-50 box-b-l box-b-r box-img-right">
+                    <div class="img-cont" style="background-image: url(resources/images/me.png);"></div>
+                    <div class="f18">Online Mobile Resume</div>
+                    <div class="f16">Senior HTML5 Architect</div>
+                    <div class="f14">November 2013</div>
+                    <div class="f16 myBody">
+                        Resume implemented as a mobile web application.  Includes several innovative ways to page through data.
+                        Showcases many different developer frameworks and libraries.
+
+                    </div>
+                    <div class="f16 myBody">
+                        HTML5, Sencha Touch 2.3, JQuery 1.10.2, AngularJS 1.2.1 (Data Binding, Controller), Modernizr (CSS 3D Transforms and Transitions), JavaScript, CSS/SASS, Windows Azure Hosting
+                    </div>
+                    <div class="f16 myBody">
+                        JQuery plugins: MockJax (AJAX Mocking), jquery.flips, TouchSwipe, jQuery.qrcode
+                    </div>
+                </div>
+                <div class="box w-90 h-50 box-b-l box-b-r box-img-left">
+                    <div class="img-cont" style="background-image: url(resources/images/EMSPEEDPOC.jpg); "></div>
+                    <div class="f18">Large Oil and Gas Provider - Houston, TX</div>
+                    <div class="f16">Senior HTML5 Architect</div>
+                    <div class="f14">Feb 2012 - May 2012</div>
+                    <div class="f16 myBody">
+                        HTML5 Proof of Concept.  Web application that provided for visualization of complex workflow
+                        and workstreams for project lifecycle management.  Utilized complex graphics drawing library for data visualizations.
+                    </div>
+                    <div class="f16 myBody">
+                        Sencha Ext JS, HTML5, JQuery, JavaScript, JavaScript InfoVis Toolkit (http://philogb.github.io/jit/),
+                        Microsoft .NET, C#, Microsoft WCF
+                    </div>
+                </div>
+                <div class="box w-10 h-50 box-b-l box-b-r">
+                </div>
+            </div>
+
+            <!--p3-->
+            <div class="f-page">
+                <div class="f-title">
+                    <a>Marc Gusmano</a>
+                    <h2>Projects at Hitachi Consulting</h2>
+                    <a>Previous Projects</a>
+                </div>
+                <div class="box w-90 h-50 box-b-l box-b-r box-img-left">
+                    <div class="img-cont" style="background-image: url(resources/images/EMSPEED10.jpg); "></div>
+                    <div class="f18">Large Oil and Gas Provider - Houston, TX</div>
+                    <div class="f16">Senior Web Architect</div>
+                    <div class="f14">Nov 2011 - Jan 2012</div>
+                    <div class="f16 myBody">
+                        Architected and implemented a Web-based portal to a project management system.  The User Interface
+                        is based on a mix of ASP.NET and Microsoft Silverlight.  All
+                        interaction with the server is via AJAX calls to Microsoft Windows Communication Framework (WCF) services and
+                        SQL Server.
+                    </div>
+                    <div class="f16 myBody">
+                        ASP.NET, Silverlight, JQuery, JavaScript,
+                        Microsoft .NET, C#, Microsoft WCF
+                    </div>
+                </div>
+                <div class="box w-10 h-50 box-b-l box-b-r">
+                </div>
+                <div class="box w-10 h-50 box-b-l box-b-r">
+                </div>
+                <div class="box w-90 h-50 box-b-l box-b-r box-img-right">
+                    <div class="img-cont" style="background-image: url(resources/images/NalcoEquip.jpg); "></div>
+                    <div class="f18">Energy Technologies Company - Houston, TX</div>
+                    <div class="f16">Senior Web Architect</div>
+                    <div class="f14">Sept 2010 - Oct 2011</div>
+                    <div class="f16 myBody">
+                        Designed and developed a client-facing SharePoint 2010 Refined Knowledge application,
+                        which allows for the monitoring of key refinery equipment at a client site and provides for real-time
+                        reporting and monitoring through custom-built SharePoint sites.  The application heavily utilizes
+                        Silverlight 4 for the user experience, and a back-end Pi database infrastructure from OSISoft.
+                    </div>
+                    <div class="f16 myBody">
+                        ASP.NET, Silverlight, JQuery, JavaScript, SharePoint 2010,
+                        Microsoft .NET, C#, Microsoft WCF
+                    </div>
+                </div>
+            </div>
+
+            <!--p4-->
+            <div class="f-page">
+                <div class="f-title">
+                    <a class="f14">Marc Gusmano</a>
+                    <h2>Projects at Hitachi Consulting</h2>
+                    <a class="f14">Projects Summary</a>
+                </div>
+                <div class="box w-10 h-50 box-b-l box-b-r">
+                </div>
+                <div class="box w-90 h-50 box-b-l box-b-r box-img-right">
+                    <div class="img-cont" style="background-image: url(resources/images/Scheduler.jpg); "></div>
+                    <div class="f18">Defense Contractor - Norfolk, VA</div>
+                    <div class="f16">Senior Web Architect</div>
+                    <div class="f14">May 2010 - Aug 2010</div>
+                    <div class="f16 myBody">
+                        Architected, designed and developed a SharePoint 2010 event management system
+                        which utilized a Silverlight 4 calendaring interface that was built with the Telerik Silverlight controls
+                        and the SharePoint Client Object model.
+                        The application also takes advantage of the new SharePoint Relational list technology,
+                        and utilizes a Visual Studio - based Workflow to manage the life cycle of events.
+                    </div>
+                    <div class="f16 myBody">
+                        ASP.NET, Silverlight, JQuery, JavaScript, SharePoint 2010,
+                        Microsoft .NET, C#, Microsoft WCF
+                    </div>
+                </div>
+                <div class="box w-90 h-50 box-b-l box-b-r box-img-left">
+                    <div class="img-cont" style="background-image: url(resources/images/Atlas.jpg); "></div>
+                    <div class="f18">Major Pharmaceutical Company - San Francisco, CA</div>
+                    <div class="f16">Senior Web Architect</div>
+                    <div class="f14">Jan 2010 - April 2010</div>
+                    <div class="f16 myBody">
+                        Lead Architect for a custom SharePoint Search Web application against an OpenText/LiveLink document repository.
+                        Defined and implemented the SharePoint search interface to OpenText/LiveLink, and designed and developed
+                        the custom search experience utilizing the Infragistics Silverlight grid control which provided for advanced sorting,
+                        grouping and column manipulation.
+                    </div>
+                    <div class="f16 myBody">
+                        ASP.NET, Silverlight, JQuery, JavaScript, SharePoint 2007, Visual Studio 2008, Infragistics controls ,
+                        Microsoft .NET, C#, Microsoft WCF
+                    </div>
+                </div>
+                <div class="box w-10 h-50 box-b-l box-b-r">
+                </div>
+            </div>
+
+            <!--p5-->
+            <div class="f-page">
+                <div class="f-title">
+                    <a>Marc Gusmano</a>
+                    <h2>Projects at Hitachi Consulting</h2>
+                    <a>Previous Projects</a>
+                </div>
+                <div class="box w-100 h-60 box-b-l box-b-r box-img-left">
+                    <div class="img-cont" style="background-image: url(resources/images/EMSIX.png); "></div>
+                    <div class="f18">Large Oil and Gas Provider - Houston, TX</div>
+                    <div class="f16">Senior SharePoint Architect</div>
+                    <div class="f14">Oct 2009 - Dec 2009</div>
+                    <div class="f16 myBody">
+                        Architected and implemented a Document Management System utilizing SharePoint Enterprise Search.
+                        The application utilized the SharePoint Profile System to provide for personalized search results.
+                        The display of search results utilized a custom faceted search experience, with result data displayed
+                        in tabular format to allow for sorting.  An AJAX-enabled interface added to the custom search experience.
+                        The custom Search experience was created with custom Visual Studio controls.
+                    </div>
+                    <div class="f16 myBody">
+                        Microsoft.Net (C#) 3.5, SQL Server2008 SharePoint 2007, Visual Studio 2008, ASP.NET AJAX
+                    </div>
+                </div>
+                <div class="box w-10 h-50 box-b-l box-b-r">
+                </div>
+                <div class="box w-10 h-50 box-b-l box-b-r">
+                </div>
+                <div class="box w-90 h-50 box-b-l box-b-r box-img-right">
+                    <div class="img-cont" style="background-image: url(resources/images/); "></div>
+                    <div class="f18"></div>
+                    <div class="f16"></div>
+                    <div class="f14"></div>
+                    <div class="f16 myBody">
+
+                    </div>
+                    <div class="f16 myBody">
+
+                    </div>
+                </div>
+            </div>
+
+            <!--p6-->
+            <div class="f-page">
+                <div class="f-title">
+                    <a>Marc Gusmano</a>
+                    <h2>Projects Prior to Hitachi Consulting</h2>
+                    <a>Previous Projects</a>
+                </div>
+
+                <div class="box w-50 h-60 box-b-l box-b-r">
+                    <div class="f18">Major Midwest US Energy Company - Exelon Corporation</div>
+                    <div class="f14">March 2009 â€“ October 2009</div>
+                    <div class="f14 myBody">
+                        Architected and led the development of a Site Ownership web part to gather site information from site administrators across SharePoint sites into a Central site directory.  This solution was implemented as a web part written utilizing Visual Studio 2008 and C#, and utilized the SharePoint Object Model to create a dynamic Site Ownership form from a view defined in the SharePoint site directory list - this allowed for dynamic creation of a form that displays any fields an administrator chooses to expose.  The web part also utilizes the SharePoint object model to allow for editing of the Site Directory from external SharePoint sites with no additional security needing to be applied.
+                    </div>
+                    <div class="f14 myBody">
+                        Designed and constructed an Advanced Query solution that used the SharePoint Search object model to query against an Oracle database that utilized Business Data Services for its indexing.  The solution was implemented as a web part built with Microsoft .NET, AJAX and JavaScript to provide for an enhanced user experience, and displayed the returned results in a SharePoint â€˜SPGridView, that provided for real time sorting and paging.  the Web Part was written utilizing Visual Studio 2008 and C#.
+                    </div>
+                </div>
+                <div class="box w-25 h-60 box-b-l box-b-r">
+                    <div class="f18">Midwest US Tool Manufacturer</div>
+                    <div class="f14">October 2008 â€“ March 2009</div>
+                    <div class="f14 myBody">
+                        SharePoint 2007, Visual Studio 2008, Microsoft .NET Framework 3.5, C#
+                    </div>
+                    <div class="f14 myBody">
+                    </div>
+                </div>
+                <div class="box w-25 h-60 box-b-l box-b-r">
+                    <div class="f18">Argonne National Lab</div>
+                    <div class="f14">March 2008 â€“ October 2008</div>
+                    <div class="f16 myBody">
+                        Architected and implemented the SharePoint components of Argonne National Labs next-generation Emergency Management software and tools, called â€˜EMToolsâ€™ (http://www.dis.anl.gov/pubs/62348.pdf). This application included a â€˜1-clickâ€™ installation, which automatically installed all parts of a SharePoint Solution; from creating the IIS Web Site, building the SharePoint Web Application, creating the Site Collection and Root Site based on a custom template, and adding user permissions. Also architected and implemented the back-end SharePoint / .NET custom extensibility components.
+                    </div>
+                    <div class="f16 myBody">
+                        SharePoint 2007, Visual Studio 2008, Microsoft .NET Framework 3.5, C#
+                    </div>
+                </div>
+
+                <div class="box w-60 h-40 box-b-l box-b-r">
+                    <div class="f18">Midwest US Microsoft Solution Partner</div>
+                    <div class="f14">October 2007 â€“ March 2008</div>
+                    <div class="f14 myBody">
+                        Designed and implemented a Microsoft Office SharePoint Server (MOSS)-based custom internet-facing site. The site contains customized master pages, utilizes MOSS Web Content Management pages with custom-built page layouts, contains custom-built C# Web Parts, and utilizes MOSS Excel Services and the Business Data Catalog.  A custom authentication provider that accesses the clients Microsoft Dynamics CRM 4.0 Contact entity was also developed for the site..
+                    </div>
+                    <div class="f14 myBody">
+                        SharePoint 2007, Visual Studio 2005, Microsoft .NET Framework 3.0, C#
+                    </div>
+                </div>
+                <div class="box w-40 h-40 box-b-l box-b-r">
+                    <div class="f18">Midwest US Logistics Firm</div>
+                    <div class="f14">May 2007 â€“ October 2007</div>
+                    <div class="f14 myBody">
+                        Architected and implemented custom authentication in a SharePoint/MOSS solution for a Chicago-based logistics firm. The implementation provided for the creation of a custom ASP.NET Forms Authentication Provider that retrieved credentials from a database hosted on an AS 400 platform.
+                    </div>
+                    <div class="f14 myBody">
+                        SharePoint 2007, Visual Studio 2005, Microsoft .NET Framework 3.0, C#
+                    </div>
+                </div>
+
+
+            </div>
+
+
+
+            <div class="f-page f-cover-back">
+                <div>
+                    <h3 style="color:#FFFFFF;">End of summary</h3>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="currentarea">
+        <div style="display: none;" id="summary">
+            <div class="f24 myName">Marc Gusmano</div>
+            <div class="f14 myBody" style="font-style: italic; color: #146BA8; ">Senior HTML5 and Microsoft SharePoint Architect</div>
+            <div class="f14 myBody">
+                Senior Manager with Hitachi Consulting based in the Houston, TX office
+                with 30 years of experence in the software services industry.
+            </div>
+            <div class="f14 myBody">
+                Extensively involved with custom HTML5 browser and mobile development projects, typically combining knowledge of the underlying
+                Microsoft SharePoint architecture with experience building HTML5 Single Page Applications; working on the requirements,
+                design and development and implementation of custom solutions.
+            </div>
+            <div class="f14 myBody" style="font-style: italic; color: #146BA8; ">
+                "I have a passion for building outstanding software, especially leading edge, user-centric applications.
+                I love to delight my clients, and have a track record of doing exactly that.
+                I enjoy working for Hitachi Consulting, it is an innovative, driven company who understands the balance of working hard and enjoying life..."
+            </div>
+            <div ng-controller="AccomplishCtrl" class="f12 myBody" >
+                <ul>
+                    <li ng-repeat="accomplishment in accomplishments">
+                        {{accomplishment.text}}
+                    </li>
+                </ul>
+            </div>
+            <div class="f16 myHeading" style="padding:0px 0px 0px 30px"><< swipe</div>
+        </div>
+
+        <div style="display: none;" class="pastwork" id="mobile">
+            <div class="f16 myName">Large Oil and Gas Provider</div>
+            <div class="f14">Houston, TX</div>
+            <div class="f14">Senior HTML5 Architect</div>
+            <div class="f12">April 2013 - present</div>
+            <div class="f14 myBody">
+                Architected and implemented a project management mobile web application.
+            </div>
+            <div class="f14 myBody">
+                Tools: <a target="_blank" href="https://www.atlassian.com/software/jira">Jira (requirements, task management, ticketing)</a>, <a target="_blank" href="http://git-scm.com/">Git (version control)</a>,
+                <br />Browser: <a target="_blank" href="http://www.sencha.com/products/touch/">Sencha Touch 2.3</a>, <a target="_blank" href="http://jquery.com/">JQuery 1.9.1</a>, <a target="_blank" href="http://www.bryntum.com/products/siesta/">Siesta (testing)</a> ,
+                <br />Server: <a target="_blank" href="http://msdn.microsoft.com/en-us/library/ms171868(v=vs.110).aspx">Microsoft .NET Framework 4.5 in C#</a>, <a target="_blank" href="http://msdn.microsoft.com/en-us/library/ms731082(v=vs.110).aspx">Microsoft Windows Communication Foundation (WCF)</a>, <a target="_blank" href="https://www.microsoft.com/en-us/sqlserver/default.aspx">SQL Server 2010</a>
+            </div>
+        </div>
+
+        <div style="display: none;" class="pastwork" id="me">
+            <div class="f16 myName">Online Mobile Resume</div>
+            <div class="f14">Houston, TX</div>
+            <div class="f14">Senior HTML5 Architect</div>
+            <div class="f12">November 2013</div>
+            <div class="f14 myBody">
+                Resume implemented as a mobile web application.  Includes several innovative ways to page through data.
+            </div>
+            <div class="f14 myBody">
+                HTML5, Sencha Touch 2.3, JQuery 1.10.2, AngularJS 1.2.1 (Data Binding, Controller), Modernizr (CSS 3D Transforms and Transitions), JavaScript, CSS/SASS, Windows Azure Hosting
+            </div>
+            <div class="f14 myBody">
+                JQuery plugins: MockJax (AJAX Mocking), jquery.flips, TouchSwipe, jQuery.qrcode
+            </div>
+        </div>
+
+        <div style="display: none;" class="pastwork" id="EMSPEED12">
+            <div class="f16 myName">Large Oil and Gas Provider</div>
+            <div class="f14">Houston, TX</div>
+            <div class="f14">Senior SharePoint Architect</div>
+            <div class="f12">June 2012 - present</div>
+            <div class="f14 myBody">
+                Architected and implemented a Web-based portal to a project management system.  The User Interface
+                is 100% browser based, utilizing HTML5, JavaScript and CSS and is built as a 'Single Page Application'.   All
+                interaction with the server is via AJAX calls to Microsoft Windows Communication Framework (WCF) services and
+                SQL Server.
+            </div>
+            <div class="f14 myBody">
+                HTML5, Sencha ExtJS 4.2, JQuery 1.9.1, JavaScript, CSS/SASS, Siesta (testing tool),
+                Microsoft .NET 4.5, C#, Microsoft WCF
+            </div>
+        </div>
+
+        <div style="display: none;" class="pastwork" id="EMSPEED12a">
+            <div class="f16 myName">Large Oil and Gas Provider</div>
+            <div class="f14">Houston, TX</div>
+            <div class="f14">Senior SharePoint Architect</div>
+            <div class="f12">June 2012 - present</div>
+            <div class="f14 myBody">
+                Architected and implemented a Web-based portal to a project management system.  The User Interface
+                is 100% browser based, utilizing HTML5, JavaScript and CSS and is built as a 'Single Page Application'.   All
+                interaction with the server is via AJAX calls to Microsoft Windows Communication Framework (WCF) services and
+                SQL Server.
+            </div>
+            <div class="f14 myBody">
+                HTML5, Sencha ExtJS 4.2, JQuery 1.9.1, JavaScript, CSS/SASS, Siesta (testing tool),
+                Microsoft .NET 4.5, C#, Microsoft WCF
+            </div>
+        </div>
+
+
+        <div style="display: none;" class="pastwork" id="EMSPEEDPOC">
+
+            <div class="f16 myName">Large Oil and Gas Provider</div>
+            <div class="f14">Houston, TX</div>
+            <div class="f14">Senior HTML5 Architect</div>
+            <div class="f12">Feb 2012 - May 2012</div>
+            <div class="f14 myBody">
+                HTML5 Proof of Concept.  Web application that provided for visualization of complex workflow
+                and workstreams for project lifecycle management.  Utilized complex graphics drawing library for data visualizations.
+            </div>
+            <div class="f14 myBody">
+                Sencha Ext JS, HTML5, JQuery 1.9.1, JavaScript, JavaScript InfoVis Toolkit (http://philogb.github.io/jit/),
+                Microsoft .NET 4.5, C#, Microsoft WCF
+            </div>
+        </div>
+
+        <div style="display: none;" class="pastwork" id="EMSPEED10">
+
+            <div class="f16 myName">Large Oil and Gas Provider</div>
+            <div class="f14">Houston, TX</div>
+            <div class="f14">Senior Web Architect</div>
+            <div class="f12">Nov 2011 - Jan 2012</div>
+            <div class="f14 myBody">
+                Architected and implemented a Web-based portal to a project management system.  The User Interface
+                is based on a mix of ASP.NET and Microsoft Silverlight.  All
+                interaction with the server is via AJAX calls to Microsoft Windows Communication Framework (WCF) services and
+                SQL Server.
+            </div>
+            <div class="f14 myBody">
+                ASP.NET, Silverlight, JQuery, JavaScript,
+                Microsoft .NET 4.5, C#, Microsoft WCF
+            </div>
+        </div>
+
+        <div style="display: none;" class="pastwork" id="NalcoEquip">
+            <div class="f16 myName">Energy Technologies Company</div>
+            <div class="f14">Houston, TX</div>
+            <div class="f14">Senior Web Architect</div>
+            <div class="f12">Sept 2010 - Oct 2011</div>
+            <div class="f14 myBody">
+                Designed and developed a client-facing SharePoint 2010 Refined Knowledge application,
+                which allows for the monitoring of key refinery equipment at a client site and provides for real-time
+                reporting and monitoring through custom-built SharePoint sites.  The application heavily utilizes
+                Silverlight 4 for the user experience, and a back-end Pi database infrastructure from OSISoft.
+            </div>
+            <div class="f14 myBody">
+                ASP.NET, Silverlight, JQuery, JavaScript, SharePoint 2010,
+                Microsoft .NET 4.5, C#, Microsoft WCF
+            </div>
+        </div>
+
+        <div style="display: none;" class="pastwork" id="Scheduler">
+            <div class="f16 myName">Defense Contractor</div>
+            <div class="f14">Norfolk, VA</div>
+            <div class="f14">Senior Web Architect</div>
+            <div class="f12">May 2010 - Aug 2010</div>
+            <div class="f14 myBody">
+                Architected, designed and developed a SharePoint 2010 event management system
+                which utilized a Silverlight 4 calendaring interface that was built with the Telerik Silverlight controls
+                and the SharePoint Client Object model.
+                The application also takes advantage of the new SharePoint Relational list technology,
+                and utilizes a Visual Studio - based Workflow to manage the life cycle of events.
+            </div>
+            <div class="f14 myBody">
+                ASP.NET, Silverlight, JQuery, JavaScript, SharePoint 2010,
+                Microsoft .NET 4.5, C#, Microsoft WCF
+            </div>
+        </div>
+
+        <div style="display: none;" class="pastwork" id="Atlas">
+
+            <div class="f16 myName">Major Pharmaceutical Company</div>
+            <div class="f14">San Francisco, CA</div>
+            <div class="f14">Senior Web Architect</div>
+            <div class="f12">Jan 2010 - April 2010</div>
+            <div class="f14 myBody">
+                Lead Architect for a custom SharePoint Search Web application against an OpenText/LiveLink document repository.
+                Defined and implemented the SharePoint search interface to OpenText/LiveLink, and designed and developed
+                the custom search experience utilizing the Infragistics Silverlight grid control which provided for advanced sorting,
+                grouping and column manipulation.
+            </div>
+            <div class="f14 myBody">
+                ASP.NET, Silverlight, JQuery, JavaScript, SharePoint 2007, Visual Studio 2008, Infragistics controls ,
+                Microsoft .NET 4.5, C#, Microsoft WCF
+            </div>
+        </div>
+
+        <div style="display: none;" class="pastwork" id="EMSIX">
+
+            <div class="f16 myName">Large Oil and Gas Provider</div>
+            <div class="f14">Houston, TX</div>
+            <div class="f14">Senior SharePoint Architect</div>
+            <div class="f12">Oct 2009 - Dec 2009</div>
+            <div class="f14 myBody">
+                Architected and implemented a Document Management System utilizing SharePoint Enterprise Search.
+                The application utilized the SharePoint Profile System to provide for personalized search results.
+                The display of search results utilized a custom faceted search experience, with result data displayed
+                in tabular format to allow for sorting.  An AJAX-enabled interface added to the custom search experience.
+                The custom Search experience was created with custom Visual Studio controls.
+            </div>
+            <div class="f14 myBody">
+                Microsoft.Net (C#) 3.5, SQL Server2008 SharePoint 2007, Visual Studio 2008, ASP.NET AJAX
+            </div>
+        </div>
+    </div>
+
+    <div id="companyarea">
+        <div style="display: none;" id="hitachi" class="pastcompany">
+            <div class="f14 myBody">
+                Senior Manager with Hitachi Consulting based in the Houston office. Involved in assisting and mentoring clients in the development and implementation of solutions that utilize Microsoft SharePoint related technologies including ASP.NET and HTML5.
+            </div>
+        </div>
+
+        <div style="display: none;" id="img" class="pastcompany">
+            <div class="f14 myBody">
+                Partner and the Director of Emerging Technologies for The Information Management Group, a Microsoft Gold Certified Partner and the Worldwide 2001 Microsoft Certified Technical Education Center (CTEC) of the year. In this role, Mr. Gusmano was responsible for fostering an understanding of new and emerging technologies can be utilized for IMG and its clients.  In this position, Marc was  involved in Architecting applications for IMGâ€™s Consulting Services clients, as well as mentoring and training in client engagements.
+            </div>
+        </div>
+
+        <div style="display: none;" id="bismarck" class="pastcompany">
+            <div class="f14 myBody">
+                The Bismarck Group was a Client Server software product integration Firm headquartered in Chicago, Illinois.  The Firmâ€™s tag, 'Business Integration Services using Client Server Technologies', highlighted the firmâ€™s focus: Providing Client Server software integration services to high growth, information-centric organizations and building solutions that can be sold as 'Customizable Software Products'.
+            </div>
+        </div>
+
+        <div style="display: none;" id="lante" class="pastcompany">
+            <div class="f14 myBody">
+                Mr. Gusmano started at Lante as Senior Consulting Manager and immediately began to get involved in many of the key clients for Lante, including Dell Computer, Abbott Labs, Baxter Healthcare, Sears, and Ameritech.  In  April of 1993 Marc was promoted to the position of Director of Consulting, responsible for the entire consulting organization at Lante, including all aspects of project execution, profit and loss (utilization) responsibility,  performance reviews,  recruiting,  and staffing.
+            </div>
+        </div>
+
+        <div style="display: none;" id="andersen" class="pastcompany">
+            <div class="f14 myBody">
+                Mr. Gusmano began his consulting career as a staff consultant in the Chicago office of Arthur Andersen and Co./Andersen Consulting in May of 1984.  He spent his first 4 years on a variety of medium and large systems development projects for organizations such as IBM, Northern Trust Bank, Mellon Bank in Pittsburgh, and Lutheran General Hospital.  Mr. Gusmano was promoted to a Project Manager after just four years with Andersen Consulting, and moved to the Technology Services area where he became a project Manager for the New Age Systems group, a very specialized group within Andersen Consulting, focusing on assisting local Andersen offices with the planning, management, and deployment of client-server business applications.
+            </div>
+        </div>
+    </div>
+
+    <div id="oldarea">
+        <div style="display: none; border: 1px solid #000000; padding: 10px 10px 10px 10px;" id="a">
+            <div class="f16 myName">Major Midwest US Energy Company</div>
+            <div class="f14">Senior SharePoint Architect</div>
+            <div class="f12">Apr 2009 â€“ Sep 2009</div>
+            <div class="f16 myBody">
+                Architected and led the development of a Site Ownership web part to gather site information from site administrators across SharePoint sites into a Central site directory.  This web part was written utilizing Visual Studio 2008 and C#, and utilized the SharePoint Object Model to create a dynamic Site Ownership form from a view defined in the SharePoint site directory list - this allowed for dynamic creation of a form that displays any fields an administrator chooses to expose.  The web part also utilizes the SharePoint object model to allow for editing of the Site Directory from external SharePoint sites with no needed additional security.
+            </div>
+        </div>
+
+        <div style="display: none; border: 1px solid #000000; padding: 10px 10px 10px 10px;" id="b">
+            <div class="f16 myName">Major Midwest US Energy Company</div>
+            <div class="f14">Senior SharePoint Architect</div>
+            <div class="f12">Apr 2009 â€“ Sep 2009</div>
+            <div class="f16 myBody">
+                Designed and constructed an Advanced Query solution that used the SharePoint Search object model to query against an Oracle database that utilized Business Data Services for its indexing.  The solution was implemented as a web part built with Microsoft .NET, AJAX and JavaScript to provide for an enhanced user experience, and displayed the returned results in a SharePoint â€˜SPGridView, that provided for real time sorting and paging.  the Web Part was written utilizing Visual Studio 2008 and C#.
+            </div>
+        </div>
+
+        <div style="display: none; border: 1px solid #000000; padding: 10px 10px 10px 10px;" id="c">
+            <div class="f16 myName">Midwest US Tool Manufacturer</div>
+            <div class="f14">SharePoint Architect and Developer</div>
+            <div class="f12">November  2008 â€“ March 2009</div>
+            <div class="f16 myBody">
+                SharePoint 2007, Visual Studio 2008, Microsoft .NET Framework 3.5, C#
+            </div>
+        </div>
+
+        <div style="display: none; border: 1px solid #000000; padding: 10px 10px 10px 10px;" id="d">
+            <div class="f16 myName">Argonne National Lab</div>
+            <div class="f14">SharePoint Architect</div>
+            <div class="f12">March 2008 â€“ October 2008</div>
+            <div class="f16 myBody">
+                Architected and implemented the SharePoint components of Argonne National Labs next-generation Emergency Management software and tools, called â€˜EMToolsâ€™ (http://www.dis.anl.gov/pubs/62348.pdf). This application included a â€˜1-clickâ€™ installation, which automatically installed all parts of a SharePoint Solution; from creating the IIS Web Site, building the SharePoint Web Application, creating the Site Collection and Root Site based on a custom template, and adding user permissions.
+            </div>
+            <div class="f16 myBody">
+                SharePoint 2007, Visual Studio 2008, Microsoft .NET Framework 3.5, C#
+            </div>
+        </div>
+
+        <div style="display: none; border: 1px solid #000000; padding: 10px 10px 10px 10px;" id="e">
+            <div class="f16 myName">Midwest US Microsoft Solution Partner</div>
+            <div class="f14">Project Manager / SharePoint Architect</div>
+            <div class="f12"> November 2007 â€“ March 2008</div>
+            <div class="f16 myBody">
+                Designed and implemented a Microsoft Office SharePoint Server (MOSS)-based custom internet-facing site. The site contains customized master pages, utilizes MOSS Web Content Management pages with custom-built page layouts, contains custom-built C# Web Parts, and utilizes MOSS Excel Services and the Business Data Catalog.  A custom authentication provider that accesses the clients Microsoft Dynamics CRM 4.0 Contact entity was also developed for the site..
+            </div>
+            <div class="f16 myBody">
+                SharePoint 2007, Visual Studio 2008, Microsoft .NET Framework 3.5, C#
+            </div>
+        </div>
+
+        <div style="display: none; border: 1px solid #000000; padding: 10px 10px 10px 10px;" id="f">
+            <div class="f16 myName">Midwest US Logistics Firm</div>
+            <div class="f14">SharePoint Developer</div>
+            <div class="f12">May 2007 â€“ October 2007</div>
+            <div class="f16 myBody">
+                Architected and implemented custom authentication in a SharePoint/MOSS solution for a Chicago-based logistics firm. The implementation provided for the creation of a custom ASP.NET Forms Authentication Provider that retrieved credentials from a database hosted on an AS 400 platform.
+            </div>
+            <div class="f16 myBody">
+                SharePoint 2007, Visual Studio 2005, Microsoft .NET Framework 3.0, C#
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <script id="pageTmpl" type="text/x-jquery-tmpl">
+        <div class="${theClass}" style="${theStyle}">
+            <div class="front">
+                <div class="outer">
+                    <div class="content" style="${theContentStyleFront}">
+                        <div class="inner">{{html theContentFront}}</div>
+                    </div>
+                </div>
+            </div>
+            <div class="back">
+                <div class="outer">
+                    <div class="content" style="${theContentStyleBack}">
+                        <div class="inner">{{html theContentBack}}</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </script>
+
+
+
+
+    <!--
+
+        <div id="fmobile" style="display: none;">
+            <table>
+                <tr>
+                    <td>
+                        <img src="resources/images/mobile.png" alt="" width="100%">
+                    </td>
+                    <td>
+                        <div class="f18">Large Oil and Gas Provider - Houston, TX</div>
+                        <div class="f16">Senior HTML5 Architect</div>
+                        <div class="f14">April 2013 - present</div>
+                        <div class="f16 myBody">
+                            Architected and implemented a project management mobile web application.
+                        </div>
+                        <div class="f16 myBody">
+                            Tools: <a target="_blank" class="lnk" href="https://www.atlassian.com/software/jira">Jira (requirements, tasks, ticketing)</a>, <a target="_blank" class="lnk" href="http://git-scm.com/">Git (version control</a>),
+                            <br />Browser: <a target="_blank" class="lnk" href="http://www.sencha.com/products/touch/">Sencha ExtJS 2.3</a>, <a target="_blank" class="lnk" href="http://jquery.com/">JQuery 1.9.1</a>, <a target="_blank" class="lnk" href="http://www.bryntum.com/products/siesta/">Siesta (testing)</a> ,
+                            <br />Server: <a target="_blank" class="lnk" href="http://msdn.microsoft.com/en-us/library/ms171868(v=vs.110).aspx">Microsoft .NET Framework 4.5 in C#</a>, <a target="_blank" class="lnk" href="http://msdn.microsoft.com/en-us/library/ms731082(v=vs.110).aspx">Microsoft Windows Communication Foundation (WCF)</a>, <a target="_blank" class="lnk" href="https://www.microsoft.com/en-us/sqlserver/default.aspx">SQL Server 2010</a>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div id="fEMSPEED12" style="display: none;">
+            <table>
+                <tr>
+                    <td>
+                        <img src="resources/images/EMSPEED12.png" alt="" width="100%">
+                    </td>
+                    <td>
+                        <div class="f18">Large Oil and Gas Provider - Houston, TX</div>
+                        <div class="f16">Senior HTML5 Architect</div>
+                        <div class="f14">June 2012 - present</div>
+                        <div class="f16 myBody">
+                            Architected and implemented a Web-based portal to a project management system.  Built as 100% browser based 'Single Page Application'
+                            utilizing HTML5, JavaScript, AJAX and CSS3.
+                        </div>
+                        <div class="f16 myBody">
+                            Tools: <a target="_blank" class="lnk" href="https://www.atlassian.com/software/jira">Jira (requirements, task management, ticketing)</a>, <a target="_blank" class="lnk" href="http://git-scm.com/">Git (version control</a>),
+                            <br />Browser: <a target="_blank" class="lnk" href="http://www.sencha.com/products/extjs/">Sencha ExtJS 4.2</a>, <a target="_blank" class="lnk" href="http://jquery.com/">JQuery 1.9.1</a>, <a target="_blank" class="lnk" href="http://www.bryntum.com/products/siesta/">Siesta (testing)</a> ,
+                            <br />Server: <a target="_blank" class="lnk" href="http://msdn.microsoft.com/en-us/library/ms171868(v=vs.110).aspx">Microsoft .NET Framework 4.5 in C#</a>, <a target="_blank" class="lnk" href="http://msdn.microsoft.com/en-us/library/ms731082(v=vs.110).aspx">Microsoft Windows Communication Foundation (WCF)</a>, <a target="_blank" class="lnk" href="https://www.microsoft.com/en-us/sqlserver/default.aspx">SQL Server 2010</a>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    -->
+    <!--
+                <li style="font-size: 24px; list-style: square outside;">BS Business Administration, University Of Illinois, May 1984 (GPA 4.6/5.0)</li>
+                <li style="font-size: 24px; list-style: square outside;">Instructor for SharePoint Advanced Developer classes for The Ted Pattison Group curriculum   Ted Pattison Developer Courses - http://www.tedpattison.net/CoursesForDevelopers.aspx</li>
+                <li style="font-size: 24px; list-style: square outside;">Microsoft Regional Director in the US Midwest District for 3 years.</li>
+                <li style="font-size: 24px; list-style: square outside;">Public Speaker and Conference Presenter</li>
+                <li style="font-size: 24px; list-style: square outside;">Speaker at numerous conferences, including Microsoft TechEd US and Europe and Advisor Magazine DevCons - A recent event is the Microsoft MSDN Developer Conference - http://www.msdndevcon.com/Pages/Chicago.aspx</li>
+                <li style="font-size: 24px; list-style: square outside;">Founder / Partner,  The Bismarck Group, Chicago, Illinois - 1995 to 1997</li>
+                <li style="font-size: 24px; list-style: square outside;">Partner, The Information Management Group, Chicago, Illinois â€“ 1997 to 2009</li>
+    -->
+    <!--
+    <div class="f18 myHeading">Who am I?</div>
+    <div class="f14" style="margin:5px 0px 0px 0px;">I have a passion for building outstanding software, especially leading edge, user-centric applications.</div>
+    <div class="f14">I have been building Graphical/Windows applications for over 15 years (C++, Visual Basic, .NET/C#)</div>
+    <div class="f14">I have been developing brower-based web applications for the past 10 years, ASP.NET, Silverlight, HTML5/JavaScript/CSS</div>
+    <div class="f14">I have been very Microsoft-centric in my career; i am very well versed on the Microsoft developer stack</div>
+    <div class="f14">I want to work for an innovative, driven company who understands the work/life balance - working hard and enjoying life.</div>
+    <div class="f14">I am ready to take on the next phase of my career as a senior developer, mentor and key resource to help build a small business.</div>
+    <div class="f14">I want to share my knowledge as a trainer and mentor.</div>
+    <div class="f14">I love to delight my clients, and have a track record of doing exactly that.</div>
+    <div class="f14">I am a huge beliver of continuous integration as part of the software development process.</div>
+    <div class="f14">I enjoy public speaking, and have spoken at many industry developer conferences (Microsoft Tech-Ed, Advisor DevCon)</div>
+    <div class="f14">I was the President and key speaker for Microsoft Interactive Developer Group in Chicago</div>
+    -->
+</body>
+
+</html>

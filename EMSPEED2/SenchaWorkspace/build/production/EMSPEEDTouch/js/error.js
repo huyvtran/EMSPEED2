@@ -1,0 +1,1 @@
+function _2c93fa8c1ca71c001caf0a50ed0fdebea7a24007(){};window.onerror=function myErrorHandler(c,b,a){alert("error:");if(c!=null&&typeof c==="object"){alert(Ext.encode(c))}else{alert(c)}alert(b);alert(a);return false};

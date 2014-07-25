@@ -1,0 +1,1651 @@
+/* line 208, ../../../../ext/packages/ext-theme-base/sass/etc/mixins/frame.scss */
+.x-tab-navigation-top-mc {
+  background-color: transparent;
+}
+
+/* line 256, ../../../../ext/packages/ext-theme-base/sass/etc/mixins/frame.scss */
+.x-nbr .x-tab-navigation-top {
+  padding: 0 !important;
+  border-width: 0 !important;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -ms-border-radius: 0px;
+  -o-border-radius: 0px;
+  border-radius: 0px;
+  background-color: transparent !important;
+}
+
+/* line 271, ../../../../ext/packages/ext-theme-base/sass/etc/mixins/frame.scss */
+.x-tab-navigation-top-frameInfo {
+  font-family: th-0-0-0-0-0-0-0-0-24-20-24-20-;
+}
+
+/* line 337, ../../../../ext/packages/ext-theme-base/sass/etc/mixins/frame.scss */
+.x-tab-navigation-top-tl {
+  background-position: 0 0;
+}
+
+/* line 341, ../../../../ext/packages/ext-theme-base/sass/etc/mixins/frame.scss */
+.x-tab-navigation-top-tr {
+  background-position: right 0;
+}
+
+/* line 345, ../../../../ext/packages/ext-theme-base/sass/etc/mixins/frame.scss */
+.x-tab-navigation-top-bl {
+  background-position: 0 0;
+}
+
+/* line 349, ../../../../ext/packages/ext-theme-base/sass/etc/mixins/frame.scss */
+.x-tab-navigation-top-br {
+  background-position: right 0;
+}
+
+/* line 353, ../../../../ext/packages/ext-theme-base/sass/etc/mixins/frame.scss */
+.x-tab-navigation-top-ml {
+  background-position: 0 top;
+}
+
+/* line 361, ../../../../ext/packages/ext-theme-base/sass/etc/mixins/frame.scss */
+.x-tab-navigation-top-mr {
+  background-position: right top;
+}
+
+/* line 369, ../../../../ext/packages/ext-theme-base/sass/etc/mixins/frame.scss */
+.x-tab-navigation-top-tc {
+  background-position: 0 0;
+}
+
+/* line 373, ../../../../ext/packages/ext-theme-base/sass/etc/mixins/frame.scss */
+.x-tab-navigation-top-bc {
+  background-position: 0 0;
+}
+
+/* line 380, ../../../../ext/packages/ext-theme-base/sass/etc/mixins/frame.scss */
+.x-tab-navigation-top-tr,
+.x-tab-navigation-top-br,
+.x-tab-navigation-top-mr {
+  padding-right: 0;
+}
+
+/* line 386, ../../../../ext/packages/ext-theme-base/sass/etc/mixins/frame.scss */
+.x-tab-navigation-top-tl,
+.x-tab-navigation-top-bl,
+.x-tab-navigation-top-ml {
+  padding-left: 0;
+}
+
+/* line 390, ../../../../ext/packages/ext-theme-base/sass/etc/mixins/frame.scss */
+.x-tab-navigation-top-tc {
+  height: 0;
+}
+
+/* line 393, ../../../../ext/packages/ext-theme-base/sass/etc/mixins/frame.scss */
+.x-tab-navigation-top-bc {
+  height: 0;
+}
+
+/* line 454, ../../../../ext/packages/ext-theme-base/sass/etc/mixins/frame.scss */
+.x-tab-navigation-top-mc {
+  padding: 24px 20px 24px 20px;
+}
+
+/* line 158, ../../../../ext/packages/ext-theme-base/sass/etc/mixins/frame.scss */
+.x-tab-navigation-bottom {
+  -moz-border-radius-topleft: 0;
+  -webkit-border-top-left-radius: 0;
+  border-top-left-radius: 0;
+  -moz-border-radius-topright: 0;
+  -webkit-border-top-right-radius: 0;
+  border-top-right-radius: 0;
+  -moz-border-radius-bottomright: 0;
+  -webkit-border-bottom-right-radius: 0;
+  border-bottom-right-radius: 0;
+  -moz-border-radius-bottomleft: 0;
+  -webkit-border-bottom-left-radius: 0;
+  border-bottom-left-radius: 0;
+  padding: 24px 20px 24px 20px;
+  border-width: 0 0 0 0;
+  border-style: solid;
+  background-color: transparent;
+}
+
+/* line 208, ../../../../ext/packages/ext-theme-base/sass/etc/mixins/frame.scss */
+.x-tab-navigation-bottom-mc {
+  background-color: transparent;
+}
+
+/* line 256, ../../../../ext/packages/ext-theme-base/sass/etc/mixins/frame.scss */
+.x-nbr .x-tab-navigation-bottom {
+  padding: 0 !important;
+  border-width: 0 !important;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -ms-border-radius: 0px;
+  -o-border-radius: 0px;
+  border-radius: 0px;
+  background-color: transparent !important;
+}
+
+/* line 271, ../../../../ext/packages/ext-theme-base/sass/etc/mixins/frame.scss */
+.x-tab-navigation-bottom-frameInfo {
+  font-family: th-0-0-0-0-0-0-0-0-24-20-24-20-;
+}
+
+/* line 337, ../../../../ext/packages/ext-theme-base/sass/etc/mixins/frame.scss */
+.x-tab-navigation-bottom-tl {
+  background-position: 0 0;
+}
+
+/* line 341, ../../../../ext/packages/ext-theme-base/sass/etc/mixins/frame.scss */
+.x-tab-navigation-bottom-tr {
+  background-position: right 0;
+}
+
+/* line 345, ../../../../ext/packages/ext-theme-base/sass/etc/mixins/frame.scss */
+.x-tab-navigation-bottom-bl {
+  background-position: 0 0;
+}
+
+/* line 349, ../../../../ext/packages/ext-theme-base/sass/etc/mixins/frame.scss */
+.x-tab-navigation-bottom-br {
+  background-position: right 0;
+}
+
+/* line 353, ../../../../ext/packages/ext-theme-base/sass/etc/mixins/frame.scss */
+.x-tab-navigation-bottom-ml {
+  background-position: 0 bottom;
+}
+
+/* line 361, ../../../../ext/packages/ext-theme-base/sass/etc/mixins/frame.scss */
+.x-tab-navigation-bottom-mr {
+  background-position: right bottom;
+}
+
+/* line 369, ../../../../ext/packages/ext-theme-base/sass/etc/mixins/frame.scss */
+.x-tab-navigation-bottom-tc {
+  background-position: 0 0;
+}
+
+/* line 373, ../../../../ext/packages/ext-theme-base/sass/etc/mixins/frame.scss */
+.x-tab-navigation-bottom-bc {
+  background-position: 0 0;
+}
+
+/* line 380, ../../../../ext/packages/ext-theme-base/sass/etc/mixins/frame.scss */
+.x-tab-navigation-bottom-tr,
+.x-tab-navigation-bottom-br,
+.x-tab-navigation-bottom-mr {
+  padding-right: 0;
+}
+
+/* line 386, ../../../../ext/packages/ext-theme-base/sass/etc/mixins/frame.scss */
+.x-tab-navigation-bottom-tl,
+.x-tab-navigation-bottom-bl,
+.x-tab-navigation-bottom-ml {
+  padding-left: 0;
+}
+
+/* line 390, ../../../../ext/packages/ext-theme-base/sass/etc/mixins/frame.scss */
+.x-tab-navigation-bottom-tc {
+  height: 0;
+}
+
+/* line 393, ../../../../ext/packages/ext-theme-base/sass/etc/mixins/frame.scss */
+.x-tab-navigation-bottom-bc {
+  height: 0;
+}
+
+/* line 454, ../../../../ext/packages/ext-theme-base/sass/etc/mixins/frame.scss */
+.x-tab-navigation-bottom-mc {
+  padding: 24px 20px 24px 20px;
+}
+
+/* line 158, ../../../../ext/packages/ext-theme-base/sass/etc/mixins/frame.scss */
+.x-tab-navigation-left {
+  -moz-border-radius-topleft: 0;
+  -webkit-border-top-left-radius: 0;
+  border-top-left-radius: 0;
+  -moz-border-radius-topright: 0;
+  -webkit-border-top-right-radius: 0;
+  border-top-right-radius: 0;
+  -moz-border-radius-bottomright: 0;
+  -webkit-border-bottom-right-radius: 0;
+  border-bottom-right-radius: 0;
+  -moz-border-radius-bottomleft: 0;
+  -webkit-border-bottom-left-radius: 0;
+  border-bottom-left-radius: 0;
+  padding: 24px 20px 24px 20px;
+  border-width: 0 0 0 0;
+  border-style: solid;
+  background-color: transparent;
+}
+
+/* line 208, ../../../../ext/packages/ext-theme-base/sass/etc/mixins/frame.scss */
+.x-tab-navigation-left-mc {
+  background-color: transparent;
+}
+
+/* line 256, ../../../../ext/packages/ext-theme-base/sass/etc/mixins/frame.scss */
+.x-nbr .x-tab-navigation-left {
+  padding: 0 !important;
+  border-width: 0 !important;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -ms-border-radius: 0px;
+  -o-border-radius: 0px;
+  border-radius: 0px;
+  background-color: transparent !important;
+}
+
+/* line 271, ../../../../ext/packages/ext-theme-base/sass/etc/mixins/frame.scss */
+.x-tab-navigation-left-frameInfo {
+  font-family: th-0-0-0-0-0-0-0-0-24-20-24-20-;
+}
+
+/* line 337, ../../../../ext/packages/ext-theme-base/sass/etc/mixins/frame.scss */
+.x-tab-navigation-left-tl {
+  background-position: 0 0;
+}
+
+/* line 341, ../../../../ext/packages/ext-theme-base/sass/etc/mixins/frame.scss */
+.x-tab-navigation-left-tr {
+  background-position: right 0;
+}
+
+/* line 345, ../../../../ext/packages/ext-theme-base/sass/etc/mixins/frame.scss */
+.x-tab-navigation-left-bl {
+  background-position: 0 0;
+}
+
+/* line 349, ../../../../ext/packages/ext-theme-base/sass/etc/mixins/frame.scss */
+.x-tab-navigation-left-br {
+  background-position: right 0;
+}
+
+/* line 353, ../../../../ext/packages/ext-theme-base/sass/etc/mixins/frame.scss */
+.x-tab-navigation-left-ml {
+  background-position: 0 top;
+}
+
+/* line 361, ../../../../ext/packages/ext-theme-base/sass/etc/mixins/frame.scss */
+.x-tab-navigation-left-mr {
+  background-position: right top;
+}
+
+/* line 369, ../../../../ext/packages/ext-theme-base/sass/etc/mixins/frame.scss */
+.x-tab-navigation-left-tc {
+  background-position: 0 0;
+}
+
+/* line 373, ../../../../ext/packages/ext-theme-base/sass/etc/mixins/frame.scss */
+.x-tab-navigation-left-bc {
+  background-position: 0 0;
+}
+
+/* line 380, ../../../../ext/packages/ext-theme-base/sass/etc/mixins/frame.scss */
+.x-tab-navigation-left-tr,
+.x-tab-navigation-left-br,
+.x-tab-navigation-left-mr {
+  padding-right: 0;
+}
+
+/* line 386, ../../../../ext/packages/ext-theme-base/sass/etc/mixins/frame.scss */
+.x-tab-navigation-left-tl,
+.x-tab-navigation-left-bl,
+.x-tab-navigation-left-ml {
+  padding-left: 0;
+}
+
+/* line 390, ../../../../ext/packages/ext-theme-base/sass/etc/mixins/frame.scss */
+.x-tab-navigation-left-tc {
+  height: 0;
+}
+
+/* line 393, ../../../../ext/packages/ext-theme-base/sass/etc/mixins/frame.scss */
+.x-tab-navigation-left-bc {
+  height: 0;
+}
+
+/* line 454, ../../../../ext/packages/ext-theme-base/sass/etc/mixins/frame.scss */
+.x-tab-navigation-left-mc {
+  padding: 24px 20px 24px 20px;
+}
+
+/* line 158, ../../../../ext/packages/ext-theme-base/sass/etc/mixins/frame.scss */
+.x-tab-navigation-right {
+  -moz-border-radius-topleft: 0;
+  -webkit-border-top-left-radius: 0;
+  border-top-left-radius: 0;
+  -moz-border-radius-topright: 0;
+  -webkit-border-top-right-radius: 0;
+  border-top-right-radius: 0;
+  -moz-border-radius-bottomright: 0;
+  -webkit-border-bottom-right-radius: 0;
+  border-bottom-right-radius: 0;
+  -moz-border-radius-bottomleft: 0;
+  -webkit-border-bottom-left-radius: 0;
+  border-bottom-left-radius: 0;
+  padding: 24px 20px 24px 20px;
+  border-width: 0 0 0 0;
+  border-style: solid;
+  background-color: transparent;
+}
+
+/* line 208, ../../../../ext/packages/ext-theme-base/sass/etc/mixins/frame.scss */
+.x-tab-navigation-right-mc {
+  background-color: transparent;
+}
+
+/* line 256, ../../../../ext/packages/ext-theme-base/sass/etc/mixins/frame.scss */
+.x-nbr .x-tab-navigation-right {
+  padding: 0 !important;
+  border-width: 0 !important;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -ms-border-radius: 0px;
+  -o-border-radius: 0px;
+  border-radius: 0px;
+  background-color: transparent !important;
+}
+
+/* line 271, ../../../../ext/packages/ext-theme-base/sass/etc/mixins/frame.scss */
+.x-tab-navigation-right-frameInfo {
+  font-family: th-0-0-0-0-0-0-0-0-24-20-24-20-;
+}
+
+/* line 337, ../../../../ext/packages/ext-theme-base/sass/etc/mixins/frame.scss */
+.x-tab-navigation-right-tl {
+  background-position: 0 0;
+}
+
+/* line 341, ../../../../ext/packages/ext-theme-base/sass/etc/mixins/frame.scss */
+.x-tab-navigation-right-tr {
+  background-position: right 0;
+}
+
+/* line 345, ../../../../ext/packages/ext-theme-base/sass/etc/mixins/frame.scss */
+.x-tab-navigation-right-bl {
+  background-position: 0 0;
+}
+
+/* line 349, ../../../../ext/packages/ext-theme-base/sass/etc/mixins/frame.scss */
+.x-tab-navigation-right-br {
+  background-position: right 0;
+}
+
+/* line 353, ../../../../ext/packages/ext-theme-base/sass/etc/mixins/frame.scss */
+.x-tab-navigation-right-ml {
+  background-position: 0 top;
+}
+
+/* line 361, ../../../../ext/packages/ext-theme-base/sass/etc/mixins/frame.scss */
+.x-tab-navigation-right-mr {
+  background-position: right top;
+}
+
+/* line 369, ../../../../ext/packages/ext-theme-base/sass/etc/mixins/frame.scss */
+.x-tab-navigation-right-tc {
+  background-position: 0 0;
+}
+
+/* line 373, ../../../../ext/packages/ext-theme-base/sass/etc/mixins/frame.scss */
+.x-tab-navigation-right-bc {
+  background-position: 0 0;
+}
+
+/* line 380, ../../../../ext/packages/ext-theme-base/sass/etc/mixins/frame.scss */
+.x-tab-navigation-right-tr,
+.x-tab-navigation-right-br,
+.x-tab-navigation-right-mr {
+  padding-right: 0;
+}
+
+/* line 386, ../../../../ext/packages/ext-theme-base/sass/etc/mixins/frame.scss */
+.x-tab-navigation-right-tl,
+.x-tab-navigation-right-bl,
+.x-tab-navigation-right-ml {
+  padding-left: 0;
+}
+
+/* line 390, ../../../../ext/packages/ext-theme-base/sass/etc/mixins/frame.scss */
+.x-tab-navigation-right-tc {
+  height: 0;
+}
+
+/* line 393, ../../../../ext/packages/ext-theme-base/sass/etc/mixins/frame.scss */
+.x-tab-navigation-right-bc {
+  height: 0;
+}
+
+/* line 454, ../../../../ext/packages/ext-theme-base/sass/etc/mixins/frame.scss */
+.x-tab-navigation-right-mc {
+  padding: 24px 20px 24px 20px;
+}
+
+/* line 304, ../../../../ext/packages/ext-theme-neutral/sass/src/tab/Tab.scss */
+.x-tab-navigation {
+  border-color: #2e6eaf;
+  cursor: pointer;
+}
+
+/* line 311, ../../../../ext/packages/ext-theme-neutral/sass/src/tab/Tab.scss */
+.x-tab-navigation-top {
+  margin: 0;
+}
+/* line 320, ../../../../ext/packages/ext-theme-neutral/sass/src/tab/Tab.scss */
+.x-tab-navigation-top.x-tab-rotate-left {
+  margin: 0 0 0 0;
+}
+
+/* line 338, ../../../../ext/packages/ext-theme-neutral/sass/src/tab/Tab.scss */
+.x-tab-navigation-right {
+  margin: 0 0 0 0;
+}
+/* line 347, ../../../../ext/packages/ext-theme-neutral/sass/src/tab/Tab.scss */
+.x-tab-navigation-right.x-tab-rotate-right {
+  margin: 0 0 0 0;
+}
+
+/* line 367, ../../../../ext/packages/ext-theme-neutral/sass/src/tab/Tab.scss */
+.x-tab-navigation-bottom {
+  margin: 0 0 0 0;
+}
+/* line 376, ../../../../ext/packages/ext-theme-neutral/sass/src/tab/Tab.scss */
+.x-tab-navigation-bottom.x-tab-rotate-left {
+  margin: 0 0 0 0;
+}
+
+/* line 394, ../../../../ext/packages/ext-theme-neutral/sass/src/tab/Tab.scss */
+.x-tab-navigation-left {
+  margin: 0 0 0 0;
+}
+/* line 403, ../../../../ext/packages/ext-theme-neutral/sass/src/tab/Tab.scss */
+.x-tab-navigation-left.x-tab-rotate-right {
+  margin: 0 0 0 0;
+}
+
+/* line 423, ../../../../ext/packages/ext-theme-neutral/sass/src/tab/Tab.scss */
+.x-tab-button-navigation {
+  height: 20px;
+}
+
+/* line 428, ../../../../ext/packages/ext-theme-neutral/sass/src/tab/Tab.scss */
+.x-tab-inner-navigation {
+  font: 600 14px/20px "Proxima Nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: white;
+  max-width: 100%;
+}
+/* line 439, ../../../../ext/packages/ext-theme-neutral/sass/src/tab/Tab.scss */
+.x-tab-icon-right > .x-tab-inner-navigation, .x-tab-icon-left > .x-tab-inner-navigation {
+  max-width: calc(100% - 20px);
+}
+
+/* line 446, ../../../../ext/packages/ext-theme-neutral/sass/src/tab/Tab.scss */
+.x-tab-icon-el-navigation {
+  height: 20px;
+  line-height: 20px;
+  background-position: center center;
+}
+/* line 450, ../../../../ext/packages/ext-theme-neutral/sass/src/tab/Tab.scss */
+.x-tab-icon-left > .x-tab-icon-el-navigation, .x-tab-icon-right > .x-tab-icon-el-navigation {
+  width: 20px;
+}
+/* line 455, ../../../../ext/packages/ext-theme-neutral/sass/src/tab/Tab.scss */
+.x-tab-icon-top > .x-tab-icon-el-navigation, .x-tab-icon-bottom > .x-tab-icon-el-navigation {
+  min-width: 20px;
+}
+/* line 462, ../../../../ext/packages/ext-theme-neutral/sass/src/tab/Tab.scss */
+.x-tab-icon-el-navigation.x-tab-glyph {
+  font-size: 20px;
+  line-height: 20px;
+  color: white;
+}
+/* line 485, ../../../../ext/packages/ext-theme-neutral/sass/src/tab/Tab.scss */
+.x-tab-text.x-tab-icon-left > .x-tab-icon-el-navigation {
+  margin-right: 15px;
+}
+/* line 496, ../../../../ext/packages/ext-theme-neutral/sass/src/tab/Tab.scss */
+.x-tab-text.x-tab-icon-right > .x-tab-icon-el-navigation {
+  margin-left: 15px;
+}
+/* line 507, ../../../../ext/packages/ext-theme-neutral/sass/src/tab/Tab.scss */
+.x-tab-text.x-tab-icon-top > .x-tab-icon-el-navigation {
+  margin-bottom: 15px;
+}
+/* line 511, ../../../../ext/packages/ext-theme-neutral/sass/src/tab/Tab.scss */
+.x-tab-text.x-tab-icon-bottom > .x-tab-icon-el-navigation {
+  margin-top: 15px;
+}
+
+/* line 540, ../../../../ext/packages/ext-theme-neutral/sass/src/tab/Tab.scss */
+.x-tab-over.x-tab-navigation .x-tab-glyph {
+  color: white;
+}
+
+/* line 580, ../../../../ext/packages/ext-theme-neutral/sass/src/tab/Tab.scss */
+.x-tab-active.x-tab-navigation {
+  background-color: transparent;
+}
+/* line 601, ../../../../ext/packages/ext-theme-neutral/sass/src/tab/Tab.scss */
+.x-tab-active.x-tab-navigation .x-tab-glyph {
+  color: white;
+}
+
+/* line 644, ../../../../ext/packages/ext-theme-neutral/sass/src/tab/Tab.scss */
+.x-tab-disabled.x-tab-navigation {
+  cursor: default;
+}
+/* line 657, ../../../../ext/packages/ext-theme-neutral/sass/src/tab/Tab.scss */
+.x-tab-disabled.x-tab-navigation .x-tab-inner-navigation {
+  font-weight: bold;
+  font-size: 13px;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=30);
+  opacity: 0.3;
+}
+/* line 676, ../../../../ext/packages/ext-theme-neutral/sass/src/tab/Tab.scss */
+.x-tab-disabled.x-tab-navigation .x-tab-icon-el-navigation {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+  opacity: 0.5;
+}
+/* line 681, ../../../../ext/packages/ext-theme-neutral/sass/src/tab/Tab.scss */
+.x-tab-disabled.x-tab-navigation .x-tab-glyph {
+  color: white;
+  opacity: 0.3;
+  filter: none;
+}
+
+/* line 708, ../../../../ext/packages/ext-theme-neutral/sass/src/tab/Tab.scss */
+.x-tab-disabled.x-tab-navigation-top, .x-tab-disabled.x-tab-navigation-left, .x-tab-disabled.x-tab-navigation-right {
+  border-color: #2e6eaf #2e6eaf #2e6eaf;
+}
+/* line 722, ../../../../ext/packages/ext-theme-neutral/sass/src/tab/Tab.scss */
+.x-tab-disabled.x-tab-navigation-bottom {
+  border-color: #2e6eaf #2e6eaf #2e6eaf #2e6eaf;
+}
+
+/* line 738, ../../../../ext/packages/ext-theme-neutral/sass/src/tab/Tab.scss */
+.x-nbr .x-tab-navigation {
+  background-image: none;
+}
+
+/* line 759, ../../../../ext/packages/ext-theme-neutral/sass/src/tab/Tab.scss */
+.x-tab-over .x-tab-navigation-top-tl,
+.x-tab-over .x-tab-navigation-top-bl,
+.x-tab-over .x-tab-navigation-top-tr,
+.x-tab-over .x-tab-navigation-top-br,
+.x-tab-over .x-tab-navigation-top-tc,
+.x-tab-over .x-tab-navigation-top-bc {
+  background-image: url(images/tab/tab-navigation-top-over-corners.gif);
+}
+/* line 764, ../../../../ext/packages/ext-theme-neutral/sass/src/tab/Tab.scss */
+.x-tab-over .x-tab-navigation-top-ml,
+.x-tab-over .x-tab-navigation-top-mr {
+  background-image: url(images/tab/tab-navigation-top-over-sides.gif);
+}
+/* line 768, ../../../../ext/packages/ext-theme-neutral/sass/src/tab/Tab.scss */
+.x-tab-over .x-tab-navigation-top-mc {
+  background-color: transparent;
+}
+
+/* line 759, ../../../../ext/packages/ext-theme-neutral/sass/src/tab/Tab.scss */
+.x-tab-active .x-tab-navigation-top-tl,
+.x-tab-active .x-tab-navigation-top-bl,
+.x-tab-active .x-tab-navigation-top-tr,
+.x-tab-active .x-tab-navigation-top-br,
+.x-tab-active .x-tab-navigation-top-tc,
+.x-tab-active .x-tab-navigation-top-bc {
+  background-image: url(images/tab/tab-navigation-top-active-corners.gif);
+}
+/* line 764, ../../../../ext/packages/ext-theme-neutral/sass/src/tab/Tab.scss */
+.x-tab-active .x-tab-navigation-top-ml,
+.x-tab-active .x-tab-navigation-top-mr {
+  background-image: url(images/tab/tab-navigation-top-active-sides.gif);
+}
+/* line 768, ../../../../ext/packages/ext-theme-neutral/sass/src/tab/Tab.scss */
+.x-tab-active .x-tab-navigation-top-mc {
+  background-color: transparent;
+}
+
+/* line 759, ../../../../ext/packages/ext-theme-neutral/sass/src/tab/Tab.scss */
+.x-tab-disabled .x-tab-navigation-top-tl,
+.x-tab-disabled .x-tab-navigation-top-bl,
+.x-tab-disabled .x-tab-navigation-top-tr,
+.x-tab-disabled .x-tab-navigation-top-br,
+.x-tab-disabled .x-tab-navigation-top-tc,
+.x-tab-disabled .x-tab-navigation-top-bc {
+  background-image: url(images/tab/tab-navigation-top-disabled-corners.gif);
+}
+/* line 764, ../../../../ext/packages/ext-theme-neutral/sass/src/tab/Tab.scss */
+.x-tab-disabled .x-tab-navigation-top-ml,
+.x-tab-disabled .x-tab-navigation-top-mr {
+  background-image: url(images/tab/tab-navigation-top-disabled-sides.gif);
+}
+/* line 768, ../../../../ext/packages/ext-theme-neutral/sass/src/tab/Tab.scss */
+.x-tab-disabled .x-tab-navigation-top-mc {
+  background-color: #5e8fc1;
+}
+
+/* line 759, ../../../../ext/packages/ext-theme-neutral/sass/src/tab/Tab.scss */
+.x-tab-over .x-tab-navigation-right-tl,
+.x-tab-over .x-tab-navigation-right-bl,
+.x-tab-over .x-tab-navigation-right-tr,
+.x-tab-over .x-tab-navigation-right-br,
+.x-tab-over .x-tab-navigation-right-tc,
+.x-tab-over .x-tab-navigation-right-bc {
+  background-image: url(images/tab/tab-navigation-right-over-corners.gif);
+}
+/* line 764, ../../../../ext/packages/ext-theme-neutral/sass/src/tab/Tab.scss */
+.x-tab-over .x-tab-navigation-right-ml,
+.x-tab-over .x-tab-navigation-right-mr {
+  background-image: url(images/tab/tab-navigation-right-over-sides.gif);
+}
+/* line 768, ../../../../ext/packages/ext-theme-neutral/sass/src/tab/Tab.scss */
+.x-tab-over .x-tab-navigation-right-mc {
+  background-color: transparent;
+}
+
+/* line 759, ../../../../ext/packages/ext-theme-neutral/sass/src/tab/Tab.scss */
+.x-tab-active .x-tab-navigation-right-tl,
+.x-tab-active .x-tab-navigation-right-bl,
+.x-tab-active .x-tab-navigation-right-tr,
+.x-tab-active .x-tab-navigation-right-br,
+.x-tab-active .x-tab-navigation-right-tc,
+.x-tab-active .x-tab-navigation-right-bc {
+  background-image: url(images/tab/tab-navigation-right-active-corners.gif);
+}
+/* line 764, ../../../../ext/packages/ext-theme-neutral/sass/src/tab/Tab.scss */
+.x-tab-active .x-tab-navigation-right-ml,
+.x-tab-active .x-tab-navigation-right-mr {
+  background-image: url(images/tab/tab-navigation-right-active-sides.gif);
+}
+/* line 768, ../../../../ext/packages/ext-theme-neutral/sass/src/tab/Tab.scss */
+.x-tab-active .x-tab-navigation-right-mc {
+  background-color: transparent;
+}
+
+/* line 759, ../../../../ext/packages/ext-theme-neutral/sass/src/tab/Tab.scss */
+.x-tab-disabled .x-tab-navigation-right-tl,
+.x-tab-disabled .x-tab-navigation-right-bl,
+.x-tab-disabled .x-tab-navigation-right-tr,
+.x-tab-disabled .x-tab-navigation-right-br,
+.x-tab-disabled .x-tab-navigation-right-tc,
+.x-tab-disabled .x-tab-navigation-right-bc {
+  background-image: url(images/tab/tab-navigation-right-disabled-corners.gif);
+}
+/* line 764, ../../../../ext/packages/ext-theme-neutral/sass/src/tab/Tab.scss */
+.x-tab-disabled .x-tab-navigation-right-ml,
+.x-tab-disabled .x-tab-navigation-right-mr {
+  background-image: url(images/tab/tab-navigation-right-disabled-sides.gif);
+}
+/* line 768, ../../../../ext/packages/ext-theme-neutral/sass/src/tab/Tab.scss */
+.x-tab-disabled .x-tab-navigation-right-mc {
+  background-color: #5e8fc1;
+}
+
+/* line 759, ../../../../ext/packages/ext-theme-neutral/sass/src/tab/Tab.scss */
+.x-tab-over .x-tab-navigation-bottom-tl,
+.x-tab-over .x-tab-navigation-bottom-bl,
+.x-tab-over .x-tab-navigation-bottom-tr,
+.x-tab-over .x-tab-navigation-bottom-br,
+.x-tab-over .x-tab-navigation-bottom-tc,
+.x-tab-over .x-tab-navigation-bottom-bc {
+  background-image: url(images/tab/tab-navigation-bottom-over-corners.gif);
+}
+/* line 764, ../../../../ext/packages/ext-theme-neutral/sass/src/tab/Tab.scss */
+.x-tab-over .x-tab-navigation-bottom-ml,
+.x-tab-over .x-tab-navigation-bottom-mr {
+  background-image: url(images/tab/tab-navigation-bottom-over-sides.gif);
+}
+/* line 768, ../../../../ext/packages/ext-theme-neutral/sass/src/tab/Tab.scss */
+.x-tab-over .x-tab-navigation-bottom-mc {
+  background-color: transparent;
+}
+
+/* line 759, ../../../../ext/packages/ext-theme-neutral/sass/src/tab/Tab.scss */
+.x-tab-active .x-tab-navigation-bottom-tl,
+.x-tab-active .x-tab-navigation-bottom-bl,
+.x-tab-active .x-tab-navigation-bottom-tr,
+.x-tab-active .x-tab-navigation-bottom-br,
+.x-tab-active .x-tab-navigation-bottom-tc,
+.x-tab-active .x-tab-navigation-bottom-bc {
+  background-image: url(images/tab/tab-navigation-bottom-active-corners.gif);
+}
+/* line 764, ../../../../ext/packages/ext-theme-neutral/sass/src/tab/Tab.scss */
+.x-tab-active .x-tab-navigation-bottom-ml,
+.x-tab-active .x-tab-navigation-bottom-mr {
+  background-image: url(images/tab/tab-navigation-bottom-active-sides.gif);
+}
+/* line 768, ../../../../ext/packages/ext-theme-neutral/sass/src/tab/Tab.scss */
+.x-tab-active .x-tab-navigation-bottom-mc {
+  background-color: transparent;
+}
+
+/* line 759, ../../../../ext/packages/ext-theme-neutral/sass/src/tab/Tab.scss */
+.x-tab-disabled .x-tab-navigation-bottom-tl,
+.x-tab-disabled .x-tab-navigation-bottom-bl,
+.x-tab-disabled .x-tab-navigation-bottom-tr,
+.x-tab-disabled .x-tab-navigation-bottom-br,
+.x-tab-disabled .x-tab-navigation-bottom-tc,
+.x-tab-disabled .x-tab-navigation-bottom-bc {
+  background-image: url(images/tab/tab-navigation-bottom-disabled-corners.gif);
+}
+/* line 764, ../../../../ext/packages/ext-theme-neutral/sass/src/tab/Tab.scss */
+.x-tab-disabled .x-tab-navigation-bottom-ml,
+.x-tab-disabled .x-tab-navigation-bottom-mr {
+  background-image: url(images/tab/tab-navigation-bottom-disabled-sides.gif);
+}
+/* line 768, ../../../../ext/packages/ext-theme-neutral/sass/src/tab/Tab.scss */
+.x-tab-disabled .x-tab-navigation-bottom-mc {
+  background-color: #5e8fc1;
+}
+
+/* line 759, ../../../../ext/packages/ext-theme-neutral/sass/src/tab/Tab.scss */
+.x-tab-over .x-tab-navigation-left-tl,
+.x-tab-over .x-tab-navigation-left-bl,
+.x-tab-over .x-tab-navigation-left-tr,
+.x-tab-over .x-tab-navigation-left-br,
+.x-tab-over .x-tab-navigation-left-tc,
+.x-tab-over .x-tab-navigation-left-bc {
+  background-image: url(images/tab/tab-navigation-left-over-corners.gif);
+}
+/* line 764, ../../../../ext/packages/ext-theme-neutral/sass/src/tab/Tab.scss */
+.x-tab-over .x-tab-navigation-left-ml,
+.x-tab-over .x-tab-navigation-left-mr {
+  background-image: url(images/tab/tab-navigation-left-over-sides.gif);
+}
+/* line 768, ../../../../ext/packages/ext-theme-neutral/sass/src/tab/Tab.scss */
+.x-tab-over .x-tab-navigation-left-mc {
+  background-color: transparent;
+}
+
+/* line 759, ../../../../ext/packages/ext-theme-neutral/sass/src/tab/Tab.scss */
+.x-tab-active .x-tab-navigation-left-tl,
+.x-tab-active .x-tab-navigation-left-bl,
+.x-tab-active .x-tab-navigation-left-tr,
+.x-tab-active .x-tab-navigation-left-br,
+.x-tab-active .x-tab-navigation-left-tc,
+.x-tab-active .x-tab-navigation-left-bc {
+  background-image: url(images/tab/tab-navigation-left-active-corners.gif);
+}
+/* line 764, ../../../../ext/packages/ext-theme-neutral/sass/src/tab/Tab.scss */
+.x-tab-active .x-tab-navigation-left-ml,
+.x-tab-active .x-tab-navigation-left-mr {
+  background-image: url(images/tab/tab-navigation-left-active-sides.gif);
+}
+/* line 768, ../../../../ext/packages/ext-theme-neutral/sass/src/tab/Tab.scss */
+.x-tab-active .x-tab-navigation-left-mc {
+  background-color: transparent;
+}
+
+/* line 759, ../../../../ext/packages/ext-theme-neutral/sass/src/tab/Tab.scss */
+.x-tab-disabled .x-tab-navigation-left-tl,
+.x-tab-disabled .x-tab-navigation-left-bl,
+.x-tab-disabled .x-tab-navigation-left-tr,
+.x-tab-disabled .x-tab-navigation-left-br,
+.x-tab-disabled .x-tab-navigation-left-tc,
+.x-tab-disabled .x-tab-navigation-left-bc {
+  background-image: url(images/tab/tab-navigation-left-disabled-corners.gif);
+}
+/* line 764, ../../../../ext/packages/ext-theme-neutral/sass/src/tab/Tab.scss */
+.x-tab-disabled .x-tab-navigation-left-ml,
+.x-tab-disabled .x-tab-navigation-left-mr {
+  background-image: url(images/tab/tab-navigation-left-disabled-sides.gif);
+}
+/* line 768, ../../../../ext/packages/ext-theme-neutral/sass/src/tab/Tab.scss */
+.x-tab-disabled .x-tab-navigation-left-mc {
+  background-color: #5e8fc1;
+}
+
+/* line 782, ../../../../ext/packages/ext-theme-neutral/sass/src/tab/Tab.scss */
+.x-tab-navigation-tl,
+.x-tab-navigation-bl,
+.x-tab-navigation-tr,
+.x-tab-navigation-br {
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF);
+}
+
+/* line 789, ../../../../ext/packages/ext-theme-neutral/sass/src/tab/Tab.scss */
+.x-tab-navigation .x-tab-close-btn {
+  top: 2px;
+  right: 2px;
+  width: 12px;
+  height: 12px;
+  background: url(images/tab/tab-navigation-close.png) 0 0;
+}
+/* line 800, ../../../../ext/packages/ext-theme-neutral/sass/src/tab/Tab.scss */
+.x-tab-navigation .x-tab-close-btn-over {
+  background-position: -12px 0;
+}
+/* line 810, ../../../../ext/packages/ext-theme-neutral/sass/src/tab/Tab.scss */
+.x-tab-navigation .x-tab-close-btn-pressed {
+  background-position: -24px 0;
+}
+/* line 816, ../../../../ext/packages/ext-theme-neutral/sass/src/tab/Tab.scss */
+.x-tab-navigation.x-tab-active .x-tab-close-btn {
+  background-position: 0 -12px;
+}
+/* line 821, ../../../../ext/packages/ext-theme-neutral/sass/src/tab/Tab.scss */
+.x-tab-navigation.x-tab-active .x-tab-close-btn-over {
+  background-position: -12px -12px;
+}
+/* line 827, ../../../../ext/packages/ext-theme-neutral/sass/src/tab/Tab.scss */
+.x-tab-navigation.x-tab-active .x-tab-close-btn-pressed {
+  background-position: -24px -12px;
+}
+/* line 834, ../../../../ext/packages/ext-theme-neutral/sass/src/tab/Tab.scss */
+.x-tab-navigation.x-tab-disabled .x-tab-close-btn {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=30);
+  opacity: 0.3;
+  background-position: 0 0;
+}
+
+/* line 852, ../../../../ext/packages/ext-theme-neutral/sass/src/tab/Tab.scss */
+.x-tab-closable.x-tab-navigation .x-tab-button {
+  padding-right: 15px;
+}
+
+/*<if slicer>*/
+/* line 78, ../../../../ext/packages/ext-theme-base/sass/etc/mixins/slicer.scss */
+.x-tab-over.x-tab-navigation-top:after {
+  display: none;
+  content: "x-slicer:corners:url(images/tab/tab-navigation-top-over-corners.gif), sides:url(images/tab/tab-navigation-top-over-sides.gif), stretch:bottom";
+}
+
+/*</if slicer>*/
+/* */
+/*<if slicer>*/
+/* line 78, ../../../../ext/packages/ext-theme-base/sass/etc/mixins/slicer.scss */
+.x-tab-over.x-tab-navigation-right:after {
+  display: none;
+  content: "x-slicer:corners:url(images/tab/tab-navigation-right-over-corners.gif), sides:url(images/tab/tab-navigation-right-over-sides.gif), stretch:left";
+}
+
+/*</if slicer>*/
+/* */
+/*<if slicer>*/
+/* line 78, ../../../../ext/packages/ext-theme-base/sass/etc/mixins/slicer.scss */
+.x-tab-over.x-tab-navigation-bottom:after {
+  display: none;
+  content: "x-slicer:corners:url(images/tab/tab-navigation-bottom-over-corners.gif), sides:url(images/tab/tab-navigation-bottom-over-sides.gif), stretch:top";
+}
+
+/*</if slicer>*/
+/* */
+/*<if slicer>*/
+/* line 78, ../../../../ext/packages/ext-theme-base/sass/etc/mixins/slicer.scss */
+.x-tab-over.x-tab-navigation-left:after {
+  display: none;
+  content: "x-slicer:corners:url(images/tab/tab-navigation-left-over-corners.gif), sides:url(images/tab/tab-navigation-left-over-sides.gif), stretch:right";
+}
+
+/*</if slicer>*/
+/* */
+/*<if slicer>*/
+/* line 78, ../../../../ext/packages/ext-theme-base/sass/etc/mixins/slicer.scss */
+.x-tab-active.x-tab-navigation-top:after {
+  display: none;
+  content: "x-slicer:corners:url(images/tab/tab-navigation-top-active-corners.gif), sides:url(images/tab/tab-navigation-top-active-sides.gif), stretch:bottom";
+}
+
+/*</if slicer>*/
+/* */
+/*<if slicer>*/
+/* line 78, ../../../../ext/packages/ext-theme-base/sass/etc/mixins/slicer.scss */
+.x-tab-active.x-tab-navigation-right:after {
+  display: none;
+  content: "x-slicer:corners:url(images/tab/tab-navigation-right-active-corners.gif), sides:url(images/tab/tab-navigation-right-active-sides.gif), stretch:left";
+}
+
+/*</if slicer>*/
+/* */
+/*<if slicer>*/
+/* line 78, ../../../../ext/packages/ext-theme-base/sass/etc/mixins/slicer.scss */
+.x-tab-active.x-tab-navigation-bottom:after {
+  display: none;
+  content: "x-slicer:corners:url(images/tab/tab-navigation-bottom-active-corners.gif), sides:url(images/tab/tab-navigation-bottom-active-sides.gif), stretch:top";
+}
+
+/*</if slicer>*/
+/* */
+/*<if slicer>*/
+/* line 78, ../../../../ext/packages/ext-theme-base/sass/etc/mixins/slicer.scss */
+.x-tab-active.x-tab-navigation-left:after {
+  display: none;
+  content: "x-slicer:corners:url(images/tab/tab-navigation-left-active-corners.gif), sides:url(images/tab/tab-navigation-left-active-sides.gif), stretch:right";
+}
+
+/*</if slicer>*/
+/* */
+/*<if slicer>*/
+/* line 78, ../../../../ext/packages/ext-theme-base/sass/etc/mixins/slicer.scss */
+.x-tab-disabled.x-tab-navigation-top:after {
+  display: none;
+  content: "x-slicer:corners:url(images/tab/tab-navigation-top-disabled-corners.gif), sides:url(images/tab/tab-navigation-top-disabled-sides.gif), stretch:bottom";
+}
+
+/*</if slicer>*/
+/* */
+/*<if slicer>*/
+/* line 78, ../../../../ext/packages/ext-theme-base/sass/etc/mixins/slicer.scss */
+.x-tab-disabled.x-tab-navigation-right:after {
+  display: none;
+  content: "x-slicer:corners:url(images/tab/tab-navigation-right-disabled-corners.gif), sides:url(images/tab/tab-navigation-right-disabled-sides.gif), stretch:left";
+}
+
+/*</if slicer>*/
+/* */
+/*<if slicer>*/
+/* line 78, ../../../../ext/packages/ext-theme-base/sass/etc/mixins/slicer.scss */
+.x-tab-disabled.x-tab-navigation-bottom:after {
+  display: none;
+  content: "x-slicer:corners:url(images/tab/tab-navigation-bottom-disabled-corners.gif), sides:url(images/tab/tab-navigation-bottom-disabled-sides.gif), stretch:top";
+}
+
+/*</if slicer>*/
+/* */
+/*<if slicer>*/
+/* line 78, ../../../../ext/packages/ext-theme-base/sass/etc/mixins/slicer.scss */
+.x-tab-disabled.x-tab-navigation-left:after {
+  display: none;
+  content: "x-slicer:corners:url(images/tab/tab-navigation-left-disabled-corners.gif), sides:url(images/tab/tab-navigation-left-disabled-sides.gif), stretch:right";
+}
+
+/*</if slicer>*/
+/* */
+/* line 130, ../../../../ext/packages/ext-theme-neutral/sass/src/tab/Bar.scss */
+.x-tab-bar-navigation {
+  background-color: gray;
+}
+
+/* line 169, ../../../../ext/packages/ext-theme-neutral/sass/src/tab/Bar.scss */
+.x-tab-bar-navigation-top > .x-tab-bar-body-navigation {
+  padding: 0;
+}
+/* line 173, ../../../../ext/packages/ext-theme-neutral/sass/src/tab/Bar.scss */
+.x-tab-bar-navigation-bottom > .x-tab-bar-body-navigation {
+  padding: 0 0 0 0;
+}
+/* line 177, ../../../../ext/packages/ext-theme-neutral/sass/src/tab/Bar.scss */
+.x-tab-bar-navigation-left > .x-tab-bar-body-navigation {
+  padding: 0 0 0 0;
+}
+/* line 187, ../../../../ext/packages/ext-theme-neutral/sass/src/tab/Bar.scss */
+.x-tab-bar-navigation-right > .x-tab-bar-body-navigation {
+  padding: 0 0 0 0;
+}
+
+/* line 199, ../../../../ext/packages/ext-theme-neutral/sass/src/tab/Bar.scss */
+.x-tab-bar-plain.x-tab-bar-navigation-horizontal {
+  border-top-color: transparent;
+  border-bottom-color: transparent;
+  border-left-width: 0;
+  border-right-width: 0;
+}
+/* line 206, ../../../../ext/packages/ext-theme-neutral/sass/src/tab/Bar.scss */
+.x-tab-bar-plain.x-tab-bar-navigation-vertical {
+  border-right-color: transparent;
+  border-left-color: transparent;
+  border-top-width: 0;
+  border-bottom-width: 0;
+}
+
+/* line 320, ../../../../ext/packages/ext-theme-neutral/sass/src/tab/Bar.scss */
+.x-tab-bar-horizontal > .x-tab-bar-body-navigation {
+  min-height: 68px;
+}
+/* line 323, ../../../../ext/packages/ext-theme-neutral/sass/src/tab/Bar.scss */
+.x-ie9m .x-tab-bar-horizontal > .x-tab-bar-body-navigation {
+  min-height: 68px;
+}
+
+/* line 329, ../../../../ext/packages/ext-theme-neutral/sass/src/tab/Bar.scss */
+.x-tab-bar-vertical > .x-tab-bar-body-navigation {
+  min-width: 68px;
+}
+/* line 332, ../../../../ext/packages/ext-theme-neutral/sass/src/tab/Bar.scss */
+.x-ie9m .x-tab-bar-vertical > .x-tab-bar-body-navigation {
+  min-width: 68px;
+}
+
+/* line 145, ../../../../ext/packages/ext-theme-neutral/sass/src/layout/container/Box.scss */
+.x-tab-bar-navigation-scroller .x-box-scroller-body-horizontal {
+  margin-left: 24px;
+}
+
+/* line 151, ../../../../ext/packages/ext-theme-neutral/sass/src/layout/container/Box.scss */
+.x-tab-bar-navigation-vertical-scroller .x-box-scroller-body-vertical {
+  margin-top: 24px;
+}
+
+/* line 156, ../../../../ext/packages/ext-theme-neutral/sass/src/layout/container/Box.scss */
+.x-box-scroller-tab-bar-navigation {
+  cursor: pointer;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+  opacity: 0.5;
+}
+/* line 165, ../../../../ext/packages/ext-theme-neutral/sass/src/layout/container/Box.scss */
+.x-box-scroller-tab-bar-navigation.x-box-scroller-hover {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
+  opacity: 0.6;
+}
+/* line 171, ../../../../ext/packages/ext-theme-neutral/sass/src/layout/container/Box.scss */
+.x-box-scroller-tab-bar-navigation.x-box-scroller-pressed {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+  opacity: 0.7;
+}
+/* line 177, ../../../../ext/packages/ext-theme-neutral/sass/src/layout/container/Box.scss */
+.x-box-scroller-tab-bar-navigation.x-box-scroller-disabled {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=25);
+  opacity: 0.25;
+  cursor: default;
+}
+/* line 188, ../../../../ext/packages/ext-theme-neutral/sass/src/layout/container/Box.scss */
+.x-box-scroller-tab-bar-navigation.x-box-scroller-left, .x-box-scroller-tab-bar-navigation.x-box-scroller-right {
+  width: 24px;
+  height: 24px;
+  top: 50%;
+  margin-top: -12px;
+}
+/* line 214, ../../../../ext/packages/ext-theme-neutral/sass/src/layout/container/Box.scss */
+.x-box-scroller-tab-bar-navigation.x-box-scroller-left {
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  background-image: url(images/tab-bar/navigation-scroll-left.png);
+}
+/* line 237, ../../../../ext/packages/ext-theme-neutral/sass/src/layout/container/Box.scss */
+.x-box-scroller-tab-bar-navigation.x-box-scroller-right {
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  background-image: url(images/tab-bar/navigation-scroll-right.png);
+}
+/* line 263, ../../../../ext/packages/ext-theme-neutral/sass/src/layout/container/Box.scss */
+.x-box-scroller-tab-bar-navigation.x-box-scroller-top, .x-box-scroller-tab-bar-navigation.x-box-scroller-bottom {
+  height: 24px;
+  width: 24px;
+  left: 50%;
+  margin-left: -12px;
+}
+/* line 289, ../../../../ext/packages/ext-theme-neutral/sass/src/layout/container/Box.scss */
+.x-box-scroller-tab-bar-navigation.x-box-scroller-top {
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  background-image: url(images/tab-bar/navigation-scroll-top.png);
+}
+/* line 312, ../../../../ext/packages/ext-theme-neutral/sass/src/layout/container/Box.scss */
+.x-box-scroller-tab-bar-navigation.x-box-scroller-bottom {
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  background-image: url(images/tab-bar/navigation-scroll-bottom.png);
+}
+
+/* line 446, ../../../../ext/packages/ext-theme-neutral/sass/src/tab/Bar.scss */
+.x-tab-bar-navigation-top .x-box-scroller-tab-bar-navigation {
+  margin-top: -12px;
+}
+/* line 450, ../../../../ext/packages/ext-theme-neutral/sass/src/tab/Bar.scss */
+.x-tab-bar-navigation-right .x-box-scroller-tab-bar-navigation {
+  margin-left: -12px;
+}
+/* line 454, ../../../../ext/packages/ext-theme-neutral/sass/src/tab/Bar.scss */
+.x-tab-bar-navigation-bottom .x-box-scroller-tab-bar-navigation {
+  margin-top: -12px;
+}
+/* line 458, ../../../../ext/packages/ext-theme-neutral/sass/src/tab/Bar.scss */
+.x-tab-bar-navigation-left .x-box-scroller-tab-bar-navigation {
+  margin-left: -12px;
+}
+
+/* line 467, ../../../../ext/packages/ext-theme-neutral/sass/src/tab/Bar.scss */
+.x-box-scroller-tab-bar-navigation {
+  background-color: gray;
+}
+/* line 473, ../../../../ext/packages/ext-theme-neutral/sass/src/tab/Bar.scss */
+.x-box-scroller-tab-bar-navigation .x-ie8 .x-box-scroller-plain {
+  background-color: #fff;
+}
+
+/* line 484, ../../../../ext/packages/ext-theme-neutral/sass/src/tab/Bar.scss */
+.x-box-scroller-plain.x-box-scroller-tab-bar-navigation.x-box-scroller-left {
+  background-image: url(images/tab-bar/navigation-plain-scroll-left.png);
+}
+/* line 488, ../../../../ext/packages/ext-theme-neutral/sass/src/tab/Bar.scss */
+.x-box-scroller-plain.x-box-scroller-tab-bar-navigation.x-box-scroller-right {
+  background-image: url(images/tab-bar/navigation-plain-scroll-right.png);
+}
+/* line 492, ../../../../ext/packages/ext-theme-neutral/sass/src/tab/Bar.scss */
+.x-box-scroller-plain.x-box-scroller-tab-bar-navigation.x-box-scroller-top {
+  background-image: url(images/tab-bar/navigation-plain-scroll-top.png);
+}
+/* line 496, ../../../../ext/packages/ext-theme-neutral/sass/src/tab/Bar.scss */
+.x-box-scroller-plain.x-box-scroller-tab-bar-navigation.x-box-scroller-bottom {
+  background-image: url(images/tab-bar/navigation-plain-scroll-bottom.png);
+}
+
+/*<if slicer>*/
+/* line 78, ../../../../ext/packages/ext-theme-base/sass/etc/mixins/slicer.scss */
+.x-tab-bar-navigation-top:after {
+  display: none;
+  content: "x-slicer:stretch:bottom";
+}
+
+/*</if slicer>*/
+/* */
+/*<if slicer>*/
+/* line 78, ../../../../ext/packages/ext-theme-base/sass/etc/mixins/slicer.scss */
+.x-tab-bar-navigation-bottom:after {
+  display: none;
+  content: "x-slicer:stretch:top";
+}
+
+/*</if slicer>*/
+/* */
+/*<if slicer>*/
+/* line 78, ../../../../ext/packages/ext-theme-base/sass/etc/mixins/slicer.scss */
+.x-tab-bar-navigation-left:after {
+  display: none;
+  content: "x-slicer:stretch:right";
+}
+
+/*</if slicer>*/
+/* */
+/*<if slicer>*/
+/* line 78, ../../../../ext/packages/ext-theme-base/sass/etc/mixins/slicer.scss */
+.x-tab-bar-navigation-right:after {
+  display: none;
+  content: "x-slicer:stretch:left";
+}
+
+/*</if slicer>*/
+/* */
+/**
+ * Generates a set of style rules for the "navigation" panel UI.
+ */
+/* line 252, ../../../../ext/packages/ext-theme-neutral/sass/src/panel/Panel.scss */
+.x-panel-navigation {
+  border-color: #2e6eaf;
+  padding: 0;
+}
+
+/* line 258, ../../../../ext/packages/ext-theme-neutral/sass/src/panel/Panel.scss */
+.x-panel-header-navigation {
+  font-size: 32px;
+  border: 1px solid #2e6eaf;
+}
+/* line 265, ../../../../ext/packages/ext-theme-neutral/sass/src/panel/Panel.scss */
+.x-panel-header-navigation .x-tool-img {
+  background-color: #5f86af;
+}
+
+/* line 278, ../../../../ext/packages/ext-theme-neutral/sass/src/panel/Panel.scss */
+.x-panel-header-navigation-horizontal {
+  padding: 0;
+}
+/* line 282, ../../../../ext/packages/ext-theme-neutral/sass/src/panel/Panel.scss */
+.x-panel-header-navigation-horizontal .x-panel-header-navigation-tab-bar {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* line 302, ../../../../ext/packages/ext-theme-neutral/sass/src/panel/Panel.scss */
+.x-panel-header-navigation-vertical {
+  padding: 0 0 0 0;
+}
+/* line 306, ../../../../ext/packages/ext-theme-neutral/sass/src/panel/Panel.scss */
+.x-panel-header-navigation-vertical .x-panel-header-navigation-tab-bar {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+/* line 352, ../../../../ext/packages/ext-theme-neutral/sass/src/panel/Panel.scss */
+.x-panel-header-title-navigation {
+  color: white;
+  font-size: 32px;
+  font-weight: 600;
+  font-family: "Proxima Nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 48px;
+  margin: 26px 36px;
+}
+/* line 365, ../../../../ext/packages/ext-theme-neutral/sass/src/panel/Panel.scss */
+.x-panel-header-title-navigation > .x-title-text-navigation {
+  text-transform: none;
+  padding: 0;
+}
+/* line 383, ../../../../ext/packages/ext-theme-neutral/sass/src/panel/Panel.scss */
+.x-panel-header-title-navigation > .x-title-icon-wrap-navigation.x-title-icon-top {
+  height: 48px;
+  padding-bottom: 16px;
+}
+/* line 388, ../../../../ext/packages/ext-theme-neutral/sass/src/panel/Panel.scss */
+.x-panel-header-title-navigation > .x-title-icon-wrap-navigation.x-title-icon-right {
+  width: 48px;
+  padding-left: 16px;
+}
+/* line 400, ../../../../ext/packages/ext-theme-neutral/sass/src/panel/Panel.scss */
+.x-panel-header-title-navigation > .x-title-icon-wrap-navigation.x-title-icon-bottom {
+  height: 48px;
+  padding-top: 16px;
+}
+/* line 405, ../../../../ext/packages/ext-theme-neutral/sass/src/panel/Panel.scss */
+.x-panel-header-title-navigation > .x-title-icon-wrap-navigation.x-title-icon-left {
+  width: 48px;
+  padding-right: 16px;
+}
+/* line 417, ../../../../ext/packages/ext-theme-neutral/sass/src/panel/Panel.scss */
+.x-panel-header-title-navigation > .x-title-icon-wrap-navigation > .x-title-icon-navigation {
+  width: 32px;
+  height: 32px;
+  background-position: center center;
+}
+/* line 423, ../../../../ext/packages/ext-theme-neutral/sass/src/panel/Panel.scss */
+.x-panel-header-title-navigation > .x-title-icon-wrap-navigation > .x-title-glyph {
+  color: white;
+  font-size: 32px;
+  line-height: 32px;
+}
+/* line 440, ../../../../ext/packages/ext-theme-neutral/sass/src/panel/Panel.scss */
+.x-ie8 .x-panel-header-title-navigation > .x-title-icon-wrap-navigation > .x-title-glyph {
+  color: white;
+}
+
+/* line 450, ../../../../ext/packages/ext-theme-neutral/sass/src/panel/Panel.scss */
+.x-panel-body-navigation {
+  background: white;
+  border-color: #c1c1c1;
+  color: gray;
+  font-size: 13px;
+  font-weight: normal;
+  font-family: "Proxima Nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  border-width: 1px;
+  border-style: solid;
+}
+
+/* line 614, ../../../../ext/packages/ext-theme-neutral/sass/src/panel/Panel.scss */
+.x-panel-header-navigation {
+  background-image: none;
+  background-color: #5f86af;
+}
+
+/* line 618, ../../../../ext/packages/ext-theme-neutral/sass/src/panel/Panel.scss */
+.x-panel-header-navigation-vertical {
+  background-image: none;
+  background-color: #5f86af;
+}
+
+/* line 676, ../../../../ext/packages/ext-theme-neutral/sass/src/panel/Panel.scss */
+.x-panel .x-panel-header-navigation-collapsed-border-top {
+  border-bottom-width: 1px !important;
+}
+/* line 680, ../../../../ext/packages/ext-theme-neutral/sass/src/panel/Panel.scss */
+.x-panel .x-panel-header-navigation-collapsed-border-right {
+  border-left-width: 1px !important;
+}
+/* line 684, ../../../../ext/packages/ext-theme-neutral/sass/src/panel/Panel.scss */
+.x-panel .x-panel-header-navigation-collapsed-border-bottom {
+  border-top-width: 1px !important;
+}
+/* line 688, ../../../../ext/packages/ext-theme-neutral/sass/src/panel/Panel.scss */
+.x-panel .x-panel-header-navigation-collapsed-border-left {
+  border-right-width: 1px !important;
+}
+
+/*<if slicer>*/
+/* line 78, ../../../../ext/packages/ext-theme-base/sass/etc/mixins/slicer.scss */
+.x-panel-header-navigation-top:after {
+  display: none;
+  content: "x-slicer:stretch:bottom";
+}
+
+/*</if slicer>*/
+/* */
+/*<if slicer>*/
+/* line 78, ../../../../ext/packages/ext-theme-base/sass/etc/mixins/slicer.scss */
+.x-panel-header-navigation-bottom:after {
+  display: none;
+  content: "x-slicer:stretch:top";
+}
+
+/*</if slicer>*/
+/* */
+/*<if slicer>*/
+/* line 78, ../../../../ext/packages/ext-theme-base/sass/etc/mixins/slicer.scss */
+.x-panel-header-navigation-left:after {
+  display: none;
+  content: "x-slicer:stretch:right";
+}
+
+/*</if slicer>*/
+/* */
+/*<if slicer>*/
+/* line 78, ../../../../ext/packages/ext-theme-base/sass/etc/mixins/slicer.scss */
+.x-panel-header-navigation-right:after {
+  display: none;
+  content: "x-slicer:stretch:left";
+}
+
+/*</if slicer>*/
+/* */
+/* line 724, ../../../../ext/packages/ext-theme-neutral/sass/src/panel/Panel.scss */
+.x-panel-header-navigation-horizontal .x-tool-after-title {
+  margin: 0 0 0 6px;
+}
+/* line 734, ../../../../ext/packages/ext-theme-neutral/sass/src/panel/Panel.scss */
+.x-panel-header-navigation-horizontal .x-tool-before-title {
+  margin: 0 6px 0 0;
+}
+
+/* line 746, ../../../../ext/packages/ext-theme-neutral/sass/src/panel/Panel.scss */
+.x-panel-header-navigation-vertical .x-tool-after-title {
+  margin: 6px 0 0 0;
+}
+/* line 756, ../../../../ext/packages/ext-theme-neutral/sass/src/panel/Panel.scss */
+.x-panel-header-navigation-vertical .x-tool-before-title {
+  margin: 0 0 6px 0;
+}
+
+/* line 786, ../../../../ext/packages/ext-theme-neutral/sass/src/panel/Panel.scss */
+.x-panel-navigation-resizable .x-panel-handle {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+}
+
+/* line 2, ../../../../ext/packages/ext-theme-base/sass/etc/mixins/border-management.scss */
+.x-panel-navigation-outer-border-l {
+  border-left-color: #2e6eaf !important;
+  border-left-width: 1px !important;
+}
+
+/* line 6, ../../../../ext/packages/ext-theme-base/sass/etc/mixins/border-management.scss */
+.x-panel-navigation-outer-border-b {
+  border-bottom-color: #2e6eaf !important;
+  border-bottom-width: 1px !important;
+}
+
+/* line 10, ../../../../ext/packages/ext-theme-base/sass/etc/mixins/border-management.scss */
+.x-panel-navigation-outer-border-bl {
+  border-bottom-color: #2e6eaf !important;
+  border-bottom-width: 1px !important;
+  border-left-color: #2e6eaf !important;
+  border-left-width: 1px !important;
+}
+
+/* line 16, ../../../../ext/packages/ext-theme-base/sass/etc/mixins/border-management.scss */
+.x-panel-navigation-outer-border-r {
+  border-right-color: #2e6eaf !important;
+  border-right-width: 1px !important;
+}
+
+/* line 20, ../../../../ext/packages/ext-theme-base/sass/etc/mixins/border-management.scss */
+.x-panel-navigation-outer-border-rl {
+  border-right-color: #2e6eaf !important;
+  border-right-width: 1px !important;
+  border-left-color: #2e6eaf !important;
+  border-left-width: 1px !important;
+}
+
+/* line 26, ../../../../ext/packages/ext-theme-base/sass/etc/mixins/border-management.scss */
+.x-panel-navigation-outer-border-rb {
+  border-right-color: #2e6eaf !important;
+  border-right-width: 1px !important;
+  border-bottom-color: #2e6eaf !important;
+  border-bottom-width: 1px !important;
+}
+
+/* line 32, ../../../../ext/packages/ext-theme-base/sass/etc/mixins/border-management.scss */
+.x-panel-navigation-outer-border-rbl {
+  border-right-color: #2e6eaf !important;
+  border-right-width: 1px !important;
+  border-bottom-color: #2e6eaf !important;
+  border-bottom-width: 1px !important;
+  border-left-color: #2e6eaf !important;
+  border-left-width: 1px !important;
+}
+
+/* line 40, ../../../../ext/packages/ext-theme-base/sass/etc/mixins/border-management.scss */
+.x-panel-navigation-outer-border-t {
+  border-top-color: #2e6eaf !important;
+  border-top-width: 1px !important;
+}
+
+/* line 44, ../../../../ext/packages/ext-theme-base/sass/etc/mixins/border-management.scss */
+.x-panel-navigation-outer-border-tl {
+  border-top-color: #2e6eaf !important;
+  border-top-width: 1px !important;
+  border-left-color: #2e6eaf !important;
+  border-left-width: 1px !important;
+}
+
+/* line 50, ../../../../ext/packages/ext-theme-base/sass/etc/mixins/border-management.scss */
+.x-panel-navigation-outer-border-tb {
+  border-top-color: #2e6eaf !important;
+  border-top-width: 1px !important;
+  border-bottom-color: #2e6eaf !important;
+  border-bottom-width: 1px !important;
+}
+
+/* line 56, ../../../../ext/packages/ext-theme-base/sass/etc/mixins/border-management.scss */
+.x-panel-navigation-outer-border-tbl {
+  border-top-color: #2e6eaf !important;
+  border-top-width: 1px !important;
+  border-bottom-color: #2e6eaf !important;
+  border-bottom-width: 1px !important;
+  border-left-color: #2e6eaf !important;
+  border-left-width: 1px !important;
+}
+
+/* line 64, ../../../../ext/packages/ext-theme-base/sass/etc/mixins/border-management.scss */
+.x-panel-navigation-outer-border-tr {
+  border-top-color: #2e6eaf !important;
+  border-top-width: 1px !important;
+  border-right-color: #2e6eaf !important;
+  border-right-width: 1px !important;
+}
+
+/* line 70, ../../../../ext/packages/ext-theme-base/sass/etc/mixins/border-management.scss */
+.x-panel-navigation-outer-border-trl {
+  border-top-color: #2e6eaf !important;
+  border-top-width: 1px !important;
+  border-right-color: #2e6eaf !important;
+  border-right-width: 1px !important;
+  border-left-color: #2e6eaf !important;
+  border-left-width: 1px !important;
+}
+
+/* line 78, ../../../../ext/packages/ext-theme-base/sass/etc/mixins/border-management.scss */
+.x-panel-navigation-outer-border-trb {
+  border-top-color: #2e6eaf !important;
+  border-top-width: 1px !important;
+  border-right-color: #2e6eaf !important;
+  border-right-width: 1px !important;
+  border-bottom-color: #2e6eaf !important;
+  border-bottom-width: 1px !important;
+}
+
+/* line 86, ../../../../ext/packages/ext-theme-base/sass/etc/mixins/border-management.scss */
+.x-panel-navigation-outer-border-trbl {
+  border-color: #2e6eaf !important;
+  border-width: 1px !important;
+}
+
+/* line 57, ../../../../ExecDashboard/sass/src/view/main/Main.scss */
+.x-tab-navigation {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+  opacity: 0.5;
+}
+/* line 63, ../../../../ExecDashboard/sass/src/view/main/Main.scss */
+.x-tab-navigation.x-tab-over {
+  background-color: #737373 !important;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+  opacity: 0.8;
+}
+/* line 68, ../../../../ExecDashboard/sass/src/view/main/Main.scss */
+.x-tab-navigation.x-tab-active {
+  background-color: #191919 !important;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+}
+/* line 73, ../../../../ExecDashboard/sass/src/view/main/Main.scss */
+.x-tab-navigation.x-tab-pressed {
+  background-color: #666666 !important;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+}
+
+/* line 79, ../../../../ExecDashboard/sass/src/view/main/Main.scss */
+.x-tab-inner-navigation {
+  white-space: normal;
+}
+/* line 82, ../../../../ExecDashboard/sass/src/view/main/Main.scss */
+.x-ie8 .x-tab-inner-navigation {
+  font-size: 13px;
+}
+
+/* line 87, ../../../../ExecDashboard/sass/src/view/main/Main.scss */
+.x-panel-header-title-navigation {
+  text-align: left;
+}
+
+/* line 92, ../../../../ExecDashboard/sass/src/view/main/Main.scss */
+.exec-header-icon,
+.x-tab-icon-el-navigation {
+  background-size: contain;
+}
+
+/* line 96, ../../../../ExecDashboard/sass/src/view/main/Main.scss */
+.exec-header-icon {
+  background-image: url(icons/mybiz.png);
+}
+/* line 99, ../../../../ExecDashboard/sass/src/view/main/Main.scss */
+.x-ie8 .exec-header-icon {
+  background-image: url(icons/mybiz-small.png);
+}
+
+/* line 104, ../../../../ExecDashboard/sass/src/view/main/Main.scss */
+.exec-kpi-icon {
+  background-image: url(icons/kpi.png);
+}
+/* line 107, ../../../../ExecDashboard/sass/src/view/main/Main.scss */
+.x-ie8 .exec-kpi-icon {
+  background-image: url(icons/kpi-small.png);
+}
+
+/* line 112, ../../../../ExecDashboard/sass/src/view/main/Main.scss */
+.exec-quarterly-icon {
+  background-image: url(icons/quarterly.png);
+}
+/* line 115, ../../../../ExecDashboard/sass/src/view/main/Main.scss */
+.x-ie8 .exec-quarterly-icon {
+  background-image: url(icons/quarterly-small.png);
+}
+
+/* line 120, ../../../../ExecDashboard/sass/src/view/main/Main.scss */
+.exec-pl-icon {
+  background-image: url(icons/pl.png);
+}
+/* line 123, ../../../../ExecDashboard/sass/src/view/main/Main.scss */
+.x-ie8 .exec-pl-icon {
+  background-image: url(icons/pl-small.png);
+}
+
+/* line 128, ../../../../ExecDashboard/sass/src/view/main/Main.scss */
+.exec-news-icon {
+  background-image: url(icons/news.png);
+}
+/* line 131, ../../../../ExecDashboard/sass/src/view/main/Main.scss */
+.x-ie8 .exec-news-icon {
+  background-image: url(icons/news-small.png);
+}
+
+/* line 140, ../../../../ExecDashboard/sass/src/view/main/Main.scss */
+.exec-menu-navigation .x-menu {
+  border: none;
+}
+/* line 144, ../../../../ExecDashboard/sass/src/view/main/Main.scss */
+.exec-menu-navigation .x-css-shadow {
+  -webkit-box-shadow: 0px 0px 4px 3px rgba(0, 0, 0, 0.35) !important;
+  -moz-box-shadow: 0px 0px 4px 3px rgba(0, 0, 0, 0.35) !important;
+  box-shadow: 0px 0px 4px 3px rgba(0, 0, 0, 0.35) !important;
+}
+/* line 150, ../../../../ExecDashboard/sass/src/view/main/Main.scss */
+.exec-menu-navigation .x-tool-img {
+  background-color: transparent !important;
+  left: 44px;
+  width: 32px;
+  height: 32px;
+  position: relative;
+  top: 30px;
+}
+/* line 159, ../../../../ExecDashboard/sass/src/view/main/Main.scss */
+.exec-menu-navigation .x-tool-gear {
+  background-image: url(icons/menu-disclosure.png) !important;
+  background-size: 70%;
+  background-repeat: no-repeat;
+  background-position: center center !important;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+  opacity: 0.5;
+}
+/* line 167, ../../../../ExecDashboard/sass/src/view/main/Main.scss */
+.exec-menu-navigation.x-ie8 .x-tool-gear {
+  background-image: url(icons/menu-disclosure-small.png) !important;
+}
+/* line 171, ../../../../ExecDashboard/sass/src/view/main/Main.scss */
+.exec-menu-navigation .x-tool {
+  background-color: gray;
+}
+/* line 175, ../../../../ExecDashboard/sass/src/view/main/Main.scss */
+.exec-menu-navigation .x-tool:hover {
+  background-color: #676767 !important;
+}
+/* line 176, ../../../../ExecDashboard/sass/src/view/main/Main.scss */
+.exec-menu-navigation .x-tool:hover .x-tool-gear {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+}
+/* line 184, ../../../../ExecDashboard/sass/src/view/main/Main.scss */
+.exec-menu-navigation .x-menu-body {
+  background-color: gray;
+}
+/* line 186, ../../../../ExecDashboard/sass/src/view/main/Main.scss */
+.exec-menu-navigation .x-menu-body span {
+  color: white;
+  font-weight: 500;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+  opacity: 0.5;
+}
+/* line 191, ../../../../ExecDashboard/sass/src/view/main/Main.scss */
+.exec-menu-navigation .x-menu-body a {
+  line-height: 50px;
+}
+/* line 196, ../../../../ExecDashboard/sass/src/view/main/Main.scss */
+.exec-menu-navigation .x-menu-item-icon {
+  width: 40px;
+  height: 40px;
+  margin: 5px;
+  top: 0;
+  left: 10px;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+  opacity: 0.5;
+  background-size: 70%;
+}
+/* line 206, ../../../../ExecDashboard/sass/src/view/main/Main.scss */
+.exec-menu-navigation .x-menu-item-text {
+  margin-left: 65px;
+  margin-right: 15px;
+}
+/* line 211, ../../../../ExecDashboard/sass/src/view/main/Main.scss */
+.exec-menu-navigation .x-menu-item-active {
+  background-color: #676767 !important;
+}
+/* line 213, ../../../../ExecDashboard/sass/src/view/main/Main.scss */
+.exec-menu-navigation .x-menu-item-active span {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+}
+/* line 216, ../../../../ExecDashboard/sass/src/view/main/Main.scss */
+.exec-menu-navigation .x-menu-item-active .x-menu-item-icon {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+}

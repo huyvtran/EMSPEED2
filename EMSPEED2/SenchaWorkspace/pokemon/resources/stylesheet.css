@@ -1,0 +1,17 @@
+.pokemon {
+ height: 215;
+ width: 215;
+ margin: 8px 8px 8px 8px;
+ float: left;
+ opacity:0.5;
+ background-color: #888888;
+ border: solid 8px #ffffff;
+}
+.pokemon.over {
+ opacity:1.0;
+}
+.pokemon.selected {
+ opacity:1.0;
+ border: solid 8px black;
+ background-color: #ffffff;
+}

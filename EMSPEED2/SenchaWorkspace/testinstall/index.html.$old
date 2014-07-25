@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Test Your Workspace</title>
+    <link rel="stylesheet" href="../ext/packages/ext-theme-classic/build/resources/ext-theme-classic-all-debug.css">
+    <script src="../ext/ext-all.js"></script>
+
+    <script type="text/javascript">
+
+    if (typeof Ext === 'undefined'){
+        window.onload = function(){
+            document.getElementById('fail').style.visibility = 'visible';
+        }
+    } else {
+        Ext.onReady(function(){
+            //Ext.fly('fail').remove();
+            Ext.Msg.alert(':-)', '<h1>It looks like your workspace is set up ok!</h1>');
+        });
+    }
+
+    </script>
+
+</head>
+<body>
+
+<div id="fail" style="visibility: hidden;">
+
+    <span 
+    style="font-weight: bold; font-family: sans-serif; font-size: 24px">:-(</span>
+    <p>
+        It looks like your workspace is NOT set up ok. </p>
+        <ul>
+            <li>Review the instructions for creating a workspace</li>
+            <li>Review your class setup instructions</li>
+            <li>Talk to your instructor</li>
+        </ul>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,38 @@
+.emspeed-menu {
+background-color: #ededed;
+padding: 0;
+margin: 0;
+list-style: none;
+position: absolute;
+top: 21px;
+width: 148px;
+}
+
+
+
+.emspeed-menu li {
+border-right: 1px solid #6084a8;
+display: block;
+cursor: pointer;
+color: #386a9d;
+position: relative;
+height: 30px;
+}
+
+.emspeed-menu li.emspeed-item-over {
+background-color: #fff;
+border-top: 1px solid #6084a8;
+border-bottom: 1px solid #6084a8;
+border-left: 1px solid #6084a8;
+border-right: 1px solid #fff;
+}
+
+.fa {
+display: inline-block;
+font-family: FontAwesome;
+font-style: normal;
+font-weight: normal;
+line-height: 1;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
