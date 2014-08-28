@@ -60,7 +60,7 @@ Ext.define('EMSPEEDExt5.view.mvvm.mvvmBasePanel', {
          ];
 
         this.callParent(arguments);
-        //console.log('initComponent');
+        com.endLoading();
     },
 
     constructor: function (config) {

@@ -109,7 +109,6 @@ Ext.define('Ext.ux.dashboard.GoogleRssView', {
         var me = this;
 
         me.feedMgr = new google.feeds.Feed(me.feedUrl);
-
         me.callParent();
     },
 

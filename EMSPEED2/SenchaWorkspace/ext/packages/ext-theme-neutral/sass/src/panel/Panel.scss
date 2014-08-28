@@ -250,7 +250,7 @@
         left($ui-header-padding) + left($ui-header-border-width);
 
     .#{$prefix}panel-#{$ui} {
-        @if not is-null($ui-border-color) { border-color: $ui-border-color; }
+        @if not is-null($ui-border-color) { border-color: #C2C2C2; }
         padding: $ui-padding;
     }
 
@@ -375,6 +375,13 @@
                         // since IE8 does not support opacity on pseudo elements we simulate it by
                         // mixing the text color with the background color
                         color: mix($ui-header-color, $ui-header-background-color, 40%);
+                    }
+
+                    @if $include-rtl {
+                        &.#{$prefix}rtl:after {
+                            right: auto;
+                            left: 0;
+                        }
                     }
                 }
             }

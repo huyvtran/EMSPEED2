@@ -137,7 +137,8 @@ Ext.define('Ext.dashboard.Part', {
         }
         //</debug>
 
-        return Ext.util.ObjectTemplate.create(template, this.viewTemplateOptions);
+        var o = Ext.util.ObjectTemplate.create(template, this.viewTemplateOptions);
+        return o;
     },
 
     /**

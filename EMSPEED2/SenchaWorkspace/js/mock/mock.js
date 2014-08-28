@@ -1,3 +1,33 @@
+var dataMarc = [
+    { name: 'a' },
+    { name: 'b' },
+    { name: 'c' },
+    { name: 'd' }
+];
+
+
+var mGetMarc = $.mockjax(
+    {
+        url: 'http://' + location.hostname + ':8095/' + 'UserInterfaceService.svc/json/GetMarc',
+        response: function (xhr) {
+            var projectId = $.parseJSON(xhr.data).contextId
+            switch (projectId) {
+                case 97366:
+                    this.responseText = dataMarc;
+                    break;
+                case 97368:
+                    this.responseText = dataMarc;
+                    break;
+                case 97370:
+                    this.responseText = dataMarc;
+                    break;
+                default:
+                    this.responseText = dataMarc;
+            }
+        }
+    }
+);
+
 ///UserInterfaceService.svc/json/GetMasterLayout
 
 //project

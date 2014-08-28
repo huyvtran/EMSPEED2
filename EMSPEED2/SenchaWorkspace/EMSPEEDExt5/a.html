@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script data-require="angular.js@*" data-semver="1.2.0-rc1" src="http://code.angularjs.org/1.2.0rc1/angular.js"></script>
+
+
+    <script>
+        var theApp = angular.module('app', []);
+        angular.module('app').controller("bobController", function ($scope, widgetsService) {
+        $scope.name = 'marc';
+        $scope.items = [
+        { name: 'marc' },
+        { name: 'nick' },
+        { name: 'andy' }
+        ];
+
+        $scope.getWidgets = function () {
+        widgetsService.get().then(function (result) {
+        debugger;
+        $scope.widgets = (result !== 'null') ? result : {};
+        }, function (reason) {
+        debugger;
+        console.log('ERROR', reason);
+        });
+        };
+
+        $scope.getWidgets();
+
+        }) .factory('widgetsService', function ($http, $q) {
+        var baseUrl = 'http://localhost:88/';
+        var get = function () {
+        var deferred = $q.defer();
+        var url = baseUrl + 'api/courses';
+        $http.get(url).success(deferred.resolve).error(deferred.reject)
+        return deferred.promise;
+        };
+        return {
+        get: get
+
+        };
+        });
+    </script>
+
+
+
+</head>
+<body ng-app="app">
+
+<div id="bob" ng-controller="bobController">
+        {{name}}
+        <ul ng-repeat="item in items">
+            <li>{{item.name}}</li>
+        </ul>
+        <ul ng-repeat="widget in widgets">
+            <li>{{widget.name}}</li>
+        </ul>
+</div>
+
+
+
+</body>
+</html>

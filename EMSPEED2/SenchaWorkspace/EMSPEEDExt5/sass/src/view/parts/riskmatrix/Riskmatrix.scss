@@ -59,6 +59,10 @@
 				&:hover {
 					@include matrix-bg-hover($color-matrix-insignificant, 20%, 15%);
 				}
+
+				&:x-view-over {
+					@include matrix-bg-hover($color-matrix-insignificant, 20%, 15%);
+				}
 			}
 
 			&.low {
@@ -104,44 +108,44 @@
 
 			
 			// hover
-			&.the-hover-insignificant {
+			&.insignificant.hover {
 				@include matrix-bg-hover($color-matrix-insignificant, 20%, 15%);
 			}
 
-			&.the-hover-low {
+			&.low.hover {
 				@include matrix-bg-hover($color-matrix-low, 20%, 15%);
 			}
 
-			&.the-hover-medium {
+			&.medium.hover {
 				@include matrix-bg-hover($color-matrix-medium, 20%, 15%);
 			}
 
-			&.the-hover-high {
+			&.high.hover {
 				@include matrix-bg-hover($color-matrix-high, 20%, 15%);
 			}
 
-			&.the-hover-extreme {
+			&.extreme.hover {
 				@include matrix-bg-hover($color-matrix-extreme, 20%, 15%);
 			}
 
 			// selected
-			&.the-selected-insignificant {
+			&.insignificant.selected {
 				@include matrix-bg-selected($color-matrix-insignificant, 30%, 25%);
 			}
 
-			&.the-selected-low {
+			&.low.selected {
 				@include matrix-bg-selected($color-matrix-low, 30%, 25%);
 			}
 
-			&.the-selected-medium {
+			&.medium.selected {
 				@include matrix-bg-selected($color-matrix-medium, 30%, 25%);
 			}
 
-			&.the-selected-high {
+			&.high.selected {
 				@include matrix-bg-selected($color-matrix-high, 30%, 25%);
 			}
 
-			&.the-selected-extreme {
+			&.extreme.selected {
 				@include matrix-bg-selected($color-matrix-extreme, 30%, 25%);
 			}
 

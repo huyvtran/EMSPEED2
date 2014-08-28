@@ -219,7 +219,7 @@
                     // EXTJSIV-8846: partially transparent png images do not display correctly
                     // in winXP/IE8m when the image element has a transparent background.
                     // to fix this, we give the element the same background-color as the toolbar.
-                    background-color: $background-color;
+                    background-color: #f5f5f5; //$background-color;
                 }
             }
         }

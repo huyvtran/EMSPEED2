@@ -7,8 +7,9 @@ Ext.define('EMSPEEDExt5.Application', {
 
     requires: [
         //'Ext.app.*',
+        //'Ext.layout.container.Dashboard',
         'Ext.state.CookieProvider',
-        'MyPackage.package.mjg',
+        //'MyPackage.package.mjg',
         'EMSPEED.common.com',
         'EMSPEED.common.Marc',
         'Ext.state.LocalStorageProvider',
@@ -32,15 +33,16 @@ Ext.define('EMSPEEDExt5.Application', {
 
     init: function () {
 
-        mjg.test('hi');
-        marc.test('hi');
+        console.log('Application.js - init');
+        //mjg.test('hi');
+        //marc.test('hi');
 
         //Ext.setGlyphFontFamily('Pictos');
         Ext.setGlyphFontFamily('FontAwesome');
-        console.log('init in Application');
-        var me = this,
-            map = Ext.Object.fromQueryString(location.search),
-            charts = ('charts' in map) && !/0|false|no/i.test(map.charts);
+//        console.log('init in Application');
+        var me = this;
+        var map = Ext.Object.fromQueryString(location.search);
+        var charts = ('charts' in map) && !/0|false|no/i.test(map.charts);
         //me.setDefaultToken( charts ? 'basic-column' : 'Dashboard' );
         me.setDefaultToken('Dashboard/97366');
 
@@ -51,11 +53,11 @@ Ext.define('EMSPEEDExt5.Application', {
     },
 
     onBeforeLaunch: function () {
-        console.log('onBeforeLaunch in Application');
+//        console.log('onBeforeLaunch in Application');
         this.callParent();
     },
 
     launch: function () {
-        console.log('launch in Application');
+//        console.log('launch in Application');
     }
 });

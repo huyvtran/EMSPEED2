@@ -4,21 +4,20 @@ Ext.define('EMSPEEDExt5.view.viewport.East', {
     controller: 'EastController',
     id: 'East',
 
-
-
-
-
+    bodyStyle: { backgroundColor: '#f5f5f5' },
     title: 'Menu',
-    width: 180,
-    minWidth: 180,
-    split: true,
+    width: 170,
+    //minWidth: 180,
+    split: false,
+    //border: true,
     collapsible: true,
     rootVisible: false,
     lines: false,
-    useArrows: false,
+    useArrows: true,
     hideHeaders: true,
     reserveScrollbar: false,
     glyph: 0xf00b,
+    layout: 'fit',
 
     listeners: {
         scope: 'controller',
@@ -32,7 +31,8 @@ Ext.define('EMSPEEDExt5.view.viewport.East', {
         var store = Ext.create('Ext.data.TreeStore', {
             root: {
                 expanded: true,
-                children: me.getNavItems()
+                //children: me.getNavItems()
+                children: project.projectMenu
             }
         });
         me.columns = [
@@ -56,31 +56,125 @@ Ext.define('EMSPEEDExt5.view.viewport.East', {
         me.callParent(arguments);
     },
 
-    getNavItems: function() {
-        return [
-            {
-                text: "EMSPEED",
-                expanded: true,
-                children: [
-                    { id: "Dashboard", text: "Dashboard", qtip: "Dashboard", leaf: true, fa: 'fa-home', menuItemBasePanel: 'dashboardBasePanel' },
-                    { id: "Dashboard2", text: "Dashboard2", qtip: "Dashboard2", leaf: true, fa: 'fa-bar-chart-o', menuItemBasePanel: 'dashboard2BasePanel' },
-                    { id: "Reporting", text: "Reporting", qtip: "Reporting", leaf: true, fa: 'fa-bar-chart-o', menuItemBasePanel: 'reportingBasePanel' },
-                    { id: "KPI", text: "KPI", leaf: true, qtip: "KPI", fa: 'fa-legal', menuItemBasePanel: 'kpiBasePanel' },
-                    { id: "Riskmatrix", text: "Riskmatrix", qtip: "Riskmatrix", leaf: true, fa: 'fa-paper-plane', menuItemBasePanel: 'riskmatrixBasePanel' }
-
-                ]
-            },
-            {
-                text: "Other",
-                expanded: true,
-                children: [
-                    { id: "BigData", text: "BigData", qtip: "BigData", leaf: true, fa: 'fa-sitemap', menuItemBasePanel: 'bigdataBasePanel' },
-                    { id: "MVVM", text: "MVVM", qtip: "MVVM", leaf: true, fa: ' fa-camera', menuItemBasePanel: 'mvvmBasePanel' },
-                    { id: "Binding", text: "Binding", qtip: "Binding", leaf: true, fa: 'fa-code-fork', menuItemBasePanel: 'bindingBasePanel' },
-                    { id: "Grid", text: "Grid", qtip: "Grid", leaf: true, fa: 'fa-taxi', menuItemBasePanel: 'gridBaseView' }
-        ]
-            }
-        ];
-    }
+    //getNavItems: function () {
+    //    return [
+    //        {
+    //            id: "EMSPEED",
+    //            text: "EMSPEED",
+    //            expanded: true,
+    //            leaf: false,
+    //            action: 'submenu',
+    //            qtip: "Dashboard4",
+    //            fa: 'fa-bar-chart-o',
+    //            //"menuItemId": 1,
+    //            //"menuItemName": "EMSPEED",
+    //            "menuItemBasePanel": null,
+    //            "menuItemUrl": null,
+    //            "sequence": 1,
+    //            "parentId": null,
+    //            "level": 1,
+    //            "launch": false,
+    //            "launchFormat": null,
+    //            //"menuItemIcon": "emspeed-home",
+    //            //"menuItemTooltip": "Home",
+    //            children: [
+    //                //{ id: "Dashboard", text: "Dashboard", expanded: false, leaf: true, action: "dashboard", qtip: "Dashboard", fa: 'fa-home', menuItemBasePanel: 'dashboardBasePanel' },
+    //                //{ id: "Dashboard2", text: "Dashboard2", expanded: false, leaf: true, action: "dashboard", qtip: "Dashboard2", fa: 'fa-bar-chart-o', menuItemBasePanel: 'dashboard2BasePanel' },
+    //                //{ id: "Dashboard3", text: "Dashboard3", expanded: false, leaf: true, action: "dashboard", qtip: "Dashboard3", fa: 'fa-bar-chart-o', menuItemBasePanel: 'dashboard3BasePanel' },
+    //                {
+    //                    id: "Dashboard4",
+    //                    text: "Dashboard4",
+    //                    expanded: false,
+    //                    leaf: true,
+    //                    action: 'dashboard',
+    //                    qtip: "Dashboard4",
+    //                    fa: 'fa-bar-chart-o',
+    //                    //"menuItemId": 1,
+    //                    //"menuItemName": "Dashboard4",
+    //                    "menuItemBasePanel": "dashboardRoot",
+    //                    "menuItemUrl": null,
+    //                    "sequence": 1,
+    //                    "parentId": null,
+    //                    "level": 2,
+    //                    "launch": false,
+    //                    "launchFormat": null
+    //                    //"menuItemIcon": "emspeed-home",
+    //                    //"menuItemTooltip": "Home"
+    //                },
+    //                {
+    //                    id: "Dashboard5",
+    //                    text: "Dashboard5",
+    //                    expanded: false,
+    //                    leaf: true,
+    //                    action: 'dashboard',
+    //                    qtip: "Dashboard4",
+    //                    fa: 'fa-bar-chart-o',
+    //                    //"menuItemId": 1,
+    //                    //"menuItemName": "Dashboard4",
+    //                    "menuItemBasePanel": "dashboardRoot",
+    //                    "menuItemUrl": null,
+    //                    "sequence": 1,
+    //                    "parentId": null,
+    //                    "level": 2,
+    //                    "launch": false,
+    //                    "launchFormat": null
+    //                    //"menuItemIcon": "emspeed-home",
+    //                    //"menuItemTooltip": "Home"
+    //                },
+    //                {
+    //                    id: "Dashboard6",
+    //                    text: "Dashboard6",
+    //                    expanded: false,
+    //                    leaf: true,
+    //                    action: 'dashboard',
+    //                    qtip: "Dashboard4",
+    //                    fa: 'fa-bar-chart-o',
+    //                    //"menuItemId": 1,
+    //                    //"menuItemName": "Dashboard4",
+    //                    "menuItemBasePanel": "dashboardRoot",
+    //                    "menuItemUrl": null,
+    //                    "sequence": 1,
+    //                    "parentId": null,
+    //                    "level": 2,
+    //                    "launch": false,
+    //                    "launchFormat": null
+    //                    //"menuItemIcon": "emspeed-home",
+    //                    //"menuItemTooltip": "Home"
+    //                },
+    //                {
+    //                    id: "Dashboard7",
+    //                    text: "Dashboard7",
+    //                    expanded: false,
+    //                    leaf: true,
+    //                    action: 'dashboard',
+    //                    qtip: "Dashboard4",
+    //                    fa: 'fa-bar-chart-o',
+    //                    //"menuItemId": 1,
+    //                    //"menuItemName": "Dashboard4",
+    //                    "menuItemBasePanel": "dashboardRoot",
+    //                    "menuItemUrl": null,
+    //                    "sequence": 1,
+    //                    "parentId": null,
+    //                    "level": 2,
+    //                    "launch": false,
+    //                    "launchFormat": null
+    //                    //"menuItemIcon": "emspeed-home",
+    //                    //"menuItemTooltip": "Home"
+    //                },
+    //            ]
+    //        },
+    //        {
+    //            text: "Other",
+    //            expanded: true,
+    //            leaf: false,
+    //            children: [
+    //                { id: "BigData", text: "BigData", qtip: "BigData", leaf: true, fa: 'fa-sitemap', menuItemBasePanel: 'bigdataBasePanel' },
+    //                { id: "MVVM", text: "MVVM", qtip: "MVVM", leaf: true, fa: ' fa-camera', menuItemBasePanel: 'mvvmBasePanel' },
+    //                { id: "Binding", text: "Binding", qtip: "Binding", leaf: true, fa: 'fa-code-fork', menuItemBasePanel: 'bindingBasePanel' },
+    //                { id: "Grid", text: "Grid", qtip: "Grid", leaf: true, fa: 'fa-taxi', menuItemBasePanel: 'gridBaseView' }
+    //            ]
+    //        }
+    //    ];
+    //}
 
 });

@@ -1,0 +1,43 @@
+.emspeed-menu li .empty {
+  padding: 7px 12px;
+}
+/* line 147, ../../../../EMSPEEDExt5/sass/src/view/viewport/projectNavigation.scss */
+.emspeed-menu li:after {
+  content: ".";
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: both;
+}
+/* line 155, ../../../../EMSPEEDExt5/sass/src/view/viewport/projectNavigation.scss */
+.emspeed-menu li br.clearfix {
+  clear: both;
+  visibility: hidden;
+  height: 0;
+}
+
+/* line 164, ../../../../EMSPEEDExt5/sass/src/view/viewport/projectNavigation.scss */
+.emspeed-menu-show-hide {
+  cursor: pointer;
+  background-image: url("_layouts/EMSPortal/app/project/resources/images/menu_expaned.png");
+  background-repeat: no-repeat;
+  width: 13px;
+  height: 68px;
+}
+
+/* line 172, ../../../../EMSPEEDExt5/sass/src/view/viewport/projectNavigation.scss */
+.emspeed-menu-tab {
+  background-color: #fff;
+  color: #222;
+  margin: 2px 0;
+}
+/* line 177, ../../../../EMSPEEDExt5/sass/src/view/viewport/projectNavigation.scss */
+.emspeed-menu-tab li {
+  padding: 4px 15px;
+  background-color: #d1d1d1;
+}
+/* line 181, ../../../../EMSPEEDExt5/sass/src/view/viewport/projectNavigation.scss */
+.emspeed-menu-tab li a {
+  background-color: red;
+  text-decoration: none;
+}

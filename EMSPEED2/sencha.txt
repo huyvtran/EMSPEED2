@@ -1,4 +1,5 @@
 ﻿sencha generate workspace ./SenchaWorkspace
+sencha -sdk D:\sencha\ext-5.0.0.970 generate app EMSPEED2 ./EMSPEED2Client/EMSPEED2
 sencha -sdk D:\sencha\ext-5.0.0.970 generate app EMSPEEDExt5 ./SenchaWorkspace/EMSPEEDExt5
 sencha generate package -type code EMSPEED
 sencha -sdk D:\sencha\touch-2.3.2 generate app EMSPEEDTouch ./SENCHAWorkspace/EMSPEEDTouch
@@ -31,6 +32,11 @@ sencha generate view main.South
 sencha generate view player.Player
 sencha generate view videolist.VideoList
 
+
+sencha -sdk D:\sencha\ext-5.0.1 generate app EMSPEEDExt5 ./EMSPEEDExt5 
+
+
+sencha generate view dashboard3.dashboard3BasePanel
 
 
 

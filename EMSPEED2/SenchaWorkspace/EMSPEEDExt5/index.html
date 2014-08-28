@@ -1,10 +1,39 @@
-﻿<!DOCTYPE HTML>
-<html>
+﻿<!DOCTYPE html>
+<html lang="en" manifest="" ng-app="appM">
 <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="UTF-8">
     <title>EMSPEEDExt5</title>
+    <script src="../bower_components/angular/angular.js"></script>
+    <link href="resources/chooser.css" rel="stylesheet" />
+    <script src="../bower_components/jquery/dist/jquery.js"></script>
+    <link href="../bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+    <script src="../bower_components/bootstrap/dist/js/bootstrap.js"></script>
 
     <style type="text/css">
+
+        .x-panel-default-framed {
+            -webkit-border-radius: 4px;
+            -moz-border-radius: 4px;
+            -ms-border-radius: 4px;
+            -o-border-radius: 4px;
+            border-radius: 4px;
+            padding: 0 0 0 0;
+            border-width: 2px;
+            border-style: solid;
+            background-color: white;
+        }
+
+
+        .emspeed-header-menu {
+            position: relative;
+            z-index: 0;
+        }
+
+        .emspeed-header-submenu {
+            z-index: 10000;
+        }
+
         .sort-desc {
             background-image: url("/_layouts/EMSPortal/app/dashboard/resources/images/sort_desc.gif") !important;
             background-position: 4px 7px !important;
@@ -104,12 +133,25 @@
                 }
     </style>
 
-
-
-
     <!-- The line below must be kept intact for Sencha Cmd to build your application -->
-    <script id="microloader" type="text/javascript" src="bootstrap.js"></script>
 
+    <script type="text/javascript">
+        //var Ext = Ext || {};
+        //Ext.repoDevMode = true;
+        ////Ext.beforeLoad = function (tags) {
+        //    var theme = location.href.match(/theme=([\w-]+)/),
+        //        locale = location.href.match(/locale=([\w-]+)/);
+
+        //    theme = (theme && theme[1]) || (tags.desktop ? 'crisp' : 'crisp-touch');
+        //    locale = (locale && locale[1]) || 'en';
+
+        //    Ext.manifest = theme + "-" + locale;
+        //    //Ext.microloaderTags = tags;
+        //    debugger;
+        ////};
+    </script>
+
+    <script id="microloader" type="text/javascript" src="bootstrap.js"></script>
 </head>
 <body>
     <div id="divloading" class="loading-app">
@@ -120,7 +162,6 @@
             </div>
         </div>
     </div>
-
     <div class="emspeed-error-page" id="emspeed-error-page" style="display: none;">
         <div class="padding">
             <div class="logo emspeed-logo"></div>
@@ -129,5 +170,50 @@
             </div>
         </div>
     </div>
+
+    <script src="../bower_components/angular-mocks/angular-mocks.js"></script>
+    <script src="ngApp.js"></script>
+    <script src="ngAppM.js"></script>
+
+    <script>
+        angular.module('app')
+            //.controller('TestController', function ($scope) { })
+            .factory('TestService', function ($http, $q) {
+                var get = function () {
+                    var deferred = $q.defer();
+                    $http.get('http://localhost:88/api/alerts').success(deferred.resolve).error(deferred.reject)
+                    return deferred.promise;
+                };
+                return {
+                    get: get
+                };
+            })
+            .directive('wtTest', function () {
+                return {
+                    restrict: 'AEC',
+                    scope: {},  // use a new isolated scope
+                    replace: true,
+                    template: '' +
+                    '<div ng-repeat="alert in alerts">z{{alert.text}}</div>' +
+                    '',
+                    controller: ['$scope', 'TestService', function ($scope, service) {
+                        $scope.name = 'marc';
+                        $scope.getAlerts = function () {
+                            service.get().then(function (result) {
+                                $scope.alerts = result;
+                                $scope.$apply();
+                            }, function (reason) {
+                                console.log('ERROR', reason);
+                            });
+                        };
+                        $scope.getAlerts();
+                    }],
+                    link: function (scope) {
+                    }
+                };
+            });
+
+    </script>
+
 </body>
 </html>

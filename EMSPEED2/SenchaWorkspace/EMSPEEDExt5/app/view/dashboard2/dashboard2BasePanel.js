@@ -1,58 +1,30 @@
 Ext.define('EMSPEEDExt5.view.dashboard2.dashboard2BasePanel', {
-    extend: 'EMSPEEDExt5.view.baseclass.baseclassPanel',
+    extend: 'EMSPEEDExt5.view.dashboard.dashboardRoot',
     xtype: 'dashboard2BasePanel',
     id: 'dashboard2BasePanel',
+    itemId: 'dashboard2BasePanel',
     title: 'Dashboard2',
 
-    controller: 'dashboard2',
+    initComponent: function () {
+        var me = this;
 
-    overflowY: 'scroll',
-    overflowX: 'hidden',
+        me.myToolbar = [
+            { text: 'onlyOn2', glyph: 'xf1b8@FontAwesome', handler: function () { alert('onlyOn2'); } }
+        ];
 
-    dockedItems : [
-        {
-            xtype: 'toolbar',
-            dock: 'top',
-            items: [
-                { text: 'Add', width: '100px', handler: 'onAddClick' },
-                { text: 'ClearLS', width: '100px', handler: 'onClearLSClick' },
-                { text: 'Deserial', width: '100px', handler: 'onDeserialClick' },
-                { text: 'Mock', width: '100px', handler: 'onMockClick' }
-            ]
-        }
-    ],
+        me.defaultContent = [
+            //{ type: 'stocks', widgetData: { name: 'stocks', age: '12' }, columnIndex: 0, height: 200 },
+            //{ type: 'angular', widgetData: { name: 'bobby', age: '25', div: 'bob' }, columnIndex: 0, height: 200 },
+            { type: 'simple', widgetData: { name: 'simple', age: '8' }, columnIndex: 0, height: 200 },
+            { type: 'list', widgetData: { name: 'list1', age: '4' }, columnIndex: 0, height: 200 }
+            //{ type: 'marc', widgetData: { name: 'marc1', age: '7' }, columnIndex: 2, height: 200 },
+            //{ type: 'marc', widgetData: { name: 'marc2', age: '17' }, columnIndex: 2, height: 200 }
+            //{ type: 'googlerss', widgetData: { name: 'simple', age: '25' }, columnIndex: 0, height: 200 }
+        ];
+        me.callParent(arguments);
+    },
 
-    items: [
-
-        {
-            xtype: 'dashboard',
-            id: 'd4',
-            //columnWidths: [ 0.35, 0.40, 0.25 ],
-            columnWidths: [0.50, 0.50],
-            parts: theParts,
-
-            //listeners: {
-            //    resize: function (me, width, height, oldWidth, oldHeight, eOpts) {
-            //    }
-            //},
-
-            defaultContent: [
-                { type: 'stocks', columnIndex: 0, height: 300 },
-                { type: 'markets', columnIndex: 1, height: 300 }
-            ]
-        },
-        {
-            xtype: 'dashboard',
-            id: 'd5',
-            columnWidths: [0.75, 0.25],
-            parts: theParts,
-            defaultContent: [
-                { type: 'notifications', columnIndex: 0, height: 100 },
-                { type: 'template', columnIndex: 1, height: 100 }
-            ]
-        }
-
-
-    ]
-
+    setIt: function () {
+        alert('setIt2');
+    }
 });

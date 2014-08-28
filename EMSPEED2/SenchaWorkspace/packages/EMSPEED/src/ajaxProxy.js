@@ -4,7 +4,7 @@
 
     constructor: function (config) {
         //console.log('constructor ' + config);
-        console.log(config);
+        //console.log(config);
         Ext.apply(this, config);
         this.reader = { 
             type: 'json' 

@@ -144,6 +144,7 @@ Ext.define('EMSPEEDExt5.view.bigdata.bigdataBasePanel', {
             }
         ];
         this.callParent();
+        com.endLoading();
 
         //Ext.getBody().mask('Generating fake data...');
         //makeData(Ext.getCmp('gridBigData').getStore());

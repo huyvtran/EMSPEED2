@@ -1,8 +1,3 @@
-//function foo() {
-//    alert('foo');
-//    return false;
-//};
-
 Ext.define('EMSPEEDExt5.view.viewport.EastController', {
     extend: 'Ext.app.ViewController',
     alias: 'controller.EastController',
@@ -22,6 +17,7 @@ Ext.define('EMSPEEDExt5.view.viewport.EastController', {
         }
     },
     doRoute: function (controller, route, projectId) {
+        console.log('EastController.js - doRoute');
         var me = this;
         com.setProjectId(projectId);
         var navigation = me.getView();
@@ -32,18 +28,34 @@ Ext.define('EMSPEEDExt5.view.viewport.EastController', {
             navigation.getView().focusNode(node);
 
             var center = Ext.getCmp('Center');
-            //var center = me.getCenter();
             var theItems = center.items.items;
             var found = false;
             for (var i = 0; i < theItems.length; i++) {
-                if (node.data.menuItemBasePanel === theItems[i].xtype) {
+                if (node.data.id === theItems[i].itemId) {
                     found = true;
                 }
             }
             if (found === false) {
-                center.add({ xtype: node.data.menuItemBasePanel });
+                com.startLoading();
+                if (node.data.action === 'dashboard') {
+                    //var menuItemObject = project.projectMenu.filter(function (obj) {
+                    //    return obj.menuItemName === node.data.id;
+                    //});
+                    $.getJSON('/api/dashboard/' + project.projectId + '/' + node.data.id + '/' + '1', function (response) {
+                        //center.add({ xtype: node.data.menuItemBasePanel, itemId: node.data.id, defaultContent: menuItemObject[0].defaultContent });
+                        center.add({ xtype: node.data.menuItemBasePanel, itemId: node.data.id, dashboardLayout: response });
+                        center.getLayout().setActiveItem(node.data.id);
+                    });
+                }
+                else {
+                    center.add({ xtype: node.data.menuItemBasePanel, itemId: node.data.id });
+                    center.getLayout().setActiveItem(node.data.id);
+                    //com.endLoading();
+                }
             }
-            center.getLayout().setActiveItem(node.data.menuItemBasePanel);
+            else {
+                center.getLayout().setActiveItem(node.data.id);
+            }
         }
         else {
             Ext.Msg.alert(

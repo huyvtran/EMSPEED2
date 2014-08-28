@@ -1,54 +1,403 @@
-﻿<div class="jumbotron">
-    <h1>Applications and solutions built with Ext JS and Sencha Touch</h1>
-    <p class="lead">Marc Gusmano - mgusmano@yahoo.com</p>
-    <p class="lead">Select one of the applications</p>
-    <p>
+﻿@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="en">
 
-        <a href="http://emspeed2.azurewebsites.net/SenchaExtJs5MVC4SPATemplate.mp4" class="btn btn-primary btn-lg">Sencha ExtJs 5 ASP.NET MVC4 SPA Template Recording &raquo;</a>
-        <br /><br />
-        <br /><br />
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Marc Gusmano</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="/agency/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="/agency/css/agency.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="/agency/font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top" class="index">
+
+    <!-- Portfolio Grid Section -->
+    <section id="portfolio" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Marc Gusmano</h2>
+                    <h3 class="section-subheading text-muted">Web Application Portfolio - mgusmano@yahoo.com</h3>
+                </div>
+            </div>
+            <div class="row">
+
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a target="_blank" href="http://mjgangular.azurewebsites.net/demo/index.html#/" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="/agency/portfolio/angular.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>AngularJS Dashboard</h4>
+                        <p class="text-muted">AngularJS, Bootstrap </p>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a target="_blank" href="http://emspeed2.azurewebsites.net/SenchaWorkspace/Build/Production/MjgApp/" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="/agency/portfolio/9-resume.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>HTML5 'FlipBoard' Resume</h4>
+                        <p class="text-muted">Sencha Touch, jQuery, AngularJS</p>
+                    </div>
+                </div>
 
 
-        <a href="SenchaWorkspace/Build/Production/MjgApp/" class="btn btn-primary btn-lg">Sample Touch Resume &raquo;</a>
-        <br /><br />
 
-        <a href="http://emspeed1x.azurewebsites.net/sites/97366/Portal.aspx" class="btn btn-primary btn-lg">EMSPEED with Ext 4.2.2 &raquo;</a>
-        <a href="SenchaWorkspace/Build/Production/EMSPEEDExt5/" class="btn btn-primary btn-lg">EMSPEED with Ext 5 &raquo;</a>
-        <a href="SenchaWorkspace/Build/Production/EMSPEEDTouch/" class="btn btn-primary btn-lg">EMSPEED Touch 2.3.2&raquo;</a>
-        <br /><br />
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a target="_blank" href="http://emspeed2.azurewebsites.net/SenchaWorkspace/EMSPEEDExt5/#Dashboard5/97366" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="/agency/portfolio/8-emspeed20.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>EMSPEED 2.0</h4>
+                        <p class="text-muted">Sencha ExtJS 5</p>
+                    </div>
+                </div>
 
-        <a href="http://emspeed1x.azurewebsites.net/sites/97368/UIFilterTests/testIndexFilter.aspx" class="btn btn-primary btn-lg">Siesta Tests - Filters &raquo;</a>
-        <a href="http://emspeed1x.azurewebsites.net/sites/97368/UISortTests/testIndexSort.aspx" class="btn btn-primary btn-lg">Siesta Tests - Sorts &raquo;</a>
-<!--
-        <a href="http://emspeed1x.azurewebsites.net/sites/97368/UIDashboardTests/testIndexDashboard.aspx" class="btn btn-primary btn-lg">Siesta Tests - Dashboard &raquo;</a>
-        <a href="http://emspeed1x.azurewebsites.net/sites/97368/UIReportingTests/testIndexReporting.aspx" class="btn btn-primary btn-lg">Siesta Tests - Reporting &raquo;</a>
--->
-        <br /><br />
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a target="_blank" href="http://emspeed2.azurewebsites.net/SenchaWorkspace/Build/Production/extjs5youtube" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="~/agency/portfolio/YouTube.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>You Tube Viewer</h4>
+                        <p class="text-muted">Sencha ExtJS 5</p>
+                    </div>
+                </div>
 
-        <a href="SenchaWorkspace/ExecDashboard/index.html" class="btn btn-primary btn-lg">Executive Dashboard &raquo;</a>
-        
-    </p>
-</div>
-<!--
-<div class="row">
-    <div class="col-md-4">
-        <h2>Getting started</h2>
-        
-        <a class="btn btn-default" href="http://emspeed2.azurewebsites.net/SenchaWorkspace/Build/Production/EMSPEEDExt5/">EMSPEEDExt5 &raquo;</a>
-        <p>ASP.NET Web API is a framework that makes it easy to build HTTP services that reach
-        a broad range of clients, including browsers and mobile devices. ASP.NET Web API
-        is an ideal platform for building RESTful applications on the .NET Framework.</p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301870">Learn more &raquo;</a></p>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a target="_blank" href="http://emspeed1x.azurewebsites.net/sites/97366/Portal.aspx" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="/agency/portfolio/7-EMSPEED12.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>EMSPEED 1.2</h4>
+                        <p class="text-muted">Sencha ExtJS 4</p>
+                        <p>&nbsp;</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a target="_blank" href="http://emspeed1x.azurewebsites.net/sites/97368/UIFilterTests/testIndexFilter.aspx" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="/agency/portfolio/FilterTests.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Automated Tests</h4>
+                        <p class="text-muted">Siesta, Sencha ExtJS 4</p>
+                        <p>&nbsp;</p>
+                    </div>
+                </div>
+
+
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal0" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="/agency/portfolio/6-EMSPEED-POC.jpg" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>EMSPEED POC</h4>
+                        <p class="text-muted">Sencha ExtJS 4</p>
+                        <p>&nbsp;</p>
+
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="/agency/portfolio/5-EMSPEED10.jpg" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>EMSPEED 1.0</h4>
+                        <p class="text-muted">Microsoft Silverlight</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="/agency/portfolio/4-NalcoEquip.jpg" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Nalco</h4>
+                        <p class="text-muted">Microsoft Silverlight</p>
+                        <p>&nbsp;</p>
+                        <p>&nbsp;</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="/agency/portfolio/3-scheduler.jpg" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Scheduler</h4>
+                        <p class="text-muted">Microsoft Silverlight</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="/agency/portfolio/2-atlas.jpg" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Atlas</h4>
+                        <p class="text-muted">Microsoft Silverlight</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="/agency/portfolio/1-EMSIX.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4 style="padding:38px 1px 1px 1px">EMSIX</h4>
+                        <p class="text-muted">ASP.NET, SharePoint</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Portfolio Modals -->
+    <!-- Use the modals below to showcase details about your portfolio projects! -->
+
+    <div class="portfolio-modal modal fade" id="portfolioModal0" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                Close <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h2>EMSPEED POC</h2>
+                            <img class="img-responsive" src="/agency/portfolio/6-EMSPEED-POC.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301871">Learn more &raquo;</a></p>
+
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                Close <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h2>EMSPEED 1.0</h2>
+                            <img class="img-responsive" src="/agency/portfolio/5-EMSPEED10.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="col-md-4">
-        <h2>Web Hosting</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301872">Learn more &raquo;</a></p>
+
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                Close <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h2>Nalco</h2>
+                            <img class="img-responsive" src="/agency/portfolio/4-NalcoEquip.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-</div>
-    -->
+
+
+    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                Close <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h2>Scheduler</h2>
+                            <img class="img-responsive" src="/agency/portfolio/3-scheduler.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                Close <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h2>Atlas</h2>
+                            <img class="img-responsive" src="/agency/portfolio/2-atlas.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                Close <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h2>EMSIX</h2>
+                            <p class="item-intro text-muted">This application has a SharePoint backend and web based front end</p>
+                            <img class="img-responsive" src="/agency/portfolio/1-EMSIX.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery Version 1.11.0 -->
+    <script src="/agency/js/jquery-1.11.0.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="/agency/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="/agency/js/classie.js"></script>
+    <script src="/agency/js/cbpAnimatedHeader.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="/agency/js/jqBootstrapValidation.js"></script>
+    <script src="/agency/js/contact_me.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="/agency/js/agency.js"></script>
+
+</body>
+
+</html>

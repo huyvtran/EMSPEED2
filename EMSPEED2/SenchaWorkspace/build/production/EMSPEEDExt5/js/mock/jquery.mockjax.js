@@ -1,4 +1,4 @@
-/*!
+function _89b8d5ce2896b7c9fcef92b856090a555b0cc544(){};/*!
  * MockJax - jQuery Plugin to Mock Ajax requests
  *
  * Version:  1.5.3

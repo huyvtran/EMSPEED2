@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<head>
+    <title>Learning ExtJs5</title>
+    <script src="http://cdn.sencha.com/ext/gpl/5.0.0/build/ext-all-debug.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="http://cdn.sencha.com/ext/gpl/5.0.0/packages/ext-theme-crisp-touch/build/resources/ext-theme-crisp-touch-all.css" />
+
+</head>
+<body>
+<div id="example-grid"></div>
+</body>
+
+<script>
+
+Ext.require([
+    'Ext.data.*',
+    'Ext.grid.*'
+]);
+
+function getRandomDate() {
+    var from = new Date(1900, 0, 1).getTime();
+    var to = new Date().getTime();
+    return new Date(from + Math.random() * (to - from));
+}
+
+function createFakeData(count) {
+        var firstNames   = ['Ed', 'Tommy', 'Aaron', 'Abe'];
+        var lastNames    = ['Spencer', 'Maintz', 'Conran', 'Elias'];
+            
+        var data = [];
+        for (var i = 0; i < count ; i++) {
+            var dob = getRandomDate();           
+            var firstNameId = Math.floor(Math.random() * firstNames.length);
+            var lastNameId  = Math.floor(Math.random() * lastNames.length);
+            var name        = Ext.String.format("{0} {1}", firstNames[firstNameId], lastNames[lastNameId]);
+
+            data.push([name, dob]);
+        }
+        return data;
+    }
+
+Ext.onReady(function(){
+    Ext.define('Person',{
+        extend: 'Ext.data.Model',
+        fields: [
+            'Name', 'dob'
+        ]
+    });
+
+    // create the Data Store
+    var store = Ext.create('Ext.data.Store', {
+        model: 'Person',
+        autoLoad: true,
+        proxy: {
+            type: 'memory',
+                data: createFakeData(10),
+                reader: {
+                    type: 'array'
+                }
+        }
+    });
+
+    // create the grid
+    Ext.create('Ext.grid.Panel', {
+        store: store,
+        columns: [
+            {text: "Name", width:120, dataIndex: 'Name'},
+            {text: "dob", width: 380, dataIndex: 'dob'}
+        ],
+        renderTo:'example-grid',
+        width: 500,
+        height: 280
+    });
+    
+    
+});
+
+
+</script>
+
+
+
+</html>

@@ -1,8 +1,9 @@
 Ext.define('EMSPEEDExt5.view.parts.riskmatrix.Riskmatrix', {
-    extend: 'EMSPEEDExt5.view.dashboard.dashboardPartsBase',
+    //extend: 'EMSPEEDExt5.view.dashboard.dashboardPartsBase',
+    extend: 'EMSPEEDExt5.view.baseclass.baseclassWidget',
     xtype: 'riskmatrix',
     layout: 'vbox',
-    id: 'dashboardPortletRiskMatrix',
+    //id: 'dashboardPortletRiskMatrix',
     requires: [
         'Ext.form.Label'
     ],
@@ -22,8 +23,11 @@ Ext.define('EMSPEEDExt5.view.parts.riskmatrix.Riskmatrix', {
     currColor: 'high', //'extreme',
     currentSelection: { insignificant: false, low: false, medium: false, high: true, extreme: true },
 
+
+
     updateFilter: function (rm) {
-        var store = Ext.getCmp('gridStore').getStore();
+//        var store = Ext.getCmp('gridStore').getStore();
+        var store = rm.down('grid').getStore();
 
         store.clearFilter();
         store.filterBy(function (r) {
@@ -49,20 +53,24 @@ Ext.define('EMSPEEDExt5.view.parts.riskmatrix.Riskmatrix', {
             return false;
         });
 
-        var theItems = Ext.getCmp('gridStore').view.headerCt.items.items;
+        //debugger;
+        var theItems = this.down('grid').view.headerCt.items.items;
+        //var theItems = Ext.getCmp('gridStore').view.headerCt.items.items;
         for (var item in theItems) {
             if (theItems[item].sortState != null) {
                 store.sort([{ property: theItems[item].dataIndex, direction: theItems[item].sortState }]);
             }
         }
 
+        	
+        var i = '.' + rm.id.replace('-', '');
         for (var item in rm.currentSelection) {
             if (rm.currentSelection[item]) {
-                $('.matrix ul.row li.' + item).addClass('the-selected-' + item);
-                $('.matrix .filter li.' + item).addClass('the-selected-' + item);
+                $(i + " ul.row li." + item).addClass('the-selected-' + item);
+                $(i + " .filter li." + item).addClass('the-selected-' + item);
             } else {
-                $('.matrix ul.row li.' + item).removeClass('the-selected-' + item);
-                $('.matrix .filter li.' + item).removeClass('the-selected-' + item);
+                $(i + " ul.row li." + item).removeClass('the-selected-' + item);
+                $(i + " .filter li." + item).removeClass('the-selected-' + item);
             }
         }
     },
@@ -71,11 +79,12 @@ Ext.define('EMSPEEDExt5.view.parts.riskmatrix.Riskmatrix', {
         com.startLoading();
         var me = this;
 
-//        var mainItems2 = { xtype: 'button', text: 'hi' };
+        var i = me.id.replace('-', '');
         var mainItems = {
             xtype: 'container',
             width: '100%',
             layout: 'hbox',
+
             items: [
                 {
                     xtype: 'container',
@@ -89,21 +98,66 @@ Ext.define('EMSPEEDExt5.view.parts.riskmatrix.Riskmatrix', {
                             layout: 'hbox',
                           items: [
 
-                                //{ xtype: 'label', text: 'Severity', margin: '10 0 0 0', degrees: -90 },
+                                { xtype: 'label', text: 'Severity', margin: '10 0 0 0', degrees: -90 },
                                 {
+
+                                    listeners: {
+                                        itemclick: function (dataview, record, item, index, e, eOpts) {
+                                            com.startLoading();
+                                            debugger;
+                                            //this.up('riskmatrix').clearSelection();
+                                            this.clearSelection(dataview);
+                                            var color = $(item).attr('data-e-value');
+                                            $(item).addClass('the-selected-' + color);
+                                            var me = this.up('riskmatrix').down('grid');
+                                            var store = me.getStore();
+                                            store.clearFilter();
+                                            store.filter("riskSeverity", record.data.severity);
+                                            store.filter("riskOccurrence", record.data.occurrence);
+                                            com.endLoading();
+                                        }
+                                    },
+
+                                    clearSelection: function (dataview) {
+                                        //rm = Ext.getCmp('dashboardPortletRiskMatrix');
+                                        //rm = this;
+                                        debugger;
+                                        for (var item in dataview.currentSelection) {
+                                            dataview.currentSelection[item] = false;
+                                        }
+                                        for (var item in dataview.getSelectedNodes()) {
+                                            dataview.currentSelection[item] = false;
+                                        }
+                                        var i = '.' + this.id.replace('-', '');
+
+                                        $(i + ' li').removeClass(function (index, classNames) {
+                                            var currentClasses = classNames.split(" "),
+                                                classesToRemove = [];
+
+                                            $.each(currentClasses, function (index, className) {
+                                                if (/the-selected.*/.test(className)) {
+                                                    classesToRemove.push(className);
+                                                }
+                                            });
+
+                                            return classesToRemove.join(" ");
+                                        });
+
+                                    },
+
                                     xtype: 'dataview',
-                                    id: 'dataviewMatrix2',
+                                    //id: 'dataviewMatrix2',
                                     width: 216,
-                                    singleSelect: true,
+                                    singleSelect: false,
                                     overItemCls: 'x-view-over',
-                                    itemSelector: '.clickable',
+                                    itemSelector: 'li.clickable',
                                     emptyText: 'No data available',
                                     deferInitialRefresh: false,
                                     hidden: true,
                                     tpl: new Ext.XTemplate(
-                                        '<div class="matrix">',
+                                        '<div class="' + i + ' matrix">',
                                         '<tpl for=".">',
-                                        '{[this.doVal(values.severity, values.occurrence, values.count)]}',
+                                        '{[this.doVal(this, values.severity, values.occurrence, values.count)]}',
                                         '</tpl>',
                                         '<div class="filter">',
                                             '<span>Toggle</span>',
@@ -118,8 +172,8 @@ Ext.define('EMSPEEDExt5.view.parts.riskmatrix.Riskmatrix', {
                                         '</div>',
                                         {
                                             disableFormats: true,
-                                            doVal: function (r, c, v) {
-                                                var rm = Ext.getCmp('dashboardPortletRiskMatrix');
+                                            doVal: function (me, r, c, v) {
+                                                //var rm = Ext.getCmp('dashboardPortletRiskMatrix');
                                                 var s = '';
                                                 if (c === 1) {
                                                     s = s + '<ul class="row">';
@@ -143,7 +197,7 @@ Ext.define('EMSPEEDExt5.view.parts.riskmatrix.Riskmatrix', {
                 },
                 {
                     xtype: 'grid',
-                    id: 'gridStore',
+                    //id: 'gridStore',
                     margin: '27 15 0 0',
                     flex: 1,
                     height: 251,
@@ -214,7 +268,8 @@ Ext.define('EMSPEEDExt5.view.parts.riskmatrix.Riskmatrix', {
     },
 
     renderColor: function (value, metadata, record) {
-        var rm = Ext.getCmp('dashboardPortletRiskMatrix');
+        //var rm = Ext.getCmp('dashboardPortletRiskMatrix');
+        var rm = this.up('riskmatrix');
         var o = record.get('riskOccurrence');
         var s = record.get('riskSeverity');
         if (o > 0 && s > 0) {
@@ -309,51 +364,52 @@ $(function () {
         com.endLoading();
     });
 
-    $('body').on('click', '.matrix ul.row li', function () {
-        com.startLoading();
-        var color = $(this).attr('data-e-value');
-        clearSelection();
+    //$('body').on('click', '.matrix ul.row lix', function () {
+    //    com.startLoading();
+    //    var color = $(this).attr('data-e-value');
+    //    clearSelection();
 
-        $(this).addClass('the-selected-' + color);
+    //    $(this).addClass('the-selected-' + color);
 
-        var me = Ext.getCmp('gridStore');
-        var store = me.getStore();
-        store.clearFilter();
-        store.filter("riskSeverity", $(this).attr('r'));
-        store.filter("riskOccurrence", $(this).attr('c'));
-        com.endLoading();
-    });
+    //    var me = Ext.getCmp('gridStore');
+    //    var store = me.getStore();
+    //    store.clearFilter();
+    //    store.filter("riskSeverity", $(this).attr('r'));
+    //    store.filter("riskOccurrence", $(this).attr('c'));
+    //    com.endLoading();
+    //});
 
     // filters
-    $('body').on('mouseover', '.matrix .filter li', function () {
-        var type = $(this).attr('data-e-value');
-        $('.matrix ul.row li.' + type).addClass('the-hover-' + type);
+    //$('body').on('mouseover', '.matrix .filter li', function () {
+    //    var type = $(this).attr('data-e-value');
+    //    $('.matrix ul.row li.' + type).addClass('the-hover-' + type);
 
-    }).on('mouseout', '.matrix .filter li', function () {
-        var type = $(this).attr('data-e-value');
-        $('.matrix ul.row li.' + type).removeClass('the-hover-' + type);
-    });
+    //}).on('mouseout', '.matrix .filter li', function () {
+    //    var type = $(this).attr('data-e-value');
+    //    $('.matrix ul.row li.' + type).removeClass('the-hover-' + type);
+    //});
 
-    var clearSelection = function () {
-        rm = Ext.getCmp('dashboardPortletRiskMatrix');
+    //var clearSelection = function () {
+    //    debugger;
+    //    rm = Ext.getCmp('dashboardPortletRiskMatrix');
 
-        for (var item in rm.currentSelection) {
-            rm.currentSelection[item] = false;
-        }
+    //    for (var item in rm.currentSelection) {
+    //        rm.currentSelection[item] = false;
+    //    }
 
-        $('.matrix li').removeClass(function (index, classNames) {
-            var currentClasses = classNames.split(" "),
-                classesToRemove = [];
+    //    $('.matrix li').removeClass(function (index, classNames) {
+    //        var currentClasses = classNames.split(" "),
+    //            classesToRemove = [];
 
-            $.each(currentClasses, function (index, className) {
-                if (/the-selected.*/.test(className)) {
-                    classesToRemove.push(className);
-                }
-            });
+    //        $.each(currentClasses, function (index, className) {
+    //            if (/the-selected.*/.test(className)) {
+    //                classesToRemove.push(className);
+    //            }
+    //        });
 
-            return classesToRemove.join(" ");
-        });
+    //        return classesToRemove.join(" ");
+    //    });
 
-    };
+    //};
 
 });

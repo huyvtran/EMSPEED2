@@ -1,6 +1,3 @@
-/**
- * The main application controller. This is a good place to handle things like routes.
- */
 Ext.define('EMSPEEDExt5.controller.Root', {
     extend: 'Ext.app.Controller',
     alias: 'controller.Root',
@@ -15,7 +12,7 @@ Ext.define('EMSPEEDExt5.controller.Root', {
     ],
 
     onLaunch: function () {
-        console.log('onLaunch in rootController');
+//        console.log('onLaunch in rootController');
     },
 
     listen: {
@@ -61,20 +58,21 @@ Ext.define('EMSPEEDExt5.controller.Root', {
             }
         }
     },
+
     beforeRoute: function (route, projectId, action) {
-        console.log('in beforeRoute');
+        console.log('Root.js - beforeRoute');
         if (project.data === undefined) {
-            console.log('getting data');
             var me = this;
             var siteId = com.getSiteId();
             var displayTypeId = (siteId == com.flatDisplayTypeId) ? com.flatDisplayTypeId : com.hierarchicalDisplayTypeId;
             var theParms = { "contextId": parseFloat(projectId), "site": siteId, "displayType": displayTypeId };
+            console.log('Root.js - GetMasterLayout start');
             com.getData({
                 service: 'UserInterfaceService',
                 method: 'GetMasterLayout',
                 params: theParms,
                 callback: function (data) {
-                    console.log('GetMasterLayout done');
+                    console.log('Root.js - GetMasterLayout callback');
 
                     if (data.project != null) {
                         project.data = data.project;
@@ -98,18 +96,54 @@ Ext.define('EMSPEEDExt5.controller.Root', {
                     project.programDashboard = project.getProgramDashboard();
                     project.user = data.user;
 
-                    console.log('before viewport');
-                    me.viewport = new EMSPEEDExt5.view.viewport.Viewport({});
-                    console.log('after viewport');
-                    Ext.getCmp('contextcontrollerBasePanel').setContextData(project);
-                    //Ext.getCmp('south').setText(project.data.templateVersion);
+
+                    //$.getJSON('/api/widgets', function (response) {
+                    //    var fArray2 = response;
+                    //    var arrayLength = fArray2.length;
+                    //    com.parts = response;
+                    //    for (var i = 0; i < arrayLength; i++) {
+                    //        console.log('load... ' + s + fArray2[i].type + '.' + fArray2[i].extension);
+                    //        Ext.Loader.loadScript({ url: s + fArray2[i].type + '.' + fArray2[i].extension, onLoad: function () { flag += 1; }, onError: function () { console.log('FAIL'); }, scope: this });
 
 
+                    //    }
+                    //});
 
-                    document.getElementById('divloading').style.visibility = "hidden";
-                    action.resume();
+
+                    var filesArray;
+
+                    var hr = window.location.href;
+                    var e = hr.indexOf("index.html");
+                    var str1 = hr.substring(0, e);
+                    var s = str1 + 'widgets/';
+                    com.widgetLocation = s;
+
+                    var theArray = [];
+                    $.getJSON('/api/widgets', function (response) {
+                        var fArray2 = response;
+                        com.parts = fArray2;
+                        var arrayLength = fArray2.length;
+
+                        var flag = 0;
+                        function checkFlag() {
+                            if (flag < arrayLength) {
+                                window.setTimeout(checkFlag, 100); /* this checks the flag every 100 milliseconds*/
+                            } else {
+                                console.log('Root.js - Viewport before');
+                                me.viewport = Ext.create('EMSPEEDExt5.view.viewport.Viewport', {});
+                                console.log('Root.js - Viewport after');
+                                Ext.getCmp('contextcontrollerBasePanel').setContextData(project);
+                                document.getElementById('divloading').style.visibility = "hidden";
+                                action.resume();
+                            }
+                        }
+                        checkFlag();
+                        for (var i = 0; i < arrayLength; i++) {
+                            //console.log('load... ' + s + fArray2[i].type + '.' + fArray2[i].extension);
+                            Ext.Loader.loadScript({ url: s + fArray2[i].type + '.' + fArray2[i].extension, onLoad: function () { flag += 1; }, onError: function () { console.log('FAIL'); }, scope: this });
+                        }
+                    });
                 }
-
             });
         }
         else {
@@ -125,8 +159,9 @@ Ext.define('EMSPEEDExt5.controller.Root', {
         //action.resume();
     },
     onRoute: function (route, projectId) {
-        console.log('onRoute');
-        this.fireEvent('route', this, route, projectId);
+        console.log('Root.js - onRoute');
+        console.log('Root.js - fireEvent');
+        this.fireEvent('route', this, route, projectId); //handled in eastController
         this.description = route;
     },
 

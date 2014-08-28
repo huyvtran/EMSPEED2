@@ -45,5 +45,11 @@ Ext.define('EMSPEEDExt5.view.binding.bindingBasePanel', {
                 hidden: '{!name}'
             }
         }
-    ]
+    ],
+
+    initComponent: function () {
+        var me = this;
+        me.callParent(arguments);
+        com.endLoading();
+    }
 });
