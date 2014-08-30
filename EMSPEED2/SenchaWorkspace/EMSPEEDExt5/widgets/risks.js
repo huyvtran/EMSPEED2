@@ -315,7 +315,6 @@ Ext.define('widget.risks', {
                         //    //parent.updateFilter(parent);
                         //}
                     },
-
                     selectionchange: function (selectionModel, selected, eOpts) {
                         var me = this;
                         var risks = me.up('risks');

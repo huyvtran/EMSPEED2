@@ -3964,6 +3964,8 @@
     <Content Include="SenchaWorkspace\build\testing\mjgApp\resources\css\style.css" />
     <Content Include="SenchaWorkspace\common\src-ext\com.js" />
     <Content Include="SenchaWorkspace\common\src-touch\com.js" />
+    <Content Include="SenchaWorkspace\css\base.css" />
+    <Content Include="SenchaWorkspace\css\Spacetree.css" />
     <Content Include="SenchaWorkspace\EMSPEEDExt52\dashboard\Column.js" />
     <Content Include="SenchaWorkspace\EMSPEEDExt52\dashboard\Dashboard.js" />
     <Content Include="SenchaWorkspace\EMSPEEDExt52\dashboard\DropZone.js" />
@@ -4005,7 +4007,16 @@
     <Content Include="SenchaWorkspace\EMSPEEDExt5\.sencha\app\slice-impl.xml" />
     <Content Include="SenchaWorkspace\EMSPEEDExt5\.sencha\app\watch-impl.xml" />
     <Content Include="SenchaWorkspace\EMSPEEDExt5\a.html" />
+    <Content Include="SenchaWorkspace\EMSPEEDExt5\app\clonepmt\controller\clonePmtController.js" />
+    <Content Include="SenchaWorkspace\EMSPEEDExt5\app\clonepmt\model\clonepmtHistoryModel.js" />
+    <Content Include="SenchaWorkspace\EMSPEEDExt5\app\clonepmt\view\clonePmtBasePanel.js" />
+    <Content Include="SenchaWorkspace\EMSPEEDExt5\app\clonepmt\view\clonepmtCreateClone.js" />
+    <Content Include="SenchaWorkspace\EMSPEEDExt5\app\clonepmt\view\clonepmtHistory.js" />
+    <Content Include="SenchaWorkspace\EMSPEEDExt5\app\view\dashboard\dashboardKpiWidgetPanel.js" />
     <Content Include="SenchaWorkspace\EMSPEEDExt5\app\view\riskmatrix\riskmatrixBasePanel - Copy.js" />
+    <Content Include="SenchaWorkspace\EMSPEEDExt5\app\view\viewport\gearMenuDataview.js" />
+    <Content Include="SenchaWorkspace\EMSPEEDExt5\app\view\viewport\contextMenuDataview.js" />
+    <Content Include="SenchaWorkspace\EMSPEEDExt5\app\view\viewport\projectHeader.js" />
     <Content Include="SenchaWorkspace\EMSPEEDExt5\ngAppM.js" />
     <Content Include="SenchaWorkspace\EMSPEEDExt5\ngApp.js" />
     <Content Include="SenchaWorkspace\EMSPEEDExt5\app.js" />
@@ -4103,6 +4114,7 @@
     <Content Include="SenchaWorkspace\EMSPEEDExt5\resources\emspeed\emspeed.png" />
     <Content Include="SenchaWorkspace\EMSPEEDExt5\resources\emspeed\madEMSPEED.jpg" />
     <Content Include="SenchaWorkspace\EMSPEEDExt5\resources\emspeed\pop_up_arrow.png" />
+    <Content Include="SenchaWorkspace\EMSPEEDExt5\resources\emspeed\slb.png" />
     <Content Include="SenchaWorkspace\EMSPEEDExt5\resources\font-awesome-4.1.0\css\font-awesome.css" />
     <Content Include="SenchaWorkspace\EMSPEEDExt5\resources\font-awesome-4.1.0\css\font-awesome.min.css" />
     <Content Include="SenchaWorkspace\EMSPEEDExt5\resources\font-awesome-4.1.0\fonts\fontawesome-webfont.svg" />
@@ -4198,23 +4210,47 @@
     <Content Include="SenchaWorkspace\EMSPEEDExt5\resources\pictos\license.txt" />
     <Content Include="SenchaWorkspace\EMSPEEDExt5\resources\pictos\pictos.css" />
     <Content Include="SenchaWorkspace\EMSPEEDExt5\resources\pictos\pictos_base64.css" />
+    <Content Include="SenchaWorkspace\EMSPEEDExt5\resources\sb-admin-2.css" />
     <Content Include="SenchaWorkspace\EMSPEEDExt5\sass\example\bootstrap.css" />
     <Content Include="SenchaWorkspace\EMSPEEDExt5\sass\example\bootstrap.js" />
     <Content Include="SenchaWorkspace\EMSPEEDExt5\sass\example\custom.js" />
     <Content Include="SenchaWorkspace\EMSPEEDExt5\sass\example\example.css" />
     <Content Include="SenchaWorkspace\EMSPEEDExt5\sass\example\render.js" />
     <Content Include="SenchaWorkspace\EMSPEEDExt5\sass\example\theme.html" />
+    <Content Include="SenchaWorkspace\EMSPEEDExt5\sass\src\view\contextcontroller\contextcontrollerBasePanel.css">
+      <DependentUpon>contextcontrollerBasePanel.scss</DependentUpon>
+    </Content>
+    <Content Include="SenchaWorkspace\EMSPEEDExt5\sass\src\view\contextcontroller\contextcontrollerBasePanel.min.css">
+      <DependentUpon>contextcontrollerBasePanel.css</DependentUpon>
+    </Content>
     <Content Include="SenchaWorkspace\EMSPEEDExt5\sass\src\view\viewport\Viewport.css">
       <DependentUpon>Viewport.scss</DependentUpon>
     </Content>
     <Content Include="SenchaWorkspace\EMSPEEDExt5\sass\src\view\viewport\Viewport.min.css">
       <DependentUpon>Viewport.css</DependentUpon>
     </Content>
+    <Content Include="SenchaWorkspace\EMSPEEDExt5\Spacetree\base.css" />
+    <Content Include="SenchaWorkspace\EMSPEEDExt5\Spacetree\example1.html" />
+    <Content Include="SenchaWorkspace\EMSPEEDExt5\Spacetree\example1.js" />
+    <Content Include="SenchaWorkspace\EMSPEEDExt5\Spacetree\example2.html" />
+    <Content Include="SenchaWorkspace\EMSPEEDExt5\Spacetree\example2.js" />
+    <Content Include="SenchaWorkspace\EMSPEEDExt5\Spacetree\example3.html" />
+    <Content Include="SenchaWorkspace\EMSPEEDExt5\Spacetree\example3.js" />
+    <Content Include="SenchaWorkspace\EMSPEEDExt5\Spacetree\example4.html" />
+    <Content Include="SenchaWorkspace\EMSPEEDExt5\Spacetree\example4.js" />
+    <Content Include="SenchaWorkspace\EMSPEEDExt5\Spacetree\example5.html" />
+    <Content Include="SenchaWorkspace\EMSPEEDExt5\Spacetree\example5.js" />
+    <Content Include="SenchaWorkspace\EMSPEEDExt5\Spacetree\jit.js" />
+    <Content Include="SenchaWorkspace\EMSPEEDExt5\Spacetree\Spacetree.css" />
     <Content Include="SenchaWorkspace\EMSPEEDExt5\widgets\imageviewer.png" />
     <Content Include="SenchaWorkspace\EMSPEEDExt5\widgets\nghelloworld.png" />
     <Content Include="SenchaWorkspace\EMSPEEDExt5\widgets\nghelloworld.js" />
     <Content Include="SenchaWorkspace\EMSPEEDExt5\widgets\riskmatrix.js" />
     <Content Include="SenchaWorkspace\EMSPEEDExt5\widgets\riskmatrix.png" />
+    <Content Include="SenchaWorkspace\EMSPEEDExt5\sass\src\view\viewport\contextMenuDataview.scss" />
+    <Content Include="SenchaWorkspace\EMSPEEDExt5\sass\src\view\contextcontroller\contextcontrollerBasePanel.css.map">
+      <DependentUpon>contextcontrollerBasePanel.css</DependentUpon>
+    </Content>
     <None Include="SenchaWorkspace\EMSPEEDExt5\widgets\risks - Copy.jsx" />
     <Content Include="SenchaWorkspace\EMSPEEDExt5\widgets\risks.png" />
     <Content Include="SenchaWorkspace\EMSPEEDExt5\widgets\ngimage.png" />
@@ -4225,6 +4261,8 @@
     <Content Include="SenchaWorkspace\EMSPEEDExt5\widgets\angular.png" />
     <Content Include="SenchaWorkspace\EMSPEEDExt5\widgets\imageviewer.js" />
     <Content Include="SenchaWorkspace\EMSPEEDExt5\widgets\risks.js" />
+    <Content Include="SenchaWorkspace\EMSPEEDExt5\widgets\spacetree.png" />
+    <Content Include="SenchaWorkspace\EMSPEEDExt5\widgets\spacetree.js" />
     <Content Include="SenchaWorkspace\EMSPEEDExt5\widgets\simple.png" />
     <Content Include="SenchaWorkspace\EMSPEEDExt5\widgets\googlerss.png" />
     <Content Include="SenchaWorkspace\EMSPEEDExt5\widgets\default.png" />
@@ -12488,6 +12526,7 @@
     <Content Include="SenchaWorkspace\jiraTime\sass\example\custom.js" />
     <Content Include="SenchaWorkspace\jiraTime\sass\example\render.js" />
     <Content Include="SenchaWorkspace\jiraTime\sass\example\theme.html" />
+    <Content Include="SenchaWorkspace\js\jit.js" />
     <Content Include="SenchaWorkspace\mashup\.sencha\app\Boot.js" />
     <Content Include="SenchaWorkspace\mashup\.sencha\app\bootstrap-impl.xml" />
     <Content Include="SenchaWorkspace\mashup\.sencha\app\build-impl.xml" />

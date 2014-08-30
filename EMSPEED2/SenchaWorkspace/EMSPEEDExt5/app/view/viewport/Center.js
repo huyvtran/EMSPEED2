@@ -5,5 +5,14 @@ Ext.define('EMSPEEDExt5.view.viewport.Center', {
     layout: 'card',
     requires: [
         'Ext.layout.container.Card'
+    ],
+
+    dockedItems: [
+        {
+            xtype: 'projectheader',
+            dock: 'top'
+        }
     ]
+
+
 });

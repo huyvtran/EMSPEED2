@@ -132,7 +132,7 @@ Ext.define('EMSPEEDExt5.controller.Root', {
                                 console.log('Root.js - Viewport before');
                                 me.viewport = Ext.create('EMSPEEDExt5.view.viewport.Viewport', {});
                                 console.log('Root.js - Viewport after');
-                                Ext.getCmp('contextcontrollerBasePanel').setContextData(project);
+                                //Ext.getCmp('contextcontrollerBasePanel').setContextData(project);
                                 document.getElementById('divloading').style.visibility = "hidden";
                                 action.resume();
                             }

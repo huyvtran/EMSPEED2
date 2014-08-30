@@ -38,19 +38,14 @@ Ext.define('EMSPEEDExt5.view.viewport.EastController', {
             if (found === false) {
                 com.startLoading();
                 if (node.data.action === 'dashboard') {
-                    //var menuItemObject = project.projectMenu.filter(function (obj) {
-                    //    return obj.menuItemName === node.data.id;
-                    //});
                     $.getJSON('/api/dashboard/' + project.projectId + '/' + node.data.id + '/' + '1', function (response) {
-                        //center.add({ xtype: node.data.menuItemBasePanel, itemId: node.data.id, defaultContent: menuItemObject[0].defaultContent });
-                        center.add({ xtype: node.data.menuItemBasePanel, itemId: node.data.id, dashboardLayout: response });
+                        center.add({ xtype: node.data.menuItemBasePanel, text: node.data.text, itemId: node.data.id, dashboardLayout: response });
                         center.getLayout().setActiveItem(node.data.id);
                     });
                 }
                 else {
-                    center.add({ xtype: node.data.menuItemBasePanel, itemId: node.data.id });
+                    center.add({ xtype: node.data.menuItemBasePanel, text: node.data.text, itemId: node.data.id });
                     center.getLayout().setActiveItem(node.data.id);
-                    //com.endLoading();
                 }
             }
             else {

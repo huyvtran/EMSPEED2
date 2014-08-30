@@ -3,6 +3,7 @@ $.mockjax({
     url: /^\/api\/widgets$/,
     response: function (settings) {
         this.responseText = [
+            { "type": "spacetree", "extension": "js", "height": 200, "widgetDataDef": { "projectId": "97366" }, title: 'Risk Matrix', description: 'this is the description' },
             { "type": "riskmatrix", "extension": "js", "height": 200, "widgetDataDef": { "projectId": "97366" }, title: 'Risk Matrix', description: 'this is the description' },
             { "type": "risks", "extension": "js", "height": 200, "widgetDataDef": { "projectId": "97366" }, title: 'Risk Matrix', description: 'this is the description' },
             { "type": "nghelloworld", "extension": "js", "height": 200, "widgetDataDef": { "url": "resources/images/widgets/barchart.png", "age": "a", "marc": "m" }, title: 'Hello World', description: 'this is the description' },
@@ -23,42 +24,127 @@ $.mockjax({
     }
 });
 
-//$.mockjax({
-//    url: /^\/api\/dashboards\/([\w]+)$/,
-//    //url: /^\/api\/dashboards$/,
-//    urlParams: ['dashboardID'],
-//    response: function (settings) {
-//        var dashboardID = settings.urlParams.dashboardID;
-//        //var dashboardID = 'Dashboard3';
-//        var dashboard;
-//        switch (dashboardID) {
-//            case 'Dashboard4':
-//                dashboard = [
-//                    { "type": "angular", "widgetData": { "projectId": "97366" }, columnIndex: 0, height: 200 },
-//                    { "type": "riskmatrix", "widgetData": { "div": "Joe", "name": "n", "age": "a", "marc": "m" }, columnIndex: 0, height: 200 },
-//                    { type: 'simple', widgetData: { name: 'simple', age: '8' }, columnIndex: 0, height: 200 }
-//                ];
-//                break;
-//            case 'Dashboard5':
-//                dashboard = [
-//                    { type: 'ngdirective', widgetData: { title: 'My Alerts', name: 'list', age: '8' }, columnIndex: 0, height: 500 },
-//                    { type: 'imageviewer', widgetData: { title: 'Sample Bar Chart', "url": "resources/images/widgets/barchart.png", }, columnIndex: 1, height: 200 },
-//                    { type: 'stocks', widgetData: { name: 'Stock Ticker', age: '8' }, columnIndex: 1, height: 300 },
-//                    { type: 'list', widgetData: { title: 'Demo of a full length widget', name: 'list', age: '8' }, columnIndex: 2, height: 200 },
-//                ];
-//                break;
-//            case 'Dashboard6':
-//                dashboard = [
-//                    { type: 'list', widgetData: { name: 'list', age: '8' }, columnIndex: 0, height: 100 }
-//                ];
-//                break;
-//            default:
-//                dashboard = [
-//                ];
-//        }
-//        this.responseText = dashboard;
-//    }
-//});
+$.mockjax({
+    url: /^\/api\/dashboard\/([\w]+)\/([\w]+)\/([\d]+)$/,
+    urlParams: ['projectId', 'dashboardId', 'layoutId'],
+    response: function (settings) {
+        var projectId = settings.urlParams.projectId;
+        var dashboardId = settings.urlParams.dashboardId;
+        var layoutId = settings.urlParams.layoutId;
+        var dashboard;
+        switch (dashboardId) {
+            case 'Dashboard4':
+                switch (layoutId) {
+                    case '1':
+                        dashboard = {
+                            layoutId: 1,
+                            savedLayouts: [
+                                { id: 1, name: 'default' },
+                                { id: 2, name: 'risks and notifications' },
+                                { id: 3, name: 'spacetree testing' }
+                            ],
+                            columnWidths: [0.35, 0.65, 1],
+                            widgets: [
+                                { type: 'ngdirective', widgetData: { title: 'My Alerts', name: 'list', age: '8' }, columnIndex: 0, height: 500 },
+                                { "type": "risks", "widgetData": { "projectId": "97366" }, columnIndex: 1, height: 500 },
+                                { type: 'simple', widgetData: {
+                            name: 'simple', age: '8' }, columnIndex: 2, height: 200 }
+                            ]
+                        };
+                        break;
+                    case '2':
+                        dashboard = {
+                            layoutId: 2,
+                            savedLayouts: [
+                                { id: 1, name: 'default' },
+                                { id: 2, name: 'risks and notifications' },
+                                { id: 3, name: 'spacetree testing' }
+                            ],
+                            columnWidths: [0.65, 0.35, 1],
+                            widgets: [
+                                { "type": "risks", "widgetData": { "projectId": "97366" }, columnIndex: 0, height: 400 },
+                                { "type": "risks", "widgetData": { "projectId": "97366" }, columnIndex: 1, height: 400 },
+                                { "type": "riskmatrix", "widgetData": { "projectId": "97366" }, columnIndex: 1, height: 400 },
+                                { "type": "angular", "widgetData": { "div": "Bob", "name": "n", "age": "a", "marc": "m" }, columnIndex: 0, height: 200 },
+                                { type: 'simple', widgetData: { name: 'simple', age: '8' }, columnIndex: 0, height: 200 }
+                            ]
+                        };
+                        break;
+                    case '3':
+                        dashboard = {
+                            layoutId: 3,
+                            savedLayouts: [
+                                { id: 1, name: 'default' },
+                                { id: 2, name: 'risks and notifications' },
+                                { id: 3, name: 'spacetree testing' }
+                            ],
+                            columnWidths: [1],
+                            widgets: [
+                                { "type": "spacetree", "widgetData": {}, columnIndex: 1, height: 500 },
+                                { type: 'simple', widgetData: { name: 'list', age: '8' }, columnIndex: 0, height: 100 }
+                            ]
+                        };
+                        break;
+                    default:
+                        dashboard = [
+                        ];
+                }
+                break;
+            case 'Dashboard5':
+                dashboard = {
+                    layoutId: 3,
+                    savedLayouts: [
+                        { id: 1, name: 'configuration 1' },
+                        { id: 2, name: 'configuration 2' },
+                        { id: 3, name: 'configuration 3' }
+                    ],
+                    columnWidths: [0.35, 0.65, 1],
+                    widgets: [
+                        { type: 'ngdirective', widgetData: { title: 'My Alerts', name: 'list', age: '8' }, columnIndex: 0, height: 500 },
+                        { type: 'imageviewer', widgetData: { title: 'Sample Bar Chart', "url": "resources/images/widgets/barchart.png", }, columnIndex: 1, height: 200 },
+                        //{ type: 'stocks', widgetData: { name: 'Stock Ticker', age: '8' }, columnIndex: 1, height: 300 },
+                        { type: 'simple', widgetData: { title: 'Demo of a full length widget', name: 'list', age: '8' }, columnIndex: 2, height: 200 },
+                    ]
+                };
+                break;
+            case 'Dashboard6':
+                dashboard = {
+                    layoutId: 1,
+                    savedLayouts: [
+                        { id: 1, name: 'configuration 1' },
+                        { id: 2, name: 'configuration 2' },
+                        { id: 3, name: 'configuration 3' }
+                    ],
+                    columnWidths: [1],
+                    widgets: [
+                        { type: 'simple', widgetData: { name: 'list', age: '8' }, columnIndex: 0, height: 100 },
+                        { type: 'imageviewer', widgetData: { "url": "resources/images/widgets/manageteam.png", full: false }, columnIndex: 0, height: 300 }
+
+
+                    ]
+                };
+                break;
+            case 'ManageTeam':
+                dashboard = {
+                    layoutId: 1,
+                    savedLayouts: [
+                        { id: 1, name: 'configuration 1' },
+                        { id: 2, name: 'configuration 2' },
+                        { id: 3, name: 'configuration 3' }
+                    ],
+                    columnWidths: [1],
+                    widgets: [
+                        { type: 'imageviewer', widgetData: { "url": "resources/images/widgets/manageteam.png", full: true }, columnIndex: 0, height: 500 }
+                    ]
+                };
+                break;
+            default:
+                dashboard = [
+                ];
+        }
+        this.responseText = dashboard;
+    }
+});
 
 $.mockjax({
     url: /^\/api\/projects$/,
@@ -1712,7 +1798,6 @@ var dataGetMasterLayout98616 = {
     }
 }
 
-//mjg
 var dataGetMasterLayout97366 = {
     "project": {
         "projectId": 97366,
@@ -1784,209 +1869,122 @@ var dataGetMasterLayout97366 = {
                 "sequence": 1,
                 "menuItems": [
                     {
-                        "menuItemId": 1,
-                        "menuItemName": "Dashboard4",
-                        "menuItemBasePanel": "dashboardRoot",
-                        "defaultContent": [
-                        { "type": "risks", "widgetData": { "projectId": "97366" }, columnIndex: 0, height: 400 },
-                        { "type": "risks", "widgetData": { "projectId": "97366" }, columnIndex: 1, height: 400 },
-
-
-                            { "type": "riskmatrix", "widgetData": { "projectId": "97366" }, columnIndex: 1, height: 400 },
-                            { "type": "angular", "widgetData": { "div": "Bob", "name": "n", "age": "a", "marc": "m" }, columnIndex: 0, height: 200 },
-                            { "type": "angular", "widgetData": { "div": "Joe", "name": "n", "age": "a", "marc": "m" }, columnIndex: 0, height: 200 },
-                            { type: 'simple', widgetData: { name: 'simple', age: '8' }, columnIndex: 0, height: 200 },
-                            { type: 'simple', widgetData: { name: 'simple', age: '8' }, columnIndex: 0, height: 200 }
-                        ],
+                        id: "Dashboards",
+                        text: "Dashboards",
+                        expanded: true,
+                        leaf: false,
+                        action: 'submenu',
+                        qtip: "Dashboards",
+                        fa: '',
+                        //"menuItemId": 1,
+                        //"menuItemName": "EMSPEED",
+                        "menuItemBasePanel": null,
                         "menuItemUrl": null,
                         "sequence": 1,
                         "parentId": null,
                         "level": 1,
                         "launch": false,
                         "launchFormat": null,
-                        "menuItemIcon": "emspeed-home",
-                        "menuItemTooltip": "Home",
-                        "menuItems": null
+                        //"menuItemIcon": "emspeed-home",
+                        //"menuItemTooltip": "Home",
+                        //mjg
+                        children: [
+                            //{ id: "Dashboard", text: "Dashboard", expanded: false, leaf: true, action: "dashboard", qtip: "Dashboard", fa: 'fa-home', menuItemBasePanel: 'dashboardBasePanel' },
+                            //{ id: "Dashboard2", text: "Dashboard2", expanded: false, leaf: true, action: "dashboard", qtip: "Dashboard2", fa: 'fa-bar-chart-o', menuItemBasePanel: 'dashboard2BasePanel' },
+                            //{ id: "Dashboard3", text: "Dashboard3", expanded: false, leaf: true, action: "dashboard", qtip: "Dashboard3", fa: 'fa-bar-chart-o', menuItemBasePanel: 'dashboard3BasePanel' },
+                            {
+                                id: "Dashboard4",
+                                text: "Dashboard4",
+                                expanded: false,
+                                leaf: true,
+                                action: 'dashboard',
+                                qtip: "Dashboard4",
+                                fa: 'fa-bar-chart-o',
+                                //"menuItemId": 1,
+                                //"menuItemName": "Dashboard4",
+                                "menuItemBasePanel": "dashboardRoot",
+                                "menuItemUrl": null,
+                                "sequence": 1,
+                                "parentId": null,
+                                "level": 2,
+                                "launch": false,
+                                "launchFormat": null
+                                //"menuItemIcon": "emspeed-home",
+                                //"menuItemTooltip": "Home"
+                            },
+                            {
+                                id: "Dashboard5",
+                                text: "Dashboard5",
+                                expanded: false,
+                                leaf: true,
+                                action: 'dashboard',
+                                qtip: "Dashboard4",
+                                fa: 'fa-bar-chart-o',
+                                //"menuItemId": 1,
+                                //"menuItemName": "Dashboard4",
+                                "menuItemBasePanel": "dashboardRoot",
+                                "menuItemUrl": null,
+                                "sequence": 1,
+                                "parentId": null,
+                                "level": 2,
+                                "launch": false,
+                                "launchFormat": null
+                                //"menuItemIcon": "emspeed-home",
+                                //"menuItemTooltip": "Home"
+                            },
+                            {
+                                id: "Dashboard6",
+                                text: "Dashboard6",
+                                expanded: false,
+                                leaf: true,
+                                action: 'dashboard',
+                                qtip: "Dashboard4",
+                                fa: 'fa-bar-chart-o',
+                                //"menuItemId": 1,
+                                //"menuItemName": "Dashboard4",
+                                "menuItemBasePanel": "dashboardRoot",
+                                "menuItemUrl": null,
+                                "sequence": 1,
+                                "parentId": null,
+                                "level": 2,
+                                "launch": false,
+                                "launchFormat": null
+                                //"menuItemIcon": "emspeed-home",
+                                //"menuItemTooltip": "Home"
+                            },
+                            {
+                                id: "ManageTeam",
+                                text: "Manage Team",
+                                expanded: false,
+                                leaf: true,
+                                action: 'dashboard',
+                                qtip: "Dashboard4",
+                                fa: 'fa-bar-chart-o',
+                                //"menuItemId": 1,
+                                //"menuItemName": "Dashboard4",
+                                "menuItemBasePanel": "dashboardRoot",
+                                "menuItemUrl": null,
+                                "sequence": 1,
+                                "parentId": null,
+                                "level": 2,
+                                "launch": false,
+                                "launchFormat": null
+                                //"menuItemIcon": "emspeed-home",
+                                //"menuItemTooltip": "Home"
+                            },
+                        ]
                     },
                     {
-                        "menuItemId": 2,
-                        "menuItemName": "Dashboard5",
-                        "menuItemBasePanel": "dashboardRoot",
-                        "defaultContent": [
-                            { type: 'ngdirective', widgetData: { title: 'My Alerts', name: 'list', age: '8' }, columnIndex: 0, height: 500 },
-                            { type: 'imageviewer', widgetData: { title: 'Sample Bar Chart', "url": "resources/images/widgets/barchart.png", }, columnIndex: 1, height: 200 },
-                            { type: 'stocks', widgetData: { name: 'Stock Ticker', age: '8' }, columnIndex: 1, height: 300 },
-                            { type: 'list', widgetData: { title: 'Demo of a full length widget', name: 'list', age: '8' }, columnIndex: 2, height: 200 },
-                        ],
-                        "menuItemUrl": null,
-                        "sequence": 1,
-                        "parentId": null,
-                        "level": 1,
-                        "launch": false,
-                        "launchFormat": null,
-                        "menuItemIcon": "emspeed-home",
-                        "menuItemTooltip": "Home",
-                        "menuItems": null
-                    },
-                    {
-                        "menuItemId": 3,
-                        "menuItemName": "Dashboard6",
-                        "menuItemBasePanel": "dashboardRoot",
-                        "defaultContent": [
-                            { type: 'list', widgetData: { name: 'list', age: '8' }, columnIndex: 0, height: 100 }
-                        ],
-                        "menuItemUrl": null,
-                        "sequence": 1,
-                        "parentId": null,
-                        "level": 1,
-                        "launch": false,
-                        "launchFormat": null,
-                        "menuItemIcon": "emspeed-home",
-                        "menuItemTooltip": "Home",
-                        "menuItems": null
-                    },
-
-                    {
-                        "menuItemId": 4,
-                        "menuItemName": "Dashboard7",
-                        "menuItemBasePanel": "dashboardRoot",
-                        "defaultContent": [
-                        ],
-                        "menuItemUrl": null,
-                        "sequence": 1,
-                        "parentId": null,
-                        "level": 1,
-                        "launch": false,
-                        "launchFormat": null,
-                        "menuItemIcon": "emspeed-home",
-                        "menuItemTooltip": "Home",
-                        "menuItems": null
-                    },
-                    {
-                        "menuItemId": 5,
-                        "menuItemName": "Reporting",
-                        "menuItemBasePanel": "reportingBasePanel",
-                        "menuItemUrl": null,
-                        "sequence": 2,
-                        "parentId": null,
-                        "level": 1,
-                        "launch": false,
-                        "launchFormat": null,
-                        "menuItemIcon": "emspeed-reporting",
-                        "menuItemTooltip": "Reporting",
-                        "menuItems": null
-                    },
-                    {
-                        "menuItemId": 6,
-                        "menuItemName": "Manage Team",
-                        "menuItemBasePanel": "manageteamBasePanel",
-                        "menuItemUrl": null,
-                        "sequence": 3,
-                        "parentId": null,
-                        "level": 1,
-                        "launch": false,
-                        "launchFormat": null,
-                        "menuItemIcon": "emspeed-manageTeam",
-                        "menuItemTooltip": "Manage Team",
-                        "menuItems": null
-                    },
-                    {
-                        "menuItemId": 7,
-                        "menuItemName": "PDD Summary",
-                        "menuItemBasePanel": "pddsummaryBasePanel",
-                        "menuItemUrl": null,
-                        "sequence": 5,
-                        "parentId": null,
-                        "level": 1,
-                        "launch": false,
-                        "launchFormat": null,
-                        "menuItemIcon": "emspeed-pddSummary",
-                        "menuItemTooltip": "PDD Summary",
-                        "menuItems": null
-                    },
-                    {
-                        "menuItemId": 8,
-                        "menuItemName": "PDD CLMS",
-                        "menuItemBasePanel": "cdpBasePanel",
-                        "menuItemUrl": null,
-                        "sequence": 6,
-                        "parentId": null,
-                        "level": 1,
-                        "launch": false,
-                        "launchFormat": null,
-                        "menuItemIcon": "emspeed-pddClms",
-                        "menuItemTooltip": "PDD CLMS",
-                        "menuItems": null
-                    },
-                    {
-                        "menuItemId": 9,
-                        "menuItemName": "Snapshots",
-                        "menuItemBasePanel": "snapshotsBasePanel",
-                        "menuItemUrl": null,
-                        "sequence": 7,
-                        "parentId": null,
-                        "level": 1,
-                        "launch": false,
-                        "launchFormat": null,
-                        "menuItemIcon": "emspeed-loadSnapshot",
-                        "menuItemTooltip": "Snapshots",
-                        "menuItems": null
-                    },
-                    {
-                        "menuItemId": 10,
-                        "menuItemName": "Clone PMT",
-                        "menuItemBasePanel": "clonepmtBasePanel",
-                        "menuItemUrl": null,
-                        "sequence": 8,
-                        "parentId": null,
-                        "level": 1,
-                        "launch": false,
-                        "launchFormat": null,
-                        "menuItemIcon": "emspeed-clonePmt",
-                        "menuItemTooltip": "Clone PMT",
-                        "menuItems": null
-                    },
-                    {
-                        "menuItemId": 11,
-                        "menuItemName": "PMT",
-                        "menuItemBasePanel": "",
-                        "menuItemUrl": "/stature/control/loadSlbStudy?versionId=1000013001&viewName=Requirement&ignoreViewGroup=true",
-                        "sequence": 11,
-                        "parentId": null,
-                        "level": 1,
-                        "launch": true,
-                        "launchFormat": "Stature",
-                        "menuItemIcon": "emspeed-pmt",
-                        "menuItemTooltip": "PMT",
-                        "menuItems": null
-                    },
-                    {
-                        "menuItemId": 12,
-                        "menuItemName": "DfX",
-                        "menuItemBasePanel": "",
-                        "menuItemUrl": "/stature/control/loadSlbStudy?versionId=1000016002&viewName=DfX&ignoreViewGroup=true",
-                        "sequence": 12,
-                        "parentId": null,
-                        "level": 1,
-                        "launch": true,
-                        "launchFormat": "Stature",
-                        "menuItemIcon": "emspeed-dfx",
-                        "menuItemTooltip": "DfX",
-                        "menuItems": null
-                    },
-                    {
-                        "menuItemId": 13,
-                        "menuItemName": "Team Site",
-                        "menuItemBasePanel": "",
-                        "menuItemUrl": "http://www.microsoft.com",
-                        "sequence": 13,
-                        "parentId": null,
-                        "level": 1,
-                        "launch": true,
-                        "launchFormat": "Default",
-                        "menuItemIcon": "emspeed-teamSite",
-                        "menuItemTooltip": "Team Site",
-                        "menuItems": null
+                        text: "Other",
+                        expanded: true,
+                        leaf: false,
+                        children: [
+                            { id: "ClonePmt", text: "Clone PMT", qtip: "Clone PMT", leaf: true, fa: 'fa-sitemap', menuItemBasePanel: 'clonepmtBasePanel' },
+                            { id: "BigData", text: "BigData", qtip: "BigData", leaf: true, fa: 'fa-sitemap', menuItemBasePanel: 'bigdataBasePanel' },
+                            { id: "MVVM", text: "MVVM", qtip: "MVVM", leaf: true, fa: ' fa-camera', menuItemBasePanel: 'mvvmBasePanel' },
+                            { id: "Binding", text: "Binding", qtip: "Binding", leaf: true, fa: 'fa-code-fork', menuItemBasePanel: 'bindingBasePanel' },
+                            { id: "Grid", text: "Grid", qtip: "Grid", leaf: true, fa: 'fa-taxi', menuItemBasePanel: 'gridBaseView' }
+                        ]
                     }
                 ]
             },

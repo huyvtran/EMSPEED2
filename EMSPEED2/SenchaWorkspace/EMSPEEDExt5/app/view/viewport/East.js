@@ -4,8 +4,19 @@ Ext.define('EMSPEEDExt5.view.viewport.East', {
     controller: 'EastController',
     id: 'East',
 
+    header: {
+        itemPosition: 0,
+        //style: { borderBottom: '1px solid #6084a8' },
+        border: true,
+        items: [
+            { xtype: 'component', width: 120, height: 38, autoEl: { tag: 'img', src: 'resources/emspeed/madEMSPEED.jpg' } }
+        ]
+    },
     bodyStyle: { backgroundColor: '#f5f5f5' },
-    title: 'Menu',
+    style: { borderRight: '0px solid #003366' },
+    bodyPadding: '0 0 0 0',
+    //title: 'Menu',
+    //glyph: 0xf00b,
     width: 170,
     //minWidth: 180,
     split: false,
@@ -16,7 +27,6 @@ Ext.define('EMSPEEDExt5.view.viewport.East', {
     useArrows: true,
     hideHeaders: true,
     reserveScrollbar: false,
-    glyph: 0xf00b,
     layout: 'fit',
 
     listeners: {

@@ -1,41 +1,25 @@
 Ext.define('EMSPEEDExt5.view.bigdata.bigdataBasePanel', {
     extend: 'EMSPEEDExt5.view.baseclass.baseclassPanel',
     xtype: 'bigdataBasePanel',
-    id: 'bigdataBasePanel',
     requires: [
         'Ext.grid.column.RowNumberer',
         'Ext.grid.column.Date'
     ],
-
-    title: 'Big Data',
     controller: 'bigdataBasePanelController',
     layout:  'fit',
     bodyPadding: 0,
 
-    dockedItems: [
-        {
-            xtype: 'toolbar',
-            dock: 'top',
-            items: [
+    initComponent: function () {
+        var me = this;
+        me.toolbar = [
                 { text: 'Load', width: '100px', handler: 'onLoadClick', glyph: 'xf1c0@FontAwesome' },
                 '-',
                 { text: 'Filter', width: '100px', handler: 'onFilterClick', glyph: 'xf0b0@FontAwesome' },
                 { text: 'Clear', width: '100px', handler: 'onClearClick', glyph: 'xf12d@FontAwesome' },
                 '-',
                 { text: 'Export', width: '100px', handler: 'onExportClick', glyph: 'xf019@FontAwesome' }
-            ]
-        }
-    ],
-
-    initComponent: function () {
-
-        //var store = Ext.create('Ext.data.Store', {
-        //    //groupField: 'department',
-        //    model: 'EMSPEEDExt5.model.Employee'
-        //});
-
-
-        this.items = [
+        ];
+        me.items = [
             {
                 xtype: 'grid',
                 reference: 'gridBigData',
@@ -144,7 +128,6 @@ Ext.define('EMSPEEDExt5.view.bigdata.bigdataBasePanel', {
             }
         ];
         this.callParent();
-        com.endLoading();
 
         //Ext.getBody().mask('Generating fake data...');
         //makeData(Ext.getCmp('gridBigData').getStore());

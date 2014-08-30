@@ -6,6 +6,7 @@ Ext.define('EMSPEEDExt5.Application', {
     autoCreateViewport: false,
 
     requires: [
+        //'EMSPEEDExt5.clonepmt.model.clonepmtHistoryModel',
         //'Ext.app.*',
         //'Ext.layout.container.Dashboard',
         'Ext.state.CookieProvider',
@@ -21,8 +22,10 @@ Ext.define('EMSPEEDExt5.Application', {
     views: [
     ],
 
+
     controllers: [
-        'Root@EMSPEEDExt5.controller'
+        'Root@EMSPEEDExt5.controller',
+        'EMSPEEDExt5.clonepmt.controller.clonepmtController'
     ],
 
     stores: [
@@ -50,6 +53,20 @@ Ext.define('EMSPEEDExt5.Application', {
         //Ext.state.Manager.setProvider(Ext.create('Ext.state.CookieProvider'));
         //Ext.state.Manager.setProvider(new Ext.state.CookieProvider({ expires: new Date(new Date().getTime()+(10006060247)), //7 days from now }));
         Ext.state.Manager.setProvider(Ext.create('Ext.state.LocalStorageProvider'));
+
+
+        // to capture events for a particular component:
+        //Ext.util.Observable.capture(Ext.getCmp('clonepmtBasePanel'),function (e) {console.info(e);});
+
+        //// to capture ALL events use:
+        //Ext.util.Observable.prototype.fireEvent =
+        //    Ext.util.Observable.prototype.fireEvent.createInterceptor(function () {
+        //        console.log(this.name);
+        //        console.log(arguments);
+        //        return true;
+        //    });
+
+
     },
 
     onBeforeLaunch: function () {

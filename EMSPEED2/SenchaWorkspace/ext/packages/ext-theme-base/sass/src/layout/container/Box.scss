@@ -1,5 +1,5 @@
 .#{$prefix}box-layout-ct {
-    overflow: hidden;
+    overflow: visible;//hidden;
     position: relative;
 }
 
@@ -29,7 +29,7 @@
 }
 
 .#{$prefix}box-inner {
-    overflow:hidden;
+    overflow: visible;//hidden;
     position:relative;
     left:0;
     top:0;

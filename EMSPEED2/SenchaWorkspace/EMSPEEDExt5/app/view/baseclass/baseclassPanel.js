@@ -1,16 +1,48 @@
 Ext.define('EMSPEEDExt5.view.baseclass.baseclassPanel', {
     extend: 'Ext.panel.Panel',
     xtype: 'baseclassPanel',
-    //padding: '5px 5px 5px 5px ',
-    //margin: '0px 0px 0px 0px',
     bodyPadding: 10,
+    style: { borderLeft: '1px solid #cccccc', borderTop: '1px solid #cccccc' },
+    toolbar: [],
 
-    tools: [
-        {
-            type: 'help',
-            toast: true
-        }
-    ]
+    setTheTitle: function(title) {
+      // 1x method
+    },
+
+    initComponent: function () {
+        var me = this;
+        
+        var fullToolbar = [];
+        var leftSide = [
+            { xtype: 'component', html: '<i style="color:#003366;font-size:22px;margin-left: 0px;" class="fa fa-star fa-fw"></i>' },
+            { text: me.text, xtype: 'label', padding: '5px 0px 0px 0px', cls: 'x-panel-header-title-default' },
+            { xtype: 'tbfill' }
+        ];
+        var rightSide = [
+            { xtype: 'component', html: '', margin: '0px 0px 0px 30px' }
+            //{ xtype: 'component', html: '<i style="color:blue;font-size:18px;margin-left: 20px;" class="fa fa-star-o fa-fw"></i>' },
+            //{ xtype: 'component', html: '<i style="color:blue;font-size:18px;margin-left: 0px;" class="fa fa-star fa-fw"></i>' }
+        ];
+        fullToolbar = fullToolbar.concat(leftSide);
+        fullToolbar = fullToolbar.concat(me.toolbar);
+        fullToolbar = fullToolbar.concat(rightSide);
+        me.dockedItems = [
+            {
+                xtype: 'toolbar',
+                dock: 'top',
+                items: fullToolbar
+            }
+        ]
+        com.endLoading();
+        this.callParent();
+    }
+
+    //tools: [
+    //    {
+    //        type: 'help',
+    //        toast: true
+    //    }
+    //]
 
 
 });
