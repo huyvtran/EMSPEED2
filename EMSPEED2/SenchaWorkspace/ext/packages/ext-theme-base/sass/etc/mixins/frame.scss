@@ -202,7 +202,7 @@
         }
 
         padding: $padding-top $padding-right $padding-bottom $padding-left;
-        border-width: 1px; //$border-width;
+        border-width: $border-width;
         border-style: solid;
 
         @if not is-null($background-color) {

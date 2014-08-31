@@ -22,7 +22,7 @@
 .#{$prefix}grid-item {
     color: $grid-row-cell-color;
     font: $grid-row-cell-font;
-    background-color: #f5f5f5; //$grid-row-cell-background-color;
+    background-color: $grid-row-cell-background-color;
 }
 
 .#{$prefix}grid-item-alt {

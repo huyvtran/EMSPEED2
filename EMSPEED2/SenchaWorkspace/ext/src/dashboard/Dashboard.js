@@ -47,15 +47,6 @@ Ext.define('Ext.dashboard.Dashboard', {
         maxColumns: 4
     },
 
-
-
-    listeners : {
-        drop: function(eOpts) {
-            // event handling here
-            console.log(eOpts);
-        }
-    },
-
     /**
      * @event validatedrop
      */
@@ -76,9 +67,9 @@ Ext.define('Ext.dashboard.Dashboard', {
      * @event drop
      */
 
-
     initComponent: function () {
         var me = this;
+
         if (!me.layout) {
             me.layout = {
                 type: 'dashboard'

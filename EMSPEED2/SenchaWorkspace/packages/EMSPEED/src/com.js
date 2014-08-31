@@ -119,7 +119,7 @@ Ext.define('EMSPEED.common.com', {
         if (this.loading == 1) {
             Ext.MessageBox.show({
                 title: 'Please wait',
-                width: 280,
+                width: 275,
                 maxWidth: 280,
                 height: 100,
                 maxHeight: 100,

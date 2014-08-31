@@ -104,7 +104,6 @@ Ext.define('EMSPEEDExt5.view.parts.riskmatrix.Riskmatrix', {
                                     listeners: {
                                         itemclick: function (dataview, record, item, index, e, eOpts) {
                                             com.startLoading();
-                                            debugger;
                                             //this.up('riskmatrix').clearSelection();
                                             this.clearSelection(dataview);
                                             var color = $(item).attr('data-e-value');
@@ -121,7 +120,6 @@ Ext.define('EMSPEEDExt5.view.parts.riskmatrix.Riskmatrix', {
                                     clearSelection: function (dataview) {
                                         //rm = Ext.getCmp('dashboardPortletRiskMatrix');
                                         //rm = this;
-                                        debugger;
                                         for (var item in dataview.currentSelection) {
                                             dataview.currentSelection[item] = false;
                                         }

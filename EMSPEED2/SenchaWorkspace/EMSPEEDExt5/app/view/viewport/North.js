@@ -1,6 +1,8 @@
 Ext.define('EMSPEEDExt5.view.viewport.North', {
     extend: 'Ext.Container',
     xtype: 'North',
+    id: 'North',
+    cls: 'north',
     style: {
         backgroundColor: '#003366'
         //font-family: arial; font-size: 24px; margin: 0px 0px 0px 0px; background-color: #003366; color: #ffffff;
@@ -72,7 +74,7 @@ Ext.define('EMSPEEDExt5.view.viewport.North', {
 
             {
                 xtype: 'gearmenudataview', margin: '0px 0px 0px 0px'
-            },
+            }
 
         ];
 
