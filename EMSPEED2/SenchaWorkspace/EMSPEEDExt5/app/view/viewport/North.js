@@ -60,6 +60,9 @@ Ext.define('EMSPEEDExt5.view.viewport.North', {
                 html: '<div class="emspeed-header"> <div class="emspeed-header-menuProductTest">Welcome Marc Gusmano</div></div>'
             },
 
+            { xtype: 'button', ui: 'emspeedglyph-toolbar', style: { fontSize: '22px', color: 'white' }, tooltip: 'favorite', handler: function () { alert('clicked') }, glyph: 'xf006@FontAwesome' },
+
+
             { xtype: 'container', style: { marginTop: '17px', marginLeft: '15px' }, html: '<span class="fa fa-envelope fa-fw" style="color:white;font-size:14px;" />' },
             { xtype: 'container', style: { marginTop: '17px', marginLeft: '5px' }, html: '<span class="fa fa-caret-down" style="color:white;font-size:12px;" />' },
 

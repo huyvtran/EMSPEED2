@@ -329,6 +329,11 @@ Ext.define('ExtThemeNeptune.panel.Panel', {
     }
 });
 
+Ext.define('MyCustomTheme.panel.Panel', {
+    override: 'Ext.panel.Panel',
+    titleAlign: 'center'
+});
+
 Ext.define('ExtThemeNeptune.panel.Table', {
     override: 'Ext.panel.Table',
 

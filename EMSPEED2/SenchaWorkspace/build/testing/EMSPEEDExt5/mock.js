@@ -1,4 +1,4 @@
-
+console.log('mock.js');
 $.mockjax({
     url: /^\/api\/widgets$/,
     response: function (settings) {
@@ -3359,7 +3359,6 @@ var dataGetMasterLayoutMyProjects = {
     }
 }
 
-
 var mGetMasterLayout = $.mockjax(
     {
         url: 'http://' + location.hostname + ':8095/' + 'UserInterfaceService.svc/json/GetMasterLayout',
@@ -3369,7 +3368,7 @@ var mGetMasterLayout = $.mockjax(
                 case 98616:
                     this.responseText = dataGetMasterLayout98616;
                     break;
-			case 97366:
+			    case 97366:
                     this.responseText = dataGetMasterLayout97366;
                     break;
                 case 97368:
@@ -3384,7 +3383,6 @@ var mGetMasterLayout = $.mockjax(
         }
     }
 );
-
 
 var dataGetReportTypes = [
     {

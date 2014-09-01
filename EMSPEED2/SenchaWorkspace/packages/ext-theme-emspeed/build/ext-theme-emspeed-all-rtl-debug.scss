@@ -1,4 +1,4 @@
-$image-search-path: 'D:/devTheme/my-workspace/packages/ext-theme-emspeed/build/resources' !default;
+$image-search-path: 'D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/packages/ext-theme-emspeed/build/resources' !default;
 $theme-name:  'ext-theme-emspeed' !default;
 $include-ext-abstractmanager: true;
 $include-ext-action: true;
@@ -716,6 +716,7 @@ $include-extthemeneptune-picker-month: true;
 $include-extthemeneptune-resizer-splitter: true;
 $include-extthemeneptune-toolbar-paging: true;
 $include-extthemeneptune-toolbar-toolbar: true;
+$include-mycustomtheme-panel-panel: true;
 /* including package ext-theme-base */
 @import '../../../ext/packages/ext-theme-base/sass/etc/all';
 /* including package ext-theme-neutral */
@@ -728,6 +729,7 @@ $include-extthemeneptune-toolbar-toolbar: true;
 @import '../sass/etc/all';
 /* including package ext-theme-emspeed */
 @import '../sass/var/Component';
+@import '../sass/var/panel/Panel';
 /* including package ext-theme-crisp */
 @import '../../../ext/packages/ext-theme-crisp/sass/var/Component';
 @import '../../../ext/packages/ext-theme-crisp/sass/var/panel/Tool';
@@ -997,3 +999,7 @@ $relative-image-path-for-uis: $ext-theme-neptune-resource-path;
 @import '../../../ext/packages/ext-theme-neptune/sass/src/form/field/File';
 @import '../../../ext/packages/ext-theme-neptune/sass/src/form/field/HtmlEditor';
 @import '../../../ext/packages/ext-theme-neptune/sass/src/resizer/Resizer';
+/* including package ext-theme-emspeed */
+$ext-theme-emspeed-resource-path: 'images' !default;
+$relative-image-path-for-uis: $ext-theme-emspeed-resource-path;
+@import '../sass/src/button/Button';

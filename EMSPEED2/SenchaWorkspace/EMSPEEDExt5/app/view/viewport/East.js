@@ -4,21 +4,28 @@ Ext.define('EMSPEEDExt5.view.viewport.East', {
     viewConfig: {
         cls: 'emspeed-tree-view ',
         itemCls: 'emspeed-grid-item',
-        //itemTpl: '<div>{text}</div>',
         itemSelector: 'table.emspeed-grid-item',
         selectedItemCls: 'emspeed-grid-item-selected',
-        focusedItemCls: 'emspeed-grid-item-focused',
         overItemCls: 'emspeed-grid-item-over'
-},
-//    ui: 'light-framed',
+    },
+
+
     controller: 'EastController',
     id: 'East',
+
+    listeners: {
+        scope: 'controller',
+        afterlayout: 'onAfterLayout',
+        beforeselect: 'beforeNavSelectionChange',
+        selectionchange: 'onNavSelectionChange',
+        itemcollapse: 'onItemCollapse'
+    },
+
+
     style: { borderRight: '1px solid #cccccc' },
 
     header: {
         itemPosition: 0,
-        //style: { borderBottom: '1px solid #6084a8' },
-        border: true,
         items: [
             { xtype: 'component', width: 120, height: 38, autoEl: { tag: 'img', src: 'resources/emspeed/madEMSPEED.jpg' } }
         ]
@@ -39,12 +46,7 @@ Ext.define('EMSPEEDExt5.view.viewport.East', {
     reserveScrollbar: false,
     layout: 'fit',
 
-    listeners: {
-        scope: 'controller',
-        beforeselect: 'beforeNavSelectionChange',
-        selectionchange: 'onNavSelectionChange',
-        itemcollapse: 'onItemCollapse'
-    },
+
 
     initComponent: function () {
         var me = this;

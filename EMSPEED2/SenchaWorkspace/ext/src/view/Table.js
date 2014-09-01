@@ -1651,7 +1651,7 @@ Ext.define('Ext.view.Table', {
     // the last row focused
     onRowFocus: function(rowIdx, highlight, supressFocus) {
         var me = this;
-
+        
         if (highlight) {
             me.addItemCls(rowIdx, me.focusedItemCls);
             if (!supressFocus) {

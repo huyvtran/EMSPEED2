@@ -32,17 +32,14 @@ Ext.define('EMSPEEDExt5.view.viewport.projectHeader', {
             callback: function (sender) {
                 if (sender.getHeight() === 40) {
                     sender.setHeight(200);
+                    sender.down('tool').setType('up');
                 }
                 else {
                     sender.setHeight(40);
+                    sender.down('tool').setType('down');
                 }
-                //debugger;
-                //alert('onClick');
             }
         }
-
-
-
     ]
     //data: {projectManager: 'mjg'},
     //tpl: [

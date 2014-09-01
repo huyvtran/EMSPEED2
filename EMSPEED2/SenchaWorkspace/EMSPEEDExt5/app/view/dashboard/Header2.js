@@ -185,7 +185,6 @@ Ext.define('EMSPEEDExt5.view.dashboard.Header2', {
             cls = [me.headerCls];
 
         me.tools = me.tools || [];
-
         me.items = items = (items ? items.slice() : []);
 
         if (itemPosition !== undefined) {

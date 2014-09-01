@@ -1,3 +1,61 @@
+.x-btn-icon-top > .x-btn-icon-el-emspeed-toolbar-small, .x-btn-icon-bottom > .x-btn-icon-el-emspeed-toolbar-small {
+  min-width: 16px;
+}
+/* line 466, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-neutral/sass/src/button/Button.scss */
+.x-btn-icon-el-emspeed-toolbar-small.x-btn-glyph {
+  font-size: 16px;
+  line-height: 16px;
+  color: #003366;
+  opacity: 0.5;
+}
+/* line 486, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-neutral/sass/src/button/Button.scss */
+.x-ie8 .x-btn-icon-el-emspeed-toolbar-small.x-btn-glyph {
+  color: #7f99b2;
+}
+/* line 493, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-neutral/sass/src/button/Button.scss */
+.x-btn-text.x-btn-icon-left > .x-btn-icon-el-emspeed-toolbar-small {
+  margin-right: 0px;
+}
+/* line 504, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-neutral/sass/src/button/Button.scss */
+.x-btn-text.x-btn-icon-right > .x-btn-icon-el-emspeed-toolbar-small {
+  margin-left: 0px;
+}
+/* line 515, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-neutral/sass/src/button/Button.scss */
+.x-btn-text.x-btn-icon-top > .x-btn-icon-el-emspeed-toolbar-small {
+  margin-bottom: 5px;
+}
+/* line 519, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-neutral/sass/src/button/Button.scss */
+.x-btn-text.x-btn-icon-bottom > .x-btn-icon-el-emspeed-toolbar-small {
+  margin-top: 5px;
+}
+
+/* line 525, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-neutral/sass/src/button/Button.scss */
+.x-btn-arrow-right > .x-btn-icon.x-btn-no-text.x-btn-button-emspeed-toolbar-small {
+  padding-right: 5px;
+}
+/* line 528, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-neutral/sass/src/button/Button.scss */
+.x-btn-arrow-right > .x-btn-text.x-btn-icon-right > .x-btn-icon-el-emspeed-toolbar-small {
+  margin-right: 5px;
+}
+
+/* line 535, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-neutral/sass/src/button/Button.scss */
+.x-btn-arrow-bottom > .x-btn-button-emspeed-toolbar-small,
+.x-btn-split-bottom > .x-btn-button-emspeed-toolbar-small {
+  padding-bottom: 3px;
+}
+
+/* line 541, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-neutral/sass/src/button/Button.scss */
+.x-btn-wrap-emspeed-toolbar-small.x-btn-arrow-right:after {
+  width: 16px;
+  padding-right: 16px;
+  background-image: url(images/button/emspeed-toolbar-small-arrow.png);
+}
+/* line 563, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-neutral/sass/src/button/Button.scss */
+.x-btn-wrap-emspeed-toolbar-small.x-btn-arrow-bottom:after {
+  height: 13px;
+  background-image: url(images/button/emspeed-toolbar-small-arrow.png);
+}
+
 /* line 583, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-neutral/sass/src/button/Button.scss */
 .x-btn-wrap-emspeed-toolbar-small.x-btn-split-right:after {
   width: 20px;
@@ -446,14 +504,7 @@
 /* including package EMSPEEDExt5 */
 /* line 2, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../EMSPEEDExt5/sass/src/view/baseclass/baseclassWidgetHeader.scss */
 .headernonhover {
-  background-image: none;
   background-color: white;
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(30%, #ffffff), color-stop(65%, #ffffff), color-stop(100%, #f0f0f0));
-  background-image: -webkit-linear-gradient(top, #ffffff, #ffffff 30%, #ffffff 65%, #f0f0f0);
-  background-image: -moz-linear-gradient(top, #ffffff, #ffffff 30%, #ffffff 65%, #f0f0f0);
-  background-image: -o-linear-gradient(top, #ffffff, #ffffff 30%, #ffffff 65%, #f0f0f0);
-  background-image: -ms-linear-gradient(top, #ffffff, #ffffff 30%, #ffffff 65%, #f0f0f0);
-  background-image: linear-gradient(top, #ffffff, #ffffff 30%, #ffffff 65%, #f0f0f0);
 }
 
 /* line 6, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../EMSPEEDExt5/sass/src/view/baseclass/baseclassWidgetHeader.scss */
@@ -1181,55 +1232,47 @@
 }
 
 /* line 5, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../EMSPEEDExt5/sass/src/view/viewport/East.scss */
-.emspeed-grid-item.emspeed-grid-item-selected {
-  color: #003366;
-  background-color: #ffffff;
-  border-top: 1px solid #cccccc;
-  border-bottom: 1px solid #cccccc;
-}
-
-/* line 12, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../EMSPEEDExt5/sass/src/view/viewport/East.scss */
-.emspeed-grid-item.emspeed-grid-item-over {
-  color: white;
-  background-color: #003366;
-}
-
-/* line 18, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../EMSPEEDExt5/sass/src/view/viewport/East.scss */
-.emspeed-grid-item.emspeed-grid-item-focused {
-  background-color: red;
-  border-top: 1px solid #cccccc;
-  border-bottom: 1px solid #cccccc;
-}
-
-/* line 24, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../EMSPEEDExt5/sass/src/view/viewport/East.scss */
-.emspeed-grid-item {
-  color: #003366;
-  background-color: #f5f5f5;
-}
-
-/* line 29, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../EMSPEEDExt5/sass/src/view/viewport/East.scss */
 .emspeed-tree-view {
   color: white;
   background-color: #f5f5f5;
 }
 
-/*.x-panel, .x-plain {
-overflow: visible; 
-position: relative;
+/* line 9, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../EMSPEEDExt5/sass/src/view/viewport/East.scss */
+.emspeed-grid-item {
+  color: #003366;
+  background-color: #f5f5f5;
 }
 
-.x-panel {
-overflow: visible; 
-position: relative;
+/* line 13, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../EMSPEEDExt5/sass/src/view/viewport/East.scss */
+.emspeed-grid-item.emspeed-grid-item-selected {
+  color: #ffffff;
+  background-color: #003366;
+  border-top: 1px solid #cccccc;
+  border-bottom: 1px solid #cccccc;
 }
 
-.x-panel-body {
-overflow: visible; 
-position: relative;
-}*/
-/*.x-tree-view {
-overflow: visible;
-}*/
+/* line 19, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../EMSPEEDExt5/sass/src/view/viewport/East.scss */
+.emspeed-grid-item.emspeed-grid-item-over {
+  color: white;
+  background-color: #003366;
+}
+
+/* line 23, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../EMSPEEDExt5/sass/src/view/viewport/East.scss */
+.emspeed-grid-item .x-grid-item-focused {
+  color: white;
+  background-color: #003366;
+}
+
+/* line 27, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../EMSPEEDExt5/sass/src/view/viewport/East.scss */
+.collapsed {
+  border-right: 1px solid #cccccc;
+}
+
+/* line 30, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../EMSPEEDExt5/sass/src/view/viewport/East.scss */
+.x-tool {
+  top: 0;
+}
+
 /* line 1, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../EMSPEEDExt5/sass/src/view/viewport/Menu.scss */
 .emspeed-menu {
   background-color: #ededed;

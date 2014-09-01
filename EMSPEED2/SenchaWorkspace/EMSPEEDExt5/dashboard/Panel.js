@@ -7,6 +7,7 @@ Ext.define('Ext.dashboard.Panel', {
     extend: 'Ext.panel.Panel',
     xtype: 'dashboard-panel',
     cls: Ext.baseCSSPrefix + 'dashboard-panel',
+    headerCls: 'headernonhover',
     headerOverCls: 'headerhover',
     header: {
         xtype: 'header2',

@@ -64,6 +64,12 @@ Ext.define('EMSPEEDExt5.view.viewport.EastController', {
         }
     },
 
+    onAfterLayout: function () {
+        var i = this.getView().down('tool').el.id;
+        Ext.query('#' + i)[0].style.top = '10px';
+    },
+
+
     onItemCollapse: function (p, eOpts) {
 
         // West-placeholder-targetEl

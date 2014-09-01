@@ -1,6 +1,6 @@
 Ext.define('EMSPEEDExt5.view.baseclass.baseclassWidgetController', {
     extend: 'Ext.app.ViewController',
-    alias: 'controller.baseclasswidget',
+    alias: 'controller.baseclasswidget'
  
     //onGlyph: function () {
     //    alert('hi there');

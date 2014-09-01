@@ -553,7 +553,7 @@
                 }
             }
         },
-        logging: false,
+        logging: true,
         status: 200,
         statusText: "OK",
         responseTime: 500,

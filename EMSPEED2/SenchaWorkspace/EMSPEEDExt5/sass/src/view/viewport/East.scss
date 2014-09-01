@@ -1,54 +1,32 @@
-$base-color: #317040;
-$color: #317040;
+//$base-color: #317040;
+//$color: #317040;
 .x-tree-icon { display: none !important; }
 
+.emspeed-tree-view {
+    color: white;
+    background-color: #f5f5f5;
+}
+.emspeed-grid-item {
+    color: #003366;
+    background-color: #f5f5f5;
+}
 .emspeed-grid-item.emspeed-grid-item-selected {
-color: #003366;
-background-color: #ffffff;
-border-top: 1px solid #cccccc;
-border-bottom: 1px solid #cccccc;
-}
-
-.emspeed-grid-item.emspeed-grid-item-over {
-color: white;
-background-color: #003366;
-
-}
-
-.emspeed-grid-item.emspeed-grid-item-focused {
-    background-color: red;
+    color: #ffffff;
+    background-color: #003366;
     border-top: 1px solid #cccccc;
     border-bottom: 1px solid #cccccc;
 }
-
-.emspeed-grid-item {
-color: #003366;
-background-color: #f5f5f5;
+.emspeed-grid-item.emspeed-grid-item-over {
+    color: white;
+    background-color: #003366;
 }
-
-.emspeed-tree-view {
-color: white;
-background-color: #f5f5f5;
+.emspeed-grid-item .x-grid-item-focused {
+    color: white;
+    background-color: #003366;
 }
-
-
-
-/*.x-panel, .x-plain {
-overflow: visible; 
-position: relative;
+.collapsed {
+    border-right: 1px solid #cccccc
 }
-
-.x-panel {
-overflow: visible; 
-position: relative;
+.x-tool {
+    top: 0
 }
-
-.x-panel-body {
-overflow: visible; 
-position: relative;
-}*/
-
-/*.x-tree-view {
-overflow: visible;
-}*/
-
