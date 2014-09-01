@@ -1,0 +1,9 @@
+{
+  "version": 3,
+  "file": "baseclassWidget.css",
+  "sources": [
+    "baseclassWidget.scss"
+  ],
+  "names": [],
+  "mappings": "AAAA;EACI,kBAAkB"
+}

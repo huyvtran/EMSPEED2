@@ -5,20 +5,30 @@
  */
 Ext.define('Ext.dashboard.Panel', {
     extend: 'Ext.panel.Panel',
-
     xtype: 'dashboard-panel',
-
     cls: Ext.baseCSSPrefix + 'dashboard-panel',
+    headerOverCls: 'headerhover',
+    header: {
+        xtype: 'header2',
+        itemPosition: 0, // after title before collapse tool
+        items: [
+            { xtype: 'button', ui: 'emspeedglyph-toolbar', style: { fontSize: '22px' }, tooltip: 'favorite', handler: 'onFavorite', glyph: 'xf006@FontAwesome' }
+        ]
+    },
+
+    onMe: function() {
+        alert('me')
+    },
 
     anchor: '100%',
-
     layout  : 'fit',
 
     frame: true,
     closable: true,
     collapsible: true,
     animCollapse: true,
-    titleCollapse  : true,
+    titleCollapse  : false,
+    titleAlign: 'left',
 
     stateful : true,
 

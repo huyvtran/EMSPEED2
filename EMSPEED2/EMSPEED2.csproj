@@ -4385,6 +4385,8 @@
     <Content Include="SenchaWorkspace\EMSPEEDExt5\app\clonepmt\view\clonePmtBasePanel.js" />
     <Content Include="SenchaWorkspace\EMSPEEDExt5\app\clonepmt\view\clonepmtCreateClone.js" />
     <Content Include="SenchaWorkspace\EMSPEEDExt5\app\clonepmt\view\clonepmtHistory.js" />
+    <Content Include="SenchaWorkspace\EMSPEEDExt5\app\view\baseclass\baseclassWidgetHeader.js" />
+    <Content Include="SenchaWorkspace\EMSPEEDExt5\app\view\baseclass\baseclassWidgetController.js" />
     <Content Include="SenchaWorkspace\EMSPEEDExt5\app\view\dashboard\dashboardKpiWidgetPanel.js" />
     <Content Include="SenchaWorkspace\EMSPEEDExt5\app\view\riskmatrix\riskmatrixBasePanel - Copy.js" />
     <Content Include="SenchaWorkspace\EMSPEEDExt5\app\view\viewport\gearMenuDataview.js" />
@@ -4584,12 +4586,24 @@
     <Content Include="SenchaWorkspace\EMSPEEDExt5\resources\pictos\pictos.css" />
     <Content Include="SenchaWorkspace\EMSPEEDExt5\resources\pictos\pictos_base64.css" />
     <Content Include="SenchaWorkspace\EMSPEEDExt5\resources\sb-admin-2.css" />
+    <Content Include="SenchaWorkspace\EMSPEEDExt5\sass\etc\all.css">
+      <DependentUpon>all.scss</DependentUpon>
+    </Content>
+    <Content Include="SenchaWorkspace\EMSPEEDExt5\sass\etc\all.min.css">
+      <DependentUpon>all.css</DependentUpon>
+    </Content>
     <Content Include="SenchaWorkspace\EMSPEEDExt5\sass\example\bootstrap.css" />
     <Content Include="SenchaWorkspace\EMSPEEDExt5\sass\example\bootstrap.js" />
     <Content Include="SenchaWorkspace\EMSPEEDExt5\sass\example\custom.js" />
     <Content Include="SenchaWorkspace\EMSPEEDExt5\sass\example\example.css" />
     <Content Include="SenchaWorkspace\EMSPEEDExt5\sass\example\render.js" />
     <Content Include="SenchaWorkspace\EMSPEEDExt5\sass\example\theme.html" />
+    <Content Include="SenchaWorkspace\EMSPEEDExt5\sass\src\view\baseclass\baseclassWidgetHeader.css">
+      <DependentUpon>baseclassWidgetHeader.scss</DependentUpon>
+    </Content>
+    <Content Include="SenchaWorkspace\EMSPEEDExt5\sass\src\view\baseclass\baseclassWidgetHeader.min.css">
+      <DependentUpon>baseclassWidgetHeader.css</DependentUpon>
+    </Content>
     <Content Include="SenchaWorkspace\EMSPEEDExt5\sass\src\view\contextcontroller\contextcontrollerBasePanel.css">
       <DependentUpon>contextcontrollerBasePanel.scss</DependentUpon>
     </Content>
@@ -4744,6 +4758,15 @@
     <Content Include="SenchaWorkspace\build\production\EMSPEEDExt5\widgets\GoogleRssPart.jsx" />
     <Content Include="SenchaWorkspace\build\production\EMSPEEDExt5\widgets\GoogleRssView.jsx" />
     <Content Include="SenchaWorkspace\build\production\EMSPEEDExt5\widgets\risks - Copy.jsx" />
+    <Content Include="SenchaWorkspace\EMSPEEDExt5\sass\src\view\baseclass\baseclassWidgetHeader.scss" />
+    <Content Include="SenchaWorkspace\EMSPEEDExt5\sass\src\view\baseclass\baseclassWidgetHeader.css.map">
+      <DependentUpon>baseclassWidgetHeader.css</DependentUpon>
+    </Content>
+    <Content Include="SenchaWorkspace\EMSPEEDExt5\sass\etc\mixins\_background-gradient.scss" />
+    <Content Include="SenchaWorkspace\EMSPEEDExt5\sass\etc\_mixins.scss" />
+    <Content Include="SenchaWorkspace\EMSPEEDExt5\sass\etc\all.css.map">
+      <DependentUpon>all.css</DependentUpon>
+    </Content>
     <None Include="SenchaWorkspace\EMSPEEDExt5\widgets\risks - Copy.jsx" />
     <Content Include="SenchaWorkspace\EMSPEEDExt5\widgets\risks.png" />
     <Content Include="SenchaWorkspace\EMSPEEDExt5\widgets\ngimage.png" />
@@ -6327,6 +6350,12 @@
     <Content Include="SenchaWorkspace\ext\packages\ext-theme-base\.sencha\test\jasmine.js" />
     <Content Include="SenchaWorkspace\ext\packages\ext-theme-base\.sencha\test\test-impl.xml" />
     <Content Include="SenchaWorkspace\ext\packages\ext-theme-base\build.xml" />
+    <Content Include="SenchaWorkspace\ext\packages\ext-theme-base\sass\etc\mixins\frame.css">
+      <DependentUpon>frame.scss</DependentUpon>
+    </Content>
+    <Content Include="SenchaWorkspace\ext\packages\ext-theme-base\sass\etc\mixins\frame.min.css">
+      <DependentUpon>frame.css</DependentUpon>
+    </Content>
     <Content Include="SenchaWorkspace\ext\packages\ext-theme-base\sass\example\custom.js" />
     <Content Include="SenchaWorkspace\ext\packages\ext-theme-base\sass\example\manifest.js" />
     <Content Include="SenchaWorkspace\ext\packages\ext-theme-base\sass\example\render.js" />
@@ -12725,6 +12754,7 @@
     <Content Include="SenchaWorkspace\ext\src\menu\Separator.js" />
     <Content Include="SenchaWorkspace\ext\src\panel\Bar.js" />
     <Content Include="SenchaWorkspace\ext\src\panel\DD.js" />
+    <Content Include="SenchaWorkspace\EMSPEEDExt5\app\view\dashboard\Header2.js" />
     <Content Include="SenchaWorkspace\ext\src\panel\Header.js" />
     <Content Include="SenchaWorkspace\ext\src\panel\Panel.js" />
     <Content Include="SenchaWorkspace\ext\src\panel\Pinnable.js" />
@@ -13903,6 +13933,25 @@
     <Content Include="SenchaWorkspace\packages\ext-theme-emspeed\sass\example\example.css" />
     <Content Include="SenchaWorkspace\packages\ext-theme-emspeed\sass\example\render.js" />
     <Content Include="SenchaWorkspace\packages\ext-theme-emspeed\sass\example\theme.html" />
+    <Content Include="SenchaWorkspace\packages\ext-theme-emspeed\sass\var\Component.css.map">
+      <DependentUpon>Component.css</DependentUpon>
+    </Content>
+    <Content Include="SenchaWorkspace\ext\packages\ext-theme-base\sass\etc\mixins\frame.css.map">
+      <DependentUpon>frame.css</DependentUpon>
+    </Content>
+    <None Include="SenchaWorkspace\packages\ext-theme-emspeed\sass\var\Component.scss" />
+    <Content Include="SenchaWorkspace\packages\ext-theme-emspeed\sass\var\Component.css">
+      <DependentUpon>Component.scss</DependentUpon>
+    </Content>
+    <Content Include="SenchaWorkspace\packages\ext-theme-emspeed\sass\var\Component.min.css">
+      <DependentUpon>Component.css</DependentUpon>
+    </Content>
+    <Content Include="SenchaWorkspace\packages\ext-theme-emspeed\sass\var\panel\Panel.css">
+      <DependentUpon>Panel.scss</DependentUpon>
+    </Content>
+    <Content Include="SenchaWorkspace\packages\ext-theme-emspeed\sass\var\panel\Panel.min.css">
+      <DependentUpon>Panel.css</DependentUpon>
+    </Content>
     <Content Include="SenchaWorkspace\pokemon\.sencha\app\Boot.js" />
     <Content Include="SenchaWorkspace\pokemon\.sencha\app\bootstrap-impl.xml" />
     <Content Include="SenchaWorkspace\pokemon\.sencha\app\build-impl.xml" />
@@ -17874,7 +17923,7 @@
     <Content Include="SenchaWorkspace\EMSPEEDExt5\sass\etc\_emspeed-colors.scss" />
     <Content Include="SenchaWorkspace\EMSPEEDExt5\sass\etc\_emspeed-common.scss" />
     <Content Include="SenchaWorkspace\EMSPEEDExt5\sass\etc\_emspeed-init.scss" />
-    <Content Include="SenchaWorkspace\EMSPEEDExt5\sass\etc\_emspeed-mixins.scss" />
+    <Content Include="SenchaWorkspace\EMSPEEDExt5\sass\etc\mixins\_emspeed-mixins.scss" />
     <Content Include="SenchaWorkspace\EMSPEEDExt5\sass\etc\_hint.scss" />
     <Content Include="SenchaWorkspace\EMSPEEDExt5\sass\etc\all.scss" />
     <Content Include="SenchaWorkspace\EMSPEEDExt5\sass\etc\fontAwesome\_bordered-pulled.scss" />
@@ -18716,6 +18765,10 @@
     <Content Include="SenchaWorkspace\packages\ext-theme-emspeed\sass\var\Readme.md" />
     <Content Include="SenchaWorkspace\packages\ext-theme-emspeed\src\Readme.md" />
     <Content Include="SenchaWorkspace\packages\ext-theme-emspeed\sass\src\button\Button.scss" />
+    <Content Include="SenchaWorkspace\packages\ext-theme-emspeed\sass\var\panel\Panel.css.map">
+      <DependentUpon>Panel.css</DependentUpon>
+    </Content>
+    <Content Include="SenchaWorkspace\packages\ext-theme-emspeed\sass\var\panel\Panel.scss" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

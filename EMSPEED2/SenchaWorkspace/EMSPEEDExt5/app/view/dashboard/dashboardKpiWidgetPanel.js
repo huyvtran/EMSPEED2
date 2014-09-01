@@ -2,130 +2,102 @@ Ext.define('EMSPEEDExt5.view.dashboard.dashboardKpiWidgetPanel', {
     extend: 'Ext.panel.Panel',
     xtype: 'dashboardkpiwidgetpanel',
     bodyPadding: '10 0 10 9',
-    height: 110,
+    height: 88,
     layout: 'hbox',
 
     items: [
-        { xtype: 'component', margin: '0 10 0 0', width: 200,
-            html: ''+
-                ''+
-                '<div class="panel panel-primary">' +
-                '    <div class="panel-heading">' +
-                '        <div class="row">' +
-                '            <div class="col-xs-3">' +
-                '                <i class="fa fa-comments fa-3x"></i>' +
-                '            </div>' +
-                '            <div class="col-xs-9 text-right">' +
-                '                <div class="huge">26</div>' +
-                '                <div>New Comments!</div>' +
-                '            </div>' +
-                '        </div>' +
-                '    </div>' +
-                '    <a href="#">' +
-                '        <div class="panel-footer">' +
-                '            <span class="pull-left">View Details</span>' +
-                '            <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>' +
-                '            <div class="clearfix"></div>' +
-                '        </div>' +
-                '     </a>' +
-                ' </div>' +
-                ''
-        },
         {
-            xtype: 'component', margin: '0 10 0 0', width: 200,
+            xtype: 'component', margin: '0 10 0 0', width: 130,
             html: '' +
                 '' +
                 '<div class="panel panel-primary">' +
                 '    <div class="panel-heading">' +
                 '        <div class="row">' +
-                '            <div class="col-xs-3">' +
-                '                <i class="fa fa-comments fa-3x"></i>' +
+                '            <div class="col-xs-4">' +
+                '                <i class="fa fa-comments fa-2x"></i>' +
                 '            </div>' +
-                '            <div class="col-xs-9 text-right">' +
+                '            <div class="col-xs-8 text-right">' +
                 '                <div class="huge">26</div>' +
+                '            </div>' +
+                '        </div>' +
+                '        <div class="row">' +
+                '            <div class="col-xs-12 text-left">' +
                 '                <div>New Comments!</div>' +
                 '            </div>' +
                 '        </div>' +
                 '    </div>' +
-                '    <a href="#">' +
-                '        <div class="panel-footer">' +
-                '            <span class="pull-left">View Details</span>' +
-                '            <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>' +
-                '            <div class="clearfix"></div>' +
-                '        </div>' +
-                '     </a>' +
                 ' </div>' +
                 ''
         },
         {
-            xtype: 'component', margin: '0 10 0 0', width: 150,
+            xtype: 'component', margin: '0 10 0 0', width: 130,
             html: '' +
-               '<div class="panel panel-green">' +
-               '    <div class="panel-heading">' +
-               '        <div class="row">' +
-               '            <div class="col-xs-3">' +
-               '                <div class="huge">12</div>' +
-               '            </div>' +
-               '            <div class="col-xs-9 text-right">' +
-               '                <div>New Tasks! with more text to see how much text we can put in this area</div>' +
-               '            </div>' +
-               '        </div>' +
-               '    </div>' +
-               '</div>' +
-               ''
+                '' +
+                '<div class="panel panel-green">' +
+                '    <div class="panel-heading">' +
+                '        <div class="row">' +
+                '            <div class="col-xs-4">' +
+                '                <i class="fa fa-tasks fa-2x"></i>' +
+                '            </div>' +
+                '            <div class="col-xs-8 text-right">' +
+                '                <div class="huge">12</div>' +
+                '            </div>' +
+                '        </div>' +
+                '        <div class="row">' +
+                '            <div class="col-xs-12 text-left">' +
+                '                <div>New Tasks!</div>' +
+                '            </div>' +
+                '        </div>' +
+                '    </div>' +
+                ' </div>' +
+                ''
         },
         {
-            xtype: 'component', margin: '0 10 0 0', width: 200,
+            xtype: 'component', margin: '0 10 0 0', width: 130,
             html: '' +
+                '' +
                 '<div class="panel panel-yellow">' +
                 '    <div class="panel-heading">' +
                 '        <div class="row">' +
-                '            <div class="col-xs-3">' +
-                '                <i class="fa fa-shopping-cart fa-3x"></i>' +
+                '            <div class="col-xs-4">' +
+                '                <i class="fa fa-shopping-cart fa-2x"></i>' +
                 '            </div>' +
-                '            <div class="col-xs-9 text-right">' +
+                '            <div class="col-xs-8 text-right">' +
                 '                <div class="huge">124</div>' +
+                '            </div>' +
+                '        </div>' +
+                '        <div class="row">' +
+                '            <div class="col-xs-12 text-left">' +
                 '                <div>New Orders!</div>' +
                 '            </div>' +
                 '        </div>' +
                 '    </div>' +
-                '    <a href="#">' +
-                '        <div class="panel-footer">' +
-                '            <span class="pull-left">View Details</span>' +
-                '            <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>' +
-                '            <div class="clearfix"></div>' +
-                '        </div>' +
-                '    </a>' +
-                '</div>' +
+                ' </div>' +
                 ''
         },
-
         {
-            xtype: 'component', margin: '0 10 0 0', width: 200,
+            xtype: 'component', margin: '0 10 0 0', width: 130,
             html: '' +
-
+                '' +
                 '<div class="panel panel-red">' +
                 '    <div class="panel-heading">' +
                 '        <div class="row">' +
-                '            <div class="col-xs-3">' +
-                '                <i class="fa fa-support fa-3x"></i>' +
+                '            <div class="col-xs-4">' +
+                '                <i class="fa fa-support fa-2x"></i>' +
                 '            </div>' +
-                '            <div class="col-xs-9 text-right">' +
+                '            <div class="col-xs-8 text-right">' +
                 '                <div class="huge">13</div>' +
+                '            </div>' +
+                '        </div>' +
+                '        <div class="row">' +
+                '            <div class="col-xs-12 text-left">' +
                 '                <div>Support Tickets!</div>' +
                 '            </div>' +
                 '        </div>' +
                 '    </div>' +
-                '    <a href="#">' +
-                '        <div class="panel-footer">' +
-                '            <span class="pull-left">View Details</span>' +
-                '            <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>' +
-                '            <div class="clearfix"></div>' +
-                '        </div>' +
-                '    </a>' +
-                '</div>' +
+                ' </div>' +
                 ''
-       }
+        }
     ],
 
     style: {

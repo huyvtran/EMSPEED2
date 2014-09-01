@@ -1,0 +1,16 @@
+
+.headernonhover {
+    @include background-gradient(#ffffff, bevel, top);
+}
+
+.headerhover {
+    @include background-gradient(#f5f5f5, bevel, top);
+}
+
+.showme{ 
+display: none;
+}
+
+.headerhover:hover {
+display : block;
+}

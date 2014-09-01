@@ -1,14 +1,13 @@
 $toolbar-border-color: #e8e8e8;
-
 $images-dir: 'resources/images/';
+
 @import "fontAwesome/font-awesome";
-// http://fortawesome.github.io/Font-Awesome/cheatsheet/
 @import '_css-reset';
 @import '_emspeed-colors';
 @import '_emspeed-common';
 @import '_emspeed-init';
-@import '_emspeed-mixins';
 @import '_hint';
+@import '_mixins';
 
 
 

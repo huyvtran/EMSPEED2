@@ -14,7 +14,7 @@ Ext.define('EMSPEEDExt5.view.baseclass.baseclassPanel', {
         
         var fullToolbar = [];
         var leftSide = [
-            { xtype: 'component', html: '<i style="color:#003366;font-size:22px;margin-left: 0px;" class="fa fa-star fa-fw"></i>' },
+            { ui: 'emspeedglyph-toolbar', style: { fontSize: '22px' }, tooltip: 'favorite', handler: 'onFavorite', glyph: 'xf006@FontAwesome' },
             { text: me.text, xtype: 'label', padding: '5px 0px 0px 0px', cls: 'x-panel-header-title-default' },
             { xtype: 'tbfill' }
         ];
