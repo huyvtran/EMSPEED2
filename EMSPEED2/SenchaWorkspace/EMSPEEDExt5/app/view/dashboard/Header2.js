@@ -10,8 +10,6 @@ Ext.define('EMSPEEDExt5.view.dashboard.Header2', {
     xtype: 'header2',
 
     onMouseOver: function (sender) {
-        console.log('onMouseOver');
-
         var tools = this.query('tool');
         var arrayLength = tools.length;
         for (var i = 0; i < arrayLength; i++) {

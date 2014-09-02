@@ -29,6 +29,7 @@ Ext.define('EMSPEEDExt5.view.dashboard.dashboardKpiWidgetPanel', {
                 ' </div>' +
                 ''
         },
+
         {
             xtype: 'component', margin: '0 10 0 0', width: 130,
             html: '' +
@@ -97,7 +98,52 @@ Ext.define('EMSPEEDExt5.view.dashboard.dashboardKpiWidgetPanel', {
                 '    </div>' +
                 ' </div>' +
                 ''
+        },
+        {
+            xtype: 'component', margin: '0 10 0 0', width: 130,
+            html: '' +
+                '' +
+                '<div class="panel panel-default">' +
+                '    <div class="panel-body panel-heading">' +
+                '        <div class="row">' +
+                '            <div class="col-xs-4">' +
+                '                <i class="fa fa-truck fa-2x"></i>' +
+                '            </div>' +
+                '            <div class="col-xs-8 text-right">' +
+                '                <div class="huge">13</div>' +
+                '            </div>' +
+                '        </div>' +
+                '        <div class="row">' +
+                '            <div class="col-xs-12 text-right">' +
+                '                <div>New Orders</div>' +
+                '            </div>' +
+                '        </div>' +
+                '    </div>' +
+                ' </div>' +
+                ''
         }
+
+
+        //{
+        //    xtype: 'component', margin: '0 10 0 0', xwidth: 130,
+        //    html: '' +
+        //        '' +
+        //           '<div class="panel panel-default ">' +
+        //           '    <div class="panel-body alert-info">' +
+        //           '        <div class="col-xs-6">' +
+        //           '            <i class="fa fa-truck fa-2x"></i>' +
+        //           '        </div>' +
+        //           '        <div class="col-xs-6 text-right">' +
+        //           '            <p class="alerts-heading">343</p>' +
+        //           '            <p class="alerts-text text-right">New Orders</p>' +
+        //           '        </div>' +
+        //           '    </div>' +
+        //           '</div>' +
+        //        ''
+        //},
+
+
+
     ],
 
     style: {

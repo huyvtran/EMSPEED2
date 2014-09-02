@@ -6,9 +6,9 @@
 
     mixins: ['Ext.mixin.Mashup'],
 
-    requiredScripts: [
-        '../js/jquery/jquery-1.9.1.js'
-    ],
+    //requiredScripts: [
+    //    '../js/jquery/jquery-1.9.1.js'
+    //],
 
     constructor: function (config) {
         this.callParent(arguments);

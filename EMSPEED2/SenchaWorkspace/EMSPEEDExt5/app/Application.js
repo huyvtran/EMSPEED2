@@ -6,6 +6,7 @@ Ext.define('EMSPEEDExt5.Application', {
     autoCreateViewport: false,
 
     requires: [
+        'Ext.chart.*',
         //'EMSPEEDExt5.clonepmt.model.clonepmtHistoryModel',
         //'Ext.app.*',
         //'Ext.layout.container.Dashboard',

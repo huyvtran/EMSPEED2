@@ -12,6 +12,7 @@
  * http://appendto.com/open-source-licenses
  */
 (function ($) {
+    console.log('MockJax');
     var _ajax = $.ajax,
 		mockHandlers = [],
 		mockedAjaxCalls = [],
@@ -419,7 +420,6 @@
 
     // The core $.ajax replacement.
     function handleAjax(url, origSettings) {
-        debugger;
         var mockRequest, requestSettings, mockHandler;
 
         // If url is an object, simulate pre-1.5 signature
@@ -525,14 +525,13 @@
 
 
     // Public
-
     $.extend({
         ajax: handleAjax
     });
 
     $.mockjaxSettings = {
-        //url:        null,
-        //type:       'GET',
+        url:        null,
+        type:       'GET',
         log: function (mockHandler, requestSettings) {
             if (mockHandler.logging === false ||
 				 (typeof mockHandler.logging === 'undefined' && $.mockjaxSettings.logging === false)) {

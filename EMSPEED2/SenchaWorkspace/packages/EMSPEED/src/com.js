@@ -166,7 +166,7 @@ Ext.define('EMSPEED.common.com', {
     },
 
     ajaxUrlOptions: function (options) {
-        var port = options.port || '8095',
+        var port = options.port || '1002',
             host = options.host || location.hostname,
             type = options.type || 'json';
         return 'http://' + host + ':' + port + '/' + options.service + '.svc/' + type + '/' + options.method;

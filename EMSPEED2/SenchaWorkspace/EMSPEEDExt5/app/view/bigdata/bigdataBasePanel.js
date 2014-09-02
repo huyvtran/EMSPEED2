@@ -12,12 +12,12 @@ Ext.define('EMSPEEDExt5.view.bigdata.bigdataBasePanel', {
     initComponent: function () {
         var me = this;
         me.toolbar = [
-                { text: 'Load', width: '100px', handler: 'onLoadClick', glyph: 'xf1c0@FontAwesome' },
+                { text: 'Load', width: '100px', ui: 'emspeed-toolbar', handler: 'onLoadClick', glyph: 'xf1c0@FontAwesome' },
                 '-',
-                { text: 'Filter', width: '100px', handler: 'onFilterClick', glyph: 'xf0b0@FontAwesome' },
-                { text: 'Clear', width: '100px', handler: 'onClearClick', glyph: 'xf12d@FontAwesome' },
+                { text: 'Filter', width: '100px', ui: 'emspeed-toolbar', handler: 'onFilterClick', glyph: 'xf0b0@FontAwesome' },
+                { text: 'Clear', width: '100px', ui: 'emspeed-toolbar', handler: 'onClearClick', glyph: 'xf12d@FontAwesome' },
                 '-',
-                { text: 'Export', width: '100px', handler: 'onExportClick', glyph: 'xf019@FontAwesome' }
+                { text: 'Export', width: '100px', ui: 'emspeed-toolbar', handler: 'onExportClick', glyph: 'xf019@FontAwesome' }
         ];
         me.items = [
             {

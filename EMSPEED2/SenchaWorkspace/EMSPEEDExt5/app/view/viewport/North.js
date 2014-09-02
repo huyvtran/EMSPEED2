@@ -56,15 +56,32 @@ Ext.define('EMSPEEDExt5.view.viewport.North', {
 
             {
                 xtype: 'component',
-                margin: '0px 0px 0px 0px',
-                html: '<div class="emspeed-header"> <div class="emspeed-header-menuProductTest">Welcome Marc Gusmano</div></div>'
+                margin: '17px 0px 15px 0px',
+                html: '' +
+                   '    <a style="color:white;font-size:14px;" href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> Marc Gusmano<b class="caret"></b></a>' +
+                   ''
             },
 
-            { xtype: 'button', ui: 'emspeedglyph-toolbar', style: { fontSize: '22px', color: 'white' }, tooltip: 'favorite', handler: function () { alert('clicked') }, glyph: 'xf006@FontAwesome' },
+            //{
+            //    xtype: 'component',
+            //    margin: '0px 0px 0px 0px',
+            //    html: '<div class="emspeed-header"> <div class="emspeed-header-menuProductTest">Welcome Marc Gusmano</div></div>'
+            //},
+
+            //{ xtype: 'button', ui: 'emspeedglyph-toolbar', style: { fontSize: '22px', color: 'white' }, tooltip: 'favorite', handler: function () { alert('clicked') }, glyph: 'xf006@FontAwesome' },
+
+                        {
+                xtype: 'component',
+                margin: '15px 0px 0px 15px',
+                html: '<a style="color:white;font-size:14px;" href="#" class="dropdown-toggle" data-toggle="dropdown"><i style="color:white;font-size:14px;" class="fa fa-envelope fa-fw"></i> Messages <span style="color:white;font-size:14px;" class="badge">2</span> <b style="color:white;font-size:14px;" class="caret"></b></a>'
+            },
 
 
-            { xtype: 'container', style: { marginTop: '17px', marginLeft: '15px' }, html: '<span class="fa fa-envelope fa-fw" style="color:white;font-size:14px;" />' },
-            { xtype: 'container', style: { marginTop: '17px', marginLeft: '5px' }, html: '<span class="fa fa-caret-down" style="color:white;font-size:12px;" />' },
+
+
+
+            //{ xtype: 'container', style: { marginTop: '17px', marginLeft: '15px' }, html: '<span class="fa fa-envelope fa-fw" style="color:white;font-size:14px;" />' },
+            //{ xtype: 'container', style: { marginTop: '17px', marginLeft: '5px' }, html: '<span class="fa fa-caret-down" style="color:white;font-size:12px;" />' },
 
             { xtype: 'container', style: { marginTop: '17px', marginLeft: '15px' }, html: '<span class="fa fa-tasks fa-fw" style="color:white;font-size:14px;" />' },
             { xtype: 'container', style: { marginTop: '17px', marginLeft: '5px' }, html: '<span class="fa fa-caret-down" style="color:white;font-size:12px;" />' },

@@ -113,16 +113,7 @@
     "js": [
 
         {
-            "path": "../js/error.js"
-        },
-        {
-            "path": "../js/jquery/jquery-1.9.1.js"
-        },
-        {
-            "path": "../js/mock/jquery.mockjax.js"
-        },
-        {
-            "path": "mock.js"
+            "path": "js/error.js", "includeInBundle": true
         },
         {
             "path": "app.js",

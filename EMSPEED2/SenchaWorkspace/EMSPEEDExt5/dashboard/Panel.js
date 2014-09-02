@@ -17,6 +17,10 @@ Ext.define('Ext.dashboard.Panel', {
         ]
     },
 
+    listeners: {
+        resize: 'onResize'
+    },
+
     onMe: function() {
         alert('me')
     },
