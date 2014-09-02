@@ -32,12 +32,8 @@ Ext.define('EMSPEEDExt5.view.viewport.East', {
     },
     bodyStyle: { backgroundColor: '#f5f5f5' },
     bodyPadding: '0 0 0 0',
-    //title: 'Menu',
-    //glyph: 0xf00b,
     width: 170,
-    //minWidth: 180,
     split: false,
-    //border: true,
     collapsible: true,
     rootVisible: false,
     lines: false,
@@ -45,8 +41,6 @@ Ext.define('EMSPEEDExt5.view.viewport.East', {
     hideHeaders: true,
     reserveScrollbar: false,
     layout: 'fit',
-
-
 
     initComponent: function () {
         var me = this;
@@ -66,9 +60,9 @@ Ext.define('EMSPEEDExt5.view.viewport.East', {
                 renderer: function (value, metaData, record, rowIndex, colIndex, store, view) {
                     var s = '';
                     if (record.data.leaf) {
-                        s = '<i style="width: 15px;xcolor: #386a9d;xbackground-color:yellow;margin: 0px 10px 0px -30px" class="fa ' + record.data.fa + '"></i>';
+                        s = '<i style="width:15px;margin: 0 10px 0 -30px" class="fa ' + record.data.fa + '"></i>';
                     }
-                    return s + '<span style="xcolor: #386a9d;xbackground-color:yellow;" >' + value + '</span>';
+                    return s + '<span>' + value + '</span>';
                 }
             }
         ];

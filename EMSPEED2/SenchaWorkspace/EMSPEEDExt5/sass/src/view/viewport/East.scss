@@ -1,28 +1,28 @@
-//$base-color: #317040;
-//$color: #317040;
 .x-tree-icon { display: none !important; }
 
 .emspeed-tree-view {
     color: white;
-    background-color: #f5f5f5;
+    background-color: $color-background;
 }
 .emspeed-grid-item {
-    color: #003366;
-    background-color: #f5f5f5;
+    color: $color;
+    background-color: $color-background;
 }
 .emspeed-grid-item.emspeed-grid-item-selected {
     color: #ffffff;
-    background-color: #003366;
-    border-top: 1px solid #cccccc;
-    border-bottom: 1px solid #cccccc;
+    background-color: $color;
+    border-top: 1px solid $color;
+    border-bottom: 1px solid $color;
 }
 .emspeed-grid-item.emspeed-grid-item-over {
     color: white;
-    background-color: #003366;
+    background-color: $color-light10;
 }
 .emspeed-grid-item .x-grid-item-focused {
     color: white;
-    background-color: #003366;
+    background-color: $color;
+    border-top: 0 solid $color;
+    border-bottom: 0 solid $color;
 }
 .collapsed {
     border-right: 1px solid #cccccc
