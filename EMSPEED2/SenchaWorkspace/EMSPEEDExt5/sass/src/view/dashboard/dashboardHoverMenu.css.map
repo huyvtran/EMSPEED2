@@ -1,0 +1,9 @@
+{
+  "version": 3,
+  "file": "dashboardHoverMenu.css",
+  "sources": [
+    "dashboardHoverMenu.scss"
+  ],
+  "names": [],
+  "mappings": "AAAA;EACE,WAAW;EACX,OAAO;EACP,gBAAgB;EAChB,YAAY;EACN,UAAU;;AAgBlB;EACE,kBAAkB;EAClB,mBAAmB;EACnB,qBAAqB;;AAGvB;EACS,aAA6B"
+}

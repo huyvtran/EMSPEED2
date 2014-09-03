@@ -1,0 +1,16 @@
+﻿.hover-menu {
+  font-size: 17px;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  position: relative; }
+
+.hover-icon {
+  background-image: url('emspeed/pop_up_arrow.png');
+  background-repeat: no-repeat;
+  background-position: center bottom; }
+
+.hover-active {
+  text-shadow: -1px 1px 8px #fff, 1px -1px 8px #fff; }
+
+/*# sourceMappingURL=dashboardHoverMenu.css.map */

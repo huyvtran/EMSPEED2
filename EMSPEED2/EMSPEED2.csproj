@@ -4126,6 +4126,8 @@
     <Content Include="SenchaWorkspace\build\testing\mjgApp\resources\css\style.css" />
     <Content Include="SenchaWorkspace\common\src-ext\com.js" />
     <Content Include="SenchaWorkspace\common\src-touch\com.js" />
+    <Content Include="SenchaWorkspace\EMSPEEDExt5\app\view\dashboard\dashboardHoverMenu.js" />
+    <Content Include="SenchaWorkspace\EMSPEEDExt5\app\view\dashboard\dashboardMenuItem.js" />
     <Content Include="SenchaWorkspace\EMSPEEDExt5\bootstrap.js" />
     <Content Include="SenchaWorkspace\EMSPEEDExt5\css\base.css" />
     <Content Include="SenchaWorkspace\EMSPEEDExt5\css\Spacetree.css" />
@@ -4407,6 +4409,12 @@
     <Content Include="SenchaWorkspace\EMSPEEDExt5\sass\src\view\contextcontroller\contextcontrollerBasePanel.min.css">
       <DependentUpon>contextcontrollerBasePanel.css</DependentUpon>
     </Content>
+    <Content Include="SenchaWorkspace\EMSPEEDExt5\sass\src\view\dashboard\dashboardHoverMenu.css">
+      <DependentUpon>dashboardHoverMenu.scss</DependentUpon>
+    </Content>
+    <Content Include="SenchaWorkspace\EMSPEEDExt5\sass\src\view\dashboard\dashboardHoverMenu.min.css">
+      <DependentUpon>dashboardHoverMenu.css</DependentUpon>
+    </Content>
     <Content Include="SenchaWorkspace\EMSPEEDExt5\sass\src\view\viewport\East.css">
       <DependentUpon>East.scss</DependentUpon>
     </Content>
@@ -4547,6 +4555,10 @@
     <Content Include="SenchaWorkspace\build\production\EMSPEEDExt5\widgets\GoogleRssPart.jsx" />
     <Content Include="SenchaWorkspace\build\production\EMSPEEDExt5\widgets\GoogleRssView.jsx" />
     <Content Include="SenchaWorkspace\build\production\EMSPEEDExt5\widgets\risks - Copy.jsx" />
+    <Content Include="SenchaWorkspace\EMSPEEDExt5\sass\src\view\dashboard\dashboardHoverMenu.scss" />
+    <Content Include="SenchaWorkspace\EMSPEEDExt5\sass\src\view\dashboard\dashboardHoverMenu.css.map">
+      <DependentUpon>dashboardHoverMenu.css</DependentUpon>
+    </Content>
     <None Include="SenchaWorkspace\EMSPEEDExt5\widgets\risks - Copy.jsx" />
     <Content Include="SenchaWorkspace\EMSPEEDExt5\widgets\risks.png" />
     <Content Include="SenchaWorkspace\EMSPEEDExt5\widgets\ngimage.png" />

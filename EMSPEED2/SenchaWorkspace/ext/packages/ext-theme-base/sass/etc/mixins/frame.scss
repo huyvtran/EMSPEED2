@@ -203,7 +203,7 @@
 
         padding: $padding-top $padding-right $padding-bottom $padding-left;
         //padding: 3px 3px 3px 3px; //mjg
-        border-width: $border-width;
+        border-width: $border-width; 
         border-style: solid;
 
         @if not is-null($background-color) {
