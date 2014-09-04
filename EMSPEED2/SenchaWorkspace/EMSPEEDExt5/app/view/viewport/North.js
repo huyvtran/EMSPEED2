@@ -34,150 +34,10 @@ Ext.define('EMSPEEDExt5.view.viewport.North', {
     },
     initComponent: function () {
 
-        // some data used in the examples
-        Ext.namespace('Ext.example');
-
-        Ext.example.states = [
-            ['AL', 'Alabama', 'The Heart of Dixie'],
-            ['AK', 'Alaska', 'The Land of the Midnight Sun'],
-            ['AZ', 'Arizona', 'The Grand Canyon State'],
-            ['AR', 'Arkansas', 'The Natural State'],
-            ['CA', 'California', 'The Golden State'],
-            ['CO', 'Colorado', 'The Mountain State'],
-            ['CT', 'Connecticut', 'The Constitution State'],
-            ['DE', 'Delaware', 'The First State'],
-            ['FL', 'Florida', 'The Sunshine State'],
-            ['GA', 'Georgia', 'The Peach State'],
-            ['HI', 'Hawaii', 'The Aloha State'],
-            ['ID', 'Idaho', 'Famous Potatoes'],
-            ['IL', 'Illinois', 'The Prairie State'],
-            ['IN', 'Indiana', 'The Hospitality State'],
-            ['IA', 'Iowa', 'The Corn State'],
-            ['KS', 'Kansas', 'The Sunflower State'],
-            ['KY', 'Kentucky', 'The Bluegrass State'],
-            ['LA', 'Louisiana', 'The Bayou State'],
-            ['ME', 'Maine', 'The Pine Tree State'],
-            ['MD', 'Maryland', 'Chesapeake State'],
-            ['MA', 'Massachusetts', 'The Spirit of America'],
-            ['MI', 'Michigan', 'Great Lakes State'],
-            ['MN', 'Minnesota', 'North Star State'],
-            ['MS', 'Mississippi', 'Magnolia State'],
-            ['MO', 'Missouri', 'Show Me State'],
-            ['MT', 'Montana', 'Big Sky Country'],
-            ['NE', 'Nebraska', 'Beef State'],
-            ['NV', 'Nevada', 'Silver State'],
-            ['NH', 'New Hampshire', 'Granite State'],
-            ['NJ', 'New Jersey', 'Garden State'],
-            ['NM', 'New Mexico', 'Land of Enchantment'],
-            ['NY', 'New York', 'Empire State'],
-            ['NC', 'North Carolina', 'First in Freedom'],
-            ['ND', 'North Dakota', 'Peace Garden State'],
-            ['OH', 'Ohio', 'The Heart of it All'],
-            ['OK', 'Oklahoma', 'Oklahoma is OK'],
-            ['OR', 'Oregon', 'Pacific Wonderland'],
-            ['PA', 'Pennsylvania', 'Keystone State'],
-            ['RI', 'Rhode Island', 'Ocean State'],
-            ['SC', 'South Carolina', 'Nothing Could be Finer'],
-            ['SD', 'South Dakota', 'Great Faces, Great Places'],
-            ['TN', 'Tennessee', 'Volunteer State'],
-            ['TX', 'Texas', 'Lone Star State'],
-            ['UT', 'Utah', 'Salt Lake State'],
-            ['VT', 'Vermont', 'Green Mountain State'],
-            ['VA', 'Virginia', 'Mother of States'],
-            ['WA', 'Washington', 'Green Tree State'],
-            ['WV', 'West Virginia', 'Mountain State'],
-            ['WI', 'Wisconsin', "America's Dairyland"],
-            ['WY', 'Wyoming', 'Like No Place on Earth']
-        ];
-
-
-        Ext.QuickTips.init();
-
-        var dateMenu = Ext.create('Ext.menu.DatePicker', {
-            handler: function (dp, date) {
-                Ext.example.msg('Date Selected', 'You choose {0}.', Ext.Date.format(date, 'M j, Y'));
-
-            }
-        });
-
-        var colorMenu = Ext.create('Ext.menu.ColorPicker', {
-            handler: function (cm, color) {
-                Ext.example.msg('Color Selected', '<span style="color:#' + color + ';">You choose {0}.</span>', color);
-            }
-        });
-
-        var store = Ext.create('Ext.data.ArrayStore', {
-            fields: ['abbr', 'state'],
-            data: Ext.example.states
-        });
-
-        var combo = Ext.create('Ext.form.field.ComboBox', {
-            hideLabel: true,
-            store: store,
-            displayField: 'state',
-            typeAhead: true,
-            queryMode: 'local',
-            triggerAction: 'all',
-            emptyText: 'Select a state...',
-            selectOnFocus: true,
-            width: 135,
-            indent: true
-        });
-
-
         var aMenu = [
-
             {
                 xtype: 'container',
-                html: '<div class="emspeed-header-submenu"><ul class="submenu-section" style:"z-index:200000;"=""><li class="emspeed-menu-heading">5 Most Recent:</li><li><a href="/sites/97366/Portal.aspx">97366 - EMSPEED 1.1 testing</a></li><li><a href="/sites/97370/Portal.aspx">97370 - EMSPEED1.1 Johnny test</a></li><li><a href="/sites/97368/Portal.aspx">97368 - EMSPEED1.1 Jon Test</a></li></ul></div>',
-            },
-
-            '-',
-            combo,                  // A Field in a Menu
-            {
-                text: 'I like Ext',
-                checked: true,       // when checked has a boolean value, it is assumed to be a CheckItem
-                //checkHandler: onItemCheck
-            },
-
-            {
-                text: 'Radio Options',
-                menu: {        // <-- submenu by nested config object
-                    items: [
-                        // stick any markup in a menu
-                        '<b class="menu-title">Choose a Theme</b>',
-                        {
-                            text: 'Aero Glass',
-                            checked: true,
-                            group: 'theme',
-                            //checkHandler: onItemCheck
-                        }, {
-                            text: 'Vista Black',
-                            checked: false,
-                            group: 'theme',
-                            //checkHandler: onItemCheck
-                        }, {
-                            text: 'Gray Theme',
-                            checked: false,
-                            group: 'theme',
-                            //checkHandler: onItemCheck
-                        }, {
-                            text: 'Default Theme',
-                            checked: false,
-                            group: 'theme',
-                            //checkHandler: onItemCheck
-                        }
-                    ]
-                }
-            },
-            {
-                text: 'Choose a Date',
-                iconCls: 'calendar',
-                menu: dateMenu // <-- submenu by reference
-            },
-            {
-                text: 'Choose a Color',
-                menu: colorMenu // <-- submenu by reference
+                html: '<div class="emspeed-header-menu"><div class="xemspeed-header-submenu"><ul class="submenu-section" style:"z-index:200000;"=""><li class="emspeed-menu-heading">5 Most Recent:</li><li><a href="/sites/97366/Portal.aspx">97366 - EMSPEED 1.1 testing</a></li><li><a href="/sites/97370/Portal.aspx">97370 - EMSPEED1.1 Johnny test</a></li><li><a href="/sites/97368/Portal.aspx">97368 - EMSPEED1.1 Jon Test</a></li></ul></div></div>'
             }
         ];
 
@@ -190,7 +50,7 @@ Ext.define('EMSPEEDExt5.view.viewport.North', {
             },
 
             { xtype: 'dashboardhovermenu', margin: '16px 10px 0px 200px', text: 'Project', active: true, menuItems: aMenu },
-            { xtype: 'dashboardhovermenu', margin: '16px 10px 0px 20px', text: 'Program', active: false, menuItems: { text: 'm2' } },
+            { xtype: 'dashboardhovermenu', margin: '16px 10px 0px 20px', text: 'Product', active: false, menuItems: aMenu },
 
 
             //{  xtype: 'contextmenudataview', margin: '6px 0px 0px 50px'  },

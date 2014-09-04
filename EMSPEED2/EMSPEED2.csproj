@@ -4446,6 +4446,7 @@
     <Content Include="SenchaWorkspace\EMSPEEDExt5\Spacetree\example5.js" />
     <Content Include="SenchaWorkspace\EMSPEEDExt5\Spacetree\jit.js" />
     <Content Include="SenchaWorkspace\EMSPEEDExt5\Spacetree\Spacetree.css" />
+    <Content Include="SenchaWorkspace\EMSPEEDExt5\test.html" />
     <Content Include="SenchaWorkspace\EMSPEEDExt5\widgets\basiclinemarker.png" />
     <Content Include="SenchaWorkspace\EMSPEEDExt5\widgets\basiclinemarker.js" />
     <Content Include="SenchaWorkspace\EMSPEEDExt5\widgets\basicline.png" />

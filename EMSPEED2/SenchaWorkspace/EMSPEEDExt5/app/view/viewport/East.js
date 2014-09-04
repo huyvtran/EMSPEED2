@@ -2,13 +2,16 @@ Ext.define('EMSPEEDExt5.view.viewport.East', {
     extend: 'Ext.tree.Panel',
     xtype: 'East',
     viewConfig: {
+        animate: true,
+        expandDuration: 2500,
+        collapseDuration: 2500,
+        bufferedRenderer: false,
         cls: 'emspeed-tree-view ',
         itemCls: 'emspeed-grid-item',
         itemSelector: 'table.emspeed-grid-item',
         selectedItemCls: 'emspeed-grid-item-selected',
         overItemCls: 'emspeed-grid-item-over'
     },
-
 
     controller: 'EastController',
     id: 'East',

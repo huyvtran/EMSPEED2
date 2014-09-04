@@ -312,7 +312,7 @@ Ext.define('Ext.tree.Panel', {
     noLinesCls: Ext.baseCSSPrefix + 'tree-no-lines',
     autoWidthCls: Ext.baseCSSPrefix + 'autowidth-table',
 
-    constructor: function(config) {
+    constructor: function (config) {
         config = config || {};
         if (config.animate === undefined) {
             config.animate = Ext.isBoolean(this.animate) ? this.animate : Ext.enableFx;

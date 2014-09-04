@@ -35,6 +35,7 @@ Ext.define('EMSPEEDExt5.view.dashboard.dashboardHoverMenu', {
 
         me.menu = Ext.create('Ext.menu.Menu', {
             btn: me,
+            height: 150,
             style: { borderTop: '0px' },
             items: me.menuItems,
             listeners: {

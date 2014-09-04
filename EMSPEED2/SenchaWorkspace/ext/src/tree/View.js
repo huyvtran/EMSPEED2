@@ -444,7 +444,7 @@ Ext.define('Ext.tree.View', {
         }
     },
 
-    onExpand: function(parent) {
+    onExpand: function (parent) {
         var me = this,
             queue = me.animQueue,
             id = parent.getId(),
