@@ -13,10 +13,6 @@ Ext.define('Ext.dashboard.Column', {
         'Ext.dashboard.Panel'
     ],
 
-    listeners: {
-        resize: 'onResize'
-    },
-
     layout: 'anchor',
 
     isDashboardColumn : true,

@@ -1,4 +1,4 @@
-Ext.define('EMSPEEDExt5.view.viewport.projectHeader', {
+Ext.define('EMSPEEDExt5.view.project.projectHeader', {
     extend: 'Ext.container.Container',
     xtype: 'projectheader',
     style: { backgroundColor: '#f5f5f5' },

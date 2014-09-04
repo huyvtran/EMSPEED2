@@ -1,26 +1,26 @@
-Ext.example = function () {
-    var msgCt;
+//Ext.example = function () {
+//    var msgCt;
 
-    function createBox(t, s) {
-        // return ['<div class="msg">',
-        //         '<div class="x-box-tl"><div class="x-box-tr"><div class="x-box-tc"></div></div></div>',
-        //         '<div class="x-box-ml"><div class="x-box-mr"><div class="x-box-mc"><h3>', t, '</h3>', s, '</div></div></div>',
-        //         '<div class="x-box-bl"><div class="x-box-br"><div class="x-box-bc"></div></div></div>',
-        //         '</div>'].join('');
-        return '<div class="msg ' + Ext.baseCSSPrefix + 'border-box"><h3>' + t + '</h3><p>' + s + '</p></div>';
-    }
-    return {
-        msg: function (title, format) {
-            if (!msgCt) {
-                msgCt = Ext.DomHelper.insertFirst(document.body, { id: 'msg-div' }, true);
-            }
-            var s = Ext.String.format.apply(String, Array.prototype.slice.call(arguments, 1));
-            var m = Ext.DomHelper.append(msgCt, createBox(title, s), true);
-            m.hide();
-            m.slideIn('t').ghost("t", { delay: 1000, remove: true });
-        }
-    };
-}();
+//    function createBox(t, s) {
+//        // return ['<div class="msg">',
+//        //         '<div class="x-box-tl"><div class="x-box-tr"><div class="x-box-tc"></div></div></div>',
+//        //         '<div class="x-box-ml"><div class="x-box-mr"><div class="x-box-mc"><h3>', t, '</h3>', s, '</div></div></div>',
+//        //         '<div class="x-box-bl"><div class="x-box-br"><div class="x-box-bc"></div></div></div>',
+//        //         '</div>'].join('');
+//        return '<div class="msg ' + Ext.baseCSSPrefix + 'border-box"><h3>' + t + '</h3><p>' + s + '</p></div>';
+//    }
+//    return {
+//        msg: function (title, format) {
+//            if (!msgCt) {
+//                msgCt = Ext.DomHelper.insertFirst(document.body, { id: 'msg-div' }, true);
+//            }
+//            var s = Ext.String.format.apply(String, Array.prototype.slice.call(arguments, 1));
+//            var m = Ext.DomHelper.append(msgCt, createBox(title, s), true);
+//            m.hide();
+//            m.slideIn('t').ghost("t", { delay: 1000, remove: true });
+//        }
+//    };
+//}();
 
 
 Ext.define('EMSPEEDExt5.view.viewport.North', {
@@ -49,8 +49,8 @@ Ext.define('EMSPEEDExt5.view.viewport.North', {
                 html: '<img src="resources/emspeed/slb.png">'
             },
 
-            { xtype: 'dashboardhovermenu', margin: '16px 10px 0px 200px', text: 'Project', active: true, menuItems: aMenu },
-            { xtype: 'dashboardhovermenu', margin: '16px 10px 0px 20px', text: 'Product', active: false, menuItems: aMenu },
+            { xtype: 'hovermenu', margin: '16px 10px 0px 200px', text: 'Project', active: true, menuItems: aMenu },
+            { xtype: 'hovermenu', margin: '16px 10px 0px 20px', text: 'Product', active: false, menuItems: aMenu },
 
 
             //{  xtype: 'contextmenudataview', margin: '6px 0px 0px 50px'  },

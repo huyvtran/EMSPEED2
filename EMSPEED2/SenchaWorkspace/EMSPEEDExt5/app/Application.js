@@ -7,11 +7,7 @@ Ext.define('EMSPEEDExt5.Application', {
 
     requires: [
         'Ext.chart.*',
-        //'EMSPEEDExt5.clonepmt.model.clonepmtHistoryModel',
-        //'Ext.app.*',
-        //'Ext.layout.container.Dashboard',
         'Ext.state.CookieProvider',
-        //'MyPackage.package.mjg',
         'EMSPEED.common.com',
         'EMSPEED.common.Marc',
         'Ext.state.LocalStorageProvider',
@@ -22,7 +18,6 @@ Ext.define('EMSPEEDExt5.Application', {
 
     views: [
     ],
-
 
     controllers: [
         'Root@EMSPEEDExt5.controller',
@@ -36,8 +31,7 @@ Ext.define('EMSPEEDExt5.Application', {
     //defaultToken: 'home',
 
     init: function () {
-
-        console.log('Application.js - init');
+        //console.log('Application.js - init');
         //mjg.test('hi');
         //marc.test('hi');
 

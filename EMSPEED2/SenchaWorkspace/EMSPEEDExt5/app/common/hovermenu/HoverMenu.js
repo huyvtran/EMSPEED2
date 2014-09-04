@@ -1,10 +1,10 @@
-Ext.define('EMSPEEDExt5.view.dashboard.dashboardHoverMenu', {
+Ext.define('EMSPEEDExt5.common.hovermenu.HoverMenu', {
     extend: 'Ext.Component',
-    xtype: 'dashboardhovermenu',
+    xtype: 'hovermenu',
 
     hideMenu: function () {
         var me = this;
-        console.log('hide');
+        //console.log('hide');
         if (me.active === false) {
             Ext.get(me.id + '-hoverMenu').removeCls('hover-icon');
         }

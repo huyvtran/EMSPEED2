@@ -1,96 +1,126 @@
 Ext.define('EMSPEEDExt5.view.dashboard.dashboardBasePanel', {
-//    extend: 'EMSPEEDExt5.view.baseclass.baseclassPanel',
     extend: 'Ext.panel.Panel',
     xtype: 'dashboardBasePanel',
-    id: 'dashboardBasePanel',
+    itemId: 'dashboardBasePanel',
+    style: { borderLeft: '0px solid #cccccc', borderTop: '1px solid #cccccc' },
     requires: [
         'Ext.dashboard.Dashboard',
-        'Ext.tip.ToolTip'
-        //'Ext.ux.google.Feeds'
+        'Ext.tip.ToolTip',
+        'Ext.sparkline.Line'
     ],
-    title: 'Dashboard',
-    bodyPadding: 10,
-    controller: 'dashboard',
-    overflowY: 'scroll',
-    overflowX: 'hidden',
+    controller: 'dashboardBasePanel',
+    layout: 'fit',
+    myToolbar: [],
+
+    listeners: {
+        afterlayout: 'onAfterLayout'
+    },
 
     initComponent: function () {
         var me = this;
         me.items = [
             {
                 xtype: 'dashboard',
-                id: 'd2',
+                height: '100%',
                 reference: 'dashboard',
-                columnWidths: [0.35,0.40,0.25],
+                columnWidths: me.dashboardLayout.columnWidths,
                 parts: com.parts,
-                defaultContent: [
-                    { type: 'stocks', widgetData: { name: 'simple', age: '25' }, columnIndex: 1, height: 200 },
-                    //{ type: 'angular', widgetData: { name: 'bobby', age: '25', div: 'bob' }, columnIndex: 0, height: 200 },
-                    { type: 'simple', widgetData: { name: 'simple', age: '25' }, columnIndex: 0, height: 200 },
-                    { type: 'list', widgetData: { name: 'simple', age: '25' }, columnIndex: 1, height: 200 },
-                    { type: 'marc', widgetData: { name: 'simple', age: '25' }, columnIndex: 2, height: 200 }
-                    //{ type: 'googlerss', widgetData: { name: 'simple', age: '25' }, columnIndex: 0, height: 200 }
-                ]
-            },
+                defaultContent: me.dashboardLayout.widgets
+            }
+        ];
 
+        var theToolbarTitle = [
+            { ui: 'emspeedglyph-toolbar', style: { fontSize: '22px' }, tooltip: 'favorite', handler: 'onFavorite', glyph: 'xf006@FontAwesome' },
+            { text: me.text, xtype: 'label', padding: '5px 0px 0px 0px', cls: 'x-panel-header-title-default' }
+        ];
+
+        var theToolbar = [
+            { ui: 'emspeedglyph-toolbar', style: {fontSize: '22px' }, tooltip: 'favorite', handler: 'onFavorite', glyph: 'xf006@FontAwesome' },
+            { text: me.text, xtype: 'label', padding: '5px 0px 0px 0px', cls: 'x-panel-header-title-default' },
+
+
+
+            //{ text: 'Get State', handler: 'onGetState', glyph: 'xf083@FontAwesome' },
+            //{ text: 'ng', handler: 'onNg' },
+            //'-',
+            //{ text: 'ClearLS', handler: 'onClearLSClick', glyph: 'xf1b8@FontAwesome' },
+            //{ text: 'Deserial', handler: 'onDeserialClick', glyph: 'xf1c0@FontAwesome' },
+            { xtype: 'tbfill' },
+	        {
+	            xtype: 'combobox',
+	            fieldLabel: 'My Layouts',
+                hidden: true,
+	            listeners: {
+	                select: function (sender, records, eOpts) {
+	                    com.startLoading();
+	                    var panel = this.up('dashboardBasePanel');
+	                    panel.removeAll(true);
+	                    $.getJSON('/api/dashboard/' + project.projectId + '/' + me.itemId + '/' + records[0].id, function (response) {
+	                        panel.add(
+                                {
+                                    xtype: 'dashboard',
+                                    height: '100%',
+                                    reference: 'dashboard',
+                                    columnWidths: response.columnWidths,
+                                    parts: com.parts,
+                                    defaultContent: response.widgets
+                                }
+                            );
+	                        com.endLoading();
+	                    });
+	                }
+	            },
+	            width: 380,
+	            labelWidth: 80,
+	            forceSelection: true,
+	            emptyText: 'Select',
+	            store: Ext.create('Ext.data.Store', {
+	                fields: ['id', 'name'],
+	                data: me.dashboardLayout.savedLayouts
+	            }),
+	            queryMode: 'local',
+	            displayField: 'name',
+	            value: me.dashboardLayout.layoutId,
+	            valueField: 'id'
+	        },
+            { text: 'New', ui: 'emspeed-toolbar', hidden: true, handler: 'onAddLayout', glyph: 'xf055@FontAwesome' },
+            { text: 'Delete', ui: 'emspeed-toolbar', hidden: true, handler: 'onDeleteLayout', margin: '0px 120px 0px 0px', glyph: 'xf00d@FontAwesome' },
+            { text: 'Add Widget', ui: 'emspeed-toolbar', hidden: true, handler: 'onAddWidget', glyph: 'xf067@FontAwesome' },
+            { text: 'Restore', ui: 'emspeed-toolbar', hidden: true, handler: 'onRestore', glyph: 'xf0e2@FontAwesome' },
+            { xtype: 'component', html: '', margin: '0px 0px 0px 30px' },
+            { ui: 'emspeedglyph-toolbar', style: { fontSize: '22px' }, tooltip: 'dashboard editing tools', handler: 'onToggleToolbar', glyph: 'xf044@FontAwesome' }
+
+            //{ xtype: 'component', html: '<i style="color:#003366;font-size:18px;margin-left: 20px;" class="fa fa-star-o fa-fw"></i>' },
+            //{ xtype: 'component', html: '<i style="color:#003366;font-size:18px;margin-left: 0px;" class="fa fa-star fa-fw"></i>' }
+
+        ];
+        me.dockedItems = [
             {
-                xtype: 'button'
+                xtype: 'toolbar',
+                dock: 'top',
+                reference: 'theToolbarTitle',
+                hidden: true,
+                items: theToolbarTitle
+            },
+            {
+                xtype: 'toolbar',
+                dock: 'top',
+                height: 40,
+                reference: 'theToolbar',
+                items: theToolbar
+            },
+            {
+                xtype: 'dashboardkpiwidgetpanel',
+                reference: 'dashboardkpiwidgetpanel',
+                dock: 'top'
+            },
+            {
+                xtype: 'dashboardproperties',
+                reference: 'properties',
+                dock: 'right'
             }
         ];
         me.callParent(arguments);
-    },
-
-    dockedItems: [
-
-        {
-            xtype: 'toolbar',
-            dock: 'right',
-            items: [
-
-                {
-                    text: 'Add New',
-                    handler: 'onAddNew'
-                }
-            ]
-
-
-        },
-
-
-
-        {
-            xtype: 'toolbar',
-            dock: 'top',
-            //border: 1,
-            items: [
-
-                {
-                    text: 'Add New',
-                    handler: 'onAddNew'
-                },
-
-                {
-                    text: 'Sencha Blog',
-                    handler: 'onAddFeedUrl',
-                    feedUrl: 'http://feeds.feedburner.com/extblog'
-                },
-
-                {
-                    text: 'Add Marc',
-                    handler: 'onAddMarc'
-                },
-
-                {
-                    text: 'Get State',
-                    handler: 'onGetState'
-                },
-
-
-                { text: 'Add', width: '100px', handler: 'onAddClick', glyph: 'xf0e4@FontAwesome' },
-                { text: 'ClearLS', width: '100px', handler: 'onClearLSClick', glyph: 'xf1c0@FontAwesome' },
-                { text: 'Deserial', width: '100px', handler: 'onDeserialClick', glyph: 'xf1c0@FontAwesome' }
-            ]
-        }
-    ]
-
+        com.endLoading();
+    }
 });

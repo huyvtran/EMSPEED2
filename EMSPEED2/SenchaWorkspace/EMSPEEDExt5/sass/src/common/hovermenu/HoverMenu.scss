@@ -1,0 +1,34 @@
+	.hover-menu {
+		font-size: 17px;
+		color: white; 
+		text-transform: uppercase;
+		text-align: center;
+        position: relative;
+
+		//left: 200px;
+		//top:3px;
+		//padding:10px;
+		//letter-spacing: -0.07em;
+		//position: absolute;
+        //border: 1px solid white;
+		//height: 42px;
+		//background-image: url('emspeed/pop_up_arrow.png');
+		//background-repeat: no-repeat;
+		//background-position: center bottom;
+		//z-index: 16000;
+        //box-shadow: inset 0 0 10px #ffffff;
+	}
+
+    .hover-icon {
+		background-image: url('emspeed/pop_up_arrow.png');
+		background-repeat: no-repeat;
+		background-position: center bottom;
+	}
+
+    .hover-active {
+        	text-shadow:    -1px 1px 8px #fff, 
+                            1px -1px 8px #fff;
+        //box-shadow: 0 0 25px #fff,
+        //            inset 0 0 50px #fff;     
+
+	}

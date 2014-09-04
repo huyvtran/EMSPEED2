@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <title></title>
+    <link href="http://localhost:501/packages/ext-theme-crisp/build/resources/ext-theme-crisp-all.css" rel="stylesheet" />
+    <link href="../bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+    <script src="../bower_components/jquery/dist/jquery.js"></script>
+    <script src="../bower_components/bootstrap/dist/js/bootstrap.js"></script>
+</head>
+<body>
+
+<script type="text/javascript" src="http://localhost:501/build/ext-all-debug.js"></script>
+<script>
+	Ext.application({
+	    name: 'EMSPEEDExt5',
+
+	    launch: function () {
+
+	        var store = Ext.create('Ext.data.TreeStore', {
+	            root: {
+	                expanded: true,
+	                children: [{
+	                    text: "detention",
+	                    leaf: true
+	                }, {
+	                    text: "homework",
+	                    expanded: true,
+	                    children: [{
+	                        text: "book report",
+	                        leaf: true
+	                    }, {
+	                        text: "alegrbra",
+	                        leaf: true
+	                    }]
+	                }, {
+	                    text: "buy lottery tickets",
+	                    leaf: true
+	                }]
+	            }
+	        });
+
+	        Ext.create('Ext.tree.Panel', {
+	            title: 'Simple Tree',
+	            width: 600,
+	            height: 800,
+	            store: store,
+	            rootVisible: false,
+	            renderTo: Ext.getBody(),
+	            animate: true,
+	            animCollapse: false,
+	            collapsible: true,
+	            //animCollapse: true,
+
+	            //expandDuration: 2500,
+	            //collapseDuration: 2500,
+	            //bufferedRenderer: false,
+
+                tools: [
+                    { xtype: 'tool' },
+                    { type: 'minimize' }
+	            ],
+
+
+	            viewConfig: {
+	                //animCollapse: 8000,
+	                animate: true,
+	                expandDuration: 2500,
+	                collapseDuration: 2500,
+	                //bufferedRenderer: false
+	            }
+
+
+	        });
+
+	    }
+	});
+</script>
+
+
+
+
+</body>
+</html>

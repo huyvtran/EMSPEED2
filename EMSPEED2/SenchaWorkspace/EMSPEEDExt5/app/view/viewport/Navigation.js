@@ -1,6 +1,6 @@
-Ext.define('EMSPEEDExt5.view.viewport.East', {
+Ext.define('EMSPEEDExt5.view.viewport.Navigation', {
     extend: 'Ext.tree.Panel',
-    xtype: 'East',
+    xtype: 'Navigation',
     viewConfig: {
         animate: true,
         expandDuration: 2500,
@@ -13,8 +13,8 @@ Ext.define('EMSPEEDExt5.view.viewport.East', {
         overItemCls: 'emspeed-grid-item-over'
     },
 
-    controller: 'EastController',
-    id: 'East',
+    controller: 'NavigationController',
+    id: 'Navigation',
 
     listeners: {
         scope: 'controller',

@@ -1,5 +1,7 @@
 Ext.define('EMSPEEDExt5.view.parts.Template', {
-    extend: 'EMSPEEDExt5.view.dashboard.dashboardPartsBase',
+    //extend: 'EMSPEEDExt5.view.dashboard.dashboardPartsBase',
+    extend: 'Ext.panel.Panel',
+
     xtype: 'template',
     requires: [
     ],

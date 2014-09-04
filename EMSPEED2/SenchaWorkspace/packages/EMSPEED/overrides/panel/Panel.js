@@ -4,5 +4,5 @@
 },
 
 function () {
-    console.log("Oh yes, my override works!");
+    //console.log("Oh yes, my override works - overrides/panel/Panel.js in EMSPEED Package");
 });

@@ -12,7 +12,6 @@
  * http://appendto.com/open-source-licenses
  */
 (function ($) {
-    console.log('MockJax');
     var _ajax = $.ajax,
 		mockHandlers = [],
 		mockedAjaxCalls = [],
@@ -552,7 +551,7 @@
                 }
             }
         },
-        logging: true,
+        logging: false,
         status: 200,
         statusText: "OK",
         responseTime: 500,

@@ -1,6 +1,6 @@
-Ext.define('EMSPEEDExt5.view.viewport.EastController', {
+Ext.define('EMSPEEDExt5.view.viewport.NavigationController', {
     extend: 'Ext.app.ViewController',
-    alias: 'controller.EastController',
+    alias: 'controller.NavigationController',
 
     config: {
         refs: {
@@ -17,7 +17,7 @@ Ext.define('EMSPEEDExt5.view.viewport.EastController', {
         }
     },
     doRoute: function (controller, route, projectId) {
-        console.log('EastController.js - doRoute');
+        //console.log('NavigationController.js - doRoute');
         var me = this;
         com.setProjectId(projectId);
         var navigation = me.getView();

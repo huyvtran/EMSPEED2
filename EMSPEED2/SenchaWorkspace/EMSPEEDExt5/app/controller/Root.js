@@ -11,6 +11,10 @@ Ext.define('EMSPEEDExt5.controller.Root', {
         'EmployeesStore'
     ],
 
+    init: function () {
+        //console.log('Root.js - init');
+    },
+
     onLaunch: function () {
 //        console.log('onLaunch in rootController');
     },
@@ -39,10 +43,6 @@ Ext.define('EMSPEEDExt5.controller.Root', {
         ':route': {
             action: 'onRouteNoProject'
         }
-        //':route': {
-        //    before: 'beforeRoute',
-        //    action: 'onRoute'
-        //}
     },
 
     config: {
@@ -60,19 +60,19 @@ Ext.define('EMSPEEDExt5.controller.Root', {
     },
 
     beforeRoute: function (route, projectId, action) {
-        console.log('Root.js - beforeRoute');
+        //console.log('Root.js - beforeRoute');
         if (project.data === undefined) {
             var me = this;
             var siteId = com.getSiteId();
             var displayTypeId = (siteId == com.flatDisplayTypeId) ? com.flatDisplayTypeId : com.hierarchicalDisplayTypeId;
             var theParms = { "contextId": parseFloat(projectId), "site": siteId, "displayType": displayTypeId };
-            console.log('Root.js - GetMasterLayout start');
+            //console.log('Root.js - GetMasterLayout start');
             com.getData({
                 service: 'UserInterfaceService',
                 method: 'GetMasterLayout',
                 params: theParms,
                 callback: function (data) {
-                    console.log('Root.js - GetMasterLayout callback');
+                    //console.log('Root.js - GetMasterLayout callback');
 
                     if (data.project != null) {
                         project.data = data.project;
@@ -129,9 +129,9 @@ Ext.define('EMSPEEDExt5.controller.Root', {
                             if (flag < arrayLength) {
                                 window.setTimeout(checkFlag, 100); /* this checks the flag every 100 milliseconds*/
                             } else {
-                                console.log('Root.js - Viewport before');
+                                //console.log('Root.js - Viewport before');
                                 me.viewport = Ext.create('EMSPEEDExt5.view.viewport.Viewport', {});
-                                console.log('Root.js - Viewport after');
+                                //console.log('Root.js - Viewport after');
                                 //Ext.getCmp('contextcontrollerBasePanel').setContextData(project);
                                 document.getElementById('divloading').style.visibility = "hidden";
                                 action.resume();
@@ -147,7 +147,7 @@ Ext.define('EMSPEEDExt5.controller.Root', {
             });
         }
         else {
-            console.log('NOT getting data');
+            //console.log('NOT getting data');
             action.resume();
         }
 
@@ -159,8 +159,8 @@ Ext.define('EMSPEEDExt5.controller.Root', {
         //action.resume();
     },
     onRoute: function (route, projectId) {
-        console.log('Root.js - onRoute');
-        console.log('Root.js - fireEvent');
+        //console.log('Root.js - onRoute');
+        //console.log('Root.js - fireEvent');
         this.fireEvent('route', this, route, projectId); //handled in eastController
         this.description = route;
     },

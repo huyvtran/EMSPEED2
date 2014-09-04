@@ -8,7 +8,7 @@ Ext.define('EMSPEEDExt5.clonepmt.controller.clonepmtController', {
     ],
 
     init: function () {
-        console.log('clonepmtController.js - init');
+        //console.log('clonepmtController.js - init');
         this.control({
             'clonepmtBasePanel': { activate: this.clonepmtBasePanel_activate },
             '#btnCreateClone': { click: this.btnCreateClone_click }

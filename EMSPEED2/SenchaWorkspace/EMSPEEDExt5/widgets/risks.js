@@ -2,6 +2,10 @@ Ext.define('widget.risks', {
     extend: 'EMSPEEDExt5.view.baseclass.baseclassWidget',
     xtype: 'risks',
 
+    requires: [
+        'Ext.form.RadioGroup'
+    ],
+
     max: null,
     all: null,
 
@@ -417,7 +421,7 @@ Ext.define('widget.risks', {
                 flex: 1,
                 height: 261,
                 hidden: true,
-                store: Ext.create('Ext.data.Store', {}),
+                store: Ext.create('Ext.data.Store', { fields: []}),
                 viewConfig: {
                     dataRetrieved: false,
                     finalRefresh: false,

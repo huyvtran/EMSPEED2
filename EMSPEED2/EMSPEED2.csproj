@@ -122,8 +122,6 @@
     <Folder Include="SenchaWorkspace\EMSPEEDExt52\app\view\login\" />
     <Folder Include="SenchaWorkspace\EMSPEEDExt52\overrides\" />
     <Folder Include="SenchaWorkspace\EMSPEEDExt52\sass\var\" />
-    <Folder Include="SenchaWorkspace\EMSPEEDExt5\app\view\login\" />
-    <Folder Include="SenchaWorkspace\EMSPEEDExt5\overrides\" />
     <Folder Include="SenchaWorkspace\EMSPEEDExt5\sass\var\" />
     <Folder Include="SenchaWorkspace\EMSPEEDTouch\app\profile\" />
     <Folder Include="SenchaWorkspace\ExecDashboard\overrides\" />
@@ -4126,8 +4124,16 @@
     <Content Include="SenchaWorkspace\build\testing\mjgApp\resources\css\style.css" />
     <Content Include="SenchaWorkspace\common\src-ext\com.js" />
     <Content Include="SenchaWorkspace\common\src-touch\com.js" />
-    <Content Include="SenchaWorkspace\EMSPEEDExt5\app\view\dashboard\dashboardHoverMenu.js" />
-    <Content Include="SenchaWorkspace\EMSPEEDExt5\app\view\dashboard\dashboardMenuItem.js" />
+    <Content Include="SenchaWorkspace\EMSPEEDExt5\app\common\panel\Header2.js" />
+    <Content Include="SenchaWorkspace\EMSPEEDExt5\app\common\hovermenu\HoverMenu.js" />
+    <Content Include="SenchaWorkspace\EMSPEEDExt5\app\view\viewport\Center.js" />
+    <Content Include="SenchaWorkspace\EMSPEEDExt5\app\view\viewport\gearMenuDataview.js" />
+    <Content Include="SenchaWorkspace\EMSPEEDExt5\app\view\viewport\Navigation.js" />
+    <Content Include="SenchaWorkspace\EMSPEEDExt5\app\view\viewport\NavigationController.js" />
+    <Content Include="SenchaWorkspace\EMSPEEDExt5\app\view\viewport\North.js" />
+    <Content Include="SenchaWorkspace\EMSPEEDExt5\app\view\project\projectHeader.js" />
+    <Content Include="SenchaWorkspace\EMSPEEDExt5\app\view\viewport\South.js" />
+    <Content Include="SenchaWorkspace\EMSPEEDExt5\app\view\viewport\Viewport.js" />
     <Content Include="SenchaWorkspace\EMSPEEDExt5\bootstrap.js" />
     <Content Include="SenchaWorkspace\EMSPEEDExt5\css\base.css" />
     <Content Include="SenchaWorkspace\EMSPEEDExt5\css\Spacetree.css" />
@@ -4180,10 +4186,6 @@
     <Content Include="SenchaWorkspace\EMSPEEDExt5\app\view\baseclass\baseclassWidgetHeader.js" />
     <Content Include="SenchaWorkspace\EMSPEEDExt5\app\view\baseclass\baseclassWidgetController.js" />
     <Content Include="SenchaWorkspace\EMSPEEDExt5\app\view\dashboard\dashboardKpiWidgetPanel.js" />
-    <Content Include="SenchaWorkspace\EMSPEEDExt5\app\view\riskmatrix\riskmatrixBasePanel - Copy.js" />
-    <Content Include="SenchaWorkspace\EMSPEEDExt5\app\view\viewport\gearMenuDataview.js" />
-    <Content Include="SenchaWorkspace\EMSPEEDExt5\app\view\viewport\contextMenuDataview.js" />
-    <Content Include="SenchaWorkspace\EMSPEEDExt5\app\view\viewport\projectHeader.js" />
     <Content Include="SenchaWorkspace\EMSPEEDExt5\css\bootstrap.css" />
     <Content Include="SenchaWorkspace\EMSPEEDExt5\js\angular-mocks.js" />
     <Content Include="SenchaWorkspace\EMSPEEDExt5\js\angular.js" />
@@ -4225,27 +4227,16 @@
     <Content Include="SenchaWorkspace\EMSPEEDExt5\app\view\binding\bindingBasePanel.js" />
     <Content Include="SenchaWorkspace\EMSPEEDExt5\app\view\binding\bindingBasePanelController.js" />
     <Content Include="SenchaWorkspace\EMSPEEDExt5\app\view\binding\bindingViewModel.js" />
-    <Content Include="SenchaWorkspace\EMSPEEDExt5\app\view\contextcontroller\contextcontrollerBasePanel.js" />
-    <Content Include="SenchaWorkspace\EMSPEEDExt5\app\view\dashboard2\dashboard2BasePanel.js" />
-    <Content Include="SenchaWorkspace\EMSPEEDExt5\app\view\dashboard2\dashboard2BasePanelController.js" />
-    <Content Include="SenchaWorkspace\EMSPEEDExt5\app\view\dashboard3\dashboard3BasePanel.js" />
-    <Content Include="SenchaWorkspace\EMSPEEDExt5\app\view\dashboard3\dashboard3BasePanelController.js" />
-    <Content Include="SenchaWorkspace\EMSPEEDExt5\app\view\dashboard3\dashboard3BasePanelModel.js" />
     <Content Include="SenchaWorkspace\EMSPEEDExt5\app\view\dashboard\dashboardProperties.js" />
     <Content Include="SenchaWorkspace\EMSPEEDExt5\app\view\dashboard\dashboardPropertiesController.js" />
-    <Content Include="SenchaWorkspace\EMSPEEDExt5\app\view\dashboard\dashboardWidgetInfoPanel.js" />
-    <Content Include="SenchaWorkspace\EMSPEEDExt5\app\view\dashboard\dashboardWidgetBrowser.js" />
+    <Content Include="SenchaWorkspace\EMSPEEDExt5\app\view\dashboard\dashboardAddWidgetInfoPanel.js" />
+    <Content Include="SenchaWorkspace\EMSPEEDExt5\app\view\dashboard\dashboardAddWidgetBrowser.js" />
     <Content Include="SenchaWorkspace\EMSPEEDExt5\app\view\dashboard\dashboardAddWidgetDialog.js" />
-    <Content Include="SenchaWorkspace\EMSPEEDExt5\app\view\dashboard\dashboardRootController.js" />
-    <Content Include="SenchaWorkspace\EMSPEEDExt5\app\view\dashboard\dashboardRoot.js" />
-    <Content Include="SenchaWorkspace\EMSPEEDExt5\app\view\dashboard\dashboardBasePanel.js" />
     <Content Include="SenchaWorkspace\EMSPEEDExt5\app\view\dashboard\dashboardBasePanelController.js" />
-    <Content Include="SenchaWorkspace\EMSPEEDExt5\app\view\dashboard\dashboardPartsBase.js" />
+    <Content Include="SenchaWorkspace\EMSPEEDExt5\app\view\dashboard\dashboardBasePanel.js" />
     <Content Include="SenchaWorkspace\EMSPEEDExt5\app\view\grid\gridBaseView.js" />
     <Content Include="SenchaWorkspace\EMSPEEDExt5\app\view\grid\gridBaseViewController.js" />
     <Content Include="SenchaWorkspace\EMSPEEDExt5\app\view\grid\gridModel.js" />
-    <Content Include="SenchaWorkspace\EMSPEEDExt5\app\view\kpi\kpiBasePanel.js" />
-    <Content Include="SenchaWorkspace\EMSPEEDExt5\app\view\kpi\kpiBasePanelController.js" />
     <Content Include="SenchaWorkspace\EMSPEEDExt5\app\view\main\Main.js" />
     <Content Include="SenchaWorkspace\EMSPEEDExt5\app\view\main\MainController.js" />
     <Content Include="SenchaWorkspace\EMSPEEDExt5\app\view\main\MainModel.js" />
@@ -4258,31 +4249,15 @@
     <Content Include="SenchaWorkspace\EMSPEEDExt5\app\view\parts\subprojects\Subprojects.js" />
     <Content Include="SenchaWorkspace\EMSPEEDExt5\app\view\parts\Template.js" />
     <Content Include="SenchaWorkspace\EMSPEEDExt5\app\view\project\project.js" />
-    <Content Include="SenchaWorkspace\EMSPEEDExt5\app\view\reporting\reportingBasePanel.js" />
-    <Content Include="SenchaWorkspace\EMSPEEDExt5\app\view\reporting\reportingBasePanelController.js" />
-    <Content Include="SenchaWorkspace\EMSPEEDExt5\app\view\riskmatrix\riskmatrixBasePanel.js" />
-    <Content Include="SenchaWorkspace\EMSPEEDExt5\app\view\riskmatrix\riskmatrixBasePanelController.js" />
-    <Content Include="SenchaWorkspace\EMSPEEDExt5\app\view\viewport\Center.js" />
-    <Content Include="SenchaWorkspace\EMSPEEDExt5\app\view\viewport\East.js" />
-    <Content Include="SenchaWorkspace\EMSPEEDExt5\app\view\viewport\EastController.js" />
-    <Content Include="SenchaWorkspace\EMSPEEDExt5\app\view\viewport\Menu.js" />
-    <Content Include="SenchaWorkspace\EMSPEEDExt5\app\view\viewport\North.js" />
-    <Content Include="SenchaWorkspace\EMSPEEDExt5\app\view\viewport\NorthModel.js" />
-    <Content Include="SenchaWorkspace\EMSPEEDExt5\app\view\viewport\projectNavigation.js" />
-    <Content Include="SenchaWorkspace\EMSPEEDExt5\app\view\viewport\projectNavigationController.js" />
-    <Content Include="SenchaWorkspace\EMSPEEDExt5\app\view\viewport\South.js" />
-    <Content Include="SenchaWorkspace\EMSPEEDExt5\app\view\viewport\Viewport.js" />
-    <Content Include="SenchaWorkspace\EMSPEEDExt5\app\view\viewport\ViewportController.js" />
     <Content Include="SenchaWorkspace\EMSPEEDExt5\bootstrap.css" />
     <Content Include="SenchaWorkspace\EMSPEEDExt5\build.xml" />
-    <Content Include="SenchaWorkspace\EMSPEEDExt5\dashboard\Column.js" />
-    <Content Include="SenchaWorkspace\EMSPEEDExt5\dashboard\Dashboard.js" />
-    <Content Include="SenchaWorkspace\EMSPEEDExt5\dashboard\DropZone.js" />
-    <Content Include="SenchaWorkspace\EMSPEEDExt5\dashboard\Panel.js" />
-    <Content Include="SenchaWorkspace\EMSPEEDExt5\dashboard\Part.js" />
     <Content Include="SenchaWorkspace\EMSPEEDExt5\index.html" />
     <Content Include="SenchaWorkspace\EMSPEEDExt5\mock.js" />
     <Content Include="SenchaWorkspace\EMSPEEDExt5\css\chooser.css" />
+    <Content Include="SenchaWorkspace\EMSPEEDExt5\overrides\dashboard\Part.js" />
+    <Content Include="SenchaWorkspace\EMSPEEDExt5\overrides\dashboard\Panel.js" />
+    <Content Include="SenchaWorkspace\EMSPEEDExt5\overrides\dashboard\Column.js" />
+    <Content Include="SenchaWorkspace\EMSPEEDExt5\overrides\dashboard\Dashboard.js" />
     <Content Include="SenchaWorkspace\EMSPEEDExt5\resources\emspeed\ContextUpArrow.png" />
     <Content Include="SenchaWorkspace\EMSPEEDExt5\resources\emspeed\ContextUpArrowOver.png" />
     <Content Include="SenchaWorkspace\EMSPEEDExt5\resources\emspeed\emspeed.png" />
@@ -4409,23 +4384,29 @@
     <Content Include="SenchaWorkspace\EMSPEEDExt5\sass\src\view\contextcontroller\contextcontrollerBasePanel.min.css">
       <DependentUpon>contextcontrollerBasePanel.css</DependentUpon>
     </Content>
-    <Content Include="SenchaWorkspace\EMSPEEDExt5\sass\src\view\dashboard\dashboardHoverMenu.css">
-      <DependentUpon>dashboardHoverMenu.scss</DependentUpon>
+    <Content Include="SenchaWorkspace\EMSPEEDExt5\sass\src\common\hovermenu\HoverMenu.css">
+      <DependentUpon>HoverMenu.scss</DependentUpon>
     </Content>
-    <Content Include="SenchaWorkspace\EMSPEEDExt5\sass\src\view\dashboard\dashboardHoverMenu.min.css">
-      <DependentUpon>dashboardHoverMenu.css</DependentUpon>
+    <Content Include="SenchaWorkspace\EMSPEEDExt5\sass\src\common\hovermenu\HoverMenu.min.css">
+      <DependentUpon>HoverMenu.css</DependentUpon>
     </Content>
-    <Content Include="SenchaWorkspace\EMSPEEDExt5\sass\src\view\viewport\East.css">
-      <DependentUpon>East.scss</DependentUpon>
+    <Content Include="SenchaWorkspace\EMSPEEDExt5\sass\src\view\viewport\Navigation.css">
+      <DependentUpon>Navigation.scss</DependentUpon>
     </Content>
-    <Content Include="SenchaWorkspace\EMSPEEDExt5\sass\src\view\viewport\East.min.css">
-      <DependentUpon>East.css</DependentUpon>
+    <Content Include="SenchaWorkspace\EMSPEEDExt5\sass\src\view\viewport\Navigation.min.css">
+      <DependentUpon>Navigation.css</DependentUpon>
     </Content>
     <Content Include="SenchaWorkspace\EMSPEEDExt5\sass\src\view\viewport\North.css">
       <DependentUpon>North.scss</DependentUpon>
     </Content>
     <Content Include="SenchaWorkspace\EMSPEEDExt5\sass\src\view\viewport\North.min.css">
       <DependentUpon>North.css</DependentUpon>
+    </Content>
+    <Content Include="SenchaWorkspace\EMSPEEDExt5\sass\src\view\viewport\South.css">
+      <DependentUpon>South.scss</DependentUpon>
+    </Content>
+    <Content Include="SenchaWorkspace\EMSPEEDExt5\sass\src\view\viewport\South.min.css">
+      <DependentUpon>South.css</DependentUpon>
     </Content>
     <Content Include="SenchaWorkspace\EMSPEEDExt5\sass\src\view\viewport\Viewport.css">
       <DependentUpon>Viewport.scss</DependentUpon>
@@ -4456,12 +4437,12 @@
     <Content Include="SenchaWorkspace\EMSPEEDExt5\widgets\nghelloworld.js" />
     <Content Include="SenchaWorkspace\EMSPEEDExt5\widgets\riskmatrix.js" />
     <Content Include="SenchaWorkspace\EMSPEEDExt5\widgets\riskmatrix.png" />
-    <Content Include="SenchaWorkspace\EMSPEEDExt5\sass\src\view\viewport\contextMenuDataview.scss" />
+    <Content Include="SenchaWorkspace\EMSPEEDExt5\sass\src\view\viewport\gearMenuDataview.scss" />
     <Content Include="SenchaWorkspace\EMSPEEDExt5\sass\src\view\contextcontroller\contextcontrollerBasePanel.css.map">
       <DependentUpon>contextcontrollerBasePanel.css</DependentUpon>
     </Content>
-    <Content Include="SenchaWorkspace\EMSPEEDExt5\sass\src\view\viewport\East.css.map">
-      <DependentUpon>East.css</DependentUpon>
+    <Content Include="SenchaWorkspace\EMSPEEDExt5\sass\src\view\viewport\Navigation.css.map">
+      <DependentUpon>Navigation.css</DependentUpon>
     </Content>
     <Content Include="SenchaWorkspace\EMSPEEDExt5\sass\src\view\viewport\North.css.map">
       <DependentUpon>North.css</DependentUpon>
@@ -4556,9 +4537,12 @@
     <Content Include="SenchaWorkspace\build\production\EMSPEEDExt5\widgets\GoogleRssPart.jsx" />
     <Content Include="SenchaWorkspace\build\production\EMSPEEDExt5\widgets\GoogleRssView.jsx" />
     <Content Include="SenchaWorkspace\build\production\EMSPEEDExt5\widgets\risks - Copy.jsx" />
-    <Content Include="SenchaWorkspace\EMSPEEDExt5\sass\src\view\dashboard\dashboardHoverMenu.scss" />
-    <Content Include="SenchaWorkspace\EMSPEEDExt5\sass\src\view\dashboard\dashboardHoverMenu.css.map">
-      <DependentUpon>dashboardHoverMenu.css</DependentUpon>
+    <Content Include="SenchaWorkspace\EMSPEEDExt5\sass\src\common\hovermenu\HoverMenu.scss" />
+    <Content Include="SenchaWorkspace\EMSPEEDExt5\sass\src\common\hovermenu\HoverMenu.css.map">
+      <DependentUpon>HoverMenu.css</DependentUpon>
+    </Content>
+    <Content Include="SenchaWorkspace\EMSPEEDExt5\sass\src\view\viewport\South.css.map">
+      <DependentUpon>South.css</DependentUpon>
     </Content>
     <None Include="SenchaWorkspace\EMSPEEDExt5\widgets\risks - Copy.jsx" />
     <Content Include="SenchaWorkspace\EMSPEEDExt5\widgets\risks.png" />
@@ -12511,7 +12495,6 @@
     <Content Include="SenchaWorkspace\ext\src\menu\Separator.js" />
     <Content Include="SenchaWorkspace\ext\src\panel\Bar.js" />
     <Content Include="SenchaWorkspace\ext\src\panel\DD.js" />
-    <Content Include="SenchaWorkspace\EMSPEEDExt5\app\view\dashboard\Header2.js" />
     <Content Include="SenchaWorkspace\ext\src\panel\Header.js" />
     <Content Include="SenchaWorkspace\ext\src\panel\Panel.js" />
     <Content Include="SenchaWorkspace\ext\src\panel\Pinnable.js" />
@@ -12941,6 +12924,16 @@
     <Content Include="SenchaWorkspace\mjgApp\resources\startup\768x1004.png" />
     <Content Include="SenchaWorkspace\packages\EMSPEED\overrides\grid\Panel.js" />
     <Content Include="SenchaWorkspace\packages\EMSPEED\overrides\ux\ajax\SimManager.js" />
+    <Content Include="SenchaWorkspace\packages\ext-theme-emspeed\resources\images\button\emspeed-toolbar-small-arrow-rtl.png" />
+    <Content Include="SenchaWorkspace\packages\ext-theme-emspeed\resources\images\button\emspeedglyph-toolbar-small-arrow-rtl.png" />
+    <Content Include="SenchaWorkspace\packages\ext-theme-emspeed\resources\images\button\emspeed-toolbar-small-s-arrow-rtl.png" />
+    <Content Include="SenchaWorkspace\packages\ext-theme-emspeed\resources\images\button\emspeedglyph-toolbar-small-s-arrow-rtl.png" />
+    <Content Include="SenchaWorkspace\packages\ext-theme-emspeed\resources\images\button\emspeed-toolbar-small-arrow.png" />
+    <Content Include="SenchaWorkspace\packages\ext-theme-emspeed\resources\images\button\emspeedglyph-toolbar-small-arrow.png" />
+    <Content Include="SenchaWorkspace\packages\ext-theme-emspeed\resources\images\button\emspeed-toolbar-small-s-arrow.png" />
+    <Content Include="SenchaWorkspace\packages\ext-theme-emspeed\resources\images\button\emspeed-toolbar-small-s-arrow-b.png" />
+    <Content Include="SenchaWorkspace\packages\ext-theme-emspeed\resources\images\button\emspeedglyph-toolbar-small-s-arrow-b.png" />
+    <Content Include="SenchaWorkspace\packages\ext-theme-emspeed\resources\images\button\emspeedglyph-toolbar-small-s-arrow.png" />
     <Content Include="SenchaWorkspace\packages\EMSPEED\src\ajaxProxy.js" />
     <Content Include="SenchaWorkspace\packages\EMSPEED\src\com.js" />
     <Content Include="SenchaWorkspace\common\src\data.js" />
@@ -17661,10 +17654,8 @@
     <Content Include="SenchaWorkspace\EMSPEEDExt5\sass\src\view\contextcontroller\contextcontrollerBasePanel.scss" />
     <Content Include="SenchaWorkspace\EMSPEEDExt5\sass\src\view\dashboard\dashboardBasePanel.scss" />
     <Content Include="SenchaWorkspace\EMSPEEDExt5\sass\src\view\parts\riskmatrix\Riskmatrix.scss" />
-    <Content Include="SenchaWorkspace\EMSPEEDExt5\sass\src\view\viewport\East.scss" />
-    <Content Include="SenchaWorkspace\EMSPEEDExt5\sass\src\view\viewport\Menu.scss" />
+    <Content Include="SenchaWorkspace\EMSPEEDExt5\sass\src\view\viewport\Navigation.scss" />
     <Content Include="SenchaWorkspace\EMSPEEDExt5\sass\src\view\viewport\North.scss" />
-    <Content Include="SenchaWorkspace\EMSPEEDExt5\sass\src\view\viewport\projectNavigation.scss" />
     <Content Include="SenchaWorkspace\EMSPEEDExt5\sass\src\view\viewport\South.scss" />
     <Content Include="SenchaWorkspace\EMSPEEDExt5\sass\src\view\viewport\Viewport.scss" />
     <Content Include="SenchaWorkspace\ext\.sencha\package\build.properties" />

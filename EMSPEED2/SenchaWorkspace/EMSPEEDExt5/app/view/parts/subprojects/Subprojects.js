@@ -1,5 +1,6 @@
 Ext.define('EMSPEEDExt5.view.parts.subprojects.Subprojects', {
-    extend: 'EMSPEEDExt5.view.dashboard.dashboardPartsBase',
+    extend: 'Ext.panel.Panel',
+    //extend: 'EMSPEEDExt5.view.dashboard.dashboardPartsBase',
     xtype: 'subprojects',
 
     initComponent: function () {

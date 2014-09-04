@@ -9,9 +9,9 @@ Ext.define('EMSPEEDExt5.view.viewport.Viewport', {
     layout: 'border',
     items: [
         { region: 'north', xtype: 'North' },
-        //{ region: 'east', xtype: 'projectNavigation' },
+        { region: 'west',  xtype: 'Navigation' },
         { region: 'center', xtype: 'Center' },
-        { region: 'west',  xtype: 'East' },
+        //{ region: 'east', xtype: 'projectNavigation' },
         { region: 'south', xtype: 'South' }
     ]
 });

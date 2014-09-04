@@ -1,8 +1,8 @@
 {
   "version": 3,
-  "file": "dashboardHoverMenu.css",
+  "file": "HoverMenu.css",
   "sources": [
-    "dashboardHoverMenu.scss"
+    "HoverMenu.scss"
   ],
   "names": [],
   "mappings": "AAAA;EACE,WAAW;EACX,OAAO;EACP,gBAAgB;EAChB,YAAY;EACN,UAAU;;AAgBlB;EACE,kBAAkB;EAClB,mBAAmB;EACnB,qBAAqB;;AAGvB;EACS,aAA6B"
