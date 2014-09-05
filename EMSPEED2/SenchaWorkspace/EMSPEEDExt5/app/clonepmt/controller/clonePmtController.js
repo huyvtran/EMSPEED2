@@ -16,7 +16,6 @@ Ext.define('EMSPEEDExt5.clonepmt.controller.clonepmtController', {
     },
 
     clonepmtBasePanel_activate: function (panel, e, eOpts) {
-        console.log('clonepmtBasePanel_activate');
         Ext.getCmp('txtPmtCloneName').reset();
         Ext.getCmp('txtNewPmtCloneName').reset();
         this.getData();

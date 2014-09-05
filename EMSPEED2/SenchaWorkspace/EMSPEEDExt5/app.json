@@ -110,12 +110,24 @@
      *          //
      *          "bootstrap": false   // OPTIONAL
      *      }
+
+
      */
     "js": [
 
-        {
-            "path": "js/error.js", "includeInBundle": true
-        },
+
+
+
+
+        { "path": "js/error.js", "includeInBundle": true },
+
+        { "path": "js/angular.min.js", "includeInBundle": true },
+        { "path": "ngApp.js", "includeInBundle": true },
+        { "path": "ngAppM.js", "includeInBundle": true },
+
+        { "path": "js/jquery.js", "includeInBundle": true },
+        { "path": "js/jquery.mockjax.js", "includeInBundle": true },
+        { "path": "mock.js", "includeInBundle": true },
         {
             "path": "app.js",
             "bundle": true
@@ -149,9 +161,8 @@
      */
     "css": [
 
-        {
-            "path": "resources/font-awesome-4.1.0/css/font-awesome.css"
-        },
+        { "path": "css/bootstrap.css" },
+        { "path": "resources/font-awesome-4.1.0/css/font-awesome.css" },
         {
             "path": "bootstrap.css",
             "bootstrap": true
@@ -177,7 +188,7 @@
         /**
          * List of items in the FALLBACK section
          */
-        "fallback": []
+        "fallback": [ ]
     },
 
     /**
@@ -211,17 +222,17 @@
             }
         ]
     },
-    
+
     /**
      * override objects for setting build environment specific 
      * settings.
      */
     "production": {
     },
-    
+
     "testing": {
     },
-    
+
     "development": {
     },
 

@@ -16,9 +16,6 @@ Ext.define('EMSPEEDExt5.common.panel.Header2', {
             tools[i].setHidden(true);
         }
     },
-    //onMouseDown: function () {
-    //    console.log('onMouseDown');
-    //},
     onRender: function () {
         var me = this;
         me.callParent(arguments);
@@ -26,7 +23,6 @@ Ext.define('EMSPEEDExt5.common.panel.Header2', {
             scope: me,
             mouseover: me.onMouseOver,
             mouseout: me.onMouseOut
-            //mousedown: me.onMouseDown
         };
         btn = me.el;
         me.mon(btn, btnListeners);

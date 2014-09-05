@@ -1,76 +1,43 @@
 .x-tree-icon { display: none !important; }
 
-
-
-/*.emspeed-tree-view {
-    color: white;
-    background-color:  $color;
-}
-.emspeed-grid-item {
-    color: $color-background;
-    background-color: $color;
-}
-.emspeed-grid-item.emspeed-grid-item-selected {
-    color: $color;
-    background-color: white;
-    border-top: 1px solid white;
-    border-bottom: 1px solid white;
-}
-.emspeed-grid-item.emspeed-grid-item-over {
-    color: $color-light10;
-    background-color: white;
-}
-.emspeed-grid-item .x-grid-item-focused {
-    color: $color;
-    background-color: white;
-    border-top: 0 solid white;
-    border-bottom: 0 solid white;
-}
-.collapsed {
-    border-right: 1px solid #cccccc;
-    background-color: $color;
-}*/
-
 .emspeed-tree-view {
-    color: white;
-    background-color: $color-background;
+    color: $color-white;
+    background-color: $color-slb-gray;
 }
 .emspeed-grid-item {
-    color: $color;
-    background-color: $color-background;
+    color: $color-slb-blue;
+    background-color: $color-slb-gray;
     border-top: 0;
     border-bottom: 0;
-    border-color: $color;
-    outline-color: $color;
+    border-color: $color-slb-blue;
+    outline-color: $color-slb-blue;
 }
 .emspeed-grid-item.emspeed-grid-item-selected {
-    color: #ffffff;
-    background-color: $color;
+    color: $color-white;
+    background-color: $color-slb-blue;
     border-top: 0;
     border-bottom: 0;
 }
 .emspeed-grid-item.emspeed-grid-item-over {
-    color: white;
-    background-color: $color-light10;
+    color: $color-white;
+    background-color: $color-emspeed-blue;
     border-top: 0;
     border-bottom: 0;
 }
 .emspeed-grid-item .x-grid-item-focused {
-    color: white;
-    background-color: $color;
+    color: $color-white;
+    background-color: $color-slb-blue;
     border-top: 0;
     border-bottom: 0;
 }
 .collapsed {
-    border-right: 1px solid #cccccc;
+    border-right: 1px solid $color-slb-line;
 }
 
-*:focus {
+/**:focus {
     outline: 0;
 }
 
-
-
 .x-tool {
     top: 0
-}
+}*/

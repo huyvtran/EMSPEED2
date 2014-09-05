@@ -1,0 +1,45 @@
+
+.emspeed-error-page {
+    width: 700px;
+    height: 275px;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -125px 0 0 -300px;
+    border: 1px solid #960000;
+    border-radius: 3px;
+}
+
+.emspeed-error-page h3 {
+    font-family: verdana;
+    color: #ffffff;
+    font-size: 15px;
+    background-color: #960000;
+    padding: 5px;
+    text-align: center;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+.error-table {
+    overflow: auto;
+}
+
+.error-table table {
+    border-spacing: 0;
+    border-collapse: collapse;
+    white-space: pre-wrap;
+    font-size: 11px;
+    color: #4d4d4d;
+    margin-top: 12px;
+}
+
+.error-table table th {
+    text-align: right;
+}
+
+.error-table table td,
+.error-table table th {
+    padding: 4px 6px;
+}

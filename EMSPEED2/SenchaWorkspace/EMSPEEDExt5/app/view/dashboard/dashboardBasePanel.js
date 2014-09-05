@@ -2,7 +2,8 @@ Ext.define('EMSPEEDExt5.view.dashboard.dashboardBasePanel', {
     extend: 'Ext.panel.Panel',
     xtype: 'dashboardBasePanel',
     itemId: 'dashboardBasePanel',
-    style: { borderLeft: '0px solid #cccccc', borderTop: '1px solid #cccccc' },
+    //    style: { borderLeft: '0px solid #cccccc', borderTop: '0px solid #cccccc' },
+    border: 0,
     requires: [
         'Ext.dashboard.Dashboard',
         'Ext.tip.ToolTip',

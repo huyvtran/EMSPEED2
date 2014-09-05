@@ -1,10 +1,21 @@
-$line-color: #f5f5f5;
-
+.headernonhover {
+    background-color: white;
+}
+.headerhover {
+    @include background-gradient(#f5f5f5, bevel, top);
+}
 
 .x-docked-top {
   border-bottom-width: 1px !important;
+  border-color: $color-slb-gray;
 }
 
-.toolbar {
-	border-top: 1px solid darken($line-color, 5);
+.x-toolbar-docked-top {
+	border-bottom: 1px solid $color-slb-gray;
+}
+.x-panel-docked-top {
+	border-bottom: 1px solid $color-slb-gray;
+}
+.x-container-docked-top {
+	border-bottom: 1px solid $color-slb-line;
 }

@@ -2,7 +2,7 @@ Ext.define('EMSPEEDExt5.view.baseclass.baseclassPanel', {
     extend: 'Ext.panel.Panel',
     xtype: 'baseclassPanel',
     bodyPadding: 10,
-    style: { borderLeft: '1px solid #cccccc', borderTop: '1px solid #cccccc' },
+    style: { borderLeft: '0px solid #cccccc', borderTop: '0px solid #cccccc' },
     toolbar: [],
 
     setTheTitle: function(title) {
