@@ -152,6 +152,7 @@
      */
     "css": [
 
+        { "path": "css/animate.css" },
         { "path": "css/bootstrap.css" },
         { "path": "resources/font-awesome-4.1.0/css/font-awesome.css" },
         {

@@ -2,16 +2,16 @@ Ext.define('EMSPEEDExt5.view.dashboard.dashboardBasePanelController', {
     extend: 'Ext.app.ViewController',
     alias: 'controller.dashboardBasePanel',
 
-    onNg: function () {
-        var $theDiv = $('#Test');
-        var controllerScope = angular.element($theDiv).scope();
-        var $injector = angular.injector(['ng', 'app']);
-        $injector.invoke(function ($compile) {
-            controllerScope.$apply(function () {
-                $compile($theDiv)(controllerScope);
-            })
-        });
-    },
+    //onNg: function () {
+    //    var $theDiv = $('#Test');
+    //    var controllerScope = angular.element($theDiv).scope();
+    //    var $injector = angular.injector(['ng', 'app']);
+    //    $injector.invoke(function ($compile) {
+    //        controllerScope.$apply(function () {
+    //            $compile($theDiv)(controllerScope);
+    //        })
+    //    });
+    //},
 
     //onFavorite: function () {
     //    alert('dashboardBasePanelController - onGlyph2');
@@ -62,10 +62,7 @@ Ext.define('EMSPEEDExt5.view.dashboard.dashboardBasePanelController', {
     },
 
     onToggleToolbar: function (sender) {
-
         var toolbar = sender.up('toolbar');
-
-
         //var fa = '';
         if (sender.glyph === 'xf044@FontAwesome') {
             sender.setGlyph('xf040@FontAwesome');
@@ -83,9 +80,7 @@ Ext.define('EMSPEEDExt5.view.dashboard.dashboardBasePanelController', {
             toolbar.items.items[4].hide();
             toolbar.items.items[3].hide();
         }
-
     },
-
 
     onFavorite: function (sender) {
         var addOrRemove = '';
@@ -103,7 +98,6 @@ Ext.define('EMSPEEDExt5.view.dashboard.dashboardBasePanelController', {
                 theType = 'Widget';
                 theTitle = parent.title;
                 break;
-
             default:
         }
 
@@ -150,7 +144,7 @@ Ext.define('EMSPEEDExt5.view.dashboard.dashboardBasePanelController', {
         alert('to be implemented...');
     },
     onAddWidget: function () {
-        var margin = 10;
+        var margin = 200;
         Ext.create("EMSPEEDExt5.view.dashboard.dashboardAddWidgetDialog", { rootView: this.lookupReference('dashboard'), width: window.innerWidth - margin, height: window.innerHeight - margin }).show();
     },
 

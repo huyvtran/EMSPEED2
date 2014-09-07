@@ -9,7 +9,7 @@ $.mockjax({
             { "type": "spacetree", "extension": "js", "height": 200, "widgetDataDef": { "projectId": "97366" }, title: 'Risk Matrix', description: 'this is the description' },
             { "type": "riskmatrix", "extension": "js", "height": 200, "widgetDataDef": { "projectId": "97366" }, title: 'Risk Matrix', description: 'this is the description' },
             { "type": "risks", "extension": "js", "height": 200, "widgetDataDef": { "projectId": "97366" }, title: 'Risk Matrix', description: 'this is the description' },
-            { "type": "nghelloworld", "extension": "js", "height": 200, "widgetDataDef": { "url": "resources/images/widgets/barchart.png", "age": "a", "marc": "m" }, title: 'nghelloworld', description: 'nghelloworld' },
+            { "type": "nghelloworld", "extension": "js", "height": 200, "widgetDataDef": { text: 'Name Here' }, title: 'nghelloworld', description: 'nghelloworld' },
             { "type": "imageviewer", "extension": "js", "height": 200, "widgetDataDef": { "url": "resources/images/widgets/barchart.png", "age": "a", "marc": "m" }, title: 'Image Viewer', description: 'this is the description' },
             { "type": "ngimage", "extension": "js", "height": 500, "widgetDataDef": { "name": "n", "age": "a", "marc": "m" }, title: 'Angular Image Viewer', description: 'this is the description' },
             { "type": "ngdirective", "extension": "js", "height": 500, "widgetDataDef": { "name": "n", "age": "a", "marc": "m" }, title: 'Angular Directive', description: 'this is the description' },
@@ -44,11 +44,10 @@ $.mockjax({
                             ],
                             columnWidths: [0.35, 0.65, 1],
                             widgets: [
-                                { type: 'basiclinemarker', widgetData: { name: 'basic', age: '8' }, columnIndex: 0, height: 535 },
+                                { type: 'ngdirective', widgetData: { title: 'My ole Alerts', name: 'list', age: '8' }, columnIndex: 0, height: 500 },
                                 { type: "risks", "widgetData": { "projectId": "97366" }, columnIndex: 1, height: 500 },
-                                { type: 'simple', widgetData: { name: 'simple', age: '8' }, columnIndex: 2, height: 200 },
-                                { type: 'basicline', widgetData: { name: 'basic', age: '8' }, columnIndex: 2, height: 200 }
-            ]
+                                { type: 'basiclinemarker', widgetData: { name: 'basic', age: '8' }, columnIndex: 2, height: 200 }
+                            ]
                         };
                         break;
                     case '2':
@@ -99,9 +98,10 @@ $.mockjax({
                     ],
                     columnWidths: [0.35, 0.65, 1],
                     widgets: [
-                        { type: 'ngdirective', widgetData: { title: 'My ole Alerts', name: 'list', age: '8' }, columnIndex: 0, height: 950 },
+                        { type: 'ngdirective', widgetData: { title: 'My ole Alerts', name: 'list', age: '8' }, columnIndex: 0, height: 500 },
                         { type: 'nghelloworld', widgetData: { text: 'Marc' }, columnIndex: 1, height: 100 },
                         { type: 'nghelloworld', widgetData: { text: 'Nick' }, columnIndex: 1, height: 50 },
+                        { type: 'nganimate', widgetData: { text: 'Nick' }, columnIndex: 1, height: 50 },
                         { type: 'imageviewer', widgetData: { title: 'Sample Bar Chart', "url": "resources/images/widgets/barchart.png" }, columnIndex: 1, height: 200 },
                         //{ type: 'stocks', widgetData: { name: 'Stock Ticker', age: '8' }, columnIndex: 1, height: 300 },
                         { type: 'simple', widgetData: { title: 'Demo of a full length widget', name: 'list', age: '8' }, columnIndex: 2, height: 200 }

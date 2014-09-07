@@ -1,7 +1,6 @@
 Ext.define('widget.ngdirective', {
     extend: 'EMSPEEDExt5.view.baseclass.baseclassWidget',
     statics: {
-        addStyles: function (styles) { this.callParent(arguments);},
         angularCode: function (xclass) {
             var controller = xclass + 'Controller';
             var service = xclass + 'Service';
@@ -68,7 +67,8 @@ Ext.define('widget.ngdirective', {
 
 
 //*********************************************************** do not modify below this line
-        }
+        },
+        addStyles: function (styles) { this.callParent(arguments); }
     },
 },
 function (o) {

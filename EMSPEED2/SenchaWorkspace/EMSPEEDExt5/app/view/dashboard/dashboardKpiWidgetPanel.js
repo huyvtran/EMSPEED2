@@ -5,8 +5,7 @@ Ext.define('EMSPEEDExt5.view.dashboard.dashboardKpiWidgetPanel', {
     height: 50,
     layout: 'hbox',
     style: {
-        borderBottomWidth: '1px',
-        borderColor: '#e8e8e8'
+        borderBottomStyle: 'none'
     },
 
     initComponent: function () {

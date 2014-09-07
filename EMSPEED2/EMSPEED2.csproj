@@ -4207,6 +4207,7 @@
     <Content Include="SenchaWorkspace\EMSPEEDExt5\app\view\viewport\South.js" />
     <Content Include="SenchaWorkspace\EMSPEEDExt5\app\view\viewport\Viewport.js" />
     <Content Include="SenchaWorkspace\EMSPEEDExt5\bootstrap.js" />
+    <Content Include="SenchaWorkspace\EMSPEEDExt5\css\animate.css" />
     <Content Include="SenchaWorkspace\EMSPEEDExt5\css\xxSpacetree.css" />
     <Content Include="SenchaWorkspace\EMSPEEDExt52\dashboard\Column.js" />
     <Content Include="SenchaWorkspace\EMSPEEDExt52\dashboard\Dashboard.js" />

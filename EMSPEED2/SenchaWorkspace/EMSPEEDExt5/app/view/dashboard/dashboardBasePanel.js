@@ -3,7 +3,13 @@ Ext.define('EMSPEEDExt5.view.dashboard.dashboardBasePanel', {
     xtype: 'dashboardBasePanel',
     itemId: 'dashboardBasePanel',
     //    style: { borderLeft: '0px solid #cccccc', borderTop: '0px solid #cccccc' },
-    border: 0,
+    style: {
+        borderRightWidth: '0 !important',
+        borderLeftWidth: '0 !important'
+    },
+    bodyStyle: {
+        borderStyle: 'none'
+    },
     requires: [
         'Ext.dashboard.Dashboard',
         'Ext.tip.ToolTip',
@@ -30,10 +36,10 @@ Ext.define('EMSPEEDExt5.view.dashboard.dashboardBasePanel', {
             }
         ];
 
-        var theToolbarTitle = [
-            { ui: 'emspeedglyph-toolbar', style: { fontSize: '22px' }, tooltip: 'favorite', handler: 'onFavorite', glyph: 'xf006@FontAwesome' },
-            { text: me.text, xtype: 'label', padding: '5px 0px 0px 0px', cls: 'x-panel-header-title-default' }
-        ];
+        //var theToolbarTitle = [
+        //    { ui: 'emspeedglyph-toolbar', style: { fontSize: '22px' }, tooltip: 'favorite', handler: 'onFavorite', glyph: 'xf006@FontAwesome' },
+        //    { text: me.text, xtype: 'label', padding: '5px 0px 0px 0px', cls: 'x-panel-header-title-default' }
+        //];
 
         var theToolbar = [
             { ui: 'emspeedglyph-toolbar', style: {fontSize: '22px' }, tooltip: 'favorite', handler: 'onFavorite', glyph: 'xf006@FontAwesome' },
@@ -89,23 +95,27 @@ Ext.define('EMSPEEDExt5.view.dashboard.dashboardBasePanel', {
             { text: 'Add Widget', ui: 'emspeed-toolbar', hidden: true, handler: 'onAddWidget', glyph: 'xf067@FontAwesome' },
             { text: 'Restore', ui: 'emspeed-toolbar', hidden: true, handler: 'onRestore', glyph: 'xf0e2@FontAwesome' },
             { xtype: 'component', html: '', margin: '0px 0px 0px 30px' },
-            { ui: 'emspeedglyph-toolbar', style: { fontSize: '22px' }, tooltip: 'dashboard editing tools', handler: 'onToggleToolbar', glyph: 'xf044@FontAwesome' }
+            { ui: 'emspeedglyph-toolbar', style: { fontSize: '22px' }, margin: '0px 12px 0px 0px', tooltip: 'dashboard editing tools', handler: 'onToggleToolbar', glyph: 'xf044@FontAwesome' }
 
             //{ xtype: 'component', html: '<i style="color:#003366;font-size:18px;margin-left: 20px;" class="fa fa-star-o fa-fw"></i>' },
             //{ xtype: 'component', html: '<i style="color:#003366;font-size:18px;margin-left: 0px;" class="fa fa-star fa-fw"></i>' }
 
         ];
         me.dockedItems = [
+            //{
+            //    xtype: 'toolbar',
+            //    dock: 'top',
+            //    reference: 'theToolbarTitle',
+            //    hidden: true,
+            //    items: theToolbarTitle
+            //},
             {
                 xtype: 'toolbar',
                 dock: 'top',
-                reference: 'theToolbarTitle',
-                hidden: true,
-                items: theToolbarTitle
-            },
-            {
-                xtype: 'toolbar',
-                dock: 'top',
+                style: {
+                    borderRightWidth: '0 !important',
+                    borderLeftWidth: '0 !important'
+                },
                 height: 40,
                 reference: 'theToolbar',
                 items: theToolbar

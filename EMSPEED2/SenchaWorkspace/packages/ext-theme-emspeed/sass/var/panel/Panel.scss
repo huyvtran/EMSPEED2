@@ -1,1 +1,9 @@
 ﻿$panel-header-padding: 3px 10px 3px 3px;
+$panel-border-color : $color-slb-line;
+
+/*.x-panel-default-outer-border-rl {
+    border-right-color: right($panel-border-color) !important;
+    border-right-width: 0 !important;
+    border-left-color: left($panel-border-color) !important;
+    border-left-width: 0 !important;
+}*/

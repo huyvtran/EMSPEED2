@@ -2547,6 +2547,12 @@ input, select {
     margin: 0;
 }*/
 /* including package ext-theme-emspeed */
+/*.x-panel-default-outer-border-rl {
+    border-right-color: right($panel-border-color) !important;
+    border-right-width: 0 !important;
+    border-left-color: left($panel-border-color) !important;
+    border-left-width: 0 !important;
+}*/
 /* including package ext-theme-crisp */
 /** @class Ext.resizer.Resizer */
 /* including package ext-theme-neptune */
@@ -18032,14 +18038,14 @@ div.x-form-text-grow .x-form-textarea {
 
 /* line 252, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-neutral/sass/src/panel/Panel.scss */
 .x-panel-default {
-  border-color: #f5f5f5;
+  border-color: #cccccc;
   padding: 0;
 }
 
 /* line 258, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-neutral/sass/src/panel/Panel.scss */
 .x-panel-header-default {
   font-size: 15px;
-  border: 1px solid #f5f5f5;
+  border: 1px solid #cccccc;
 }
 /* line 265, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-neutral/sass/src/panel/Panel.scss */
 .x-panel-header-default .x-tool-img {
@@ -18188,132 +18194,132 @@ div.x-form-text-grow .x-form-textarea {
 
 /* line 2, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-base/sass/etc/mixins/border-management.scss */
 .x-panel-default-outer-border-l {
-  border-left-color: #f5f5f5 !important;
+  border-left-color: #cccccc !important;
   border-left-width: 1px !important;
 }
 
 /* line 6, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-base/sass/etc/mixins/border-management.scss */
 .x-panel-default-outer-border-b {
-  border-bottom-color: #f5f5f5 !important;
+  border-bottom-color: #cccccc !important;
   border-bottom-width: 1px !important;
 }
 
 /* line 10, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-base/sass/etc/mixins/border-management.scss */
 .x-panel-default-outer-border-bl {
-  border-bottom-color: #f5f5f5 !important;
+  border-bottom-color: #cccccc !important;
   border-bottom-width: 1px !important;
-  border-left-color: #f5f5f5 !important;
+  border-left-color: #cccccc !important;
   border-left-width: 1px !important;
 }
 
 /* line 16, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-base/sass/etc/mixins/border-management.scss */
 .x-panel-default-outer-border-r {
-  border-right-color: #f5f5f5 !important;
+  border-right-color: #cccccc !important;
   border-right-width: 1px !important;
 }
 
 /* line 20, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-base/sass/etc/mixins/border-management.scss */
 .x-panel-default-outer-border-rl {
-  border-right-color: #f5f5f5 !important;
+  border-right-color: #cccccc !important;
   border-right-width: 1px !important;
-  border-left-color: #f5f5f5 !important;
+  border-left-color: #cccccc !important;
   border-left-width: 1px !important;
 }
 
 /* line 26, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-base/sass/etc/mixins/border-management.scss */
 .x-panel-default-outer-border-rb {
-  border-right-color: #f5f5f5 !important;
+  border-right-color: #cccccc !important;
   border-right-width: 1px !important;
-  border-bottom-color: #f5f5f5 !important;
+  border-bottom-color: #cccccc !important;
   border-bottom-width: 1px !important;
 }
 
 /* line 32, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-base/sass/etc/mixins/border-management.scss */
 .x-panel-default-outer-border-rbl {
-  border-right-color: #f5f5f5 !important;
+  border-right-color: #cccccc !important;
   border-right-width: 1px !important;
-  border-bottom-color: #f5f5f5 !important;
+  border-bottom-color: #cccccc !important;
   border-bottom-width: 1px !important;
-  border-left-color: #f5f5f5 !important;
+  border-left-color: #cccccc !important;
   border-left-width: 1px !important;
 }
 
 /* line 40, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-base/sass/etc/mixins/border-management.scss */
 .x-panel-default-outer-border-t {
-  border-top-color: #f5f5f5 !important;
+  border-top-color: #cccccc !important;
   border-top-width: 1px !important;
 }
 
 /* line 44, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-base/sass/etc/mixins/border-management.scss */
 .x-panel-default-outer-border-tl {
-  border-top-color: #f5f5f5 !important;
+  border-top-color: #cccccc !important;
   border-top-width: 1px !important;
-  border-left-color: #f5f5f5 !important;
+  border-left-color: #cccccc !important;
   border-left-width: 1px !important;
 }
 
 /* line 50, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-base/sass/etc/mixins/border-management.scss */
 .x-panel-default-outer-border-tb {
-  border-top-color: #f5f5f5 !important;
+  border-top-color: #cccccc !important;
   border-top-width: 1px !important;
-  border-bottom-color: #f5f5f5 !important;
+  border-bottom-color: #cccccc !important;
   border-bottom-width: 1px !important;
 }
 
 /* line 56, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-base/sass/etc/mixins/border-management.scss */
 .x-panel-default-outer-border-tbl {
-  border-top-color: #f5f5f5 !important;
+  border-top-color: #cccccc !important;
   border-top-width: 1px !important;
-  border-bottom-color: #f5f5f5 !important;
+  border-bottom-color: #cccccc !important;
   border-bottom-width: 1px !important;
-  border-left-color: #f5f5f5 !important;
+  border-left-color: #cccccc !important;
   border-left-width: 1px !important;
 }
 
 /* line 64, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-base/sass/etc/mixins/border-management.scss */
 .x-panel-default-outer-border-tr {
-  border-top-color: #f5f5f5 !important;
+  border-top-color: #cccccc !important;
   border-top-width: 1px !important;
-  border-right-color: #f5f5f5 !important;
+  border-right-color: #cccccc !important;
   border-right-width: 1px !important;
 }
 
 /* line 70, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-base/sass/etc/mixins/border-management.scss */
 .x-panel-default-outer-border-trl {
-  border-top-color: #f5f5f5 !important;
+  border-top-color: #cccccc !important;
   border-top-width: 1px !important;
-  border-right-color: #f5f5f5 !important;
+  border-right-color: #cccccc !important;
   border-right-width: 1px !important;
-  border-left-color: #f5f5f5 !important;
+  border-left-color: #cccccc !important;
   border-left-width: 1px !important;
 }
 
 /* line 78, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-base/sass/etc/mixins/border-management.scss */
 .x-panel-default-outer-border-trb {
-  border-top-color: #f5f5f5 !important;
+  border-top-color: #cccccc !important;
   border-top-width: 1px !important;
-  border-right-color: #f5f5f5 !important;
+  border-right-color: #cccccc !important;
   border-right-width: 1px !important;
-  border-bottom-color: #f5f5f5 !important;
+  border-bottom-color: #cccccc !important;
   border-bottom-width: 1px !important;
 }
 
 /* line 86, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-base/sass/etc/mixins/border-management.scss */
 .x-panel-default-outer-border-trbl {
-  border-color: #f5f5f5 !important;
+  border-color: #cccccc !important;
   border-width: 1px !important;
 }
 
 /* line 252, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-neutral/sass/src/panel/Panel.scss */
 .x-panel-default-framed {
-  border-color: #f5f5f5;
+  border-color: #cccccc;
   padding: 0;
 }
 
 /* line 258, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-neutral/sass/src/panel/Panel.scss */
 .x-panel-header-default-framed {
   font-size: 15px;
-  border: 1px solid #f5f5f5;
+  border: 1px solid #cccccc;
 }
 /* line 265, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-neutral/sass/src/panel/Panel.scss */
 .x-panel-header-default-framed .x-tool-img {
@@ -19644,119 +19650,119 @@ div.x-form-text-grow .x-form-textarea {
 
 /* line 2, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-base/sass/etc/mixins/border-management.scss */
 .x-panel-default-framed-outer-border-l {
-  border-left-color: #f5f5f5 !important;
+  border-left-color: #cccccc !important;
   border-left-width: 1px !important;
 }
 
 /* line 6, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-base/sass/etc/mixins/border-management.scss */
 .x-panel-default-framed-outer-border-b {
-  border-bottom-color: #f5f5f5 !important;
+  border-bottom-color: #cccccc !important;
   border-bottom-width: 1px !important;
 }
 
 /* line 10, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-base/sass/etc/mixins/border-management.scss */
 .x-panel-default-framed-outer-border-bl {
-  border-bottom-color: #f5f5f5 !important;
+  border-bottom-color: #cccccc !important;
   border-bottom-width: 1px !important;
-  border-left-color: #f5f5f5 !important;
+  border-left-color: #cccccc !important;
   border-left-width: 1px !important;
 }
 
 /* line 16, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-base/sass/etc/mixins/border-management.scss */
 .x-panel-default-framed-outer-border-r {
-  border-right-color: #f5f5f5 !important;
+  border-right-color: #cccccc !important;
   border-right-width: 1px !important;
 }
 
 /* line 20, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-base/sass/etc/mixins/border-management.scss */
 .x-panel-default-framed-outer-border-rl {
-  border-right-color: #f5f5f5 !important;
+  border-right-color: #cccccc !important;
   border-right-width: 1px !important;
-  border-left-color: #f5f5f5 !important;
+  border-left-color: #cccccc !important;
   border-left-width: 1px !important;
 }
 
 /* line 26, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-base/sass/etc/mixins/border-management.scss */
 .x-panel-default-framed-outer-border-rb {
-  border-right-color: #f5f5f5 !important;
+  border-right-color: #cccccc !important;
   border-right-width: 1px !important;
-  border-bottom-color: #f5f5f5 !important;
+  border-bottom-color: #cccccc !important;
   border-bottom-width: 1px !important;
 }
 
 /* line 32, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-base/sass/etc/mixins/border-management.scss */
 .x-panel-default-framed-outer-border-rbl {
-  border-right-color: #f5f5f5 !important;
+  border-right-color: #cccccc !important;
   border-right-width: 1px !important;
-  border-bottom-color: #f5f5f5 !important;
+  border-bottom-color: #cccccc !important;
   border-bottom-width: 1px !important;
-  border-left-color: #f5f5f5 !important;
+  border-left-color: #cccccc !important;
   border-left-width: 1px !important;
 }
 
 /* line 40, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-base/sass/etc/mixins/border-management.scss */
 .x-panel-default-framed-outer-border-t {
-  border-top-color: #f5f5f5 !important;
+  border-top-color: #cccccc !important;
   border-top-width: 1px !important;
 }
 
 /* line 44, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-base/sass/etc/mixins/border-management.scss */
 .x-panel-default-framed-outer-border-tl {
-  border-top-color: #f5f5f5 !important;
+  border-top-color: #cccccc !important;
   border-top-width: 1px !important;
-  border-left-color: #f5f5f5 !important;
+  border-left-color: #cccccc !important;
   border-left-width: 1px !important;
 }
 
 /* line 50, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-base/sass/etc/mixins/border-management.scss */
 .x-panel-default-framed-outer-border-tb {
-  border-top-color: #f5f5f5 !important;
+  border-top-color: #cccccc !important;
   border-top-width: 1px !important;
-  border-bottom-color: #f5f5f5 !important;
+  border-bottom-color: #cccccc !important;
   border-bottom-width: 1px !important;
 }
 
 /* line 56, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-base/sass/etc/mixins/border-management.scss */
 .x-panel-default-framed-outer-border-tbl {
-  border-top-color: #f5f5f5 !important;
+  border-top-color: #cccccc !important;
   border-top-width: 1px !important;
-  border-bottom-color: #f5f5f5 !important;
+  border-bottom-color: #cccccc !important;
   border-bottom-width: 1px !important;
-  border-left-color: #f5f5f5 !important;
+  border-left-color: #cccccc !important;
   border-left-width: 1px !important;
 }
 
 /* line 64, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-base/sass/etc/mixins/border-management.scss */
 .x-panel-default-framed-outer-border-tr {
-  border-top-color: #f5f5f5 !important;
+  border-top-color: #cccccc !important;
   border-top-width: 1px !important;
-  border-right-color: #f5f5f5 !important;
+  border-right-color: #cccccc !important;
   border-right-width: 1px !important;
 }
 
 /* line 70, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-base/sass/etc/mixins/border-management.scss */
 .x-panel-default-framed-outer-border-trl {
-  border-top-color: #f5f5f5 !important;
+  border-top-color: #cccccc !important;
   border-top-width: 1px !important;
-  border-right-color: #f5f5f5 !important;
+  border-right-color: #cccccc !important;
   border-right-width: 1px !important;
-  border-left-color: #f5f5f5 !important;
+  border-left-color: #cccccc !important;
   border-left-width: 1px !important;
 }
 
 /* line 78, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-base/sass/etc/mixins/border-management.scss */
 .x-panel-default-framed-outer-border-trb {
-  border-top-color: #f5f5f5 !important;
+  border-top-color: #cccccc !important;
   border-top-width: 1px !important;
-  border-right-color: #f5f5f5 !important;
+  border-right-color: #cccccc !important;
   border-right-width: 1px !important;
-  border-bottom-color: #f5f5f5 !important;
+  border-bottom-color: #cccccc !important;
   border-bottom-width: 1px !important;
 }
 
 /* line 86, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-base/sass/etc/mixins/border-management.scss */
 .x-panel-default-framed-outer-border-trbl {
-  border-color: #f5f5f5 !important;
+  border-color: #cccccc !important;
   border-width: 1px !important;
 }
 

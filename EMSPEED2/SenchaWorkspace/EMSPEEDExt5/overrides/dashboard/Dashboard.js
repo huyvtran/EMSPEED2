@@ -1,6 +1,10 @@
 Ext.define('Ext.overrides.dashboard.Dashboard', {
     override: 'Ext.dashboard.Dashboard',
 
+    bodyStyle: {
+        borderStyle: 'none'
+    },
+
     applyParts: function (parts, collection) {
         var me = this;
         if (!collection) {
