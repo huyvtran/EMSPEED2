@@ -2,25 +2,25 @@ $.mockjax({
     url: /^\/api\/widgets$/,
     response: function (settings) {
         this.responseText = [
+            { "type": "nghelloworld", "extension": "js", "height": 200, "widgetDataDef": { text: 'Name Here' }, title: 'nghelloworld', description: 'nghelloworld' },
+            { "type": "nganimate", "extension": "js", "height": 200, "widgetDataDef": { "projectId": "97366" }, title: 'nganimate', description: 'this is the description' },
+            { "type": "ngdirective", "extension": "js", "height": 500, "widgetDataDef": { "name": "n", "age": "a", "marc": "m" }, title: 'Angular Directive', description: 'this is the description' },
+            { "type": "angular", "extension": "js", "height": 500, "widgetDataDef": { "div": "Andy", "name": "n", "age": "a", "marc": "m" }, title: 'Angular Widget', description: 'this is the description' },
+
+            { "type": "risks", "extension": "js", "height": 200, "widgetDataDef": { "projectId": "97366" }, title: 'Risk Matrix', description: 'this is the description' },
+            { "type": "riskmatrix", "extension": "js", "height": 200, "widgetDataDef": { "projectId": "97366" }, title: 'Risk Matrix', description: 'this is the description' },
+
+            { "type": "infovis", "extension": "js", "height": 200, "widgetDataDef": { "projectId": "97366" }, title: 'nganimate', description: 'this is the description' },
+
             { "type": "basiclinemarker", "extension": "js", "height": 200, "widgetDataDef": { "projectId": "97366" }, title: 'Basic Line Marker Chart', description: 'this is the description' },
             { "type": "basicline", "extension": "js", "height": 200, "widgetDataDef": { "projectId": "97366" }, title: 'Basic Line Chart', description: 'this is the description' },
             { "type": "basiccolumn", "extension": "js", "height": 200, "widgetDataDef": { "projectId": "97366" }, title: 'Basic Column Chart', description: 'this is the description' },
-            { "type": "spacetree", "extension": "js", "height": 200, "widgetDataDef": { "projectId": "97366" }, title: 'Risk Matrix', description: 'this is the description' },
-            { "type": "riskmatrix", "extension": "js", "height": 200, "widgetDataDef": { "projectId": "97366" }, title: 'Risk Matrix', description: 'this is the description' },
-            { "type": "risks", "extension": "js", "height": 200, "widgetDataDef": { "projectId": "97366" }, title: 'Risk Matrix', description: 'this is the description' },
-            { "type": "nghelloworld", "extension": "js", "height": 200, "widgetDataDef": { "url": "resources/images/widgets/barchart.png", "age": "a", "marc": "m" }, title: 'Hello World', description: 'this is the description' },
+
             { "type": "imageviewer", "extension": "js", "height": 200, "widgetDataDef": { "url": "resources/images/widgets/barchart.png", "age": "a", "marc": "m" }, title: 'Image Viewer', description: 'this is the description' },
-            { "type": "ngimage", "extension": "js", "height": 500, "widgetDataDef": { "name": "n", "age": "a", "marc": "m" }, title: 'Angular Image Viewer', description: 'this is the description' },
-            { "type": "ngdirective", "extension": "js", "height": 500, "widgetDataDef": { "name": "n", "age": "a", "marc": "m" }, title: 'Angular Directive', description: 'this is the description' },
-            { "type": "angular", "extension": "js", "height": 500, "widgetDataDef": { "div": "Andy", "name": "n", "age": "a", "marc": "m" }, title: 'Angular Widget', description: 'this is the description' },
             { "type": "googlerss", "extension": "js", "height": 500, "widgetDataDef": { "name": "n", "age": "a", "marc": "m" }, title: 'Google RSS Feed', description: 'this is the description' },
             { "type": "list", "extension": "js", "height": 500, "widgetDataDef": { "name": "n", "age": "a", "marc": "m" }, title: 'Project List', description: 'this is the description' },
             { "type": "marc", "extension": "js", "height": 500, "widgetDataDef": { "name": "default name for marc", "age": "a", "marc": "m" }, title: 'Marc Widget', description: 'this is the description' },
             { "type": "simple", "extension": "js", "height": 500, "widgetDataDef": { "name": "default name for simple", "age": "a", "marc": "m" }, title: 'Simple Widget', description: 'this is the description' },
-            { "type": "stocks", "extension": "js", "height": 500, "widgetDataDef": { "name": "n", "age": "a", "marc": "m" }, title: 'Stocks Widget', description: 'this is the description' },
-            { "type": "stocks", "extension": "js", "height": 500, "widgetDataDef": { "name": "n", "age": "a", "marc": "m" }, title: 'Stocks Widget', description: 'this is the description' },
-            { "type": "stocks", "extension": "js", "height": 500, "widgetDataDef": { "name": "n", "age": "a", "marc": "m" }, title: 'Stocks Widget', description: 'this is the description' },
-            { "type": "stocks", "extension": "js", "height": 500, "widgetDataDef": { "name": "n", "age": "a", "marc": "m" }, title: 'Stocks Widget', description: 'this is the description' },
             { "type": "stocks", "extension": "js", "height": 500, "widgetDataDef": { "name": "n", "age": "a", "marc": "m" }, title: 'Stocks Widget', description: 'this is the description' }
         ]
     }
@@ -47,11 +47,10 @@ $.mockjax({
                             ],
                             columnWidths: [0.35, 0.65, 1],
                             widgets: [
-                                { type: 'basiclinemarker', widgetData: { name: 'basic', age: '8' }, columnIndex: 0, height: 535 },
+                                { type: 'ngdirective', widgetData: { title: 'My ole Alerts', name: 'list', age: '8' }, columnIndex: 0, height: 500 },
                                 { type: "risks", "widgetData": { "projectId": "97366" }, columnIndex: 1, height: 500 },
-                                { type: 'simple', widgetData: { name: 'simple', age: '8' }, columnIndex: 2, height: 200 },
-                                { type: 'basicline', widgetData: { name: 'basic', age: '8' }, columnIndex: 2, height: 200 }
-            ]
+                                { type: 'basiclinemarker', widgetData: { name: 'basic', age: '8' }, columnIndex: 2, height: 200 }
+                            ]
                         };
                         break;
                     case '2':
@@ -82,8 +81,6 @@ $.mockjax({
                             ],
                             columnWidths: [1],
                             widgets: [
-                                { "type": "spacetree", "widgetData": {}, columnIndex: 1, height: 500 },
-                                { type: 'simple', widgetData: { name: 'list', age: '8' }, columnIndex: 0, height: 100 }
                             ]
                         };
                         break;
@@ -92,24 +89,61 @@ $.mockjax({
                         ];
                 }
                 break;
-            case 'Dashboard5':
+
+            case 'CLM':
                 dashboard = {
-                    layoutId: 3,
+                    layoutId: 1,
                     savedLayouts: [
                         { id: 1, name: 'configuration 1' },
                         { id: 2, name: 'configuration 2' },
                         { id: 3, name: 'configuration 3' }
                     ],
-                    columnWidths: [0.35, 0.65, 1],
+                    columnWidths: [.75, .25, 1],
                     widgets: [
-                        { type: 'ngdirective', widgetData: { title: 'My Alerts', name: 'list', age: '8' }, columnIndex: 0, height: 950 },
-                        { type: 'imageviewer', widgetData: { title: 'Sample Bar Chart', "url": "resources/images/widgets/barchart.png" }, columnIndex: 1, height: 200 },
-                        //{ type: 'stocks', widgetData: { name: 'Stock Ticker', age: '8' }, columnIndex: 1, height: 300 },
-                        { type: 'simple', widgetData: { title: 'Demo of a full length widget', name: 'list', age: '8' }, columnIndex: 2, height: 200 }
+                        { "type": "risks", "widgetData": { "projectId": "97366" }, columnIndex: 0, height: 450 },
+                        { "type": "riskmatrix", "widgetData": { "projectId": "97366" }, columnIndex: 0, height: 400 },
+                        { "type": "risks", "widgetData": { "projectId": "97366" }, columnIndex: 1, height: 450 },
                     ]
                 };
                 break;
-            case 'Dashboard6':
+
+            case 'Angular':
+                dashboard = {
+                    layoutId: 1,
+                    savedLayouts: [
+                        { id: 1, name: 'configuration 1' },
+                        { id: 2, name: 'configuration 2' },
+                        { id: 3, name: 'configuration 3' }
+                    ],
+                    columnWidths: [.5, .5, 1],
+                    widgets: [
+                        { type: 'nghelloworld', widgetData: { text: 'Marc' }, columnIndex: 0, height: 50 },
+                        { type: 'nghelloworld', widgetData: { text: 'Nick' }, columnIndex: 0, height: 50 },
+                        { type: 'nganimate', widgetData: { text: 'Nick' }, columnIndex: 0, height: 50 },
+                        { type: 'angular', widgetData: { text: 'Nick' }, columnIndex: 0, height: 150 },
+                        { type: 'ngdirective', widgetData: { title: 'My ole Alerts', name: 'list', age: '8' }, columnIndex: 1, height: 500 },
+                    ]
+                };
+                break;
+
+            case 'Visualization':
+                dashboard = {
+                    layoutId: 1,
+                    savedLayouts: [
+                        { id: 1, name: 'configuration 1' },
+                        { id: 2, name: 'configuration 2' },
+                        { id: 3, name: 'configuration 3' }
+                    ],
+                    columnWidths: [.5, .5, 1],
+                    widgets: [
+                        { type: 'infovis', widgetData: { rootCls: 'infovisRoot' }, columnIndex: 0, height: 450 },
+                        { type: 'simple', widgetData: { name: 'list', age: '8' }, columnIndex: 0, height: 100 },
+                        { type: 'imageviewer', widgetData: { title: 'Sample Bar Chart', "url": "resources/images/widgets/barchart.png" }, columnIndex: 1, height: 350 }
+                    ]
+                };
+                break;
+
+            case 'Charts':
                 dashboard = {
                     layoutId: 1,
                     savedLayouts: [
@@ -121,10 +155,10 @@ $.mockjax({
                     widgets: [
                         { type: 'basicline', widgetData: { name: 'basic', age: '8' }, columnIndex: 0, height: 535 },
                         { type: 'basiclinemarker', widgetData: { name: 'basic', age: '8' }, columnIndex: 1, height: 535 },
-                        { type: 'imageviewer', widgetData: { "url": "resources/images/widgets/manageteam.png", full: false }, columnIndex: 2, height: 300 }
                     ]
                 };
                 break;
+
             case 'ManageTeam':
                 dashboard = {
                     layoutId: 1,
@@ -1890,17 +1924,14 @@ var dataGetMasterLayout97366 = {
                         //"menuItemTooltip": "Home",
                         //mjg
                         children: [
-                            //{ id: "Dashboard", text: "Dashboard", expanded: false, leaf: true, action: "dashboard", qtip: "Dashboard", fa: 'fa-home', menuItemBasePanel: 'dashboardBasePanel' },
-                            //{ id: "Dashboard2", text: "Dashboard2", expanded: false, leaf: true, action: "dashboard", qtip: "Dashboard2", fa: 'fa-bar-chart-o', menuItemBasePanel: 'dashboard2BasePanel' },
-                            //{ id: "Dashboard3", text: "Dashboard3", expanded: false, leaf: true, action: "dashboard", qtip: "Dashboard3", fa: 'fa-bar-chart-o', menuItemBasePanel: 'dashboard3BasePanel' },
                             {
                                 id: "Dashboard",
-                                text: "Dashboard",
+                                text: "Home",
                                 expanded: false,
                                 leaf: true,
                                 action: 'dashboard',
                                 qtip: "Dashboard",
-                                fa: 'fa-bar-chart-o',
+                                fa: 'fa-th',
                                 //"menuItemId": 1,
                                 //"menuItemName": "Dashboard4",
                                 "menuItemBasePanel": "dashboardBasePanel",
@@ -1913,46 +1944,50 @@ var dataGetMasterLayout97366 = {
                                 //"menuItemIcon": "emspeed-home",
                                 //"menuItemTooltip": "Home"
                             },
+
                             {
-                                id: "Dashboard5",
-                                text: "Dashboard5",
+                                id: "CLM",
+                                text: "CLM/Stature",
+                                qtip: "CLM/Stature",
+                                fa: 'fa-columns',
+                                "menuItemBasePanel": "dashboardBasePanel",
+                                action: 'dashboard',
                                 expanded: false,
                                 leaf: true,
-                                action: 'dashboard',
-                                qtip: "Dashboard4",
-                                fa: 'fa-bar-chart-o',
-                                //"menuItemId": 1,
-                                //"menuItemName": "Dashboard4",
-                                "menuItemBasePanel": "dashboardBasePanel",
-                                "menuItemUrl": null,
-                                "sequence": 1,
-                                "parentId": null,
-                                "level": 2,
-                                "launch": false,
-                                "launchFormat": null
-                                //"menuItemIcon": "emspeed-home",
-                                //"menuItemTooltip": "Home"
                             },
                             {
-                                id: "Dashboard6",
-                                text: "Dashboard6",
+                                id: "Angular",
+                                text: "Angular Tests",
+                                qtip: "Angular Tests",
+                                fa: 'fa-laptop',
+                                "menuItemBasePanel": "dashboardBasePanel",
+                                action: 'dashboard',
                                 expanded: false,
                                 leaf: true,
-                                action: 'dashboard',
-                                qtip: "Dashboard4",
-                                fa: 'fa-bar-chart-o',
-                                //"menuItemId": 1,
-                                //"menuItemName": "Dashboard4",
-                                "menuItemBasePanel": "dashboardBasePanel",
-                                "menuItemUrl": null,
-                                "sequence": 1,
-                                "parentId": null,
-                                "level": 2,
-                                "launch": false,
-                                "launchFormat": null
-                                //"menuItemIcon": "emspeed-home",
-                                //"menuItemTooltip": "Home"
                             },
+
+                            {
+                                id: "Visualization",
+                                text: "Visualization",
+                                qtip: "Visualization",
+                                fa: 'fa-sun-o',
+                                "menuItemBasePanel": "dashboardBasePanel",
+                                action: 'dashboard',
+                                expanded: false,
+                                leaf: true,
+                            },
+
+                            {
+                                id: "Charts",
+                                text: "Charts",
+                                qtip: "Charts",
+                                fa: 'fa-bar-chart-o',
+                                "menuItemBasePanel": "dashboardBasePanel",
+                                action: 'dashboard',
+                                expanded: false,
+                                leaf: true,
+                            },
+
                             {
                                 id: "ManageTeam",
                                 text: "Manage Team",
@@ -1960,7 +1995,7 @@ var dataGetMasterLayout97366 = {
                                 leaf: true,
                                 action: 'dashboard',
                                 qtip: "Dashboard4",
-                                fa: 'fa-bar-chart-o',
+                                fa: 'fa-users',
                                 //"menuItemId": 1,
                                 //"menuItemName": "Dashboard4",
                                 "menuItemBasePanel": "dashboardBasePanel",

@@ -1,32 +1,3 @@
-//Ext.define('widget.nghelloworld', {
-//    extend: 'EMSPEEDExt5.view.baseclass.baseclassWidget',
-//    angularCode: function (ngVar) {
-//        angular.module('app')
-//        .controller(ngVar + 'Controller', function ($scope) { })
-//        .factory(ngVar + 'Service', function ($http, $q) {
-//        })
-//        .directive('wt' + ngVar, function () {
-//            return {
-//                restrict: 'AE',
-//                replace: true,
-//                template: '<p style="background-color:{{color}}">Hello World',
-//                link: function (scope, elem, attrs) {
-//                    elem.bind('click', function () {
-//                        elem.css('background-color', 'red');
-//                        scope.$apply(function () {
-//                            scope.color = "red";
-//                        });
-//                    });
-//                    elem.bind('mouseover', function () {
-//                        elem.css('cursor', 'pointer');
-//                    });
-//                }
-//            };
-//        });
-//    }
-//});
-
-
 Ext.define('widget.nghelloworld', {
     extend: 'EMSPEEDExt5.view.baseclass.baseclassWidget',
     statics: {

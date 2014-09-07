@@ -12,7 +12,7 @@ window.onerror = function (message, url, linenumber) {
         Ext.getCmp('North').hide();
         //Ext.getCmp('West').hide();
         Ext.getCmp('Center').hide();
-        Ext.getCmp('East').hide();
+        Ext.getCmp('Navigation').hide();
         Ext.getCmp('South').hide();
     }
 

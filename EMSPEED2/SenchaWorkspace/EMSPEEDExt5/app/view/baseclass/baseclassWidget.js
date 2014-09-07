@@ -2,7 +2,6 @@ Ext.define('EMSPEEDExt5.view.baseclass.baseclassWidget', {
     extend: 'Ext.panel.Panel',
     bodyPadding: 10,
     xtype: 'baseclasswidget',
-    //requires: [],
 
     statics: {
         addStyles: function (styles) {
@@ -33,7 +32,7 @@ Ext.define('EMSPEEDExt5.view.baseclass.baseclassWidget', {
             me.ngVar = me.ngVar + 'Directive';
             theData = me.ngVar + 'Data';
             me.html = '' +
-                '<div ng-controller="' + xclass + 'Controller"><div id="' + me.ngVar + '" ' + xclass.toLowerCase() + ' widgetdata="' + theData.toLowerCase() + '"></div></div>' +
+                '<div ng-controller="' + xclass + 'Controller"><div class="' + me.widgetData.rootCls + '" id="' + me.ngVar + '" ' + xclass.toLowerCase() + ' widgetdata="' + theData.toLowerCase() + '"></div></div>' +
                 '';
         };
         me.callParent(arguments);
