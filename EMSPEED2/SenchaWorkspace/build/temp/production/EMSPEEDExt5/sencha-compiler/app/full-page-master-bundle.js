@@ -1,9 +1,3 @@
 // @tag full-page
 // @require D:\dev\EMSPEED2\EMSPEED2\SenchaWorkspace\EMSPEEDExt5\js\error.js
-// @require D:\dev\EMSPEED2\EMSPEED2\SenchaWorkspace\EMSPEEDExt5\js\angular.min.js
-// @require D:\dev\EMSPEED2\EMSPEED2\SenchaWorkspace\EMSPEEDExt5\ngApp.js
-// @require D:\dev\EMSPEED2\EMSPEED2\SenchaWorkspace\EMSPEEDExt5\ngAppM.js
-// @require D:\dev\EMSPEED2\EMSPEED2\SenchaWorkspace\EMSPEEDExt5\js\jquery.js
-// @require D:\dev\EMSPEED2\EMSPEED2\SenchaWorkspace\EMSPEEDExt5\js\jquery.mockjax.js
-// @require D:\dev\EMSPEED2\EMSPEED2\SenchaWorkspace\EMSPEEDExt5\mock.js
 // @require D:\dev\EMSPEED2\EMSPEED2\SenchaWorkspace\EMSPEEDExt5\app.js

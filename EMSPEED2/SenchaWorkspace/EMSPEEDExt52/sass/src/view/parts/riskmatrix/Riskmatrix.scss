@@ -1,0 +1,246 @@
+//original start
+@mixin center-risk-score{
+	padding: 5px 0 0 0;
+	text-align: center !important;
+}
+
+.risk-matrix{
+	position: relative;
+	padding-right: 35px;
+
+	.emspeed-matrix-labels {
+	}
+
+	.emspeed-matrix-occurrence {
+		padding: 0 45px;
+		margin: 1px 0;
+		font-size: 20px;
+		
+	}
+
+	.emspeed-matrix-severity {
+		position:absolute;
+		font-size: 20px;
+		//writing-mode: tb-rl;
+		-webkit-transform: rotate(90deg);
+		-moz-transform: rotate(90deg);
+		-ms-transform: rotate(90deg);
+		-o-transform: rotate(90deg);
+		transform: rotate(90deg);
+		left: -10px;
+		top: 33px;
+	}
+	
+}
+
+.matrix {
+	ul {
+		list-style: none;
+		margin:0 0 6px 0;
+		padding: 0;
+
+		li {
+			display: inline-block;
+			*display: inline; // IE 7
+			padding: 0;
+			line-height: 33px;
+			box-sizing:border-box;
+			cursor:pointer;
+			width:35px;
+			height:35px;
+			text-align:center;
+			overflow:hidden;
+			margin: 0 3px;
+			zoom: 1;
+
+			&.insignificant {
+				@include matrix-bg-color($color-matrix-insignificant);
+
+				&:hover {
+					@include matrix-bg-hover($color-matrix-insignificant, 20%, 15%);
+				}
+			}
+
+			&.low {
+				@include matrix-bg-color($color-matrix-low);
+				
+				&:hover {
+					@include matrix-bg-hover($color-matrix-low, 20%, 15%);
+				}
+			}
+
+			&.medium {
+				@include matrix-bg-color($color-matrix-medium);
+				
+				&:hover {
+					@include matrix-bg-hover($color-matrix-medium, 30%, 20%);
+				}
+			}
+
+			&.high {
+				@include matrix-bg-color($color-matrix-high);
+
+				&:hover {
+					@include matrix-bg-hover($color-matrix-high, 20%, 15%);
+				}
+			}
+
+			&.extreme {
+				@include matrix-bg-color($color-matrix-extreme);
+				color: #ccc;
+
+				&:hover {
+					@include matrix-bg-hover($color-matrix-extreme, 20%, 15%);
+				}
+			}
+			/*
+			&:hover {
+				@include matrix-bg-hover($color-matrix-insignificant);
+			}
+			
+			&.selected {
+				@include matrix-bg-hover($color-matrix-insignificant);
+			}*/ 
+
+			
+			// hover
+			&.the-hover-insignificant {
+				@include matrix-bg-hover($color-matrix-insignificant, 20%, 15%);
+			}
+
+			&.the-hover-low {
+				@include matrix-bg-hover($color-matrix-low, 20%, 15%);
+			}
+
+			&.the-hover-medium {
+				@include matrix-bg-hover($color-matrix-medium, 20%, 15%);
+			}
+
+			&.the-hover-high {
+				@include matrix-bg-hover($color-matrix-high, 20%, 15%);
+			}
+
+			&.the-hover-extreme {
+				@include matrix-bg-hover($color-matrix-extreme, 20%, 15%);
+			}
+
+			// selected
+			&.the-selected-insignificant {
+				@include matrix-bg-selected($color-matrix-insignificant, 30%, 25%);
+			}
+
+			&.the-selected-low {
+				@include matrix-bg-selected($color-matrix-low, 30%, 25%);
+			}
+
+			&.the-selected-medium {
+				@include matrix-bg-selected($color-matrix-medium, 30%, 25%);
+			}
+
+			&.the-selected-high {
+				@include matrix-bg-selected($color-matrix-high, 30%, 25%);
+			}
+
+			&.the-selected-extreme {
+				@include matrix-bg-selected($color-matrix-extreme, 30%, 25%);
+			}
+
+		}
+
+	}
+
+
+	.filter {
+		margin-top:15px;
+		border: 1px solid darkgray;
+		border-radius: 3px;
+		padding: 3px;
+		height: 28px;
+		width: 210px;
+		position: relative;
+
+		span {
+			display: inline-block;
+			padding: 0 10px 0 2px;
+			position: absolute;
+			top: 7px;
+			text-transform: uppercase;
+			color: darkgray;
+		}
+
+		ul {
+			position: absolute;
+			left: 64px;
+		}
+
+		ul li {
+			width: 20px;
+			height:20px;
+			zoom: 1;
+		}
+	}
+}
+
+
+.insignificant-r .x-riskScore-cell {
+	@include risk-score-bg-color($color-matrix-insignificant);
+
+	div { @include center-risk-score}	
+}
+
+.low-r .x-riskScore-cell {
+	@include risk-score-bg-color($color-matrix-low);
+
+	div { @include center-risk-score}	
+}
+
+.medium-r .x-riskScore-cell {
+	@include risk-score-bg-color($color-matrix-medium);
+
+	div { @include center-risk-score}	
+}
+
+.high-r .x-riskScore-cell {
+	@include risk-score-bg-color($color-matrix-high);
+
+	div { @include center-risk-score}	
+}
+
+.extreme-r .x-riskScore-cell {
+	@include risk-score-bg-color($color-matrix-extreme);
+	color: #ccc;
+
+	div { @include center-risk-score}
+}
+
+// for PMT Summary
+.insignificant-cell {
+	@include risk-score-bg-color($color-matrix-insignificant);
+
+	div { @include center-risk-score}	
+}
+
+.low-cell {
+	@include risk-score-bg-color($color-matrix-low);
+
+	div { @include center-risk-score}	
+}
+
+.medium-cell {
+	@include risk-score-bg-color($color-matrix-medium);
+
+	div { @include center-risk-score}	
+}
+
+.high-cell {
+	@include risk-score-bg-color($color-matrix-high);
+
+	div { @include center-risk-score}	
+}
+
+.extreme-cell {
+	@include risk-score-bg-color($color-matrix-extreme);
+	color: #ccc;
+
+	div { @include center-risk-score}
+}

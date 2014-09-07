@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <title></title>
+    <link href="http://localhost:501/packages/ext-theme-crisp/build/resources/ext-theme-crisp-all.css" rel="stylesheet" />
+</head>
+<body>
+
+<script type="text/javascript" src="http://localhost:501/build/ext-all-debug.js"></script>
+<script>
+	Ext.application({
+	    name: 'EMSPEEDExt5',
+
+	    launch: function () {
+
+	        Ext.create('Ext.container.Viewport', {
+	            id: 'main-viewport',
+	            layout: 'border',
+	            border: false,
+	            items: [{
+	                xtype: 'panel',
+	                region: 'center',
+	                title: 'hello',
+	                items: [
+
+                    ]
+	            }]
+	        });
+
+	    }
+	});
+</script>
+
+
+
+
+</body>
+</html>

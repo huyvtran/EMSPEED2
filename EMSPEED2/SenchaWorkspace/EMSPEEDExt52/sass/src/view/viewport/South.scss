@@ -1,0 +1,11 @@
+$south-background-color: #2a3f5d;
+$south-use-gradient: false;
+
+#South {
+    @if $south-use-gradient {
+        @include background-image(linear-gradient(top, lighten($south-background-color, 5), darken($south-background-color, 5)));
+    } @else {
+        background-color: $south-background-color;
+    }
+	border-top: 1px solid darken($south-background-color, 15);
+}

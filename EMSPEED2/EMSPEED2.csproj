@@ -364,6 +364,7 @@
     <Content Include="mgusmano\resources\loading\Default-Portrait~ipad.png" />
     <Content Include="mgusmano\resources\loading\Default.png" />
     <Content Include="mgusmano\resources\loading\Default~ipad.png" />
+    <Content Include="ngAnimate\index.html" />
     <Content Include="one-page-wonder\css\bootstrap.css" />
     <Content Include="one-page-wonder\css\bootstrap.min.css" />
     <Content Include="one-page-wonder\css\one-page-wonder.css" />
@@ -484,10 +485,83 @@
     <Content Include="Scripts\respond.min.js" />
     <Content Include="sencha.txt" />
     <Content Include="SenchaWorkspace\.sencha\workspace\plugin.xml" />
+    <Content Include="SenchaWorkspace\bower_components\angular-animate\angular-animate.js" />
+    <Content Include="SenchaWorkspace\bower_components\angular-animate\angular-animate.min.js" />
     <Content Include="SenchaWorkspace\bower_components\angular-mocks\angular-mocks.js" />
     <Content Include="SenchaWorkspace\bower_components\angular\angular-csp.css" />
     <Content Include="SenchaWorkspace\bower_components\angular\angular.js" />
     <Content Include="SenchaWorkspace\bower_components\angular\angular.min.js" />
+    <Content Include="SenchaWorkspace\bower_components\animate.css\.gitignore" />
+    <Content Include="SenchaWorkspace\bower_components\animate.css\animate.css" />
+    <Content Include="SenchaWorkspace\bower_components\animate.css\animate.min.css" />
+    <Content Include="SenchaWorkspace\bower_components\animate.css\Gruntfile.js" />
+    <Content Include="SenchaWorkspace\bower_components\animate.css\source\attention_seekers\bounce.css" />
+    <Content Include="SenchaWorkspace\bower_components\animate.css\source\attention_seekers\flash.css" />
+    <Content Include="SenchaWorkspace\bower_components\animate.css\source\attention_seekers\pulse.css" />
+    <Content Include="SenchaWorkspace\bower_components\animate.css\source\attention_seekers\rubberBand.css" />
+    <Content Include="SenchaWorkspace\bower_components\animate.css\source\attention_seekers\shake.css" />
+    <Content Include="SenchaWorkspace\bower_components\animate.css\source\attention_seekers\swing.css" />
+    <Content Include="SenchaWorkspace\bower_components\animate.css\source\attention_seekers\tada.css" />
+    <Content Include="SenchaWorkspace\bower_components\animate.css\source\attention_seekers\wobble.css" />
+    <Content Include="SenchaWorkspace\bower_components\animate.css\source\bouncing_entrances\bounceIn.css" />
+    <Content Include="SenchaWorkspace\bower_components\animate.css\source\bouncing_entrances\bounceInDown.css" />
+    <Content Include="SenchaWorkspace\bower_components\animate.css\source\bouncing_entrances\bounceInLeft.css" />
+    <Content Include="SenchaWorkspace\bower_components\animate.css\source\bouncing_entrances\bounceInRight.css" />
+    <Content Include="SenchaWorkspace\bower_components\animate.css\source\bouncing_entrances\bounceInUp.css" />
+    <Content Include="SenchaWorkspace\bower_components\animate.css\source\bouncing_exits\bounceOut.css" />
+    <Content Include="SenchaWorkspace\bower_components\animate.css\source\bouncing_exits\bounceOutDown.css" />
+    <Content Include="SenchaWorkspace\bower_components\animate.css\source\bouncing_exits\bounceOutLeft.css" />
+    <Content Include="SenchaWorkspace\bower_components\animate.css\source\bouncing_exits\bounceOutRight.css" />
+    <Content Include="SenchaWorkspace\bower_components\animate.css\source\bouncing_exits\bounceOutUp.css" />
+    <Content Include="SenchaWorkspace\bower_components\animate.css\source\fading_entrances\fadeIn.css" />
+    <Content Include="SenchaWorkspace\bower_components\animate.css\source\fading_entrances\fadeInDown.css" />
+    <Content Include="SenchaWorkspace\bower_components\animate.css\source\fading_entrances\fadeInDownBig.css" />
+    <Content Include="SenchaWorkspace\bower_components\animate.css\source\fading_entrances\fadeInLeft.css" />
+    <Content Include="SenchaWorkspace\bower_components\animate.css\source\fading_entrances\fadeInLeftBig.css" />
+    <Content Include="SenchaWorkspace\bower_components\animate.css\source\fading_entrances\fadeInRight.css" />
+    <Content Include="SenchaWorkspace\bower_components\animate.css\source\fading_entrances\fadeInRightBig.css" />
+    <Content Include="SenchaWorkspace\bower_components\animate.css\source\fading_entrances\fadeInUp.css" />
+    <Content Include="SenchaWorkspace\bower_components\animate.css\source\fading_entrances\fadeInUpBig.css" />
+    <Content Include="SenchaWorkspace\bower_components\animate.css\source\fading_exits\fadeOut.css" />
+    <Content Include="SenchaWorkspace\bower_components\animate.css\source\fading_exits\fadeOutDown.css" />
+    <Content Include="SenchaWorkspace\bower_components\animate.css\source\fading_exits\fadeOutDownBig.css" />
+    <Content Include="SenchaWorkspace\bower_components\animate.css\source\fading_exits\fadeOutLeft.css" />
+    <Content Include="SenchaWorkspace\bower_components\animate.css\source\fading_exits\fadeOutLeftBig.css" />
+    <Content Include="SenchaWorkspace\bower_components\animate.css\source\fading_exits\fadeOutRight.css" />
+    <Content Include="SenchaWorkspace\bower_components\animate.css\source\fading_exits\fadeOutRightBig.css" />
+    <Content Include="SenchaWorkspace\bower_components\animate.css\source\fading_exits\fadeOutUp.css" />
+    <Content Include="SenchaWorkspace\bower_components\animate.css\source\fading_exits\fadeOutUpBig.css" />
+    <Content Include="SenchaWorkspace\bower_components\animate.css\source\flippers\flip.css" />
+    <Content Include="SenchaWorkspace\bower_components\animate.css\source\flippers\flipInX.css" />
+    <Content Include="SenchaWorkspace\bower_components\animate.css\source\flippers\flipInY.css" />
+    <Content Include="SenchaWorkspace\bower_components\animate.css\source\flippers\flipOutX.css" />
+    <Content Include="SenchaWorkspace\bower_components\animate.css\source\flippers\flipOutY.css" />
+    <Content Include="SenchaWorkspace\bower_components\animate.css\source\lightspeed\lightSpeedIn.css" />
+    <Content Include="SenchaWorkspace\bower_components\animate.css\source\lightspeed\lightSpeedOut.css" />
+    <Content Include="SenchaWorkspace\bower_components\animate.css\source\rotating_entrances\rotateIn.css" />
+    <Content Include="SenchaWorkspace\bower_components\animate.css\source\rotating_entrances\rotateInDownLeft.css" />
+    <Content Include="SenchaWorkspace\bower_components\animate.css\source\rotating_entrances\rotateInDownRight.css" />
+    <Content Include="SenchaWorkspace\bower_components\animate.css\source\rotating_entrances\rotateInUpLeft.css" />
+    <Content Include="SenchaWorkspace\bower_components\animate.css\source\rotating_entrances\rotateInUpRight.css" />
+    <Content Include="SenchaWorkspace\bower_components\animate.css\source\rotating_exits\rotateOut.css" />
+    <Content Include="SenchaWorkspace\bower_components\animate.css\source\rotating_exits\rotateOutDownLeft.css" />
+    <Content Include="SenchaWorkspace\bower_components\animate.css\source\rotating_exits\rotateOutDownRight.css" />
+    <Content Include="SenchaWorkspace\bower_components\animate.css\source\rotating_exits\rotateOutUpLeft.css" />
+    <Content Include="SenchaWorkspace\bower_components\animate.css\source\rotating_exits\rotateOutUpRight.css" />
+    <Content Include="SenchaWorkspace\bower_components\animate.css\source\specials\hinge.css" />
+    <Content Include="SenchaWorkspace\bower_components\animate.css\source\specials\rollIn.css" />
+    <Content Include="SenchaWorkspace\bower_components\animate.css\source\specials\rollOut.css" />
+    <Content Include="SenchaWorkspace\bower_components\animate.css\source\zooming_entrances\zoomIn.css" />
+    <Content Include="SenchaWorkspace\bower_components\animate.css\source\zooming_entrances\zoomInDown.css" />
+    <Content Include="SenchaWorkspace\bower_components\animate.css\source\zooming_entrances\zoomInLeft.css" />
+    <Content Include="SenchaWorkspace\bower_components\animate.css\source\zooming_entrances\zoomInRight.css" />
+    <Content Include="SenchaWorkspace\bower_components\animate.css\source\zooming_entrances\zoomInUp.css" />
+    <Content Include="SenchaWorkspace\bower_components\animate.css\source\zooming_exits\zoomOut.css" />
+    <Content Include="SenchaWorkspace\bower_components\animate.css\source\zooming_exits\zoomOutDown.css" />
+    <Content Include="SenchaWorkspace\bower_components\animate.css\source\zooming_exits\zoomOutLeft.css" />
+    <Content Include="SenchaWorkspace\bower_components\animate.css\source\zooming_exits\zoomOutRight.css" />
+    <Content Include="SenchaWorkspace\bower_components\animate.css\source\zooming_exits\zoomOutUp.css" />
+    <Content Include="SenchaWorkspace\bower_components\animate.css\source\_base.css" />
     <Content Include="SenchaWorkspace\bower_components\bootstrap\dist\css\bootstrap-theme.css" />
     <Content Include="SenchaWorkspace\bower_components\bootstrap\dist\css\bootstrap-theme.min.css" />
     <Content Include="SenchaWorkspace\bower_components\bootstrap\dist\css\bootstrap.css" />
@@ -1644,9 +1718,15 @@
     <Content Include="SenchaWorkspace\build\development\Ext5Test\resources\images\window\toast\icon16_info.png" />
     <Content Include="SenchaWorkspace\build\production\EMSPEEDExt5\app.js" />
     <Content Include="SenchaWorkspace\build\production\EMSPEEDExt5\index.html" />
-    <Content Include="SenchaWorkspace\build\production\EMSPEEDExt5\mock.js" />
-    <Content Include="SenchaWorkspace\build\production\EMSPEEDExt5\ngApp.js" />
-    <Content Include="SenchaWorkspace\build\production\EMSPEEDExt5\ngAppM.js" />
+    <Content Include="SenchaWorkspace\build\production\EMSPEEDExt5\js\angular-mocks.js" />
+    <Content Include="SenchaWorkspace\build\production\EMSPEEDExt5\js\angular.min.js" />
+    <Content Include="SenchaWorkspace\build\production\EMSPEEDExt5\js\bootstrap.js" />
+    <Content Include="SenchaWorkspace\build\production\EMSPEEDExt5\js\error.js" />
+    <Content Include="SenchaWorkspace\build\production\EMSPEEDExt5\js\jquery.min.js" />
+    <Content Include="SenchaWorkspace\build\production\EMSPEEDExt5\js\jquery.mockjax.js" />
+    <Content Include="SenchaWorkspace\build\production\EMSPEEDExt5\js\mock.js" />
+    <Content Include="SenchaWorkspace\build\production\EMSPEEDExt5\js\ngApp.js" />
+    <Content Include="SenchaWorkspace\build\production\EMSPEEDExt5\js\ngAppM.js" />
     <Content Include="SenchaWorkspace\build\production\EMSPEEDExt5\resources\EMSPEEDExt5-all.css" />
     <Content Include="SenchaWorkspace\build\production\EMSPEEDExt5\resources\EMSPEEDExt5-all_01.css" />
     <Content Include="SenchaWorkspace\build\production\EMSPEEDExt5\resources\EMSPEEDExt5-all_02.css" />
@@ -4112,14 +4192,18 @@
     <Content Include="SenchaWorkspace\build\testing\mjgApp\resources\css\style.css" />
     <Content Include="SenchaWorkspace\common\src-ext\com.js" />
     <Content Include="SenchaWorkspace\common\src-touch\com.js" />
+    <Content Include="SenchaWorkspace\EMSPEEDExt5\app\common\panel\AnimateTool.js" />
     <Content Include="SenchaWorkspace\EMSPEEDExt5\app\common\panel\Header2.js" />
     <Content Include="SenchaWorkspace\EMSPEEDExt5\app\common\hovermenu\HoverMenu.js" />
+    <Content Include="SenchaWorkspace\EMSPEEDExt5\app\view\project\projectHeader.js" />
+    <Content Include="SenchaWorkspace\EMSPEEDExt5\app\view\project\projectHeaderRootDiv.js" />
+    <Content Include="SenchaWorkspace\EMSPEEDExt5\app\view\project\projectHeader - Copy.js" />
     <Content Include="SenchaWorkspace\EMSPEEDExt5\app\view\viewport\Center.js" />
     <Content Include="SenchaWorkspace\EMSPEEDExt5\app\view\viewport\gearMenuDataview.js" />
     <Content Include="SenchaWorkspace\EMSPEEDExt5\app\view\viewport\Navigation.js" />
     <Content Include="SenchaWorkspace\EMSPEEDExt5\app\view\viewport\NavigationController.js" />
     <Content Include="SenchaWorkspace\EMSPEEDExt5\app\view\viewport\North.js" />
-    <Content Include="SenchaWorkspace\EMSPEEDExt5\app\view\project\projectHeader.js" />
+    <Content Include="SenchaWorkspace\EMSPEEDExt5\app\view\project\projectHeaderChildDiv.js" />
     <Content Include="SenchaWorkspace\EMSPEEDExt5\app\view\viewport\South.js" />
     <Content Include="SenchaWorkspace\EMSPEEDExt5\app\view\viewport\Viewport.js" />
     <Content Include="SenchaWorkspace\EMSPEEDExt5\bootstrap.js" />
@@ -4173,16 +4257,15 @@
     <Content Include="SenchaWorkspace\EMSPEEDExt5\app\view\baseclass\baseclassWidgetController.js" />
     <Content Include="SenchaWorkspace\EMSPEEDExt5\app\view\dashboard\dashboardKpiWidgetPanel.js" />
     <Content Include="SenchaWorkspace\EMSPEEDExt5\css\bootstrap.css" />
+    <Content Include="SenchaWorkspace\EMSPEEDExt5\js\angular-animate.js" />
     <Content Include="SenchaWorkspace\EMSPEEDExt5\js\angular-mocks.js" />
     <Content Include="SenchaWorkspace\EMSPEEDExt5\js\angular.js" />
-    <Content Include="SenchaWorkspace\EMSPEEDExt5\js\angular.min.js" />
     <Content Include="SenchaWorkspace\EMSPEEDExt5\js\bootstrap.js" />
     <Content Include="SenchaWorkspace\EMSPEEDExt5\js\error.js" />
-    <Content Include="SenchaWorkspace\EMSPEEDExt5\js\jit.js" />
-    <Content Include="SenchaWorkspace\EMSPEEDExt5\js\jquery.js" />
+    <Content Include="SenchaWorkspace\EMSPEEDExt5\js\jquery.min.js" />
     <Content Include="SenchaWorkspace\EMSPEEDExt5\js\jquery.mockjax.js" />
-    <Content Include="SenchaWorkspace\EMSPEEDExt5\ngAppM.js" />
-    <Content Include="SenchaWorkspace\EMSPEEDExt5\ngApp.js" />
+    <Content Include="SenchaWorkspace\EMSPEEDExt5\js\ngAppM.js" />
+    <Content Include="SenchaWorkspace\EMSPEEDExt5\js\ngApp.js" />
     <Content Include="SenchaWorkspace\EMSPEEDExt5\app.js" />
     <Content Include="SenchaWorkspace\EMSPEEDExt5\app\Application.js" />
     <Content Include="SenchaWorkspace\EMSPEEDExt5\app\controller\Root.js" />
@@ -4238,7 +4321,7 @@
     <Content Include="SenchaWorkspace\EMSPEEDExt5\bootstrap.css" />
     <Content Include="SenchaWorkspace\EMSPEEDExt5\build.xml" />
     <Content Include="SenchaWorkspace\EMSPEEDExt5\index.html" />
-    <Content Include="SenchaWorkspace\EMSPEEDExt5\mock.js" />
+    <Content Include="SenchaWorkspace\EMSPEEDExt5\js\mock.js" />
     <Content Include="SenchaWorkspace\EMSPEEDExt5\overrides\dashboard\Part.js" />
     <Content Include="SenchaWorkspace\EMSPEEDExt5\overrides\dashboard\Panel.js" />
     <Content Include="SenchaWorkspace\EMSPEEDExt5\overrides\dashboard\Column.js" />
@@ -4375,6 +4458,12 @@
     <Content Include="SenchaWorkspace\EMSPEEDExt5\sass\src\view\dashboard\dashboardBasePanel.min.css">
       <DependentUpon>dashboardBasePanel.css</DependentUpon>
     </Content>
+    <Content Include="SenchaWorkspace\EMSPEEDExt5\sass\src\common\panel\AnimateTool.css">
+      <DependentUpon>AnimateTool.scss</DependentUpon>
+    </Content>
+    <Content Include="SenchaWorkspace\EMSPEEDExt5\sass\src\common\panel\AnimateTool.min.css">
+      <DependentUpon>AnimateTool.css</DependentUpon>
+    </Content>
     <Content Include="SenchaWorkspace\EMSPEEDExt5\sass\src\view\viewport\Navigation.css">
       <DependentUpon>Navigation.scss</DependentUpon>
     </Content>
@@ -4413,11 +4502,17 @@
     <Content Include="SenchaWorkspace\EMSPEEDExt5\Spacetree\jit.js" />
     <Content Include="SenchaWorkspace\EMSPEEDExt5\Spacetree\Spacetree.css" />
     <Content Include="SenchaWorkspace\EMSPEEDExt5\test.html" />
+    <Content Include="SenchaWorkspace\EMSPEEDExt5\testing\animate.html" />
+    <Content Include="SenchaWorkspace\EMSPEEDExt5\testing\touchSlider\index.html" />
+    <Content Include="SenchaWorkspace\EMSPEEDExt5\testing\touchSlider\menu.css" />
+    <Content Include="SenchaWorkspace\EMSPEEDExt5\testing\touchSlider\menu.js" />
     <Content Include="SenchaWorkspace\EMSPEEDExt5\widgets\basiclinemarker.png" />
     <Content Include="SenchaWorkspace\EMSPEEDExt5\widgets\basiclinemarker.js" />
     <Content Include="SenchaWorkspace\EMSPEEDExt5\widgets\basicline.png" />
     <Content Include="SenchaWorkspace\EMSPEEDExt5\widgets\basicline.js" />
     <Content Include="SenchaWorkspace\EMSPEEDExt5\widgets\imageviewer.png" />
+    <Content Include="SenchaWorkspace\EMSPEEDExt5\widgets\nganimate.js" />
+    <Content Include="SenchaWorkspace\EMSPEEDExt5\widgets\nganimate.png" />
     <Content Include="SenchaWorkspace\EMSPEEDExt5\widgets\nghelloworld.png" />
     <Content Include="SenchaWorkspace\EMSPEEDExt5\widgets\nghelloworld.js" />
     <Content Include="SenchaWorkspace\EMSPEEDExt5\widgets\riskmatrix.js" />
@@ -4529,6 +4624,20 @@
     <Content Include="SenchaWorkspace\EMSPEEDExt5\sass\src\view\dashboard\dashboardAddWidgetBrowser.css.map">
       <DependentUpon>dashboardAddWidgetBrowser.css</DependentUpon>
     </Content>
+    <Content Include="SenchaWorkspace\EMSPEEDExt5\sass\src\common\panel\AnimateTool.scss" />
+    <Content Include="SenchaWorkspace\EMSPEEDExt5\sass\src\common\panel\AnimateTool.css.map">
+      <DependentUpon>AnimateTool.css</DependentUpon>
+    </Content>
+    <Content Include="SenchaWorkspace\bower_components\angular-animate\.bower.json" />
+    <Content Include="SenchaWorkspace\bower_components\angular-animate\angular-animate.min.js.map" />
+    <Content Include="SenchaWorkspace\bower_components\angular-animate\bower.json" />
+    <Content Include="SenchaWorkspace\bower_components\angular-animate\README.md" />
+    <Content Include="SenchaWorkspace\bower_components\animate.css\.bower.json" />
+    <Content Include="SenchaWorkspace\bower_components\animate.css\.editorconfig" />
+    <Content Include="SenchaWorkspace\bower_components\animate.css\animate-config.json" />
+    <Content Include="SenchaWorkspace\bower_components\animate.css\bower.json" />
+    <Content Include="SenchaWorkspace\bower_components\animate.css\package.json" />
+    <Content Include="SenchaWorkspace\bower_components\animate.css\README.md" />
     <None Include="SenchaWorkspace\EMSPEEDExt5\widgets\risks - Copy.jsx" />
     <Content Include="SenchaWorkspace\EMSPEEDExt5\widgets\risks.png" />
     <Content Include="SenchaWorkspace\EMSPEEDExt5\widgets\ngimage.png" />

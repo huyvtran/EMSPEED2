@@ -1,0 +1,6 @@
+@-webkit-keyframes makeBigger { from {height: 40px;} to {height: 200px;} }
+@-webkit-keyframes makeSmaller { from {height: 200px;} to {height: 40px;}
+}
+
+.animateItBigger { transform: translate3d(0, 0, 0);-webkit-animation: makeBigger 250ms; }
+.animateItSmaller { transform: translate3d(0, 0, 0);-webkit-animation: makeSmaller 250ms; }

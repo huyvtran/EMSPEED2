@@ -17,12 +17,15 @@
     background-color: $color-slb-blue;
     border-top: 0;
     border-bottom: 0;
+
 }
 .emspeed-grid-item.emspeed-grid-item-over {
     color: $color-white;
     background-color: $color-emspeed-blue;
     border-top: 0;
     border-bottom: 0;
+transform: translate3d(0, 0, 0);-webkit-transition: height 10s;transition: height 10s;
+
 }
 .emspeed-grid-item .x-grid-item-focused {
     color: $color-white;

@@ -351,63 +351,63 @@ Ext.define('EMSPEEDExt5.view.parts.riskmatrix.Riskmatrix', {
 });
 
 
-$(function () {
+//$(function () {
 
-    $('body').on('click', '.matrix .filter li', function () {
-        com.startLoading();
-        var type = $(this).attr('data-e-value'),
-            rm = Ext.getCmp('dashboardPortletRiskMatrix');
-        rm.currentSelection[type] = !rm.currentSelection[type];
-        rm.updateFilter(rm);
-        com.endLoading();
-    });
+//    $('body').on('click', '.matrix .filter li', function () {
+//        com.startLoading();
+//        var type = $(this).attr('data-e-value'),
+//            rm = Ext.getCmp('dashboardPortletRiskMatrix');
+//        rm.currentSelection[type] = !rm.currentSelection[type];
+//        rm.updateFilter(rm);
+//        com.endLoading();
+//    });
 
-    //$('body').on('click', '.matrix ul.row lix', function () {
-    //    com.startLoading();
-    //    var color = $(this).attr('data-e-value');
-    //    clearSelection();
+//    //$('body').on('click', '.matrix ul.row lix', function () {
+//    //    com.startLoading();
+//    //    var color = $(this).attr('data-e-value');
+//    //    clearSelection();
 
-    //    $(this).addClass('the-selected-' + color);
+//    //    $(this).addClass('the-selected-' + color);
 
-    //    var me = Ext.getCmp('gridStore');
-    //    var store = me.getStore();
-    //    store.clearFilter();
-    //    store.filter("riskSeverity", $(this).attr('r'));
-    //    store.filter("riskOccurrence", $(this).attr('c'));
-    //    com.endLoading();
-    //});
+//    //    var me = Ext.getCmp('gridStore');
+//    //    var store = me.getStore();
+//    //    store.clearFilter();
+//    //    store.filter("riskSeverity", $(this).attr('r'));
+//    //    store.filter("riskOccurrence", $(this).attr('c'));
+//    //    com.endLoading();
+//    //});
 
-    // filters
-    //$('body').on('mouseover', '.matrix .filter li', function () {
-    //    var type = $(this).attr('data-e-value');
-    //    $('.matrix ul.row li.' + type).addClass('the-hover-' + type);
+//    // filters
+//    //$('body').on('mouseover', '.matrix .filter li', function () {
+//    //    var type = $(this).attr('data-e-value');
+//    //    $('.matrix ul.row li.' + type).addClass('the-hover-' + type);
 
-    //}).on('mouseout', '.matrix .filter li', function () {
-    //    var type = $(this).attr('data-e-value');
-    //    $('.matrix ul.row li.' + type).removeClass('the-hover-' + type);
-    //});
+//    //}).on('mouseout', '.matrix .filter li', function () {
+//    //    var type = $(this).attr('data-e-value');
+//    //    $('.matrix ul.row li.' + type).removeClass('the-hover-' + type);
+//    //});
 
-    //var clearSelection = function () {
-    //    debugger;
-    //    rm = Ext.getCmp('dashboardPortletRiskMatrix');
+//    //var clearSelection = function () {
+//    //    debugger;
+//    //    rm = Ext.getCmp('dashboardPortletRiskMatrix');
 
-    //    for (var item in rm.currentSelection) {
-    //        rm.currentSelection[item] = false;
-    //    }
+//    //    for (var item in rm.currentSelection) {
+//    //        rm.currentSelection[item] = false;
+//    //    }
 
-    //    $('.matrix li').removeClass(function (index, classNames) {
-    //        var currentClasses = classNames.split(" "),
-    //            classesToRemove = [];
+//    //    $('.matrix li').removeClass(function (index, classNames) {
+//    //        var currentClasses = classNames.split(" "),
+//    //            classesToRemove = [];
 
-    //        $.each(currentClasses, function (index, className) {
-    //            if (/the-selected.*/.test(className)) {
-    //                classesToRemove.push(className);
-    //            }
-    //        });
+//    //        $.each(currentClasses, function (index, className) {
+//    //            if (/the-selected.*/.test(className)) {
+//    //                classesToRemove.push(className);
+//    //            }
+//    //        });
 
-    //        return classesToRemove.join(" ");
-    //    });
+//    //        return classesToRemove.join(" ");
+//    //    });
 
-    //};
+//    //};
 
-});
+//});

@@ -1,34 +1,10 @@
-//Ext.example = function () {
-//    var msgCt;
-
-//    function createBox(t, s) {
-//        // return ['<div class="msg">',
-//        //         '<div class="x-box-tl"><div class="x-box-tr"><div class="x-box-tc"></div></div></div>',
-//        //         '<div class="x-box-ml"><div class="x-box-mr"><div class="x-box-mc"><h3>', t, '</h3>', s, '</div></div></div>',
-//        //         '<div class="x-box-bl"><div class="x-box-br"><div class="x-box-bc"></div></div></div>',
-//        //         '</div>'].join('');
-//        return '<div class="msg ' + Ext.baseCSSPrefix + 'border-box"><h3>' + t + '</h3><p>' + s + '</p></div>';
-//    }
-//    return {
-//        msg: function (title, format) {
-//            if (!msgCt) {
-//                msgCt = Ext.DomHelper.insertFirst(document.body, { id: 'msg-div' }, true);
-//            }
-//            var s = Ext.String.format.apply(String, Array.prototype.slice.call(arguments, 1));
-//            var m = Ext.DomHelper.append(msgCt, createBox(title, s), true);
-//            m.hide();
-//            m.slideIn('t').ghost("t", { delay: 1000, remove: true });
-//        }
-//    };
-//}();
-
-
 Ext.define('EMSPEEDExt5.view.viewport.North', {
-    extend: 'Ext.Container',
+   extend: 'Ext.Container',
     xtype: 'North',
     id: 'North',
     cls: 'north',
     height: 50,
+
     layout: {
         type: 'hbox'
     },
@@ -52,57 +28,31 @@ Ext.define('EMSPEEDExt5.view.viewport.North', {
             { xtype: 'hovermenu', margin: '16px 10px 0px 200px', text: 'Project', active: true, menuItems: aMenu },
             { xtype: 'hovermenu', margin: '16px 10px 0px 20px', text: 'Product', active: false, menuItems: aMenu },
 
-
             //{  xtype: 'contextmenudataview', margin: '6px 0px 0px 50px'  },
-
-
             //{ xtype: 'dashboardmenuitem', text: 'Products', style: { color: 'white' } },
 
-            {
-                xtype: 'container',
-                height: 50,
-                flex: 1,
-                items: [
-                ]
-            },
+            { xtype: 'container', height: 50, flex: 1, items: [] },
 
             {
                 xtype: 'component',
                 margin: '17px 0px 15px 0px',
                 html: '' +
                     '<a style="color:white;font-size:14px;" href="#" class="dropdown-toggle" data-toggle="dropdown">' +
-                    //'<i class="fa fa-user"></i>' +
                     'Marc Gusmano' +
-                    //'<b class="caret"></b>' +
                     '</a>' +
                     ''
             },
 
-            //{
-            //    xtype: 'component',
-            //    margin: '0px 0px 0px 0px',
-            //    html: '<div class="emspeed-header"> <div class="emspeed-header-menuProductTest">Welcome Marc Gusmano</div></div>'
-            //},
-
-            //{ xtype: 'button', ui: 'emspeedglyph-toolbar', style: { fontSize: '22px', color: 'white' }, tooltip: 'favorite', handler: function () { alert('clicked') }, glyph: 'xf006@FontAwesome' },
-
-            
-            //{
-            //    xtype: 'component',
-            //    margin: '15px 0px 0px 15px',
-            //    html: '<a style="color:white;font-size:14px;" href="#" class="dropdown-toggle" data-toggle="dropdown"><i style="color:white;font-size:14px;" class="fa fa-envelope fa-fw"></i> Messages <span style="color:white;font-size:14px;" class="badge">2</span> <b style="color:white;font-size:14px;" class="caret"></b></a>'
-            //},
-
-            { xtype: 'container', style: { marginTop: '17px', marginLeft: '15px' }, html: '<span class="fa fa-envelope fa-fw" style="color:white;font-size:14px;" />' },
+            //{ xtype: 'container', style: { marginTop: '17px', marginLeft: '15px' }, html: '<span class="fa fa-envelope fa-fw" style="color:white;font-size:14px;" />' },
             //{ xtype: 'container', style: { marginTop: '17px', marginLeft: '5px' }, html: '<span class="fa fa-caret-down" style="color:white;font-size:12px;" />' },
 
-            { xtype: 'container', style: { marginTop: '17px', marginLeft: '15px' }, html: '<span class="fa fa-tasks fa-fw" style="color:white;font-size:14px;" />' },
+            //{ xtype: 'container', style: { marginTop: '17px', marginLeft: '15px' }, html: '<span class="fa fa-tasks fa-fw" style="color:white;font-size:14px;" />' },
             //{ xtype: 'container', style: { marginTop: '17px', marginLeft: '5px' }, html: '<span class="fa fa-caret-down" style="color:white;font-size:12px;" />' },
 
-            { xtype: 'container', style: { marginTop: '17px', marginLeft: '15px' }, html: '<span class="fa fa-bell fa-fw" style="color:white;font-size:14px;" />' },
+            { xtype: 'container', style: { marginTop: '17px', marginLeft: '15px', marginRight: '15px' }, html: '<span class="fa fa-bell fa-fw" style="color:white;font-size:14px;" />' },
             //{ xtype: 'container', style: { marginTop: '17px', marginLeft: '5px' }, html: '<span class="fa fa-caret-down" style="color:white;font-size:12px;" />' },
 
-            { xtype: 'container', style: { marginTop: '17px', marginLeft: '15px', marginRight: '15px' }, html: '<span class="fa fa-user fa-fw" style="color:white;font-size:14px;" />' },
+            //{ xtype: 'container', style: { marginTop: '17px', marginLeft: '15px', marginRight: '15px' }, html: '<span class="fa fa-user fa-fw" style="color:white;font-size:14px;" />' },
             //{ xtype: 'container', style: { marginTop: '17px', marginLeft: '5px', marginRight: '95px' }, html: '<span class="fa fa-caret-down" style="color:white;font-size:12px;" />' },
 
             {

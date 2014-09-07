@@ -90,24 +90,24 @@
         ]
 });
 
-$(function () {
-    $(document.body).on("click", '.cloneLink', function () {
-        if (typeof ALLOW_CHROME === "undefined") {
-            if (!Ext.isIE) {
-                launchDetailPanel = false;
-                var newMsg = '<span>PMT Cloned Studies are only available using Internet Explorer as your browser.  If you wish to use the PMT Clone Study feature, then please close your current browser and return using Internet Explorer.</span>';
-                Ext.Msg.show({
-                    title: 'Incompatible Browser',
-                    msg: newMsg,
-                    buttons: Ext.MessageBox.OK,
-                    fn: Ext.emptyFn,
-                    closable: false,
-                    icon: Ext.Msg.INFO
-                });
-                return false;
-            }
-        }
-        var url = $(this).attr("data-url");
-        com.popUpWindow(url);
-    });
-});
+//$(function () {
+//    $(document.body).on("click", '.cloneLink', function () {
+//        if (typeof ALLOW_CHROME === "undefined") {
+//            if (!Ext.isIE) {
+//                launchDetailPanel = false;
+//                var newMsg = '<span>PMT Cloned Studies are only available using Internet Explorer as your browser.  If you wish to use the PMT Clone Study feature, then please close your current browser and return using Internet Explorer.</span>';
+//                Ext.Msg.show({
+//                    title: 'Incompatible Browser',
+//                    msg: newMsg,
+//                    buttons: Ext.MessageBox.OK,
+//                    fn: Ext.emptyFn,
+//                    closable: false,
+//                    icon: Ext.Msg.INFO
+//                });
+//                return false;
+//            }
+//        }
+//        var url = $(this).attr("data-url");
+//        com.popUpWindow(url);
+//    });
+//});

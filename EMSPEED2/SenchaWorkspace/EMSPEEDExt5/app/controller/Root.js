@@ -129,10 +129,12 @@ Ext.define('EMSPEEDExt5.controller.Root', {
                             if (flag < arrayLength) {
                                 window.setTimeout(checkFlag, 100); /* this checks the flag every 100 milliseconds*/
                             } else {
-                                //console.log('Root.js - Viewport before');
+                                console.log('Root.js - Viewport before');
+                                var $injector = angular.bootstrap(document, ['app']);
                                 me.viewport = Ext.create('EMSPEEDExt5.view.viewport.Viewport', {});
                                 //console.log('Root.js - Viewport after');
                                 //Ext.getCmp('contextcontrollerBasePanel').setContextData(project);
+                                me.viewport.addCls('viewport-inner');
                                 document.getElementById('divloading').style.visibility = "hidden";
                                 action.resume();
                             }
@@ -140,7 +142,17 @@ Ext.define('EMSPEEDExt5.controller.Root', {
                         checkFlag();
                         for (var i = 0; i < arrayLength; i++) {
                             //console.log('load... ' + s + fArray2[i].type + '.' + fArray2[i].extension);
-                            Ext.Loader.loadScript({ url: s + fArray2[i].type + '.' + fArray2[i].extension, onLoad: function () { flag += 1; }, onError: function () { console.log('FAIL'); }, scope: this });
+                            Ext.Loader.loadScript({
+                                url: s + fArray2[i].type + '.' + fArray2[i].extension, onLoad: function (s) {
+                                    flag += 1;
+                                    //console.log(s.url);
+                                    //var myClass = Ext.ClassManager.getClass('widget.' + fArray2[i].type);
+                                    //myClass.sayHi();
+
+                                }, onError: function () { console.log('FAIL'); }, scope: this
+                            });
+
+
                         }
                     });
                 }
