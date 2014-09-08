@@ -32,7 +32,8 @@ Ext.define('EMSPEEDExt5.view.baseclass.baseclassWidget', {
             me.ngVar = me.ngVar + 'Directive';
             theData = me.ngVar + 'Data';
             me.html = '' +
-                '<div ng-controller="' + xclass + 'Controller"><div class="' + me.widgetData.rootCls + '" id="' + me.ngVar + '" ' + xclass.toLowerCase() + ' widgetdata="' + theData.toLowerCase() + '"></div></div>' +
+                //'<div ng-controller="' + xclass + 'Controller"><div class="' + me.widgetData.rootCls + '" id="' + me.ngVar + '" ' + xclass.toLowerCase() + ' widgetdata="' + theData.toLowerCase() + '"></div></div>' +
+                '<div ng-controller="widgetController"><div class="' +me.widgetData.rootCls + '" id="' +me.ngVar + '" ' +xclass.toLowerCase() + ' widgetdata="' +theData.toLowerCase() + '"></div></div>' +
                 '';
         };
         me.callParent(arguments);
@@ -60,22 +61,23 @@ Ext.define('EMSPEEDExt5.view.baseclass.baseclassWidget', {
         }]);
     },
 
-    //style_rules: [],
-    //constructor: function () {
-    //    var me = this;
-    //    if (this.style_rules.length > 0) {
-    //        var style = '<style type="text/css">' + this.style_rules.join("\n") + "</style>";
-    //        $("head").append(style);
-    //    }
-    //    me.callParent(arguments);
-    //},
-
     loadPage: function () {
     },
 
     configModified: function (s) {
-        this.widgetData = s;
-        this.loadPage();
+        var me = this;
+        me.widgetData = s;
+
+        if (me.self.angularCode != undefined) {
+            var ngVar = me.ngVar;
+            var $theDiv = $('#' + ngVar);
+            var controllerScope = angular.element($theDiv).scope();
+            var scopeVar = ngVar + 'Data';
+            controllerScope[scopeVar.toLowerCase()] = s;
+            controllerScope.$apply(function () {
+            })
+        };
+        me.loadPage();
     },
 
     refresh: function () {

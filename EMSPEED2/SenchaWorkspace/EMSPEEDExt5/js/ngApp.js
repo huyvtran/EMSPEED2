@@ -1,4 +1,5 @@
 angular.module('app', ['ngAnimate', 'ngMockE2E'])
+.controller('widgetController', ['$scope', function ($scope) { }])
 .run(["$httpBackend", function ($httpBackend) {
 
     var items = [

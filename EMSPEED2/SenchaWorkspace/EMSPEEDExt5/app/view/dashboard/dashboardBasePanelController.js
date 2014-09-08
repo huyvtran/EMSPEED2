@@ -2,6 +2,10 @@ Ext.define('EMSPEEDExt5.view.dashboard.dashboardBasePanelController', {
     extend: 'Ext.app.ViewController',
     alias: 'controller.dashboardBasePanel',
 
+    onAddWidget: function () {
+        var margin = 200;
+        Ext.create("EMSPEEDExt5.view.dashboard.dashboardAddWidgetDialog", { rootView: this.lookupReference('dashboard'), width: window.innerWidth - margin, height: window.innerHeight - margin }).show();
+    },
     //onNg: function () {
     //    var $theDiv = $('#Test');
     //    var controllerScope = angular.element($theDiv).scope();
@@ -143,10 +147,7 @@ Ext.define('EMSPEEDExt5.view.dashboard.dashboardBasePanelController', {
     onDeleteLayout: function () {
         alert('to be implemented...');
     },
-    onAddWidget: function () {
-        var margin = 200;
-        Ext.create("EMSPEEDExt5.view.dashboard.dashboardAddWidgetDialog", { rootView: this.lookupReference('dashboard'), width: window.innerWidth - margin, height: window.innerHeight - margin }).show();
-    },
+
 
     onRestore: function () {
         alert('To Be Implemented...');

@@ -4,20 +4,11 @@ Ext.define('EMSPEEDExt5.view.dashboard.dashboardPropertiesController', {
 
     onSave: function (sender) {
         var grid = sender.up('propertygrid');
-        console.log(grid.theWidget);
-        console.log(grid.currentPanelHeader);
-        console.log(grid.getSource());
-        grid.theWidget.configModified(grid.getSource());
-        grid.currentPanelHeader.ownerCt.el.dom.style.borderWidth = '1px';
-        grid.currentPanelHeader.ownerCt.el.dom.style.borderColor = '#C2C2C2';
-        grid.setSource({});
-        grid.hide();
+        this.onApply(sender);
+        this.onCancel(sender);
     },
     onApply: function (sender) {
         var grid = sender.up('propertygrid');
-        console.log(grid.theWidget);
-        console.log(grid.currentPanelHeader);
-        console.log(grid.getSource());
         grid.theWidget.configModified(grid.getSource());
     },
     onCancel: function (sender) {
@@ -27,6 +18,5 @@ Ext.define('EMSPEEDExt5.view.dashboard.dashboardPropertiesController', {
         grid.setSource({});
         grid.hide();
     }
-
  
 });

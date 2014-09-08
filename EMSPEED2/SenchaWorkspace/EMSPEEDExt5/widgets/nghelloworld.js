@@ -11,14 +11,15 @@ Ext.define('widget.nghelloworld', {
 
 
             angular.module('app')
-            .controller(controller, ['$scope', function ($scope) { }])
             .factory(service, ['$http', '$q', function ($http, $q) { }])
             .directive(directive, function () {
                 return {
                     restrict: 'A',
                     scope: { widgetdata: '=' },
                     replace: true,
-                    template: '<p style="background-color:{{color}}">{{widgetdata.text}}</p></div>'
+                    template: '<p style="background-color:{{color}}">{{widgetdata.text}}</p></div>',
+                    controller: ['$scope', service, function ($scope, service) {
+                    }],
                     //link: function (scope, elem, attrs) {
                     //    elem.bind('click', function () {
                     //        elem.css('background-color', 'red');

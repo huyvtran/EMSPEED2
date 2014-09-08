@@ -18,7 +18,6 @@ Ext.define('widget.ngdirective', {
         ]);
 
         angular.module('app')
-        .controller(controller, ['$scope', function ($scope) { }])
         .factory(service, ['$http', '$q', function ($http, $q) {
             var get = function () {
                 var deferred = $q.defer();
