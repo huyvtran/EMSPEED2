@@ -1486,6 +1486,54 @@ input, select {
 .error-table table td, .error-table table th {
   padding: 4px 6px; }
 
+.dfx .emspeed-mismatch {
+  color: #ffa500;
+  cursor: pointer; }
+.dfx .value {
+  line-height: 1.5;
+  border: 2px solid #ffffff; }
+.dfx .emspeed-dfx-warning {
+  background-image: url('../../../images/EMSPortal/icon-warning.png');
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 19px;
+  cursor: pointer; }
+.dfx .dfx-table, .dfx .dfx-data-grid {
+  width: 100%;
+  font-size: 12px; }
+.dfx .dfx-table thead th {
+  background-color: #eee;
+  padding: 6px; }
+.dfx .dfx-table thead th:last-child, .dfx .dfx-table thead th:first-child {
+  width: 48%; }
+.dfx .dfx-table thead th:last-child {
+  text-align: right; }
+.dfx .dfx-data-grid {
+  background-color: #eee;
+  border-collapse: separate;
+  border-spacing: 1px 1px; }
+  .dfx .dfx-data-grid th {
+    background-color: #fff;
+    text-align: center;
+    text-transform: uppercase; }
+  .dfx .dfx-data-grid th, .dfx .dfx-data-grid td {
+    padding: 6px; }
+  .dfx .dfx-data-grid td.next-complete {
+    background-color: #769248;
+    color: #d7d7d7; }
+  .dfx .dfx-data-grid .overall {
+    width: 50px;
+    text-align: right; }
+  .dfx .dfx-data-grid .next {
+    text-align: left;
+    width: 50px; }
+.dfx .cdp-readiness {
+  margin-top: 15px; }
+  .dfx .cdp-readiness .row {
+    padding: 4px 0; }
+  .dfx .cdp-readiness .label {
+    font-weight: bold; }
+
 /*.msg {
     font-size: 14px;
 }*/

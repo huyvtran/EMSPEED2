@@ -43,25 +43,25 @@
 
     "js": [
 		{
-            "path": "../js/jquery-1.10.2.js"
+            "path": "js/jquery-1.10.2.js"
         },
         {
-            "path": "../js/jquery.qrcode-0.7.0.js"
+            "path": "js/jquery.qrcode-0.7.0.js"
         },	
         {
-            "path": "../js/jquery.tmpl.min.js"
+            "path": "js/jquery.tmpl.min.js"
         },        
         {
-            "path": "../js/jquery.history.js"
+            "path": "js/jquery.history.js"
         },        
         {
-            "path": "../js/core.string.js"
+            "path": "js/core.string.js"
         },        
         {
-            "path": "../js/jquery.touchSwipe-1.2.5.js"
+            "path": "js/jquery.touchSwipe-1.2.5.js"
         },        
         {
-            "path": "../js/jquery.flips.js"
+            "path": "js/jquery.flips.js"
         },        
         
         	

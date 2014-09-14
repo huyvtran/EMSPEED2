@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+
+    <link href="../ext/packages/ext-theme-crisp/build/resources/ext-theme-crisp-all-debug.css" rel="stylesheet" />
+</head>
+<body>
+    <script src="http://localhost:501/build/ext-all-debug.js"></script>
+<script>
+    Ext.application({
+        name: 'simple',
+        launch: function () {
+            console.log('launch in Application');
+            Ext.create('Ext.Viewport', {
+                layout: 'border',
+                renderTo: 'body',
+                items: [
+                    {
+                        xtype: 'button',
+                        region: 'center'
+                    }
+                ]
+            });
+        }
+    })
+</script>
+</body>
+</html>

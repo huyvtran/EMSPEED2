@@ -33,7 +33,8 @@ sencha generate view player.Player
 sencha generate view videolist.VideoList
 
 
-sencha -sdk D:\sencha\ext-5.0.1 generate app CustomThemeApp ./CustomThemeApp 
+sencha -sdk D:\sencha\ext-5.0.1 generate app EMSPEED ./EMSPEED 
+sencha app upgrade D:\sencha\ext-5.0.1.1054
 
 
 sencha generate view dashboard3.dashboard3BasePanel
@@ -42,6 +43,9 @@ sencha -sdk D:\sencha\ext-5.0.1 generate workspace my-workspace
 cd my-workspace
 sencha -sdk ext generate app ThemeDemoApp theme-demo-app
 
+sencha app upgrade -noframework
+
+sencha generate theme EMSPEED-theme
 
 
 

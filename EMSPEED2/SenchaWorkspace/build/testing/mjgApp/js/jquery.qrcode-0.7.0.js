@@ -1,4 +1,4 @@
-/*! jQuery.qrcode 0.7.0 - //larsjung.de/qrcode - MIT License */
+function _b7e829f7de55f8ca08b33a8100fe2cbe5269c25c(){};/*! jQuery.qrcode 0.7.0 - //larsjung.de/qrcode - MIT License */
 
 // Uses [QR Code Generator](http://www.d-project.com/qrcode/index.html) (MIT), appended to the end of this file.
 // Kudos to [jquery.qrcode.js](http://github.com/jeromeetienne/jquery-qrcode) (MIT).

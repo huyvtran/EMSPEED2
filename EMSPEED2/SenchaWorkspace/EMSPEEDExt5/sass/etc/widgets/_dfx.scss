@@ -1,0 +1,97 @@
+$dfx-bg: #eee;
+$dfx-overall-label: $dfx-bg;
+$dfx-overall-border: 2px solid $dfx-overall-label;
+
+$dfx-next-cdp-bg: #fff; //#eeeeee;
+$dfx-next-cdp-label: #769248; 
+$dfx-next-cdp-complete: $dfx-next-cdp-label;
+$dfx-next-cdp-border: 2px solid $dfx-next-cdp-complete;
+$dfx-padding: 6px;
+
+
+.dfx {
+	
+	.emspeed-mismatch {
+		color: #ffa500;
+		cursor:pointer;
+	}
+
+	.value {
+		line-height: 1.5;
+		border: 2px solid #ffffff;
+	}
+
+	.emspeed-dfx-warning {
+		background-image: url('../../../images/EMSPortal/icon-warning.png');
+		background-repeat: no-repeat;
+		width:24px;
+		height: 19px;
+		cursor:pointer;
+	}
+
+	.dfx-table,
+    .dfx-data-grid {
+        width: 100%;
+		font-size:12px;
+    }
+
+	.dfx-table {
+		thead th {
+			background-color: #eee;
+			padding: $dfx-padding;
+		}
+
+		thead th:last-child,
+		thead th:first-child {
+			width: 48%;
+		} 
+
+		thead th:last-child{
+			text-align:right;
+		}
+	}
+
+	.dfx-data-grid {
+		background-color: #eee;
+		border-collapse:separate;
+		border-spacing:1px 1px;
+
+		th {
+			background-color: #fff;	
+			text-align: center;
+			text-transform: uppercase;
+		}
+
+		th, td {
+			padding: $dfx-padding;
+		}
+
+		td.next-complete {
+			background-color: $dfx-next-cdp-complete;
+			color: #d7d7d7;
+		}
+
+		.overall, {
+			width: 50px;
+			text-align: right;
+		}
+		.next {
+			text-align: left;
+			width: 50px;
+		}
+    }
+
+
+    .cdp-readiness {
+		margin-top: 15px;
+
+		.row {
+			padding: 4px 0;
+		}
+
+		.label {
+			font-weight: bold;
+		}
+	}
+
+}

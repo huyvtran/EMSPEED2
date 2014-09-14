@@ -33,7 +33,7 @@ Ext.define('EMSPEEDExt5.view.baseclass.baseclassWidget', {
             theData = me.ngVar + 'Data';
             me.html = '' +
                 //'<div ng-controller="' + xclass + 'Controller"><div class="' + me.widgetData.rootCls + '" id="' + me.ngVar + '" ' + xclass.toLowerCase() + ' widgetdata="' + theData.toLowerCase() + '"></div></div>' +
-                '<div ng-controller="widgetController"><div class="' +me.widgetData.rootCls + '" id="' +me.ngVar + '" ' +xclass.toLowerCase() + ' widgetdata="' +theData.toLowerCase() + '"></div></div>' +
+                '<div style="height:100%;" ng-controller="widgetController"><div style="height:100%;" class="' + me.widgetData.rootCls + '" id="' + me.ngVar + '" ' + xclass.toLowerCase() + ' widgetdata="' + theData.toLowerCase() + '"></div></div>' +
                 '';
         };
         me.callParent(arguments);
@@ -56,7 +56,6 @@ Ext.define('EMSPEEDExt5.view.baseclass.baseclassWidget', {
         $injector.invoke(['$compile', function ($compile) {
             controllerScope.$apply(function () {
                 $compile($theDiv)(controllerScope);
-                //$scope.$$phase
             })
         }]);
     },

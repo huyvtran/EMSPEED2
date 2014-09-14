@@ -7,15 +7,15 @@ Ext.define('widget.marc', {
         this.down('button').setText(this.widgetData.name);
     },
 
-    constructor: function() {
-        console.log('marc');
-        var me = this;
+    //constructor: function() {
+    //    console.log('marc');
+    //    var me = this;
 
-        me.style_rules.push(".blue { color: blue; } ");
-        me.style_rules.push(".red { color: red; } ");
+    //    me.style_rules.push(".blue { color: blue; } ");
+    //    me.style_rules.push(".red { color: red; } ");
 
-        me.callParent(arguments);
-    },
+    //    me.callParent(arguments);
+    //},
 
     initComponent: function () {
         var me = this;

@@ -12,13 +12,16 @@ Ext.define('widget.nghelloworld', {
 
             angular.module('app')
             .factory(service, ['$http', '$q', function ($http, $q) { }])
-            .directive(directive, function () {
+            .directive(directive, ['$rootScope', function ($rootScope) {
                 return {
                     restrict: 'A',
                     scope: { widgetdata: '=' },
                     replace: true,
-                    template: '<p style="background-color:{{color}}">{{widgetdata.text}}</p></div>',
-                    controller: ['$scope', service, function ($scope, service) {
+                    template: '<p style="background-color:{{color}}">{{widgetdata.text}}-{{projectId}}</p></div>',
+                    controller: ['$scope', service, function ($scope,  service) {
+                        $scope.$on('projectId', function (event, message) {
+                            $scope.projectId = message;
+                        });
                     }],
                     //link: function (scope, elem, attrs) {
                     //    elem.bind('click', function () {
@@ -32,7 +35,7 @@ Ext.define('widget.nghelloworld', {
                     //    });
                     //}
                 };
-            });
+            }]);
 
 
 

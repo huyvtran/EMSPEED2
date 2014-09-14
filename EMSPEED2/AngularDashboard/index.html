@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html ng-app="app">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+
+    <!--<link href="bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />-->
+    <link href="../bower_components/bootstrap/less/bootstrap.less" rel="stylesheet/less" />
+   
+    <script src="js/less-1.7.4.js"></script>
+    <link href="../bower_components/metisMenu/dist/metisMenu.css" rel="stylesheet" />
+    <link href="../bower_components/fontawesome/css/font-awesome.css" rel="stylesheet" />
+    <link href="css/dashboard.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/demo.css" rel="stylesheet" />
+    <link href="css/smartadmin-production.css" rel="stylesheet" />
+    <link href="css/smartadmin-skins.css" rel="stylesheet" />
+    <link href="css/animate.css" rel="stylesheet" />
+</head>
+<body>
+    <div class='head' mg-header></div>
+    <div class='main'>
+        <div class='left' mg-sidenav></div>
+        <div class='ngview' ng-view=""></div>
+    </div>
+    <div id='foot'></div>
+    <script src="../bower_components/jquery/dist/jquery.js"></script>
+    <script src="../bower_components/jquery-ui/jquery-ui.js"></script>
+    <script src="../bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="../bower_components/metisMenu/dist/metisMenu.js"></script>
+    <script src="../bower_components/angular/angular.js"></script>
+    <script src="../bower_components/angular-route/angular-route.js"></script>
+    <script src="../bower_components/angular-bootstrap/ui-bootstrap.js"></script>
+    <script src="../bower_components/angular-ui-sortable/sortable.js"></script>
+    <script src="../bower_components/lodash/dist/lodash.js"></script>
+    <script src="js/jarvis.widget.js"></script>
+    <script src="../bower_components/angular-mocks/angular-mocks.js"></script>
+    <script src="app/dashboard.js"></script>
+    <script src="app/activity.js"></script>
+    <script src="app/app.js"></script>
+    <script src="app/models.js"></script>
+    <script src="app/widgets.js"></script>
+    <script src="app/mockNg.js"></script>
+    <script src="js/demo.js"></script>
+</body>
+</html>
+
+<script>
+    $(function () {
+        $.root_ = $('body');
+    })
+</script>
+

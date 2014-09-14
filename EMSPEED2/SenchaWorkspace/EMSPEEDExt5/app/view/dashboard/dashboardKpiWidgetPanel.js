@@ -19,7 +19,37 @@ Ext.define('EMSPEEDExt5.view.dashboard.dashboardKpiWidgetPanel', {
             { xtype: 'component', html: me.getHtml('#ffffff', '#5cb85c', 'tasks', '12', 'New Tasks') },
             { xtype: 'component', html: me.getHtml('#ffffff', '#f0ad4e', 'shopping-cart', '124', 'New Orders') },
             { xtype: 'component', html: me.getHtml('#ffffff', '#d9534f', 'support', '13', 'Support Tickets') },
-            { xtype: 'component', html: me.getHtml('#000000', '#ddd', 'truck', '10', 'New Shipments') }
+            { xtype: 'component', html: me.getHtml('#000000', '#ddd', 'truck', '10', 'New Shipments') },
+
+
+
+
+
+            {
+                xtype: 'component',
+                html: '' +
+                    '<div class="top-content">' +
+                    '	<ul class="list-inline mini-stat">' +
+                    '		<li>' +
+                    '			<h5>NEW PO\'S <span class="stat-value stat-color-orange"><i class="fa fa-shopping-cart"></i> 30</span></h5>' +
+                    '			<span id="mini-bar-chart1" class="mini-bar-chart"><canvas width="53" height="25" style="display: inline-block; vertical-align: top; width: 53px; height: 25px;"></canvas></span>' +
+                    '		</li>' +
+                    '		<li>' +
+                    '			<h5>ECO\'S <span class="stat-value stat-color-blue"><i class="fa fa-plus-circle"></i> 25</span></h5>' +
+                    '			<span id="mini-bar-chart2" class="mini-bar-chart"><canvas width="53" height="25" style="display: inline-block; vertical-align: top; width: 53px; height: 25px;"></canvas></span>' +
+                    '		</li>' +
+                    '		<li>' +
+                    '			<h5>CUSTOMERS <span class="stat-value stat-color-seagreen"><i class="fa fa-plus-circle"></i> 43,748</span></h5>' +
+                    '			<span id="mini-bar-chart3" class="mini-bar-chart"><canvas width="53" height="25" style="display: inline-block; vertical-align: top; width: 53px; height: 25px;"></canvas></span>' +
+                    '		</li>' +
+                    '	</ul>' +
+                    '</div>' +
+                    ''
+            }
+
+
+
+
         ];
         me.callParent(arguments);
     },

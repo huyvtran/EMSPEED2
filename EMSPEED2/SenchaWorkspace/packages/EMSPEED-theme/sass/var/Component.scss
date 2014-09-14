@@ -1,0 +1,9 @@
+﻿$base-color: #6084a8 !default;
+$panel-header-background-color: #6084a8 !default;
+$panel-header-border-color : #6084a8 !default;
+$panel-frame-border-width: 1px !default;
+
+.x-view-item-focused {
+    outline: 5px dashed $base-color!important;
+    outline-offset: -1px;
+}

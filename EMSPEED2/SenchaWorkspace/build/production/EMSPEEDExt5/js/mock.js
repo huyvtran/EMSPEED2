@@ -2,6 +2,12 @@ $.mockjax({
     url: /^\/api\/widgets$/,
     response: function (settings) {
         this.responseText = [
+            { "type": "ecolist", "extension": "js", "height": 200, "widgetDataDef": { text: 'text Here' }, title: 'ecolist', description: 'ecolist' },
+            { "type": "ecosummary", "extension": "js", "height": 200, "widgetDataDef": { text: 'text Here' }, title: 'ecosummary', description: 'ecosummary' },
+
+
+            { "type": "d3radial", "extension": "js", "height": 200, "widgetDataDef": { text: 'text Here' }, title: 'd3radial', description: 'd3radial' },
+
             { "type": "nghelloworld", "extension": "js", "height": 200, "widgetDataDef": { text: 'Name Here' }, title: 'nghelloworld', description: 'nghelloworld' },
             { "type": "nganimate", "extension": "js", "height": 200, "widgetDataDef": { "projectId": "97366" }, title: 'nganimate', description: 'this is the description' },
             { "type": "ngdirective", "extension": "js", "height": 500, "widgetDataDef": { "name": "n", "age": "a", "marc": "m" }, title: 'Angular Directive', description: 'this is the description' },
@@ -90,6 +96,23 @@ $.mockjax({
                 }
                 break;
 
+            case 'ECO':
+                dashboard = {
+                    layoutId: 1,
+                    savedLayouts: [
+                        { id: 1, name: 'configuration 1' },
+                        { id: 2, name: 'configuration 2' },
+                        { id: 3, name: 'configuration 3' }
+                    ],
+                    columnWidths: [.25, .75, 1],
+                    widgets: [
+                        { "type": "ecosummary", "widgetData": { "projectId": "97366" }, columnIndex: 0, height: 450 },
+                        { "type": "ecolist", "widgetData": { "projectId": "97366" }, columnIndex: 1, height: 450 }
+
+                    ]
+                };
+                break;
+
             case 'CLM':
                 dashboard = {
                     layoutId: 1,
@@ -138,7 +161,8 @@ $.mockjax({
                     widgets: [
                         { type: 'infovis', widgetData: { rootCls: 'infovisRoot' }, columnIndex: 0, height: 450 },
                         { type: 'simple', widgetData: { name: 'list', age: '8' }, columnIndex: 0, height: 100 },
-                        { type: 'imageviewer', widgetData: { title: 'Sample Bar Chart', "url": "resources/images/widgets/barchart.png" }, columnIndex: 1, height: 350 }
+                        { type: 'imageviewer', widgetData: { title: 'Sample Bar Chart', "url": "resources/images/widgets/barchart.png" }, columnIndex: 1, height: 350 },
+                        { type: 'd3radial', widgetData: { }, columnIndex: 2, height: 850 },
                     ]
                 };
                 break;
@@ -1945,6 +1969,16 @@ var dataGetMasterLayout97366 = {
                                 //"menuItemTooltip": "Home"
                             },
 
+                            {
+                                id: "ECO",
+                                text: "ECO",
+                                qtip: "ECO",
+                                fa: 'fa-wrench',
+                                "menuItemBasePanel": "dashboardBasePanel",
+                                action: 'dashboard',
+                                expanded: false,
+                                leaf: true,
+                            },
                             {
                                 id: "CLM",
                                 text: "CLM/Stature",

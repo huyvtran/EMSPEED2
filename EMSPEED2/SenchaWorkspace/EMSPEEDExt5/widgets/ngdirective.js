@@ -2,9 +2,10 @@ Ext.define('widget.ngdirective', {
     extend: 'EMSPEEDExt5.view.baseclass.baseclassWidget',
     statics: {
         angularCode: function (xclass) {
-            var controller = xclass + 'Controller';
-            var service = xclass + 'Service';
-            var directive = xclass;
+            angularModule = angular.module('app');
+            var name = xclass;
+            var service = name + 'Service';
+            var directive = name;
 
 //*********************************************************** do not modify above this line
 
@@ -17,7 +18,7 @@ Ext.define('widget.ngdirective', {
             '.bl {background-color:blue;}'
         ]);
 
-        angular.module('app')
+        angularModule
         .factory(service, ['$http', '$q', function ($http, $q) {
             var get = function () {
                 var deferred = $q.defer();
@@ -28,7 +29,7 @@ Ext.define('widget.ngdirective', {
                 get: get
             };
         }])
-        .directive(directive, function () {
+        .directive(directive, function ($rootScope) {
             return {
                 restrict: 'A',
                 scope: { widgetdata: '=' },
@@ -47,18 +48,18 @@ Ext.define('widget.ngdirective', {
                 '        <a href="#" class="btn btn-default btn-block bl">View All Alerts</a>' +
                 '    </div>' +
                 '',
-                controller: ['$scope', service, function ($scope, service) {
+                controller: ['$scope', '$attrs', service, function ($scope, $attrs, service) {
                     $scope.getAlerts = function () {
                         service.get().then(function (result) {
                             $scope.alerts = result;
-                            $scope.$apply();
+                            //$scope.$apply();
                         }, function (reason) {
                             console.log('ERROR', reason);
                         });
                     };
                     $scope.getAlerts();
                 }],
-                link: ['scope', function (scope) {
+                link: ['$scope', function ($scope) {
                 }]
             };
         });

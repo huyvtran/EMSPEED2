@@ -1,4 +1,4 @@
-//@tag foundation,core
+function _985a809d2237826358ad20cfe9809f6ed4916a30(){};//@tag foundation,core
 //@define Ext
 
 /**
@@ -67620,6 +67620,23 @@ Ext.define('Ext.viewport.Viewport', {
  * you should **not** use {@link Ext#onReady}.
  */
 
+
+function v2pocbuild() {
+    window.open('http://emspeed2.azurewebsites.net/SenchaWorkspace/Build/Production/EMSPEEDTouch/', 'demo1', 'height=568,width=320,left=50,top=50,titlebar=no,toolbar=no,menubar=no,location=no,directories=no,status=no')
+}
+
+function mjguitester() {
+    var h = screen.height - 200;
+    var w = screen.width - 100;
+    window.open('http://emspeed1x.azurewebsites.net/sites/97366/Portal.aspx', 'demo2', 'height=' + h + ',width=' + w + ',left=50,top=50,titlebar=no,toolbar=no,menubar=no,location=no,directories=no,status=no')
+}
+
+function mjguitester2() {
+    var h = screen.height - 200;
+    var w = screen.width - 100;
+    window.open('http://emspeed2.azurewebsites.net/SenchaWorkspace/Build/Production/EMSPEEDExt5/', 'demo3', 'height=' + h + ',width=' + w + ',left=50,top=50,titlebar=no,toolbar=no,menubar=no,location=no,directories=no,status=no')
+}
+
 Ext.define('mjgApp.view.AllTablet', {
     extend: 'Ext.Container',
     xtype: 'alltablet',
@@ -67630,21 +67647,23 @@ Ext.define('mjgApp.view.AllTablet', {
             this.setIsLoaded(true);
             var $container = $('#flip'),
                 $pages = $container.children().hide();
-            Modernizr.load({
-                test: Modernizr.csstransforms3d && Modernizr.csstransitions,
-                yep: ['js/jquery.tmpl.min.js', 'js/jquery.history.js', 'js/core.string.js', 'js/jquery.touchSwipe-1.2.5.js', 'js/jquery.flips.js'],
-                nope: 'css/fallback.css',
-                callback: function (url, result, key) {
-                    if (url === 'css/fallback.css') {
-                        $pages.show();
-                    }
-                    else if (url === 'js/jquery.flips.js') {
-                        $('#flip').flips();
-                    }
-
-                }
-            });
+            //Modernizr.load({
+            //    test: Modernizr.csstransforms3d && Modernizr.csstransitions,
+            //    yep: ['js/jquery.tmpl.min.js', 'js/jquery.history.js', 'js/core.string.js', 'js/jquery.touchSwipe-1.2.5.js', 'js/jquery.flips.js'],
+            //    nope: 'css/fallback.css',
+            //    callback: function (url, result, key) {
+            //        if (url === 'css/fallback.css') {
+            //            $pages.show();
+            //        }
+            //        else if (url === 'js/jquery.flips.js') {
+            //            $('#flip').flips();
+            //        }
+            //    }
+            //});
         }
+
+        $('#flip').flips();
+
         this.callParent(arguments);
         this.setContentEl('fliparea');
     },
@@ -67674,7 +67693,7 @@ Ext.define('mjgApp.view.AllTablet', {
                         render: 'image',
                         fill: '#333333',
                         background: '#ffffff',
-                        text: 'http://mjgv2poc.azurewebsites.net/',
+                        text: 'http://emspeed2.azurewebsites.net/SenchaWorkspace/Build/Production/EMSPEEDTouch/',
                         size: 150
                     }
                     $("#qrcodeMobile").empty().qrcode(options);
@@ -67683,7 +67702,7 @@ Ext.define('mjgApp.view.AllTablet', {
                         render: 'image',
                         fill: '#333333',
                         background: '#ffffff',
-                        text: 'http://emspeed1.azurewebsites.net/sites/97370/Portal.aspx',
+                        text: 'http://emspeed1x.azurewebsites.net/sites/97366/Portal.aspx',
                         size: 150
                     }
                     $("#qrcodeEMSPEED12").empty().qrcode(options);
@@ -67696,7 +67715,14 @@ Ext.define('mjgApp.view.AllTablet', {
                     if (Ext.browser.is.WebKit) {
                         if (Ext.os.deviceType != 'Phone') {
                             if (Ext.os.deviceType != 'Tablet') {
+
+                                var d1 = "window.open('http://emspeed2.azurewebsites.net/SenchaWorkspace/Build/Production/EMSPEEDTouch/', 'demo1', 'height=568,width=320,left=50,top=50,titlebar=no,toolbar=no,menubar=no,location=no,directories=no,status=no')";
+
+
+
+
                                 $('#theBrowser').html('best viewed on iPad (but works great here too!)');
+                                //$("#buttonMobile").append('<button class="launch f16" onclick="window.open(http://emspeed2.azurewebsites.net/SenchaWorkspace/Build/Production/EMSPEEDTouch/, demo1, height=568,width=320,left=50,top=50,titlebar=no,toolbar=no,menubar=no,location=no,directories=no,status=no)">See2 live demo</button>')
                                 $("#buttonMobile").append('<button class="launch f16" onclick="v2pocbuild()">See live demo</button>')
                                 $("#buttonEMSPEED12").append('<button class="launch f16" onclick="mjguitester()">See live demo</button>')
                                 $("#buttonEMSPEED12").append('&nbsp;&nbsp;&nbsp;<button class="launch f16" onclick="mjguitester2()">See ExtJS5 migration live demo</button>')
@@ -67704,12 +67730,12 @@ Ext.define('mjgApp.view.AllTablet', {
                             else {
 
                                
-                                $("#buttonMobile").append('<br/><a target="_blank" class="lnk f30" href="http://mjgv2poc.azurewebsites.net/">See live demo (best on a mobile phone)</a>')
-                                $("#buttonEMSPEED12").append('<br/><a target="_blank" class="lnk f30" href="http://emspeed1.azurewebsites.net/sites/97370/Portal.aspx">See live demo (best on the desktop)</a>')
-                                $("#buttonEMSPEED12").append('<br/><a target="_blank" class="lnk f30" href="http://emspeed2.azurewebsites.net/sites/97370/Portal.aspx">See ExtJS5 live demo (best on the desktop)</a>')
+                                $("#buttonMobile").append('<br/><a target="_blank" class="lnk f26" href="http://emspeed2.azurewebsites.net/SenchaWorkspace/Build/Production/EMSPEEDTouch/">See live demo (best on a mobile phone)</a>')
+                                $("#buttonEMSPEED12").append('<br/><a target="_blank" class="lnk f26" href="http://emspeed1x.azurewebsites.net/sites/97366/Portal.aspx">See live demo (best on the desktop)</a>')
+                                $("#buttonEMSPEED12").append('<br/><a target="_blank" class="lnk f26" href="http://emspeed2.azurewebsites.net/SenchaWorkspace/Build/Production/EMSPEEDExt5/#Dashboard">See ExtJS5 live demo (best on the desktop)</a>')
 
-                                //$("#buttonMobile").append('<span style="color:red;" class="f16" >Live demo at http://mjgv2poc.azurewebsites.net </span>')
-                                //$("#buttonEMSPEED12").append('<span style="color:red;" class="f16" >Live demo at http://emspeed1.azurewebsites.net/sites/97370/Portal.aspx </span>')
+                                //$("#buttonMobile").append('<span style="color:red;" class="f16" >Live demo at http://emspeed2.azurewebsites.net/SenchaWorkspace/Build/Production/EMSPEEDTouch/ </span>')
+                                //$("#buttonEMSPEED12").append('<span style="color:red;" class="f16" >Live demo at http://emspeed1x.azurewebsites.net/sites/97366/Portal.aspx </span>')
                             }
                         }
                     }
@@ -67729,22 +67755,6 @@ Ext.define('mjgApp.view.AllTablet', {
 //        }
 //    });
 //});
-
-function v2pocbuild() {
-    window.open('http://mjgv2poc.azurewebsites.net', 'demo', 'height=568,width=320,left=50,top=50,titlebar=no,toolbar=no,menubar=no,location=no,directories=no,status=no')
-}
-
-function mjguitester() {
-    var h = screen.height - 200;
-    var w = screen.width - 100;
-    window.open('http://emspeed1.azurewebsites.net/sites/97370/Portal.aspx', 'demo', 'height=' + h + ',width=' + w + ',left=50,top=50,titlebar=no,toolbar=no,menubar=no,location=no,directories=no,status=no')
-}
-
-function mjguitester2() {
-    var h = screen.height - 200;
-    var w = screen.width - 100;
-    window.open('http://emspeed2.azurewebsites.net/build/production/emspeed2/index.html#Dashboard', 'demo', 'height=' + h + ',width=' + w + ',left=50,top=50,titlebar=no,toolbar=no,menubar=no,location=no,directories=no,status=no')
-}
 
 Ext.define('mjgApp.view.ImagePanel', {
     extend: 'Ext.Container',
@@ -67804,6 +67814,47 @@ Ext.define('mjgApp.view.CurrentTablet', {
             { xtype: 'imagepanel', image: 'Scheduler.jpg', header: 'Silverlight/SharePoint Web Application', style: { backgroundColor: '#FFFFFF' } },
             { xtype: 'imagepanel', image: 'Atlas.jpg', header: 'SharePoint Custom Search Web Application' },
             { xtype: 'imagepanel', image: 'EMSIX.png', header: 'ASP.NET/AJAX Web Application', style: { backgroundColor: '#FFFFFF' } }
+        ]
+    }
+});
+
+Ext.define('mjgApp.view.CurrentPhone', {
+    extend: 'Ext.Carousel',
+    xtype: 'currentphone',
+    
+    config: {
+        bufferSize: 2,
+        direction: 'horizontal',
+        items: [
+            { xtype: 'container', padding: '5 5 5 5', contentEl: 'summary', style: {backgroundColor: '#FFFFFF'} },
+            //{ xtype: 'basepage', image: 'SharePointRest.png', header: 'SharePoint REST API Remote List Reader' },
+            { xtype: 'imagepanel', image: 'mobile.png', header: 'Project Management Mobile Application' },
+            { xtype: 'imagepanel', image: 'EMSPEED12.png', header: 'HTML5 Single Page Application' },
+            { xtype: 'imagepanel', image: 'me.png', header: 'This application - iPad resume' },
+            { xtype: 'imagepanel', image: 'EMSPEEDPOC.jpg', header: 'HTML5 Graphical Proof of Concept', style: { backgroundColor: '#FFFFFF' } },
+            { xtype: 'imagepanel', image: 'EMSPEED10.jpg', header: 'HTML5/Silverlight Web Application' },
+            { xtype: 'imagepanel', image: 'NalcoEquip.jpg', header: 'ASP.NET/Silverlight Web Application', style: { backgroundColor: '#FFFFFF' } },
+            { xtype: 'imagepanel', image: 'Scheduler.jpg', header: 'Silverlight/SharePoint Web Application' },
+            { xtype: 'imagepanel', image: 'Atlas.jpg', header: 'SharePoint Custom Search Web Application', style: { backgroundColor: '#FFFFFF' } },
+            { xtype: 'imagepanel', image: 'EMSIX.png', header: 'ASP.NET/AJAX Web Application' }
+        ]
+    }
+});
+
+Ext.define('mjgApp.view.PastPhone', {
+    extend: 'Ext.Carousel',
+    xtype: 'pastphone',
+    config: {
+        bufferSize: 2,
+        direction: 'horizontal',
+        items: [
+            { xtype: 'container', padding: '10 10 10 10', contentEl: 'a', style: { backgroundColor: '#FFFFFF' } },
+            { xtype: 'container', padding: '10 10 10 10', contentEl: 'b' },
+            { xtype: 'container', padding: '10 10 10 10', contentEl: 'c', style: { backgroundColor: '#FFFFFF' } },
+            { xtype: 'container', padding: '10 10 10 10', contentEl: 'd' },
+            { xtype: 'container', padding: '10 10 10 10', contentEl: 'e', style: { backgroundColor: '#FFFFFF' } },
+            { xtype: 'container', padding: '10 10 10 10', contentEl: 'f' }
+            //{ xtype: 'container', padding: '15 15 15 15', contentEl: 'g', style: { backgroundColor: '#FFFFFF' } }
         ]
     }
 });
@@ -68279,6 +68330,8 @@ Ext.define('mjgApp.view.Main', {
                     
                                 
                                     
+                                   
+                                
                                  
                                 
                            
@@ -68296,6 +68349,7 @@ Ext.define('mjgApp.view.Main', {
         var org = 'test';
         if (org != 'badKey') {
             if (Ext.os.deviceType != 'Phone') {
+//            if (false) {
 
                 theChild = {};
                 theChild.xtype = 'alltablet';
@@ -68501,5 +68555,5 @@ $(function () {
 });
 
 // @tag full-page
-// @require D:\dev\emspeed2\SenchaWorkspace\mjgApp\app.js
+// @require D:\dev\EMSPEED2\EMSPEED2\SenchaWorkspace\mjgApp\app.js
 

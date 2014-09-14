@@ -10,7 +10,7 @@ Ext.define('ExtJs5YouTube.Application', {
     ],
 
     init: function () {
-        console.log('application init');
+        //console.log('application init');
 
         //var init = [
         //    { search: 'elton john', active: true },
@@ -30,8 +30,8 @@ Ext.define('ExtJs5YouTube.Application', {
     
     launch: function () {
 
-        console.log(courses);
-        console.log(Ext.mjg);
+        //console.log(courses);
+        //console.log(Ext.mjg);
 
         //Ext.util.Observable.capture(Ext.getCmp($0.id), function (evname) { console.log(evname, arguments); })
         //var c = Ext.getCmp('Center');

@@ -2,7 +2,6 @@ Ext.define('widget.nganimate', {
     extend: 'EMSPEEDExt5.view.baseclass.baseclassWidget',
     statics: {
         angularCode: function (xclass) {
-            var controller = xclass + 'Controller';
             var service = xclass + 'Service';
             var directive = xclass;
 
@@ -24,28 +23,31 @@ Ext.define('widget.nganimate', {
             ]);
 
             angular.module('app')
-            .controller(controller, ['$scope', function ($scope) { }])
             .factory(service, ['$http', '$q', function ($http, $q) {
             }])
-            .directive(directive, function () {
+            .directive(directive, ['$rootScope', function ($rootScope) {
                 return {
                     restrict: 'A',
                     scope: { widgetdata: '=' },
-                    replace: true,
+                    replace: false,
                     template: '' +
                     '<div ng-init="on=true">' +
                     '   <button ng-click="on=!on">Toggle On/Off</button>' +
+                    '   <button ng-click="onClick()">Click</button>' +
                     '   <div class="my-special-animation" ng-if="on">' +
                     '       This content will enter and leave' +
                     '   </div>' +
                     '</div>' +
                     '',
                     controller: ['$scope', service, function ($scope, service) {
+                        $scope.onClick = function () {
+                            $rootScope.$broadcast('projectId', '12345');
+                        }
                     }],
                     link: ['scope', function (scope) {
                     }]
                 };
-            });
+            }]);
 
 
 

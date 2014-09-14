@@ -1,0 +1,91 @@
+﻿$headsize: 50;
+$toolbarsizepx: 45px;
+$sidenavwidthpx: 250px;
+$darkgray : rgb(231, 231, 231);
+$lightgray: #f8f8f8;
+
+.sidebar ul li {
+border-bottom: 1px solid $darkgray;
+}
+
+body {
+    background: #fff;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    font-family: "Open Sans",Arial,Helvetica,Sans-Serif;
+    font-size: 13px;
+    line-height: 1.42857143;
+    color: #333;
+    background-color: #fff;
+
+
+}
+
+.head {
+    background: $lightgray;
+    position: absolute;
+    width: 100%;
+    height: $headsize + px;
+}
+
+.main {
+    background: #fff;
+    height: 100%;
+    padding: $headsize + px 0 20px;
+    box-sizing: border-box;
+}
+ 
+.left {
+    border-top: 1px solid $darkgray;
+    background: $lightgray;
+    float: left;
+    top: ($headsize + 1) + px;
+    width: $sidenavwidthpx;
+    height: 100%;
+    overflow: auto;
+}
+
+.ngview {
+    background: #fff;
+    border-top: 1px solid $darkgray;
+    border-left: 1px solid $darkgray;
+    border-bottom: 1px solid $darkgray;
+    height: 100%;
+    box-sizing: border-box;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.center {
+    background: #fff;
+    height: 100%;
+    box-sizing: border-box;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.toolbar {
+    height: $toolbarsizepx;
+    padding: 5px;
+    width: 100%;
+    border-bottom: 1px solid $lightgray;
+    box-sizing: border-box;
+}
+
+.dashboard {
+    padding: 10px;
+    height: calc(100% - #{$toolbarsizepx});
+    box-sizing: border-box;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+#foot {
+    background: $lightgray;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 20px;
+}

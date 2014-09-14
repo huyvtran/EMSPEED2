@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html manifest="" lang="en-US" ng-app>
+ï»¿<!DOCTYPE html>
+<html manifest="cache.appcache" lang="en-US" ng-app>
 <head>
     <meta charset="UTF-8">
     <title>mjgApp</title>
@@ -19,6 +19,27 @@
         }
     </script>
 
+
+    <script>
+    function v2pocbuild() {
+        window.open('http://emspeed2.azurewebsites.net/SenchaWorkspace/Build/Production/EMSPEEDTouch/', 'demo1', 'height=568,width=320,left=50,top=50,titlebar=no,toolbar=no,menubar=no,location=no,directories=no,status=no')
+    }
+
+    function mjguitester() {
+        var h = screen.height - 200;
+        var w = screen.width - 100;
+        window.open('http://emspeed1x.azurewebsites.net/sites/97366/Portal.aspx', 'demo2', 'height=' + h + ',width=' + w + ',left=50,top=50,titlebar=no,toolbar=no,menubar=no,location=no,directories=no,status=no')
+    }
+
+    function mjguitester2() {
+        var h = screen.height - 200;
+        var w = screen.width - 100;
+        window.open('http://emspeed2.azurewebsites.net/SenchaWorkspace/Build/Production/EMSPEEDExt5/', 'demo3', 'height=' + h + ',width=' + w + ',left=50,top=50,titlebar=no,toolbar=no,menubar=no,location=no,directories=no,status=no')
+    }
+    </script>
+
+
+
     <style type="text/css">
         /**
          * Example of an initial loading indicator.
@@ -26,13 +47,13 @@
          * while other resources are still being loaded for the first time
          */
         html, body {
-            height: 100%;
+        height: 100%;
             background-color: #1985D0;
         }
 
         #appLoadingIndicator {
-            position: absolute;
-            top: 50%;
+        position: absolute;
+        top: 50%;
             margin-top: -15px;
             text-align: center;
             width: 100%;
@@ -45,31 +66,33 @@
 
             #appLoadingIndicator > * {
                 background-color: #FFFFFF;
-                display: inline-block;
-                height: 30px;
-                -webkit-border-radius: 15px;
-                margin: 0 5px;
-                width: 30px;
-                opacity: 0.8;
-            }
+    display: inline-block;
+    height: 30px;
+    -webkit-border-radius: 15px;
+    margin: 0 5px;
+    width: 30px;
+    opacity: 0.8;
+    }
 
         @-webkit-keyframes appLoadingIndicator {
             0% {
                 opacity: 0.8;
-            }
-
-            50% {
-                opacity: 0;
-            }
-
-            100% {
-                opacity: 0.8;
-            }
         }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0.8;
+    }
+    }
     </style>
 
     <!-- The line below must be kept intact for Sencha Command to build your application -->
-    <script type="text/javascript">(function(e){var c=e.document.head||e.document.getElementsByTagName("head")[0],b=e.Ext;if(typeof b=="undefined"){e.Ext=b={}}function d(f){document.write(f)}function a(f,g){var h=document.createElement("meta");h.setAttribute("name",f);h.setAttribute("content",g);c.appendChild(h)}b.blink=function(q){var k=q.js||[],o=q.css||[],m,n,p,h,l,g;if(navigator.userAgent.match(/IEMobile\/10\.0/)){var j=document.createElement("style");j.appendChild(document.createTextNode("@media screen and (orientation: portrait) {@-ms-viewport {width: 320px !important;}}@media screen and (orientation: landscape) {@-ms-viewport {width: 560px !important;}}"));document.getElementsByTagName("head")[0].appendChild(j)}a("viewport","width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no");a("apple-mobile-web-app-capable","yes");a("apple-touch-fullscreen","yes");b.microloaded=true;var f=window.Ext.filterPlatform=function(u){var D=false,s=navigator.userAgent,w,A;u=[].concat(u);function z(E){var i=/Mobile(\/|\s)/.test(E);return/(iPhone|iPod)/.test(E)||(!/(Silk)/.test(E)&&(/(Android)/.test(E)&&(/(Android 2)/.test(E)||i)))||(/(BlackBerry|BB)/.test(E)&&i)||/(Windows Phone)/.test(E)}function y(i){return !z(i)&&(/iPad/.test(i)||/Android|Silk/.test(i)||/(RIM Tablet OS)/.test(i)||(/MSIE 10/.test(i)&&/; Touch/.test(i)))}var r=window.location.search.substr(1),t=r.split("&"),v={},B,x;for(x=0;x<t.length;x++){var C=t[x].split("=");v[C[0]]=C[1]}B=v.platform;if(B){return u.indexOf(B)!=-1}for(w=0,A=u.length;w<A;w++){switch(u[w]){case"phone":D=z(s);break;case"tablet":D=y(s);break;case"desktop":D=!z(s)&&!y(s);break;case"ios":D=/(iPad|iPhone|iPod)/.test(s);break;case"android":D=/(Android|Silk)/.test(s);break;case"blackberry":D=/(BlackBerry|BB)/.test(s);break;case"safari":D=/Safari/.test(s)&&!(/(BlackBerry|BB)/.test(s));break;case"chrome":D=/Chrome/.test(s);break;case"ie10":D=/MSIE 10/.test(s);break;case"windows":D=/MSIE 10/.test(s)||/Trident/.test(s);break;case"tizen":D=/Tizen/.test(s);break;case"firefox":D=/Firefox/.test(s)}if(D){return true}}return false};for(m=0,n=o.length;m<n;m++){p=o[m];if(typeof p!="string"){h=p.platform;g=p.exclude;l=p.theme;p=p.path}if(h){if(!f(h)||f(g)){continue}if(!b.theme){b.theme={}}if(!b.theme.name){b.theme.name=l||"Default"}}d('<link rel="stylesheet" href="'+p+'">')}for(m=0,n=k.length;m<n;m++){p=k[m];if(typeof p!="string"){h=p.platform;g=p.exclude;p=p.path}if(h){if(!f(h)||f(g)){continue}}d('<script src="'+p+'"><\/script>')}}})(this);Ext.blink({id:"8a8dec21-189f-4ea3-b795-3410ad843e03",js:[{path:"js/jquery-1.10.2.js"},{path:"js/modernizr.custom.08464.js"},{path:"js/jquery.qrcode-0.7.0.js"},{path:"http://code.angularjs.org/1.2.0/angular.min.js",remote:true},{path:"app.js",update:"delta"}],css:[{path:"resources/css/app.css",update:"delta"},{path:"resources/css/cover.css",update:"delta"},{path:"resources/css/style.css",update:"delta"},{path:"resources/css/demo.css",update:"delta"}]});</script>
+    <script type="text/javascript">(function(e){var c=e.document.head||e.document.getElementsByTagName("head")[0],b=e.Ext;if(typeof b=="undefined"){e.Ext=b={}}function d(f){document.write(f)}function a(f,g){var h=document.createElement("meta");h.setAttribute("name",f);h.setAttribute("content",g);c.appendChild(h)}b.blink=function(q){var k=q.js||[],o=q.css||[],m,n,p,h,l,g;if(navigator.userAgent.match(/IEMobile\/10\.0/)){var j=document.createElement("style");j.appendChild(document.createTextNode("@media screen and (orientation: portrait) {@-ms-viewport {width: 320px !important;}}@media screen and (orientation: landscape) {@-ms-viewport {width: 560px !important;}}"));document.getElementsByTagName("head")[0].appendChild(j)}a("viewport","width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no");a("apple-mobile-web-app-capable","yes");a("apple-touch-fullscreen","yes");b.microloaded=true;var f=window.Ext.filterPlatform=function(u){var D=false,s=navigator.userAgent,w,A;u=[].concat(u);function z(E){var i=/Mobile(\/|\s)/.test(E);return/(iPhone|iPod)/.test(E)||(!/(Silk)/.test(E)&&(/(Android)/.test(E)&&(/(Android 2)/.test(E)||i)))||(/(BlackBerry|BB)/.test(E)&&i)||/(Windows Phone)/.test(E)}function y(i){return !z(i)&&(/iPad/.test(i)||/Android|Silk/.test(i)||/(RIM Tablet OS)/.test(i)||(/MSIE 10/.test(i)&&/; Touch/.test(i)))}var r=window.location.search.substr(1),t=r.split("&"),v={},B,x;for(x=0;x<t.length;x++){var C=t[x].split("=");v[C[0]]=C[1]}B=v.platform;if(B){return u.indexOf(B)!=-1}for(w=0,A=u.length;w<A;w++){switch(u[w]){case"phone":D=z(s);break;case"tablet":D=y(s);break;case"desktop":D=!z(s)&&!y(s);break;case"ios":D=/(iPad|iPhone|iPod)/.test(s);break;case"android":D=/(Android|Silk)/.test(s);break;case"blackberry":D=/(BlackBerry|BB)/.test(s);break;case"safari":D=/Safari/.test(s)&&!(/(BlackBerry|BB)/.test(s));break;case"chrome":D=/Chrome/.test(s);break;case"ie10":D=/MSIE 10/.test(s);break;case"windows":D=/MSIE 10/.test(s)||/Trident/.test(s);break;case"tizen":D=/Tizen/.test(s);break;case"firefox":D=/Firefox/.test(s)}if(D){return true}}return false};for(m=0,n=o.length;m<n;m++){p=o[m];if(typeof p!="string"){h=p.platform;g=p.exclude;l=p.theme;p=p.path}if(h){if(!f(h)||f(g)){continue}if(!b.theme){b.theme={}}if(!b.theme.name){b.theme.name=l||"Default"}}d('<link rel="stylesheet" href="'+p+'">')}for(m=0,n=k.length;m<n;m++){p=k[m];if(typeof p!="string"){h=p.platform;g=p.exclude;p=p.path}if(h){if(!f(h)||f(g)){continue}}d('<script src="'+p+'"><\/script>')}}})(this);Ext.blink({id:"8a8dec21-189f-4ea3-b795-3410ad843e03",js:[{path:"js/jquery-1.10.2.js",version:"f24c4c3edddc5bc618076e212fa8c74176f4b49b"},{path:"js/jquery.qrcode-0.7.0.js",version:"b7e829f7de55f8ca08b33a8100fe2cbe5269c25c"},{path:"js/jquery.tmpl.min.js",version:"5c6750574795fa5b9e2a7db63a3373d9522448ee"},{path:"js/jquery.history.js",version:"47dcb6e89bb9cc2e8c4bf77bfe1990a9c2ea64a3"},{path:"js/core.string.js",version:"37489aa8a9c98db611d05a89c86374c317c2123a"},{path:"js/jquery.touchSwipe-1.2.5.js",version:"f42f9c4803089996fa3efc55a7a03c98af712c91"},{path:"js/jquery.flips.js",version:"d00bf3342a105a6cd13f8d53d489a7b0d0f8a6f5"},{path:"http://code.angularjs.org/1.2.0/angular.min.js",remote:true},{path:"app.js",update:"delta",version:"985a809d2237826358ad20cfe9809f6ed4916a30"}],css:[{path:"resources/css/app.css",update:"delta",version:"b7042b9b5e1f84d9ada66cb396a2c73cdcae4bdd"},{path:"resources/css/cover.css",update:"delta",version:"0c9f44d01d216cf228f93242f9aa15feeef41adf"},{path:"resources/css/style.css",update:"delta",version:"868c0d086a119b4dde03ec7eaed26b292da98cf8"},{path:"resources/css/demo.css",update:"delta",version:"4c6c8864134a08544e89253ae5868f3dfd15037e"}]});</script>
+
+
 
 </head>
 <body>
@@ -242,8 +265,8 @@
             </div>
             <div class="f18">Senior HTML5 and Microsoft SharePoint Architect</div>
             <div class="f16 myBody" style="margin: 20px 0px 0px 0px;">
-                Senior Manager with Hitachi Consulting based in the Houston, TX office
-                with 30 years of experence in the software services industry.
+                Senior Manager with Hitachi Consulting 
+                with 30 years of experience in the software services industry.
             </div>
             <div class="f16 myBody" style="margin: 20px 0px 0px 0px;">
                 Extensively involved with custom HTML5 browser and mobile development projects, typically combining knowledge of the underlying
@@ -292,20 +315,21 @@
                     <h2>Projects at Hitachi Consulting</h2>
                     <a>Previous Projects</a>
                 </div>
-                <div class="box w-100 h-100 box-b-l box-b-r box-img-left" id="buttonMobile">
+                <div class="box w-100 h-100 box-b-l box-b-r box-img-right" id="buttonMobile">
                     <div class="img-cont" back="mobile" style="cursor:default;background-image: url(resources/images/mobile.png); "></div>
                     <div class="f22">Large Oil and Gas Provider - Houston, TX</div>
                     <div class="f20">Senior HTML5/Mobile Architect - April 2013 to present</div>
                     <div class="f20 myBody">
                         Architected and implemented a project management mobile web application. Included initial effort to implement for responsive design (from mobile to desktop).
                     </div>
+
                     <div class="f18 myBody">
                         Tools: <a target="_blank" class="lnk" href="https://www.atlassian.com/software/jira">Jira (requirements, tasks, ticketing)</a>, <a target="_blank" class="lnk" href="http://git-scm.com/">Git (version control)</a>, Continuous Integration (internal tool)
                         <br />Browser: <a target="_blank" class="lnk" href="http://www.sencha.com/products/touch/">Sencha Touch 2.3</a>, <a target="_blank" class="lnk" href="http://jquery.com/">JQuery 1.9.1</a>, <a target="_blank" class="lnk" href="http://www.bryntum.com/products/siesta/">Siesta (testing)</a>, <a target="_blank" class="lnk" href="http://phonegap.com/">PhoneGap</a>
                         <br />Server: <a target="_blank" class="lnk" href="http://msdn.microsoft.com/en-us/library/ms171868(v=vs.110).aspx">Microsoft .NET Framework 4.5 in C#</a>, <a target="_blank" class="lnk" href="http://msdn.microsoft.com/en-us/library/ms731082(v=vs.110).aspx">Microsoft Windows Communication Foundation (WCF)</a>, <a target="_blank" class="lnk" href="https://www.microsoft.com/en-us/sqlserver/default.aspx">SQL Server</a>, <a target="_blank" class="lnk" href="http://www.asp.net/web-api">ASP.NET MVC/WebAPI</a>
                     </div>
                     <div class="f20 myBody">
-                        <div style="margin:20px 0px 20px 0px;" id="qrcodeMobile"></div>
+                        <div id="qrcodeMobile"></div>
                         <div class="f12">use QR code to scan to phone or iPad</div>
                     </div>
                 </div>
@@ -524,17 +548,17 @@
 
                 <div class="box w-50 h-60 box-b-l box-b-r">
                     <div class="f18">Major Midwest US Energy Company - Exelon Corporation</div>
-                    <div class="f14">March 2009 â€“ October 2009</div>
+                    <div class="f14">March 2009 Ã¢â‚¬â€œ October 2009</div>
                     <div class="f14 myBody">
                         Architected and led the development of a Site Ownership web part to gather site information from site administrators across SharePoint sites into a Central site directory.  This solution was implemented as a web part written utilizing Visual Studio 2008 and C#, and utilized the SharePoint Object Model to create a dynamic Site Ownership form from a view defined in the SharePoint site directory list - this allowed for dynamic creation of a form that displays any fields an administrator chooses to expose.  The web part also utilizes the SharePoint object model to allow for editing of the Site Directory from external SharePoint sites with no additional security needing to be applied.
                     </div>
                     <div class="f14 myBody">
-                        Designed and constructed an Advanced Query solution that used the SharePoint Search object model to query against an Oracle database that utilized Business Data Services for its indexing.  The solution was implemented as a web part built with Microsoft .NET, AJAX and JavaScript to provide for an enhanced user experience, and displayed the returned results in a SharePoint â€˜SPGridView, that provided for real time sorting and paging.  the Web Part was written utilizing Visual Studio 2008 and C#.
+                        Designed and constructed an Advanced Query solution that used the SharePoint Search object model to query against an Oracle database that utilized Business Data Services for its indexing.  The solution was implemented as a web part built with Microsoft .NET, AJAX and JavaScript to provide for an enhanced user experience, and displayed the returned results in a SharePoint Ã¢â‚¬ËœSPGridView, that provided for real time sorting and paging.  the Web Part was written utilizing Visual Studio 2008 and C#.
                     </div>
                 </div>
                 <div class="box w-25 h-60 box-b-l box-b-r">
                     <div class="f18">Midwest US Tool Manufacturer</div>
-                    <div class="f14">October 2008 â€“ March 2009</div>
+                    <div class="f14">October 2008 Ã¢â‚¬â€œ March 2009</div>
                     <div class="f14 myBody">
                         SharePoint 2007, Visual Studio 2008, Microsoft .NET Framework 3.5, C#
                     </div>
@@ -543,9 +567,9 @@
                 </div>
                 <div class="box w-25 h-60 box-b-l box-b-r">
                     <div class="f18">Argonne National Lab</div>
-                    <div class="f14">March 2008 â€“ October 2008</div>
+                    <div class="f14">March 2008 Ã¢â‚¬â€œ October 2008</div>
                     <div class="f16 myBody">
-                        Architected and implemented the SharePoint components of Argonne National Labs next-generation Emergency Management software and tools, called â€˜EMToolsâ€™ (http://www.dis.anl.gov/pubs/62348.pdf). This application included a â€˜1-clickâ€™ installation, which automatically installed all parts of a SharePoint Solution; from creating the IIS Web Site, building the SharePoint Web Application, creating the Site Collection and Root Site based on a custom template, and adding user permissions. Also architected and implemented the back-end SharePoint / .NET custom extensibility components.
+                        Architected and implemented the SharePoint components of Argonne National Labs next-generation Emergency Management software and tools, called Ã¢â‚¬ËœEMToolsÃ¢â‚¬â„¢ (http://www.dis.anl.gov/pubs/62348.pdf). This application included a Ã¢â‚¬Ëœ1-clickÃ¢â‚¬â„¢ installation, which automatically installed all parts of a SharePoint Solution; from creating the IIS Web Site, building the SharePoint Web Application, creating the Site Collection and Root Site based on a custom template, and adding user permissions. Also architected and implemented the back-end SharePoint / .NET custom extensibility components.
                     </div>
                     <div class="f16 myBody">
                         SharePoint 2007, Visual Studio 2008, Microsoft .NET Framework 3.5, C#
@@ -554,7 +578,7 @@
 
                 <div class="box w-60 h-40 box-b-l box-b-r">
                     <div class="f18">Midwest US Microsoft Solution Partner</div>
-                    <div class="f14">October 2007 â€“ March 2008</div>
+                    <div class="f14">October 2007 Ã¢â‚¬â€œ March 2008</div>
                     <div class="f14 myBody">
                         Designed and implemented a Microsoft Office SharePoint Server (MOSS)-based custom internet-facing site. The site contains customized master pages, utilizes MOSS Web Content Management pages with custom-built page layouts, contains custom-built C# Web Parts, and utilizes MOSS Excel Services and the Business Data Catalog.  A custom authentication provider that accesses the clients Microsoft Dynamics CRM 4.0 Contact entity was also developed for the site..
                     </div>
@@ -564,7 +588,7 @@
                 </div>
                 <div class="box w-40 h-40 box-b-l box-b-r">
                     <div class="f18">Midwest US Logistics Firm</div>
-                    <div class="f14">May 2007 â€“ October 2007</div>
+                    <div class="f14">May 2007 Ã¢â‚¬â€œ October 2007</div>
                     <div class="f14 myBody">
                         Architected and implemented custom authentication in a SharePoint/MOSS solution for a Chicago-based logistics firm. The implementation provided for the creation of a custom ASP.NET Forms Authentication Provider that retrieved credentials from a database hosted on an AS 400 platform.
                     </div>
@@ -796,13 +820,13 @@
 
         <div style="display: none;" id="img" class="pastcompany">
             <div class="f14 myBody">
-                Partner and the Director of Emerging Technologies for The Information Management Group, a Microsoft Gold Certified Partner and the Worldwide 2001 Microsoft Certified Technical Education Center (CTEC) of the year. In this role, Mr. Gusmano was responsible for fostering an understanding of new and emerging technologies can be utilized for IMG and its clients.  In this position, Marc was  involved in Architecting applications for IMGâ€™s Consulting Services clients, as well as mentoring and training in client engagements.
+                Partner and the Director of Emerging Technologies for The Information Management Group, a Microsoft Gold Certified Partner and the Worldwide 2001 Microsoft Certified Technical Education Center (CTEC) of the year. In this role, Mr. Gusmano was responsible for fostering an understanding of new and emerging technologies can be utilized for IMG and its clients.  In this position, Marc was  involved in Architecting applications for IMGÃ¢â‚¬â„¢s Consulting Services clients, as well as mentoring and training in client engagements.
             </div>
         </div>
 
         <div style="display: none;" id="bismarck" class="pastcompany">
             <div class="f14 myBody">
-                The Bismarck Group was a Client Server software product integration Firm headquartered in Chicago, Illinois.  The Firmâ€™s tag, 'Business Integration Services using Client Server Technologies', highlighted the firmâ€™s focus: Providing Client Server software integration services to high growth, information-centric organizations and building solutions that can be sold as 'Customizable Software Products'.
+                The Bismarck Group was a Client Server software product integration Firm headquartered in Chicago, Illinois.  The FirmÃ¢â‚¬â„¢s tag, 'Business Integration Services using Client Server Technologies', highlighted the firmÃ¢â‚¬â„¢s focus: Providing Client Server software integration services to high growth, information-centric organizations and building solutions that can be sold as 'Customizable Software Products'.
             </div>
         </div>
 
@@ -823,7 +847,7 @@
         <div style="display: none; border: 1px solid #000000; padding: 10px 10px 10px 10px;" id="a">
             <div class="f16 myName">Major Midwest US Energy Company</div>
             <div class="f14">Senior SharePoint Architect</div>
-            <div class="f12">Apr 2009 â€“ Sep 2009</div>
+            <div class="f12">Apr 2009 Ã¢â‚¬â€œ Sep 2009</div>
             <div class="f16 myBody">
                 Architected and led the development of a Site Ownership web part to gather site information from site administrators across SharePoint sites into a Central site directory.  This web part was written utilizing Visual Studio 2008 and C#, and utilized the SharePoint Object Model to create a dynamic Site Ownership form from a view defined in the SharePoint site directory list - this allowed for dynamic creation of a form that displays any fields an administrator chooses to expose.  The web part also utilizes the SharePoint object model to allow for editing of the Site Directory from external SharePoint sites with no needed additional security.
             </div>
@@ -832,16 +856,16 @@
         <div style="display: none; border: 1px solid #000000; padding: 10px 10px 10px 10px;" id="b">
             <div class="f16 myName">Major Midwest US Energy Company</div>
             <div class="f14">Senior SharePoint Architect</div>
-            <div class="f12">Apr 2009 â€“ Sep 2009</div>
+            <div class="f12">Apr 2009 Ã¢â‚¬â€œ Sep 2009</div>
             <div class="f16 myBody">
-                Designed and constructed an Advanced Query solution that used the SharePoint Search object model to query against an Oracle database that utilized Business Data Services for its indexing.  The solution was implemented as a web part built with Microsoft .NET, AJAX and JavaScript to provide for an enhanced user experience, and displayed the returned results in a SharePoint â€˜SPGridView, that provided for real time sorting and paging.  the Web Part was written utilizing Visual Studio 2008 and C#.
+                Designed and constructed an Advanced Query solution that used the SharePoint Search object model to query against an Oracle database that utilized Business Data Services for its indexing.  The solution was implemented as a web part built with Microsoft .NET, AJAX and JavaScript to provide for an enhanced user experience, and displayed the returned results in a SharePoint Ã¢â‚¬ËœSPGridView, that provided for real time sorting and paging.  the Web Part was written utilizing Visual Studio 2008 and C#.
             </div>
         </div>
 
         <div style="display: none; border: 1px solid #000000; padding: 10px 10px 10px 10px;" id="c">
             <div class="f16 myName">Midwest US Tool Manufacturer</div>
             <div class="f14">SharePoint Architect and Developer</div>
-            <div class="f12">November  2008 â€“ March 2009</div>
+            <div class="f12">November  2008 Ã¢â‚¬â€œ March 2009</div>
             <div class="f16 myBody">
                 SharePoint 2007, Visual Studio 2008, Microsoft .NET Framework 3.5, C#
             </div>
@@ -850,9 +874,9 @@
         <div style="display: none; border: 1px solid #000000; padding: 10px 10px 10px 10px;" id="d">
             <div class="f16 myName">Argonne National Lab</div>
             <div class="f14">SharePoint Architect</div>
-            <div class="f12">March 2008 â€“ October 2008</div>
+            <div class="f12">March 2008 Ã¢â‚¬â€œ October 2008</div>
             <div class="f16 myBody">
-                Architected and implemented the SharePoint components of Argonne National Labs next-generation Emergency Management software and tools, called â€˜EMToolsâ€™ (http://www.dis.anl.gov/pubs/62348.pdf). This application included a â€˜1-clickâ€™ installation, which automatically installed all parts of a SharePoint Solution; from creating the IIS Web Site, building the SharePoint Web Application, creating the Site Collection and Root Site based on a custom template, and adding user permissions.
+                Architected and implemented the SharePoint components of Argonne National Labs next-generation Emergency Management software and tools, called Ã¢â‚¬ËœEMToolsÃ¢â‚¬â„¢ (http://www.dis.anl.gov/pubs/62348.pdf). This application included a Ã¢â‚¬Ëœ1-clickÃ¢â‚¬â„¢ installation, which automatically installed all parts of a SharePoint Solution; from creating the IIS Web Site, building the SharePoint Web Application, creating the Site Collection and Root Site based on a custom template, and adding user permissions.
             </div>
             <div class="f16 myBody">
                 SharePoint 2007, Visual Studio 2008, Microsoft .NET Framework 3.5, C#
@@ -862,7 +886,7 @@
         <div style="display: none; border: 1px solid #000000; padding: 10px 10px 10px 10px;" id="e">
             <div class="f16 myName">Midwest US Microsoft Solution Partner</div>
             <div class="f14">Project Manager / SharePoint Architect</div>
-            <div class="f12"> November 2007 â€“ March 2008</div>
+            <div class="f12"> November 2007 Ã¢â‚¬â€œ March 2008</div>
             <div class="f16 myBody">
                 Designed and implemented a Microsoft Office SharePoint Server (MOSS)-based custom internet-facing site. The site contains customized master pages, utilizes MOSS Web Content Management pages with custom-built page layouts, contains custom-built C# Web Parts, and utilizes MOSS Excel Services and the Business Data Catalog.  A custom authentication provider that accesses the clients Microsoft Dynamics CRM 4.0 Contact entity was also developed for the site..
             </div>
@@ -874,7 +898,7 @@
         <div style="display: none; border: 1px solid #000000; padding: 10px 10px 10px 10px;" id="f">
             <div class="f16 myName">Midwest US Logistics Firm</div>
             <div class="f14">SharePoint Developer</div>
-            <div class="f12">May 2007 â€“ October 2007</div>
+            <div class="f12">May 2007 Ã¢â‚¬â€œ October 2007</div>
             <div class="f16 myBody">
                 Architected and implemented custom authentication in a SharePoint/MOSS solution for a Chicago-based logistics firm. The implementation provided for the creation of a custom ASP.NET Forms Authentication Provider that retrieved credentials from a database hosted on an AS 400 platform.
             </div>
@@ -965,7 +989,7 @@
                 <li style="font-size: 24px; list-style: square outside;">Public Speaker and Conference Presenter</li>
                 <li style="font-size: 24px; list-style: square outside;">Speaker at numerous conferences, including Microsoft TechEd US and Europe and Advisor Magazine DevCons - A recent event is the Microsoft MSDN Developer Conference - http://www.msdndevcon.com/Pages/Chicago.aspx</li>
                 <li style="font-size: 24px; list-style: square outside;">Founder / Partner,  The Bismarck Group, Chicago, Illinois - 1995 to 1997</li>
-                <li style="font-size: 24px; list-style: square outside;">Partner, The Information Management Group, Chicago, Illinois â€“ 1997 to 2009</li>
+                <li style="font-size: 24px; list-style: square outside;">Partner, The Information Management Group, Chicago, Illinois Ã¢â‚¬â€œ 1997 to 2009</li>
     -->
     <!--
     <div class="f18 myHeading">Who am I?</div>

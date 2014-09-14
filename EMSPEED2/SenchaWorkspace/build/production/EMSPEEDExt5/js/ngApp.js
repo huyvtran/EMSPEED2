@@ -1,4 +1,5 @@
-angular.module('app', ['ngAnimate', 'ngMockE2E'])
+angular.module('app', ['ngAnimate', 'ngGrid', 'ngMockE2E'])
+.controller('widgetController', ['$scope', function ($scope) { }])
 .run(["$httpBackend", function ($httpBackend) {
 
     var items = [
@@ -9,8 +10,9 @@ angular.module('app', ['ngAnimate', 'ngMockE2E'])
         { name: 'a', value: '2' },
         { name: 'a', value: '2' }
     ];
+    $httpBackend.whenGET('http://localhost:88/api/items').respond(items);
 
-    var marc = [
+    var alerts = [
         { fa: 'comment', text: 'New Comment (c)', time: '4 minutes ago' },
         { fa: 'twitter', text: '3 New Followers', time: '12 minutes ago' },
         { fa: 'envelope', text: 'Message Sent', time: '12 minutes ago' },
@@ -21,10 +23,24 @@ angular.module('app', ['ngAnimate', 'ngMockE2E'])
         { fa: 'shopping-cart', text: 'New Order Placed', time: '9:49 AM' },
         { fa: 'money', text: 'Payment Received', time: 'Yesterday' }
     ];
+    $httpBackend.whenGET('http://localhost:88/api/alerts').respond(alerts);
+
+    var ecosummary = [
+        { fa: 'comment', text: 'Assigned To Me', number: '5' },
+        { fa: 'comment', text: 'Items I Own', number: '3' },
+        { fa: 'comment', text: 'Pending Approval', number: '3' },
+        { fa: 'comment', text: 'In Progress', number: '1' },
+        { fa: 'comment', text: 'Not Started', number: '3' },
+        { fa: 'comment', text: 'Complete', number: '8' },
+        { fa: 'comment', text: 'Created', number: '5' },
+        { fa: 'comment', text: 'Reviewed', number: '3' },
+        { fa: 'comment', text: 'Released', number: '3' }
+    ];
+    $httpBackend.whenGET('http://localhost:88/api/ecosummary').respond(ecosummary);
+
+
 
     //$httpBackend.whenGET('http://localhost:88/api/items').respond(200, [{ name: 'a', value: '2' }]);
-    $httpBackend.whenGET('http://localhost:88/api/items').respond(items);
-    $httpBackend.whenGET('http://localhost:88/api/alerts').respond(marc);
     //$httpBackend.whenGET('http://localhost:88/api/marc').respond(marc);
 
     $httpBackend.whenGET('http://localhost:88/api/marc').respond(function (method, url, data) {
