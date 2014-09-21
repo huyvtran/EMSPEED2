@@ -17,7 +17,7 @@ Ext.define('widget.nghelloworld', {
                     restrict: 'A',
                     scope: { widgetdata: '=' },
                     replace: true,
-                    template: '<p style="background-color:{{color}}">{{widgetdata.text}}-{{projectId}}</p></div>',
+                    template: '<div><p style="background-color:{{color}}">{{widgetdata.text}}-{{projectId}}</p></div>',
                     controller: ['$scope', service, function ($scope,  service) {
                         $scope.$on('projectId', function (event, message) {
                             $scope.projectId = message;

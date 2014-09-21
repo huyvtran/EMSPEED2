@@ -1,11 +1,13 @@
 ﻿$headsize: 50;
+$titlebarsizepx: 40px;
 $toolbarsizepx: 45px;
 $sidenavwidthpx: 250px;
 $darkgray : rgb(231, 231, 231);
 $lightgray: #f8f8f8;
+$blackish: #3a3633;
 
 .sidebar ul li {
-border-bottom: 1px solid $darkgray;
+border-bottom: 0 solid $darkgray;
 }
 
 body {
@@ -39,12 +41,17 @@ body {
  
 .left {
     border-top: 1px solid $darkgray;
-    background: $lightgray;
+    background: $blackish;
+    color: white;
     float: left;
     top: ($headsize + 1) + px;
     width: $sidenavwidthpx;
     height: 100%;
     overflow: auto;
+}
+
+.menuItem {
+    color: #a8a8a8;
 }
 
 .ngview {
@@ -76,7 +83,7 @@ body {
 
 .dashboard {
     padding: 10px;
-    height: calc(100% - #{$toolbarsizepx});
+    height: calc(100% - #{$toolbarsizepx} - #{$titlebarsizepx});
     box-sizing: border-box;
     overflow-y: scroll;
     overflow-x: hidden;

@@ -2,6 +2,7 @@ $.mockjax({
     url: /^\/api\/widgets$/,
     response: function (settings) {
         this.responseText = [
+            { "type": "ionic", "extension": "js", "height": 200, "widgetDataDef": { text: 'text Here' }, title: 'ionic', description: 'ionic' },
             { "type": "ecolist", "extension": "js", "height": 200, "widgetDataDef": { text: 'text Here' }, title: 'ecolist', description: 'ecolist' },
             { "type": "ecosummary", "extension": "js", "height": 200, "widgetDataDef": { text: 'text Here' }, title: 'ecosummary', description: 'ecosummary' },
 
@@ -108,6 +109,7 @@ $.mockjax({
                     ],
                     columnWidths: [.25, .75, 1],
                     widgets: [
+                        { "type": "ionic", "widgetData": { "projectId": "97366" }, columnIndex: 0, height: 450 },
                         { "type": "ecosummary", "widgetData": { "projectId": "97366" }, columnIndex: 0, height: 450 },
                         { "type": "ecolist", "widgetData": { "projectId": "97366" }, columnIndex: 1, height: 450 }
 
