@@ -33,16 +33,12 @@ Ext.define('widget.nganimate', {
                     template: '' +
                     '<div ng-init="on=true">' +
                     '   <button ng-click="on=!on">Toggle On/Off</button>' +
-                    '   <button ng-click="onClick()">Click</button>' +
                     '   <div class="my-special-animation" ng-if="on">' +
                     '       This content will enter and leave' +
                     '   </div>' +
                     '</div>' +
                     '',
                     controller: ['$scope', service, function ($scope, service) {
-                        $scope.onClick = function () {
-                            $rootScope.$broadcast('projectId', '12345');
-                        }
                     }],
                     link: ['scope', function (scope) {
                     }]

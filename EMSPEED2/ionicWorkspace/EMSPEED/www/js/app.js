@@ -14,8 +14,6 @@ angular.module('ionicApp', ['ionic', 'angular-carousel', 'ngMockE2E', 'ngCordova
         .state('main.orientation', { url: '/orientation', views: { 'main': { templateUrl: 'templates/orientation.html', controller: 'orientationController' } } })
         .state('main.tasks', { url: '/tasks', views: { 'main': { templateUrl: 'templates/tasks.html', controller: 'tasksController' } } })
         .state('main.tabs', { url: '/tabs', views: { 'main': { templateUrl: 'templates/tabs.html', controller: 'TabsPageController' } } })
-        .state('main.alerts', { url: '/alerts', views: { 'main': { templateUrl: 'templates/alerts.html', controller: 'alertsController' } } })
-        .state('main.info', { url: '/info', views: { 'main': { templateUrl: 'templates/info.html', controller: 'InfoPageController' } } })
     $urlRouterProvider.otherwise('/home');
 }])
 

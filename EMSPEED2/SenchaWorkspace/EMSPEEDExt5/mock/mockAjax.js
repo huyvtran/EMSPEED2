@@ -11,8 +11,9 @@ $.mockjax({
 
             { "type": "nghelloworld", "extension": "js", "height": 200, "widgetDataDef": { text: 'Name Here' }, title: 'nghelloworld', description: 'nghelloworld' },
             { "type": "nganimate", "extension": "js", "height": 200, "widgetDataDef": { "projectId": "97366" }, title: 'nganimate', description: 'this is the description' },
+            { "type": "ngbroadcast", "extension": "js", "height": 200, "widgetDataDef": { "projectId": "97366" }, title: 'ngbroadcast', description: 'this is the description' },
             { "type": "ngdirective", "extension": "js", "height": 500, "widgetDataDef": { "name": "n", "age": "a", "marc": "m" }, title: 'Angular Directive', description: 'this is the description' },
-            { "type": "angular", "extension": "js", "height": 500, "widgetDataDef": { "div": "Andy", "name": "n", "age": "a", "marc": "m" }, title: 'Angular Widget', description: 'this is the description' },
+            //{ "type": "angular", "extension": "js", "height": 500, "widgetDataDef": { "div": "Andy", "name": "n", "age": "a", "marc": "m" }, title: 'Angular Widget', description: 'this is the description' },
 
             { "type": "risks", "extension": "js", "height": 200, "widgetDataDef": { "projectId": "97366" }, title: 'Risk Matrix', description: 'this is the description' },
             { "type": "riskmatrix", "extension": "js", "height": 200, "widgetDataDef": { "projectId": "97366" }, title: 'Risk Matrix', description: 'this is the description' },
@@ -147,8 +148,8 @@ $.mockjax({
                     widgets: [
                         { type: 'nghelloworld', widgetData: { text: 'Marc' }, columnIndex: 0, height: 50 },
                         { type: 'nghelloworld', widgetData: { text: 'Nick' }, columnIndex: 0, height: 50 },
+                        { type: 'ngbroadcast', widgetData: { text: 'Nick' }, columnIndex: 0, height: 50 },
                         { type: 'nganimate', widgetData: { text: 'Nick' }, columnIndex: 0, height: 50 },
-                        { type: 'angular', widgetData: { text: 'Nick' }, columnIndex: 0, height: 150 },
                         { type: 'ngdirective', widgetData: { title: 'My ole Alerts', name: 'list', age: '8' }, columnIndex: 1, height: 500 },
                     ]
                 };

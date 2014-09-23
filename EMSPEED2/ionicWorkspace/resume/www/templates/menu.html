@@ -1,0 +1,82 @@
+<ion-side-menus>
+
+    <ion-side-menu-content>
+        <ion-nav-bar class="bar-dark nav-title-slide-ios7">
+            <ion-nav-back-button class="button-icon ion-arrow-left-c"></ion-nav-back-button>
+        </ion-nav-bar>
+
+        <ion-nav-buttons side="left">
+            <div class="button button-clear" menu-toggle="left" >
+                <i class="icon ion-navicon"></i>
+            </div>
+        </ion-nav-buttons>
+        <ion-nav-view name="main" animation="no-animation"></ion-nav-view>
+    </ion-side-menu-content>
+
+<ion-side-menu side="left">
+
+    <div class="bar bar-header bar-dark">
+        <h1 class="title">Marc Gusmano</h1>
+    </div>
+
+    <ion-content class="has-header">
+        <ion-list>
+
+            <div class="item item-divider">
+                About Me
+            </div>
+            <ion-item item-type="item-icon-left" nav-clear menu-close ui-sref="main.summary" ng-class="{active: isItemActive('/home')}">
+                <i class="icon ion-ios7-home" style="font-size: 17px; margin-left: 3px;"></i>
+                Summary
+            </ion-item>
+            <ion-item item-type="item-icon-left" nav-clear menu-close ui-sref="main.accomplishments" ng-class="{active: isItemActive('/home')}">
+                <i class="icon ion-trophy" style="font-size: 17px; margin-left: 3px;"></i>
+                Accomplishments
+            </ion-item>
+            <ion-item item-type="item-icon-left" nav-clear menu-close ui-sref="main.contact" ng-class="{active: isItemActive('/home')}">
+                <i class="icon ion-email" style="font-size: 17px; margin-left: 3px;"></i>
+                Contact Info
+            </ion-item>
+
+            <div class="item item-divider">
+                Career
+            </div>
+            <ion-item item-type="item-icon-left" nav-clear menu-close ui-sref="main.projects" ng-class="{active: isItemActive('/favoritos')}">
+                <i class="icon ion-archive"></i>
+                Projects
+                <span class="badge badge-assertive">13</span>
+            </ion-item>
+            <ion-item item-type="item-icon-left" nav-clear menu-close ui-sref="main.carousel" ng-class="{active: isItemActive('/favoritos')}">
+                <i class="icon ion-images"></i>
+                Carousel of Projects
+            </ion-item>
+
+            <ion-item item-type="item-icon-left" nav-clear menu-close ui-sref="main.companies" ng-class="{active: isItemActive('/favoritos')}">
+                <i class="icon ion-earth"></i>
+                Companies
+                <span class="badge badge-assertive">5</span>
+            </ion-item>
+
+            <div class="item item-divider">
+                About
+            </div>
+            <ion-item item-type="item-icon-left" nav-clear menu-close ui-sref="main.home" ng-class="{active: isItemActive('/favoritos')}">
+                <i class="icon ion-ios7-bell"></i>
+                Intro Page
+            </ion-item>
+            <ion-item item-type="item-icon-left" nav-clear menu-close ui-sref="main.technical" ng-class="{active: isItemActive('/favoritos')}">
+                <i class="icon ion-ios7-mic"></i>
+                Technical Details
+            </ion-item>
+
+            <!--<ion-item nav-clear menu-close ui-sref="main.tabs">Tabs</ion-item>
+            <ion-item nav-clear menu-close ui-sref="main.home">Home</ion-item>
+            <ion-item nav-clear menu-close ui-sref="main.orientation">Orientation</ion-item>
+            <ion-item nav-clear menu-close ui-sref="main.tasks">Tasks</ion-item>
+            <ion-item nav-clear menu-close ui-sref="main.info">Info</ion-item>
+            <ion-item nav-clear menu-close ng-click="login()">Login</ion-item>-->
+
+        </ion-list>
+    </ion-content>
+</ion-side-menu>
+</ion-side-menus>

@@ -14,8 +14,8 @@ Ext.define('widget.ngdirective', {
             '   {' +
             '       background-color:green;' +
             '   }' +
-            '',
-            '.bl {background-color:blue;}'
+            ''
+            //'.bl {background-color:blue;}'
         ]);
 
         angularModule
@@ -44,8 +44,8 @@ Ext.define('widget.ngdirective', {
                 '                </span>' +
                 '            </a>' +
                 '        </div>' +
-                '        <a href="#" class="btn btn-default btn-block mjg">{{widgetdata.title}}</a>' +
-                '        <a href="#" class="btn btn-default btn-block bl">View All Alerts</a>' +
+                //'        <a href="#" class="btn btn-default btn-block mjg">{{widgetdata.title}}</a>' +
+                '        <a href="#" class="btn btn-default btn-block">View All Alerts</a>' +
                 '    </div>' +
                 '',
                 controller: ['$scope', '$attrs', service, function ($scope, $attrs, service) {

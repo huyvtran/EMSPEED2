@@ -1,0 +1,27 @@
+img {
+    display: block;
+    max-width:100%;
+    max-height:100%;
+}
+
+
+/**************************
+/** ION HEADER BAR
+/*************************/
+
+.buttons.left-buttons{
+	margin-left: 10px !important;
+}
+
+.buttons.right-buttons{
+	margin-right: 10px !important;
+}
+
+.buttons.right-buttons a, .buttons.left-buttons button{
+	border: 0;
+}
+
+.buttons.left-buttons button:before{
+	font-size: 32px !important;
+	line-height: 36px !important;
+}

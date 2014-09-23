@@ -56,7 +56,7 @@ Ext.define('EMSPEEDExt5.view.dashboard.dashboardBasePanel', {
 	        {
 	            xtype: 'combobox',
 	            fieldLabel: 'My Layouts',
-                hidden: true,
+                hidden: false,
 	            listeners: {
 	                select: function (sender, records, eOpts) {
 	                    com.startLoading();
@@ -90,9 +90,9 @@ Ext.define('EMSPEEDExt5.view.dashboard.dashboardBasePanel', {
 	            value: me.dashboardLayout.layoutId,
 	            valueField: 'id'
 	        },
-            { text: 'New', ui: 'emspeed-toolbar', hidden: true, handler: 'onAddLayout', glyph: 'xf055@FontAwesome' },
-            { text: 'Delete', ui: 'emspeed-toolbar', hidden: true, handler: 'onDeleteLayout', margin: '0px 120px 0px 0px', glyph: 'xf00d@FontAwesome' },
-            { text: 'Add Widget', ui: 'emspeed-toolbar', hidden: true, handler: 'onAddWidget', glyph: 'xf067@FontAwesome' },
+            { text: 'New', ui: 'emspeed-toolbar', hidden: false, handler: 'onAddLayout', glyph: 'xf055@FontAwesome' },
+            { text: 'Delete', ui: 'emspeed-toolbar', hidden: false, handler: 'onDeleteLayout', margin: '0px 120px 0px 0px', glyph: 'xf00d@FontAwesome' },
+            { text: 'Add Widget', ui: 'emspeed-toolbar', hidden: false, handler: 'onAddWidget', glyph: 'xf067@FontAwesome' },
             { text: 'Restore', ui: 'emspeed-toolbar', hidden: true, handler: 'onRestore', glyph: 'xf0e2@FontAwesome' },
             { xtype: 'component', html: '', margin: '0px 0px 0px 30px' },
             { ui: 'emspeedglyph-toolbar', style: { fontSize: '22px' }, margin: '0px 12px 0px 0px', tooltip: 'dashboard editing tools', handler: 'onToggleToolbar', glyph: 'xf044@FontAwesome' }

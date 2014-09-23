@@ -1,0 +1,14 @@
+<ion-header-bar class="bar-positive" ng-controller="sidemenuController">
+    <div class="button button-clear" ng-click="toggleLeft()"><i class="icon ion-navicon"></i></div>
+    <h1 class="title">Tasks</h1>
+    <button class="button button-icon" ng-click="newTask()"><i class="icon ion-compose"></i></button>
+</ion-header-bar>
+<ion-view>
+    <ion-content>
+        <ion-list>
+            <ion-item ng-repeat="task in tasks">
+                {{task.title}}
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>
