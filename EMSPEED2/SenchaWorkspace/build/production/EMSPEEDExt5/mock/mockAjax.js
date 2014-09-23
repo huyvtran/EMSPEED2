@@ -2,6 +2,7 @@ $.mockjax({
     url: /^\/api\/widgets$/,
     response: function (settings) {
         this.responseText = [
+            { "type": "ionic", "extension": "js", "height": 200, "widgetDataDef": { text: 'text Here' }, title: 'ionic', description: 'ionic' },
             { "type": "ecolist", "extension": "js", "height": 200, "widgetDataDef": { text: 'text Here' }, title: 'ecolist', description: 'ecolist' },
             { "type": "ecosummary", "extension": "js", "height": 200, "widgetDataDef": { text: 'text Here' }, title: 'ecosummary', description: 'ecosummary' },
 
@@ -10,11 +11,13 @@ $.mockjax({
 
             { "type": "nghelloworld", "extension": "js", "height": 200, "widgetDataDef": { text: 'Name Here' }, title: 'nghelloworld', description: 'nghelloworld' },
             { "type": "nganimate", "extension": "js", "height": 200, "widgetDataDef": { "projectId": "97366" }, title: 'nganimate', description: 'this is the description' },
+            { "type": "ngbroadcast", "extension": "js", "height": 200, "widgetDataDef": { "projectId": "97366" }, title: 'ngbroadcast', description: 'this is the description' },
             { "type": "ngdirective", "extension": "js", "height": 500, "widgetDataDef": { "name": "n", "age": "a", "marc": "m" }, title: 'Angular Directive', description: 'this is the description' },
-            { "type": "angular", "extension": "js", "height": 500, "widgetDataDef": { "div": "Andy", "name": "n", "age": "a", "marc": "m" }, title: 'Angular Widget', description: 'this is the description' },
+            //{ "type": "angular", "extension": "js", "height": 500, "widgetDataDef": { "div": "Andy", "name": "n", "age": "a", "marc": "m" }, title: 'Angular Widget', description: 'this is the description' },
 
             { "type": "risks", "extension": "js", "height": 200, "widgetDataDef": { "projectId": "97366" }, title: 'Risk Matrix', description: 'this is the description' },
             { "type": "riskmatrix", "extension": "js", "height": 200, "widgetDataDef": { "projectId": "97366" }, title: 'Risk Matrix', description: 'this is the description' },
+            { "type": "dfx", "extension": "js", "height": 200, "widgetDataDef": { text: 'text Here' }, title: 'dfx', description: 'dfx' },
 
             { "type": "infovis", "extension": "js", "height": 200, "widgetDataDef": { "projectId": "97366" }, title: 'nganimate', description: 'this is the description' },
 
@@ -25,6 +28,7 @@ $.mockjax({
             { "type": "imageviewer", "extension": "js", "height": 200, "widgetDataDef": { "url": "resources/images/widgets/barchart.png", "age": "a", "marc": "m" }, title: 'Image Viewer', description: 'this is the description' },
             { "type": "googlerss", "extension": "js", "height": 500, "widgetDataDef": { "name": "n", "age": "a", "marc": "m" }, title: 'Google RSS Feed', description: 'this is the description' },
             { "type": "list", "extension": "js", "height": 500, "widgetDataDef": { "name": "n", "age": "a", "marc": "m" }, title: 'Project List', description: 'this is the description' },
+            { "type": "tpl", "extension": "js", "height": 500, "widgetDataDef": { "name": "default name for marc", "age": "a", "marc": "m" }, title: 'tpl', description: 'tpl' },
             { "type": "marc", "extension": "js", "height": 500, "widgetDataDef": { "name": "default name for marc", "age": "a", "marc": "m" }, title: 'Marc Widget', description: 'this is the description' },
             { "type": "simple", "extension": "js", "height": 500, "widgetDataDef": { "name": "default name for simple", "age": "a", "marc": "m" }, title: 'Simple Widget', description: 'this is the description' },
             { "type": "stocks", "extension": "js", "height": 500, "widgetDataDef": { "name": "n", "age": "a", "marc": "m" }, title: 'Stocks Widget', description: 'this is the description' }
@@ -106,6 +110,7 @@ $.mockjax({
                     ],
                     columnWidths: [.25, .75, 1],
                     widgets: [
+                        { "type": "ionic", "widgetData": { "projectId": "97366" }, columnIndex: 0, height: 450 },
                         { "type": "ecosummary", "widgetData": { "projectId": "97366" }, columnIndex: 0, height: 450 },
                         { "type": "ecolist", "widgetData": { "projectId": "97366" }, columnIndex: 1, height: 450 }
 
@@ -124,6 +129,7 @@ $.mockjax({
                     columnWidths: [.75, .25, 1],
                     widgets: [
                         { "type": "risks", "widgetData": { "projectId": "97366" }, columnIndex: 0, height: 450 },
+                        { "type": "dfx", "widgetData": { "projectId": "97366" }, columnIndex: 1, height: 450 },
                         { "type": "riskmatrix", "widgetData": { "projectId": "97366" }, columnIndex: 0, height: 400 },
                         { "type": "risks", "widgetData": { "projectId": "97366" }, columnIndex: 1, height: 450 },
                     ]
@@ -142,8 +148,8 @@ $.mockjax({
                     widgets: [
                         { type: 'nghelloworld', widgetData: { text: 'Marc' }, columnIndex: 0, height: 50 },
                         { type: 'nghelloworld', widgetData: { text: 'Nick' }, columnIndex: 0, height: 50 },
+                        { type: 'ngbroadcast', widgetData: { text: 'Nick' }, columnIndex: 0, height: 50 },
                         { type: 'nganimate', widgetData: { text: 'Nick' }, columnIndex: 0, height: 50 },
-                        { type: 'angular', widgetData: { text: 'Nick' }, columnIndex: 0, height: 150 },
                         { type: 'ngdirective', widgetData: { title: 'My ole Alerts', name: 'list', age: '8' }, columnIndex: 1, height: 500 },
                     ]
                 };
@@ -179,6 +185,21 @@ $.mockjax({
                     widgets: [
                         { type: 'basicline', widgetData: { name: 'basic', age: '8' }, columnIndex: 0, height: 535 },
                         { type: 'basiclinemarker', widgetData: { name: 'basic', age: '8' }, columnIndex: 1, height: 535 },
+                    ]
+                };
+                break;
+
+            case 'Misc':
+                dashboard = {
+                    layoutId: 1,
+                    savedLayouts: [
+                        { id: 1, name: 'configuration 1' },
+                        { id: 2, name: 'configuration 2' },
+                        { id: 3, name: 'configuration 3' }
+                    ],
+                    columnWidths: [.5, .5, 1],
+                    widgets: [
+                        { type: 'tpl', widgetData: { name: 'basic', age: '8' }, columnIndex: 0, height: 535 }
                     ]
                 };
                 break;
@@ -2016,6 +2037,17 @@ var dataGetMasterLayout97366 = {
                                 text: "Charts",
                                 qtip: "Charts",
                                 fa: 'fa-bar-chart-o',
+                                "menuItemBasePanel": "dashboardBasePanel",
+                                action: 'dashboard',
+                                expanded: false,
+                                leaf: true,
+                            },
+
+                            {
+                                id: "Misc",
+                                text: "Misc",
+                                qtip: "Misc",
+                                fa: 'fa-random',
                                 "menuItemBasePanel": "dashboardBasePanel",
                                 action: 'dashboard',
                                 expanded: false,
