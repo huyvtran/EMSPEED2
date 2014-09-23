@@ -1,0 +1,39 @@
+﻿.top-content ul.mini-stat {
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  zoom: 1;
+  margin-bottom: 0; }
+
+.list-inline {
+  padding-left: 0;
+  margin-left: -5px;
+  list-style: none; }
+
+.top-content ul.mini-stat > li:first-child {
+  border-left: none; }
+
+/*@media screen and (min-width: 992px)
+.top-content ul.mini-stat>li {
+padding-left: 10px;
+padding-right: 10px;
+}*/
+.top-content ul.mini-stat h5 {
+  float: left;
+  margin: 0;
+  text-align: left;
+  font-size: 0.85em;
+  color: #888; }
+
+h3, h4, h5, h6 {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+
+.top-content ul.mini-stat h5 .stat-value.stat-color-orange {
+  color: #ce7b11; }
+
+.top-content ul.mini-stat h5 .stat-value {
+  display: block;
+  font-size: 1.5em;
+  margin-top: 3px; }
+
+/*# sourceMappingURL=dashboardKpiWidgetPanel.css.map */

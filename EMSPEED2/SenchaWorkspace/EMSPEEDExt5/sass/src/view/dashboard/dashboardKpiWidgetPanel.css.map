@@ -1,0 +1,9 @@
+{
+  "version": 3,
+  "file": "dashboardKpiWidgetPanel.css",
+  "sources": [
+    "dashboardKpiWidgetPanel.scss"
+  ],
+  "names": [],
+  "mappings": "AAAA,aAAa,EAAE;EACf,SAAU;EACV,SAAS;EACT,gBAAgB;EAChB,MAAM;EACN,eAAe;;AAEf;EACA,cAAc;EACd,aAAa;EACb,YAAY;;AAEZ,aAAa,EAAE,aAAa,EAAE;EAC9B,aAAa;;;;;;;AASb,aAAa,EAAE,WAAW;EAC1B,OAAO;EACP,QAAQ;EACR,YAAY;EACZ,WAAW;EACX,OAAO;;AAEP,IAAI,IAAI,IAAI;EACZ,aAAa;;AAEb,aAAa,EAAE,WAAW,GAAG,WAAW;EACxC,OAAO;;AAEP,aAAa,EAAE,WAAW,GAAG;EAC7B,SAAS;EACT,WAAW;EACX,YAAY"
+}

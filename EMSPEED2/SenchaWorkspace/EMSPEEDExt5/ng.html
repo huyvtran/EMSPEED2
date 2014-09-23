@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html lang="en" manifest="">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">
+    <title></title>
+
+    <link href="js/ui-grid/ui-grid-unstable.css" rel="stylesheet" />
+ 
+</head>
+<body ng-app="app">
+
+<script src="js/angular.js"></script>
+<script src="js/angular-animate.js"></script>
+<script src="js/ui-grid/ui-grid-unstable.js"></script>
+
+<div mygrid></div>
+
+<script>
+angular.module('app', ['ui.grid'])
+.directive('mygrid', ['$log', function ($log) {
+    return {
+        restrict: 'A',
+        scope: { },
+        replace: false,
+        template: '<div class="gridStyle" ui-grid="gridOptions"></div>',
+        controller: ['$scope', function ($scope) {
+            $scope.myData = [
+                { button: 'a', name: '10593708', description: 'Desc 10593708' },
+                { button: 'b', name: '10593709', description: 'Desc 10593709' },
+                { button: 'c', name: '10593710', description: 'Desc 10593710' },
+                { button: 'd', name: '10593711', description: 'Desc 10593711' }
+            ];
+            $scope.foo = function () {
+                $log('here');
+            };
+            $scope.gridOptions = {
+                data: 'myData',
+                columnDefs: [
+                    { displayName: 'A Button', width: 80, field: 'button', cellTemplate: '<button id="editBtn" type="button" class="btn-small" ng-click="alert(1)" >{{COL_FIELD}}</button> ', enableSorting: false },
+                    { displayName: 'name', width: 100, field: 'name', cellTemplate: '<div ng-click="foo()" >{{COL_FIELD}}</div>', enableSorting: false },
+                    { displayName: 'Description', width: '80%', field: 'description', enableSorting: false }
+                ]
+            };
+        }]
+    };
+}]);
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.ionic.viewapp" version="0.0.1" xmlns="http://www.w3.org/ns/widgets">
+    <name>Ionic View</name>
+    <description>
+      Ionic View allows you to easily load and view your apps built with the Ionic Framework on a device.
+    </description>
+    <author email="support@drifty.com" href="http://ionicframework.com">
+        Ionic Framework Team
+    </author>
+    <content src="index.html" />
+    <access origin="*" />
+    <preference name="fullscreen" value="true" />
+    <preference name="webviewbounce" value="true" />
+    <feature name="Keyboard">
+      <param name="ios-package" value="CDVKeyboard" onload="true" />
+    </feature>
+    <preference name="DisallowOverscroll" value="true" />
+</widget>

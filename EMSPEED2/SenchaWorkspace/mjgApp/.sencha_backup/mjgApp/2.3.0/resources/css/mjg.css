@@ -1,0 +1,38 @@
+.myName{
+    display: table-cell; 
+    text-align: left; 
+    color: #146BA8; 
+    font-style: italic;
+}
+
+.myHeading{
+    color: #146BA8; 
+    font-style: italic;
+    font-weight:bold; 
+    margin: 10px 0px 0px 0px;
+}
+
+.mySwipe{
+    display:table-cell;
+    text-align:right;
+    font-weight:bold;
+    color:red;
+}
+
+
+.f10{ font-size: 10px;font-family: 'Open Sans Condensed','Arial Narrow', serif; }
+.f12{ font-size: 12px;font-family: 'Open Sans Condensed','Arial Narrow', serif; }
+.f14{ font-size: 14px;font-family: 'Open Sans Condensed','Arial Narrow', serif; }
+.f16{ font-size: 16px;font-family: 'Open Sans Condensed','Arial Narrow', serif; }
+.f18{ font-size: 18px;font-family: 'Open Sans Condensed','Arial Narrow', serif; }
+.f20{ font-size: 20px;font-family: 'Open Sans Condensed','Arial Narrow', serif; }
+.f22{ font-size: 22px;font-family: 'Open Sans Condensed','Arial Narrow', serif; }
+.f24{ font-size: 24px;font-family: 'Open Sans Condensed','Arial Narrow', serif; }
+.f26{ font-size: 26px;font-family: 'Open Sans Condensed','Arial Narrow', serif; }
+.f28{ font-size: 28px;font-family: 'Open Sans Condensed','Arial Narrow', serif; }
+.f30{ font-size: 30px;font-family: 'Open Sans Condensed','Arial Narrow', serif; }
+.f32{ font-size: 32px;font-family: 'Open Sans Condensed','Arial Narrow', serif; }
+.f34{ font-size: 34px;font-family: 'Open Sans Condensed','Arial Narrow', serif; }
+.f36{ font-size: 36px;font-family: 'Open Sans Condensed','Arial Narrow', serif; }
+.f38{ font-size: 38px;font-family: 'Open Sans Condensed','Arial Narrow', serif; }
+.f40{ font-size: 40px;font-family: 'Open Sans Condensed','Arial Narrow', serif; }

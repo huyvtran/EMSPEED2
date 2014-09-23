@@ -1,0 +1,25 @@
+<ion-view title="Project Details">
+
+    <ion-content class="has-header" padding="false">
+
+        <div class="card">
+            <div class="item item-text-wrap">
+                <h2>{{project.name}}</h2>
+                <p>{{project.role}}</p>
+                <p>{{project.dates}}</p>
+            </div>
+            <div class="item item-body">
+                <!--<div class="button-bar">
+                    <a class="button">First</a>
+                    <a class="button">Second</a>
+                    <a class="button">Third</a>
+                </div>-->
+
+                <p style="margin-top: 1px;">{{project.description}}</p>
+                <img class="full-image" ng-src="img/projects/{{project.image}}">
+            </div>
+        </div>
+
+
+    </ion-content>
+</ion-view>

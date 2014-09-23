@@ -1,0 +1,31 @@
+<ion-modal-view>
+    <ion-header-bar class="bar bar-dark">
+        <h1 class="title">More Details</h1>
+        <button class="button button-clear right-buttons" ng-click="closeModal()">Close</button>
+    </ion-header-bar>
+    <ion-content padding="true">
+        <div class="card">
+            <div class="item item-divider item-text-wrap">
+                {{project.name}}
+            </div>
+
+            <a class="button button-clear" ng-click="open()">Click to See the App (best on desktop)</a>
+
+
+            <div class="item item-text-wrap">
+                <h2>Client Tools Used:</h2>
+                <div ng-repeat="clienttool in project.clienttools">
+                    <h3>{{clienttool}}</h3>
+                </div>
+            </div>
+
+            <div class="item item-text-wrap">
+                <h2>Server Tools Used:</h2>
+                <div ng-repeat="servertool in project.servertools">
+                    <h3>{{servertool}}</h3>
+                </div>
+            </div>
+
+        </div>
+    </ion-content>
+</ion-modal-view>
