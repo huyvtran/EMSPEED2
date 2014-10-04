@@ -31,18 +31,19 @@ Ext.define('EMSPEEDExt5.Application', {
     //defaultToken: 'home',
 
     init: function () {
+        EMSPEEDExt5.eventManager = new Ext.util.Observable();
+
         //console.log('Application.js - init');
         //mjg.test('hi');
         //marc.test('hi');
 
         //Ext.setGlyphFontFamily('Pictos');
         Ext.setGlyphFontFamily('FontAwesome');
-//        console.log('init in Application');
         var me = this;
         var map = Ext.Object.fromQueryString(location.search);
         var charts = ('charts' in map) && !/0|false|no/i.test(map.charts);
         //me.setDefaultToken( charts ? 'basic-column' : 'Dashboard' );
-        me.setDefaultToken('Dashboard/97366');
+        me.setDefaultToken('project/97366/Dashboard');
 
         Ext.tip.QuickTipManager.init();
         //Ext.state.Manager.setProvider(Ext.create('Ext.state.CookieProvider'));

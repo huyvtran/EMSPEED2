@@ -60,23 +60,30 @@
                         <img src="/agency/portfolio/angular.png" class="img-responsive" alt="">
                     </a>
                     <div class="portfolio-caption">
-                        <h4>AngularJS Dashboard</h4>
-                        <p class="text-muted">AngularJS, Bootstrap </p>
+                        <h4>Angular.js Dashboard</h4>
+                        <p class="text-muted">Angular.js, Bootstrap </p>
                     </div>
                 </div>
 
+                <script>
+                    function mobileResume() {
+                        window.open('http://gusmano.azurewebsites.net/ionicWorkspace/resume/www/index.html#/home', 'demo2', 'height=600,width=350,left=200,top=50,titlebar=no,toolbar=no,menubar=no,location=no,directories=no,status=no')
+                    }
+                </script>
+
                 <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a target="_blank" href="http://gusmano.azurewebsites.net/SenchaWorkspace/Build/Production/MjgApp/" class="portfolio-link" data-toggle="modal">
+                    @*<a target="_blank" href="http://mjgangular.azurewebsites.net/demo/index.html#/" class="portfolio-link" data-toggle="modal">*@
+                    <a target="_blank" href="javascript:void(0);" onclick="mobileResume();" xhref="http://gusmano.azurewebsites.net/ionicWorkspace/resume/www/index.html#/home" class="portfolio-link" data-toggle="modal">
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content">
                                 <i class="fa fa-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="/agency/portfolio/9-resume.png" class="img-responsive" alt="">
+                        <img src="/agency/portfolio/resume.png" class="img-responsive" alt="">
                     </a>
                     <div class="portfolio-caption">
-                        <h4>HTML5 'FlipBoard' Resume</h4>
-                        <p class="text-muted">Sencha Touch, jQuery, AngularJS</p>
+                        <h4>Mobile Resume Example</h4>
+                        <p class="text-muted">Ionic Framework, Angular.js, Cordova </p>
                     </div>
                 </div>
 
@@ -93,9 +100,34 @@
                     </a>
                     <div class="portfolio-caption">
                         <h4>EMSPEED 2.0</h4>
-                        <p class="text-muted">Sencha ExtJS 5</p>
+                        <p class="text-muted">Sencha ExtJS 5, Angular.js 1.3</p>
+                        <p>&nbsp;</p>
                     </div>
                 </div>
+
+
+                <script>
+                    function v2pocbuild() {
+                        window.open('http://gusmano.azurewebsites.net/SenchaWorkspace/Build/Production/EMSPEEDTouch/', 'demo1', 'height=568,width=320,left=50,top=50,titlebar=no,toolbar=no,menubar=no,location=no,directories=no,status=no')
+                    }
+                </script>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a target="_blank" href="javascript:void(0);" onclick="v2pocbuild();" xhref="http://gusmano.azurewebsites.net/SenchaWorkspace/build/production/EMSPEEDTouch/index.html" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="/agency/portfolio/mobile.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Mobile Web Application</h4>
+                        <p class="text-muted">Sencha Touch 2.3</p>
+                    </div>
+                </div>
+
+
+
 
                 <div class="col-md-4 col-sm-6 portfolio-item">
                     <a target="_blank" href="http://gusmano.azurewebsites.net/SenchaWorkspace/Build/Production/extjs5youtube" class="portfolio-link" data-toggle="modal">
@@ -111,6 +143,29 @@
                         <p class="text-muted">Sencha ExtJS 5</p>
                     </div>
                 </div>
+
+
+
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a target="_blank" href="http://gusmano.azurewebsites.net/SenchaWorkspace/Build/Production/MjgApp/" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="/agency/portfolio/9-resume.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>HTML5 'FlipBoard' Resume</h4>
+                        <p class="text-muted">Sencha Touch, jQuery, AngularJS</p>
+                        <p>&nbsp;</p>
+                        <p>&nbsp;</p>
+                        <p>&nbsp;</p>
+                    </div>
+                </div>
+
+
+
 
                 <div class="col-md-4 col-sm-6 portfolio-item">
                     <a target="_blank" href="http://emspeed1x.azurewebsites.net/sites/97366/Portal.aspx" class="portfolio-link" data-toggle="modal">
@@ -157,6 +212,8 @@
                     <div class="portfolio-caption">
                         <h4>EMSPEED POC</h4>
                         <p class="text-muted">Sencha ExtJS 4</p>
+                        <p>&nbsp;</p>
+                        <p>&nbsp;</p>
                         <p>&nbsp;</p>
 
                     </div>
@@ -206,6 +263,13 @@
                     <div class="portfolio-caption">
                         <h4>Scheduler</h4>
                         <p class="text-muted">Microsoft Silverlight</p>
+                        <p>&nbsp;</p>
+                        <p>&nbsp;</p>
+                        <p>&nbsp;</p>
+                        <p>&nbsp;</p>
+                        <p>&nbsp;</p>
+                        <p>&nbsp;</p>
+                        <p>&nbsp;</p>
                     </div>
                 </div>
 
@@ -244,145 +308,147 @@
     </section>
 
 
-    <!-- Portfolio Modals -->
-    <!-- Use the modals below to showcase details about your portfolio projects! -->
+<!-- Portfolio Modals -->
+<!-- Use the modals below to showcase details about your portfolio projects! -->
 
-    <div class="portfolio-modal modal fade" id="portfolioModal0" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                Close <div class="lr">
-                    <div class="rl">
-                    </div>
+<div class="portfolio-modal modal fade" id="portfolioModal0" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+            Close <div class="lr">
+                <div class="rl">
                 </div>
             </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="modal-body">
-                            <!-- Project Details Go Here -->
-                            <h2>EMSPEED POC</h2>
-                            <img class="img-responsive" src="/agency/portfolio/6-EMSPEED-POC.jpg" alt="">
-                        </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="modal-body">
+                        <!-- Project Details Go Here -->
+                        <h2>EMSPEED POC</h2>
+                        <img class="img-responsive" src="/agency/portfolio/6-EMSPEED-POC.jpg" alt="">
                     </div>
                 </div>
             </div>
         </div>
     </div>
+</div>
 
-    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                Close <div class="lr">
-                    <div class="rl">
-                    </div>
+<div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+            Close <div class="lr">
+                <div class="rl">
                 </div>
             </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="modal-body">
-                            <!-- Project Details Go Here -->
-                            <h2>EMSPEED 1.0</h2>
-                            <img class="img-responsive" src="/agency/portfolio/5-EMSPEED10.jpg" alt="">
-                        </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="modal-body">
+                        <!-- Project Details Go Here -->
+                        <h2>EMSPEED 1.0</h2>
+                        <img class="img-responsive" src="/agency/portfolio/5-EMSPEED10.jpg" alt="">
                     </div>
                 </div>
             </div>
         </div>
     </div>
+</div>
 
-    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                Close <div class="lr">
-                    <div class="rl">
-                    </div>
+<div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+            Close <div class="lr">
+                <div class="rl">
                 </div>
             </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="modal-body">
-                            <!-- Project Details Go Here -->
-                            <h2>Nalco</h2>
-                            <img class="img-responsive" src="/agency/portfolio/4-NalcoEquip.jpg" alt="">
-                        </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="modal-body">
+                        <!-- Project Details Go Here -->
+                        <h2>Nalco</h2>
+                        <img class="img-responsive" src="/agency/portfolio/4-NalcoEquip.jpg" alt="">
                     </div>
                 </div>
             </div>
         </div>
     </div>
+</div>
 
 
-    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                Close <div class="lr">
-                    <div class="rl">
-                    </div>
+<div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+            Close <div class="lr">
+                <div class="rl">
                 </div>
             </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="modal-body">
-                            <!-- Project Details Go Here -->
-                            <h2>Scheduler</h2>
-                            <img class="img-responsive" src="/agency/portfolio/3-scheduler.jpg" alt="">
-                        </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="modal-body">
+                        <!-- Project Details Go Here -->
+                        <h2>Scheduler</h2>
+                        <img class="img-responsive" src="/agency/portfolio/3-scheduler.jpg" alt="">
                     </div>
                 </div>
             </div>
         </div>
     </div>
+</div>
 
-    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                Close <div class="lr">
-                    <div class="rl">
-                    </div>
+<div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+            Close <div class="lr">
+                <div class="rl">
                 </div>
             </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="modal-body">
-                            <!-- Project Details Go Here -->
-                            <h2>Atlas</h2>
-                            <img class="img-responsive" src="/agency/portfolio/2-atlas.jpg" alt="">
-                        </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="modal-body">
+                        <!-- Project Details Go Here -->
+                        <h2>Atlas</h2>
+                        <img class="img-responsive" src="/agency/portfolio/2-atlas.jpg" alt="">
                     </div>
                 </div>
             </div>
         </div>
     </div>
+</div>
 
-    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                Close <div class="lr">
-                    <div class="rl">
-                    </div>
+<div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+            Close <div class="lr">
+                <div class="rl">
                 </div>
             </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="modal-body">
-                            <!-- Project Details Go Here -->
-                            <h2>EMSIX</h2>
-                            <p class="item-intro text-muted">This application has a SharePoint backend and web based front end</p>
-                            <img class="img-responsive" src="/agency/portfolio/1-EMSIX.png" alt="">
-                        </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="modal-body">
+                        <!-- Project Details Go Here -->
+                        <h2>EMSIX</h2>
+                        <p class="item-intro text-muted">This application has a SharePoint backend and web based front end</p>
+                        <img class="img-responsive" src="/agency/portfolio/1-EMSIX.png" alt="">
                     </div>
                 </div>
             </div>
         </div>
     </div>
+</div>
 
-    <!-- jQuery Version 1.11.0 -->
-    <script src="/agency/js/jquery-1.11.0.js"></script>
+<!-- jQuery Version 1.11.0 -->
+<script src="/agency/js/jquery-1.11.0.js"></script>
+
+
 
     <!-- Bootstrap Core JavaScript -->
     <script src="/agency/js/bootstrap.min.js"></script>

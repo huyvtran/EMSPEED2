@@ -11982,14 +11982,6 @@ div.x-form-text-grow .x-form-textarea {
   line-height: 20px;
 }
 
-/*<if slicer>*/
-/* line 83, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-base/sass/etc/mixins/slicer.scss */
-.x-cmd-slicer.x-progress-bar-default:before {
-  display: none;
-  content: "x-slicer:stretch:bottom" !important;
-}
-
-/*</if slicer>*/
 /* */
 /* line 127, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-neutral/sass/src/ProgressBar.scss */
 .x-progressbar-default-cell > .x-grid-cell-inner,
@@ -14354,14 +14346,6 @@ div.x-form-text-grow .x-form-textarea {
   padding: 1px 1px 1px 1px;
 }
 
-/*<if slicer>*/
-/* line 83, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-base/sass/etc/mixins/slicer.scss */
-.x-cmd-slicer.x-btn-default-small:before {
-  display: none;
-  content: "x-slicer:frame:3px 3px 3px 3px, corners:url(images/btn/btn-default-small-corners.gif), sides:url(images/btn/btn-default-small-sides.gif)" !important;
-}
-
-/*</if slicer>*/
 /* */
 /* line 423, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-neutral/sass/src/button/Button.scss */
 .x-btn-default-small {
@@ -14756,59 +14740,11 @@ div.x-form-text-grow .x-form-textarea {
   border-color: #d4e1eb;
 }
 
-/*<if slicer>*/
-/* line 83, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-base/sass/etc/mixins/slicer.scss */
-.x-cmd-slicer.x-btn-focus.x-btn-default-small:before {
-  display: none;
-  content: "x-slicer:stretch:bottom, frame:3px 3px 3px 3px, corners:url(images/btn/btn-default-small-focus-corners.gif), sides:url(images/btn/btn-default-small-focus-sides.gif)" !important;
-}
-
-/*</if slicer>*/
 /* */
-/*<if slicer>*/
-/* line 83, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-base/sass/etc/mixins/slicer.scss */
-.x-cmd-slicer.x-btn-over.x-btn-default-small:before {
-  display: none;
-  content: "x-slicer:stretch:bottom, frame:3px 3px 3px 3px, corners:url(images/btn/btn-default-small-over-corners.gif), sides:url(images/btn/btn-default-small-over-sides.gif)" !important;
-}
-
-/*</if slicer>*/
 /* */
-/*<if slicer>*/
-/* line 83, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-base/sass/etc/mixins/slicer.scss */
-.x-cmd-slicer.x-btn-focus.x-btn-over.x-btn-default-small:before {
-  display: none;
-  content: "x-slicer:stretch:bottom, frame:3px 3px 3px 3px, corners:url(images/btn/btn-default-small-focus-over-corners.gif), sides:url(images/btn/btn-default-small-focus-over-sides.gif)" !important;
-}
-
-/*</if slicer>*/
 /* */
-/*<if slicer>*/
-/* line 83, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-base/sass/etc/mixins/slicer.scss */
-.x-cmd-slicer.x-btn-pressed.x-btn-default-small:before {
-  display: none;
-  content: "x-slicer:stretch:bottom, frame:3px 3px 3px 3px, corners:url(images/btn/btn-default-small-pressed-corners.gif), sides:url(images/btn/btn-default-small-pressed-sides.gif)" !important;
-}
-
-/*</if slicer>*/
 /* */
-/*<if slicer>*/
-/* line 83, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-base/sass/etc/mixins/slicer.scss */
-.x-cmd-slicer.x-btn-focus.x-btn-pressed.x-btn-default-small:before {
-  display: none;
-  content: "x-slicer:stretch:bottom, frame:3px 3px 3px 3px, corners:url(images/btn/btn-default-small-focus-pressed-corners.gif), sides:url(images/btn/btn-default-small-focus-pressed-sides.gif)" !important;
-}
-
-/*</if slicer>*/
 /* */
-/*<if slicer>*/
-/* line 83, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-base/sass/etc/mixins/slicer.scss */
-.x-cmd-slicer.x-btn-disabled.x-btn-default-small:before {
-  display: none;
-  content: "x-slicer:stretch:bottom, frame:3px 3px 3px 3px, corners:url(images/btn/btn-default-small-disabled-corners.gif), sides:url(images/btn/btn-default-small-disabled-sides.gif)" !important;
-}
-
-/*</if slicer>*/
 /* */
 /* line 187, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-base/sass/etc/mixins/frame.scss */
 .x-btn-default-medium {
@@ -14934,14 +14870,6 @@ div.x-form-text-grow .x-form-textarea {
   padding: 1px 1px 1px 1px;
 }
 
-/*<if slicer>*/
-/* line 83, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-base/sass/etc/mixins/slicer.scss */
-.x-cmd-slicer.x-btn-default-medium:before {
-  display: none;
-  content: "x-slicer:frame:3px 3px 3px 3px, corners:url(images/btn/btn-default-medium-corners.gif), sides:url(images/btn/btn-default-medium-sides.gif)" !important;
-}
-
-/*</if slicer>*/
 /* */
 /* line 423, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-neutral/sass/src/button/Button.scss */
 .x-btn-default-medium {
@@ -15336,59 +15264,11 @@ div.x-form-text-grow .x-form-textarea {
   border-color: #d4e1eb;
 }
 
-/*<if slicer>*/
-/* line 83, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-base/sass/etc/mixins/slicer.scss */
-.x-cmd-slicer.x-btn-focus.x-btn-default-medium:before {
-  display: none;
-  content: "x-slicer:stretch:bottom, frame:3px 3px 3px 3px, corners:url(images/btn/btn-default-medium-focus-corners.gif), sides:url(images/btn/btn-default-medium-focus-sides.gif)" !important;
-}
-
-/*</if slicer>*/
 /* */
-/*<if slicer>*/
-/* line 83, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-base/sass/etc/mixins/slicer.scss */
-.x-cmd-slicer.x-btn-over.x-btn-default-medium:before {
-  display: none;
-  content: "x-slicer:stretch:bottom, frame:3px 3px 3px 3px, corners:url(images/btn/btn-default-medium-over-corners.gif), sides:url(images/btn/btn-default-medium-over-sides.gif)" !important;
-}
-
-/*</if slicer>*/
 /* */
-/*<if slicer>*/
-/* line 83, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-base/sass/etc/mixins/slicer.scss */
-.x-cmd-slicer.x-btn-focus.x-btn-over.x-btn-default-medium:before {
-  display: none;
-  content: "x-slicer:stretch:bottom, frame:3px 3px 3px 3px, corners:url(images/btn/btn-default-medium-focus-over-corners.gif), sides:url(images/btn/btn-default-medium-focus-over-sides.gif)" !important;
-}
-
-/*</if slicer>*/
 /* */
-/*<if slicer>*/
-/* line 83, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-base/sass/etc/mixins/slicer.scss */
-.x-cmd-slicer.x-btn-pressed.x-btn-default-medium:before {
-  display: none;
-  content: "x-slicer:stretch:bottom, frame:3px 3px 3px 3px, corners:url(images/btn/btn-default-medium-pressed-corners.gif), sides:url(images/btn/btn-default-medium-pressed-sides.gif)" !important;
-}
-
-/*</if slicer>*/
 /* */
-/*<if slicer>*/
-/* line 83, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-base/sass/etc/mixins/slicer.scss */
-.x-cmd-slicer.x-btn-focus.x-btn-pressed.x-btn-default-medium:before {
-  display: none;
-  content: "x-slicer:stretch:bottom, frame:3px 3px 3px 3px, corners:url(images/btn/btn-default-medium-focus-pressed-corners.gif), sides:url(images/btn/btn-default-medium-focus-pressed-sides.gif)" !important;
-}
-
-/*</if slicer>*/
 /* */
-/*<if slicer>*/
-/* line 83, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-base/sass/etc/mixins/slicer.scss */
-.x-cmd-slicer.x-btn-disabled.x-btn-default-medium:before {
-  display: none;
-  content: "x-slicer:stretch:bottom, frame:3px 3px 3px 3px, corners:url(images/btn/btn-default-medium-disabled-corners.gif), sides:url(images/btn/btn-default-medium-disabled-sides.gif)" !important;
-}
-
-/*</if slicer>*/
 /* */
 /* line 187, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-base/sass/etc/mixins/frame.scss */
 .x-btn-default-large {
@@ -15514,14 +15394,6 @@ div.x-form-text-grow .x-form-textarea {
   padding: 1px 1px 1px 1px;
 }
 
-/*<if slicer>*/
-/* line 83, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-base/sass/etc/mixins/slicer.scss */
-.x-cmd-slicer.x-btn-default-large:before {
-  display: none;
-  content: "x-slicer:frame:3px 3px 3px 3px, corners:url(images/btn/btn-default-large-corners.gif), sides:url(images/btn/btn-default-large-sides.gif)" !important;
-}
-
-/*</if slicer>*/
 /* */
 /* line 423, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-neutral/sass/src/button/Button.scss */
 .x-btn-default-large {
@@ -15916,59 +15788,11 @@ div.x-form-text-grow .x-form-textarea {
   border-color: #d4e1eb;
 }
 
-/*<if slicer>*/
-/* line 83, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-base/sass/etc/mixins/slicer.scss */
-.x-cmd-slicer.x-btn-focus.x-btn-default-large:before {
-  display: none;
-  content: "x-slicer:stretch:bottom, frame:3px 3px 3px 3px, corners:url(images/btn/btn-default-large-focus-corners.gif), sides:url(images/btn/btn-default-large-focus-sides.gif)" !important;
-}
-
-/*</if slicer>*/
 /* */
-/*<if slicer>*/
-/* line 83, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-base/sass/etc/mixins/slicer.scss */
-.x-cmd-slicer.x-btn-over.x-btn-default-large:before {
-  display: none;
-  content: "x-slicer:stretch:bottom, frame:3px 3px 3px 3px, corners:url(images/btn/btn-default-large-over-corners.gif), sides:url(images/btn/btn-default-large-over-sides.gif)" !important;
-}
-
-/*</if slicer>*/
 /* */
-/*<if slicer>*/
-/* line 83, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-base/sass/etc/mixins/slicer.scss */
-.x-cmd-slicer.x-btn-focus.x-btn-over.x-btn-default-large:before {
-  display: none;
-  content: "x-slicer:stretch:bottom, frame:3px 3px 3px 3px, corners:url(images/btn/btn-default-large-focus-over-corners.gif), sides:url(images/btn/btn-default-large-focus-over-sides.gif)" !important;
-}
-
-/*</if slicer>*/
 /* */
-/*<if slicer>*/
-/* line 83, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-base/sass/etc/mixins/slicer.scss */
-.x-cmd-slicer.x-btn-pressed.x-btn-default-large:before {
-  display: none;
-  content: "x-slicer:stretch:bottom, frame:3px 3px 3px 3px, corners:url(images/btn/btn-default-large-pressed-corners.gif), sides:url(images/btn/btn-default-large-pressed-sides.gif)" !important;
-}
-
-/*</if slicer>*/
 /* */
-/*<if slicer>*/
-/* line 83, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-base/sass/etc/mixins/slicer.scss */
-.x-cmd-slicer.x-btn-focus.x-btn-pressed.x-btn-default-large:before {
-  display: none;
-  content: "x-slicer:stretch:bottom, frame:3px 3px 3px 3px, corners:url(images/btn/btn-default-large-focus-pressed-corners.gif), sides:url(images/btn/btn-default-large-focus-pressed-sides.gif)" !important;
-}
-
-/*</if slicer>*/
 /* */
-/*<if slicer>*/
-/* line 83, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-base/sass/etc/mixins/slicer.scss */
-.x-cmd-slicer.x-btn-disabled.x-btn-default-large:before {
-  display: none;
-  content: "x-slicer:stretch:bottom, frame:3px 3px 3px 3px, corners:url(images/btn/btn-default-large-disabled-corners.gif), sides:url(images/btn/btn-default-large-disabled-sides.gif)" !important;
-}
-
-/*</if slicer>*/
 /* */
 /* line 187, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-base/sass/etc/mixins/frame.scss */
 .x-btn-default-toolbar-small {
@@ -16094,14 +15918,6 @@ div.x-form-text-grow .x-form-textarea {
   padding: 1px 1px 1px 1px;
 }
 
-/*<if slicer>*/
-/* line 83, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-base/sass/etc/mixins/slicer.scss */
-.x-cmd-slicer.x-btn-default-toolbar-small:before {
-  display: none;
-  content: "x-slicer:frame:3px 3px 3px 3px, corners:url(images/btn/btn-default-toolbar-small-corners.gif), sides:url(images/btn/btn-default-toolbar-small-sides.gif)" !important;
-}
-
-/*</if slicer>*/
 /* */
 /* line 423, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-neutral/sass/src/button/Button.scss */
 .x-btn-default-toolbar-small {
@@ -16496,59 +16312,11 @@ div.x-form-text-grow .x-form-textarea {
   border-color: #4196d4;
 }
 
-/*<if slicer>*/
-/* line 83, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-base/sass/etc/mixins/slicer.scss */
-.x-cmd-slicer.x-btn-focus.x-btn-default-toolbar-small:before {
-  display: none;
-  content: "x-slicer:stretch:bottom, frame:3px 3px 3px 3px, corners:url(images/btn/btn-default-toolbar-small-focus-corners.gif), sides:url(images/btn/btn-default-toolbar-small-focus-sides.gif)" !important;
-}
-
-/*</if slicer>*/
 /* */
-/*<if slicer>*/
-/* line 83, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-base/sass/etc/mixins/slicer.scss */
-.x-cmd-slicer.x-btn-over.x-btn-default-toolbar-small:before {
-  display: none;
-  content: "x-slicer:stretch:bottom, frame:3px 3px 3px 3px, corners:url(images/btn/btn-default-toolbar-small-over-corners.gif), sides:url(images/btn/btn-default-toolbar-small-over-sides.gif)" !important;
-}
-
-/*</if slicer>*/
 /* */
-/*<if slicer>*/
-/* line 83, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-base/sass/etc/mixins/slicer.scss */
-.x-cmd-slicer.x-btn-focus.x-btn-over.x-btn-default-toolbar-small:before {
-  display: none;
-  content: "x-slicer:stretch:bottom, frame:3px 3px 3px 3px, corners:url(images/btn/btn-default-toolbar-small-focus-over-corners.gif), sides:url(images/btn/btn-default-toolbar-small-focus-over-sides.gif)" !important;
-}
-
-/*</if slicer>*/
 /* */
-/*<if slicer>*/
-/* line 83, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-base/sass/etc/mixins/slicer.scss */
-.x-cmd-slicer.x-btn-pressed.x-btn-default-toolbar-small:before {
-  display: none;
-  content: "x-slicer:stretch:bottom, frame:3px 3px 3px 3px, corners:url(images/btn/btn-default-toolbar-small-pressed-corners.gif), sides:url(images/btn/btn-default-toolbar-small-pressed-sides.gif)" !important;
-}
-
-/*</if slicer>*/
 /* */
-/*<if slicer>*/
-/* line 83, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-base/sass/etc/mixins/slicer.scss */
-.x-cmd-slicer.x-btn-focus.x-btn-pressed.x-btn-default-toolbar-small:before {
-  display: none;
-  content: "x-slicer:stretch:bottom, frame:3px 3px 3px 3px, corners:url(images/btn/btn-default-toolbar-small-focus-pressed-corners.gif), sides:url(images/btn/btn-default-toolbar-small-focus-pressed-sides.gif)" !important;
-}
-
-/*</if slicer>*/
 /* */
-/*<if slicer>*/
-/* line 83, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-base/sass/etc/mixins/slicer.scss */
-.x-cmd-slicer.x-btn-disabled.x-btn-default-toolbar-small:before {
-  display: none;
-  content: "x-slicer:stretch:bottom, frame:3px 3px 3px 3px, corners:url(images/btn/btn-default-toolbar-small-disabled-corners.gif), sides:url(images/btn/btn-default-toolbar-small-disabled-sides.gif)" !important;
-}
-
-/*</if slicer>*/
 /* */
 /* line 187, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-base/sass/etc/mixins/frame.scss */
 .x-btn-default-toolbar-medium {
@@ -16674,14 +16442,6 @@ div.x-form-text-grow .x-form-textarea {
   padding: 1px 1px 1px 1px;
 }
 
-/*<if slicer>*/
-/* line 83, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-base/sass/etc/mixins/slicer.scss */
-.x-cmd-slicer.x-btn-default-toolbar-medium:before {
-  display: none;
-  content: "x-slicer:frame:3px 3px 3px 3px, corners:url(images/btn/btn-default-toolbar-medium-corners.gif), sides:url(images/btn/btn-default-toolbar-medium-sides.gif)" !important;
-}
-
-/*</if slicer>*/
 /* */
 /* line 423, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-neutral/sass/src/button/Button.scss */
 .x-btn-default-toolbar-medium {
@@ -17076,59 +16836,11 @@ div.x-form-text-grow .x-form-textarea {
   border-color: #4196d4;
 }
 
-/*<if slicer>*/
-/* line 83, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-base/sass/etc/mixins/slicer.scss */
-.x-cmd-slicer.x-btn-focus.x-btn-default-toolbar-medium:before {
-  display: none;
-  content: "x-slicer:stretch:bottom, frame:3px 3px 3px 3px, corners:url(images/btn/btn-default-toolbar-medium-focus-corners.gif), sides:url(images/btn/btn-default-toolbar-medium-focus-sides.gif)" !important;
-}
-
-/*</if slicer>*/
 /* */
-/*<if slicer>*/
-/* line 83, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-base/sass/etc/mixins/slicer.scss */
-.x-cmd-slicer.x-btn-over.x-btn-default-toolbar-medium:before {
-  display: none;
-  content: "x-slicer:stretch:bottom, frame:3px 3px 3px 3px, corners:url(images/btn/btn-default-toolbar-medium-over-corners.gif), sides:url(images/btn/btn-default-toolbar-medium-over-sides.gif)" !important;
-}
-
-/*</if slicer>*/
 /* */
-/*<if slicer>*/
-/* line 83, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-base/sass/etc/mixins/slicer.scss */
-.x-cmd-slicer.x-btn-focus.x-btn-over.x-btn-default-toolbar-medium:before {
-  display: none;
-  content: "x-slicer:stretch:bottom, frame:3px 3px 3px 3px, corners:url(images/btn/btn-default-toolbar-medium-focus-over-corners.gif), sides:url(images/btn/btn-default-toolbar-medium-focus-over-sides.gif)" !important;
-}
-
-/*</if slicer>*/
 /* */
-/*<if slicer>*/
-/* line 83, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-base/sass/etc/mixins/slicer.scss */
-.x-cmd-slicer.x-btn-pressed.x-btn-default-toolbar-medium:before {
-  display: none;
-  content: "x-slicer:stretch:bottom, frame:3px 3px 3px 3px, corners:url(images/btn/btn-default-toolbar-medium-pressed-corners.gif), sides:url(images/btn/btn-default-toolbar-medium-pressed-sides.gif)" !important;
-}
-
-/*</if slicer>*/
 /* */
-/*<if slicer>*/
-/* line 83, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-base/sass/etc/mixins/slicer.scss */
-.x-cmd-slicer.x-btn-focus.x-btn-pressed.x-btn-default-toolbar-medium:before {
-  display: none;
-  content: "x-slicer:stretch:bottom, frame:3px 3px 3px 3px, corners:url(images/btn/btn-default-toolbar-medium-focus-pressed-corners.gif), sides:url(images/btn/btn-default-toolbar-medium-focus-pressed-sides.gif)" !important;
-}
-
-/*</if slicer>*/
 /* */
-/*<if slicer>*/
-/* line 83, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-base/sass/etc/mixins/slicer.scss */
-.x-cmd-slicer.x-btn-disabled.x-btn-default-toolbar-medium:before {
-  display: none;
-  content: "x-slicer:stretch:bottom, frame:3px 3px 3px 3px, corners:url(images/btn/btn-default-toolbar-medium-disabled-corners.gif), sides:url(images/btn/btn-default-toolbar-medium-disabled-sides.gif)" !important;
-}
-
-/*</if slicer>*/
 /* */
 /* line 187, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-base/sass/etc/mixins/frame.scss */
 .x-btn-default-toolbar-large {
@@ -17254,14 +16966,6 @@ div.x-form-text-grow .x-form-textarea {
   padding: 1px 1px 1px 1px;
 }
 
-/*<if slicer>*/
-/* line 83, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-base/sass/etc/mixins/slicer.scss */
-.x-cmd-slicer.x-btn-default-toolbar-large:before {
-  display: none;
-  content: "x-slicer:frame:3px 3px 3px 3px, corners:url(images/btn/btn-default-toolbar-large-corners.gif), sides:url(images/btn/btn-default-toolbar-large-sides.gif)" !important;
-}
-
-/*</if slicer>*/
 /* */
 /* line 423, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-neutral/sass/src/button/Button.scss */
 .x-btn-default-toolbar-large {
@@ -17656,59 +17360,11 @@ div.x-form-text-grow .x-form-textarea {
   border-color: #4196d4;
 }
 
-/*<if slicer>*/
-/* line 83, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-base/sass/etc/mixins/slicer.scss */
-.x-cmd-slicer.x-btn-focus.x-btn-default-toolbar-large:before {
-  display: none;
-  content: "x-slicer:stretch:bottom, frame:3px 3px 3px 3px, corners:url(images/btn/btn-default-toolbar-large-focus-corners.gif), sides:url(images/btn/btn-default-toolbar-large-focus-sides.gif)" !important;
-}
-
-/*</if slicer>*/
 /* */
-/*<if slicer>*/
-/* line 83, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-base/sass/etc/mixins/slicer.scss */
-.x-cmd-slicer.x-btn-over.x-btn-default-toolbar-large:before {
-  display: none;
-  content: "x-slicer:stretch:bottom, frame:3px 3px 3px 3px, corners:url(images/btn/btn-default-toolbar-large-over-corners.gif), sides:url(images/btn/btn-default-toolbar-large-over-sides.gif)" !important;
-}
-
-/*</if slicer>*/
 /* */
-/*<if slicer>*/
-/* line 83, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-base/sass/etc/mixins/slicer.scss */
-.x-cmd-slicer.x-btn-focus.x-btn-over.x-btn-default-toolbar-large:before {
-  display: none;
-  content: "x-slicer:stretch:bottom, frame:3px 3px 3px 3px, corners:url(images/btn/btn-default-toolbar-large-focus-over-corners.gif), sides:url(images/btn/btn-default-toolbar-large-focus-over-sides.gif)" !important;
-}
-
-/*</if slicer>*/
 /* */
-/*<if slicer>*/
-/* line 83, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-base/sass/etc/mixins/slicer.scss */
-.x-cmd-slicer.x-btn-pressed.x-btn-default-toolbar-large:before {
-  display: none;
-  content: "x-slicer:stretch:bottom, frame:3px 3px 3px 3px, corners:url(images/btn/btn-default-toolbar-large-pressed-corners.gif), sides:url(images/btn/btn-default-toolbar-large-pressed-sides.gif)" !important;
-}
-
-/*</if slicer>*/
 /* */
-/*<if slicer>*/
-/* line 83, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-base/sass/etc/mixins/slicer.scss */
-.x-cmd-slicer.x-btn-focus.x-btn-pressed.x-btn-default-toolbar-large:before {
-  display: none;
-  content: "x-slicer:stretch:bottom, frame:3px 3px 3px 3px, corners:url(images/btn/btn-default-toolbar-large-focus-pressed-corners.gif), sides:url(images/btn/btn-default-toolbar-large-focus-pressed-sides.gif)" !important;
-}
-
-/*</if slicer>*/
 /* */
-/*<if slicer>*/
-/* line 83, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-base/sass/etc/mixins/slicer.scss */
-.x-cmd-slicer.x-btn-disabled.x-btn-default-toolbar-large:before {
-  display: none;
-  content: "x-slicer:stretch:bottom, frame:3px 3px 3px 3px, corners:url(images/btn/btn-default-toolbar-large-disabled-corners.gif), sides:url(images/btn/btn-default-toolbar-large-disabled-sides.gif)" !important;
-}
-
-/*</if slicer>*/
 /* */
 /* line 1, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-neutral/sass/src/resizer/Splitter.scss */
 .x-collapse-el {
@@ -18590,41 +18246,9 @@ div.x-form-text-grow .x-form-textarea {
   border-right-width: 1px !important;
 }
 
-/*<if slicer>*/
-/* line 83, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-base/sass/etc/mixins/slicer.scss */
-.x-cmd-slicer.x-panel-header-default-top:before {
-  display: none;
-  content: "x-slicer:stretch:bottom" !important;
-}
-
-/*</if slicer>*/
 /* */
-/*<if slicer>*/
-/* line 83, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-base/sass/etc/mixins/slicer.scss */
-.x-cmd-slicer.x-panel-header-default-bottom:before {
-  display: none;
-  content: "x-slicer:stretch:top" !important;
-}
-
-/*</if slicer>*/
 /* */
-/*<if slicer>*/
-/* line 83, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-base/sass/etc/mixins/slicer.scss */
-.x-cmd-slicer.x-panel-header-default-left:before {
-  display: none;
-  content: "x-slicer:stretch:right" !important;
-}
-
-/*</if slicer>*/
 /* */
-/*<if slicer>*/
-/* line 83, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-base/sass/etc/mixins/slicer.scss */
-.x-cmd-slicer.x-panel-header-default-right:before {
-  display: none;
-  content: "x-slicer:stretch:left" !important;
-}
-
-/*</if slicer>*/
 /* */
 /* line 731, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-neutral/sass/src/panel/Panel.scss */
 .x-panel-header-default-horizontal .x-tool-after-title {
@@ -18991,14 +18615,6 @@ div.x-form-text-grow .x-form-textarea {
   padding: 0 0 0 0;
 }
 
-/*<if slicer>*/
-/* line 83, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-base/sass/etc/mixins/slicer.scss */
-.x-cmd-slicer.x-panel-default-framed:before {
-  display: none;
-  content: "x-slicer:frame:4px 4px 4px 4px, corners:url(images/panel/panel-default-framed-corners.gif), sides:url(images/panel/panel-default-framed-sides.gif)" !important;
-}
-
-/*</if slicer>*/
 /* */
 /* line 187, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-base/sass/etc/mixins/frame.scss */
 .x-panel-header-default-framed-top {
@@ -19131,14 +18747,6 @@ div.x-form-text-grow .x-form-textarea {
   padding: 0px 7px 2px 0px;
 }
 
-/*<if slicer>*/
-/* line 83, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-base/sass/etc/mixins/slicer.scss */
-.x-cmd-slicer.x-panel-header-default-framed-top:before {
-  display: none;
-  content: "x-slicer:frame:4px 4px 0 4px, corners:url(images/panel-header/panel-header-default-framed-top-corners.gif), sides:url(images/panel-header/panel-header-default-framed-top-sides.gif)" !important;
-}
-
-/*</if slicer>*/
 /* */
 /* line 187, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-base/sass/etc/mixins/frame.scss */
 .x-panel-header-default-framed-right {
@@ -19271,14 +18879,6 @@ div.x-form-text-grow .x-form-textarea {
   padding: 0px 0px 7px 2px;
 }
 
-/*<if slicer>*/
-/* line 83, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-base/sass/etc/mixins/slicer.scss */
-.x-cmd-slicer.x-panel-header-default-framed-right:before {
-  display: none;
-  content: "x-slicer:frame:4px 4px 4px 0, corners:url(images/panel-header/panel-header-default-framed-right-corners.gif), sides:url(images/panel-header/panel-header-default-framed-right-sides.gif)" !important;
-}
-
-/*</if slicer>*/
 /* */
 /* line 187, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-base/sass/etc/mixins/frame.scss */
 .x-panel-header-default-framed-bottom {
@@ -19411,14 +19011,6 @@ div.x-form-text-grow .x-form-textarea {
   padding: 3px 7px 0px 0px;
 }
 
-/*<if slicer>*/
-/* line 83, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-base/sass/etc/mixins/slicer.scss */
-.x-cmd-slicer.x-panel-header-default-framed-bottom:before {
-  display: none;
-  content: "x-slicer:frame:0 4px 4px 4px, corners:url(images/panel-header/panel-header-default-framed-bottom-corners.gif), sides:url(images/panel-header/panel-header-default-framed-bottom-sides.gif)" !important;
-}
-
-/*</if slicer>*/
 /* */
 /* line 187, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-base/sass/etc/mixins/frame.scss */
 .x-panel-header-default-framed-left {
@@ -19551,14 +19143,6 @@ div.x-form-text-grow .x-form-textarea {
   padding: 0px 3px 7px 0px;
 }
 
-/*<if slicer>*/
-/* line 83, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-base/sass/etc/mixins/slicer.scss */
-.x-cmd-slicer.x-panel-header-default-framed-left:before {
-  display: none;
-  content: "x-slicer:frame:4px 0 4px 4px, corners:url(images/panel-header/panel-header-default-framed-left-corners.gif), sides:url(images/panel-header/panel-header-default-framed-left-sides.gif)" !important;
-}
-
-/*</if slicer>*/
 /* */
 /* line 187, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-base/sass/etc/mixins/frame.scss */
 .x-panel-header-default-framed-collapsed-top {
@@ -19691,14 +19275,6 @@ div.x-form-text-grow .x-form-textarea {
   padding: 0px 7px 0px 0px;
 }
 
-/*<if slicer>*/
-/* line 83, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-base/sass/etc/mixins/slicer.scss */
-.x-cmd-slicer.x-panel-header-default-framed-collapsed-top:before {
-  display: none;
-  content: "x-slicer:frame:4px 4px 4px 4px, corners:url(images/panel-header/panel-header-default-framed-collapsed-top-corners.gif), sides:url(images/panel-header/panel-header-default-framed-collapsed-top-sides.gif)" !important;
-}
-
-/*</if slicer>*/
 /* */
 /* line 187, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-base/sass/etc/mixins/frame.scss */
 .x-panel-header-default-framed-collapsed-right {
@@ -19831,14 +19407,6 @@ div.x-form-text-grow .x-form-textarea {
   padding: 0px 0px 7px 0px;
 }
 
-/*<if slicer>*/
-/* line 83, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-base/sass/etc/mixins/slicer.scss */
-.x-cmd-slicer.x-panel-header-default-framed-collapsed-right:before {
-  display: none;
-  content: "x-slicer:frame:4px 4px 4px 4px, corners:url(images/panel-header/panel-header-default-framed-collapsed-right-corners.gif), sides:url(images/panel-header/panel-header-default-framed-collapsed-right-sides.gif)" !important;
-}
-
-/*</if slicer>*/
 /* */
 /* line 187, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-base/sass/etc/mixins/frame.scss */
 .x-panel-header-default-framed-collapsed-bottom {
@@ -19971,14 +19539,6 @@ div.x-form-text-grow .x-form-textarea {
   padding: 0px 7px 0px 0px;
 }
 
-/*<if slicer>*/
-/* line 83, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-base/sass/etc/mixins/slicer.scss */
-.x-cmd-slicer.x-panel-header-default-framed-collapsed-bottom:before {
-  display: none;
-  content: "x-slicer:frame:4px 4px 4px 4px, corners:url(images/panel-header/panel-header-default-framed-collapsed-bottom-corners.gif), sides:url(images/panel-header/panel-header-default-framed-collapsed-bottom-sides.gif)" !important;
-}
-
-/*</if slicer>*/
 /* */
 /* line 187, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-base/sass/etc/mixins/frame.scss */
 .x-panel-header-default-framed-collapsed-left {
@@ -20111,14 +19671,6 @@ div.x-form-text-grow .x-form-textarea {
   padding: 0px 0px 7px 0px;
 }
 
-/*<if slicer>*/
-/* line 83, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-base/sass/etc/mixins/slicer.scss */
-.x-cmd-slicer.x-panel-header-default-framed-collapsed-left:before {
-  display: none;
-  content: "x-slicer:frame:4px 4px 4px 4px, corners:url(images/panel-header/panel-header-default-framed-collapsed-left-corners.gif), sides:url(images/panel-header/panel-header-default-framed-collapsed-left-sides.gif)" !important;
-}
-
-/*</if slicer>*/
 /* */
 /* line 583, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-neutral/sass/src/panel/Panel.scss */
 .x-panel .x-panel-header-default-framed-top {
@@ -20539,14 +20091,6 @@ div.x-form-text-grow .x-form-textarea {
   padding: 0px 0px 0px 0px;
 }
 
-/*<if slicer>*/
-/* line 83, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-base/sass/etc/mixins/slicer.scss */
-.x-cmd-slicer.x-tip-default:before {
-  display: none;
-  content: "x-slicer:frame:3px 3px 3px 3px, corners:url(images/tip/tip-default-corners.gif), sides:url(images/tip/tip-default-sides.gif)" !important;
-}
-
-/*</if slicer>*/
 /* */
 /* line 112, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-neutral/sass/src/tip/Tip.scss */
 .x-tip-default {
@@ -20715,14 +20259,6 @@ div.x-form-text-grow .x-form-textarea {
   padding: 0px 0px 0px 0px;
 }
 
-/*<if slicer>*/
-/* line 83, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-base/sass/etc/mixins/slicer.scss */
-.x-cmd-slicer.x-tip-form-invalid:before {
-  display: none;
-  content: "x-slicer:frame:3px 3px 3px 3px, corners:url(images/tip/tip-form-invalid-corners.gif), sides:url(images/tip/tip-form-invalid-sides.gif)" !important;
-}
-
-/*</if slicer>*/
 /* */
 /* line 112, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-neutral/sass/src/tip/Tip.scss */
 .x-tip-form-invalid {
@@ -21971,14 +21507,6 @@ div.x-border-layout-ct {
   padding: 0 0 0 0;
 }
 
-/*<if slicer>*/
-/* line 83, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-base/sass/etc/mixins/slicer.scss */
-.x-cmd-slicer.x-window-default:before {
-  display: none;
-  content: "x-slicer:frame:4px 4px 4px 4px, corners:url(images/window/window-default-corners.gif), sides:url(images/window/window-default-sides.gif)" !important;
-}
-
-/*</if slicer>*/
 /* */
 /* line 234, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-neutral/sass/src/window/Window.scss */
 .x-window-body-default {
@@ -22185,14 +21713,6 @@ div.x-border-layout-ct {
   padding: 0px 7px 0px 0px;
 }
 
-/*<if slicer>*/
-/* line 83, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-base/sass/etc/mixins/slicer.scss */
-.x-cmd-slicer.x-window-header-default-top:before {
-  display: none;
-  content: "x-slicer:frame:4px 4px 4px 4px, corners:url(images/window-header/window-header-default-top-corners.gif), sides:url(images/window-header/window-header-default-top-sides.gif)" !important;
-}
-
-/*</if slicer>*/
 /* */
 /* line 187, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-base/sass/etc/mixins/frame.scss */
 .x-window-header-default-right {
@@ -22325,14 +21845,6 @@ div.x-border-layout-ct {
   padding: 0px 0px 7px 0px;
 }
 
-/*<if slicer>*/
-/* line 83, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-base/sass/etc/mixins/slicer.scss */
-.x-cmd-slicer.x-window-header-default-right:before {
-  display: none;
-  content: "x-slicer:frame:4px 4px 4px 4px, corners:url(images/window-header/window-header-default-right-corners.gif), sides:url(images/window-header/window-header-default-right-sides.gif)" !important;
-}
-
-/*</if slicer>*/
 /* */
 /* line 187, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-base/sass/etc/mixins/frame.scss */
 .x-window-header-default-bottom {
@@ -22465,14 +21977,6 @@ div.x-border-layout-ct {
   padding: 0px 0px 0px 7px;
 }
 
-/*<if slicer>*/
-/* line 83, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-base/sass/etc/mixins/slicer.scss */
-.x-cmd-slicer.x-window-header-default-bottom:before {
-  display: none;
-  content: "x-slicer:frame:4px 4px 4px 4px, corners:url(images/window-header/window-header-default-bottom-corners.gif), sides:url(images/window-header/window-header-default-bottom-sides.gif)" !important;
-}
-
-/*</if slicer>*/
 /* */
 /* line 187, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-base/sass/etc/mixins/frame.scss */
 .x-window-header-default-left {
@@ -22605,14 +22109,6 @@ div.x-border-layout-ct {
   padding: 7px 0px 0px 0px;
 }
 
-/*<if slicer>*/
-/* line 83, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-base/sass/etc/mixins/slicer.scss */
-.x-cmd-slicer.x-window-header-default-left:before {
-  display: none;
-  content: "x-slicer:frame:4px 4px 4px 4px, corners:url(images/window-header/window-header-default-left-corners.gif), sides:url(images/window-header/window-header-default-left-sides.gif)" !important;
-}
-
-/*</if slicer>*/
 /* */
 /* line 187, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-base/sass/etc/mixins/frame.scss */
 .x-window-header-default-collapsed-top {
@@ -22738,14 +22234,6 @@ div.x-border-layout-ct {
   padding: 0px 7px 0px 0px;
 }
 
-/*<if slicer>*/
-/* line 83, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-base/sass/etc/mixins/slicer.scss */
-.x-cmd-slicer.x-window-header-default-collapsed-top:before {
-  display: none;
-  content: "x-slicer:frame:4px 4px 4px 4px, corners:url(images/window-header/window-header-default-collapsed-top-corners.gif), sides:url(images/window-header/window-header-default-collapsed-top-sides.gif)" !important;
-}
-
-/*</if slicer>*/
 /* */
 /* line 187, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-base/sass/etc/mixins/frame.scss */
 .x-window-header-default-collapsed-right {
@@ -22871,14 +22359,6 @@ div.x-border-layout-ct {
   padding: 0px 0px 7px 0px;
 }
 
-/*<if slicer>*/
-/* line 83, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-base/sass/etc/mixins/slicer.scss */
-.x-cmd-slicer.x-window-header-default-collapsed-right:before {
-  display: none;
-  content: "x-slicer:frame:4px 4px 4px 4px, corners:url(images/window-header/window-header-default-collapsed-right-corners.gif), sides:url(images/window-header/window-header-default-collapsed-right-sides.gif)" !important;
-}
-
-/*</if slicer>*/
 /* */
 /* line 187, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-base/sass/etc/mixins/frame.scss */
 .x-window-header-default-collapsed-bottom {
@@ -23004,14 +22484,6 @@ div.x-border-layout-ct {
   padding: 0px 0px 0px 7px;
 }
 
-/*<if slicer>*/
-/* line 83, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-base/sass/etc/mixins/slicer.scss */
-.x-cmd-slicer.x-window-header-default-collapsed-bottom:before {
-  display: none;
-  content: "x-slicer:frame:4px 4px 4px 4px, corners:url(images/window-header/window-header-default-collapsed-bottom-corners.gif), sides:url(images/window-header/window-header-default-collapsed-bottom-sides.gif)" !important;
-}
-
-/*</if slicer>*/
 /* */
 /* line 187, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-base/sass/etc/mixins/frame.scss */
 .x-window-header-default-collapsed-left {
@@ -23137,14 +22609,6 @@ div.x-border-layout-ct {
   padding: 7px 0px 0px 0px;
 }
 
-/*<if slicer>*/
-/* line 83, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-base/sass/etc/mixins/slicer.scss */
-.x-cmd-slicer.x-window-header-default-collapsed-left:before {
-  display: none;
-  content: "x-slicer:frame:4px 4px 4px 4px, corners:url(images/window-header/window-header-default-collapsed-left-corners.gif), sides:url(images/window-header/window-header-default-collapsed-left-sides.gif)" !important;
-}
-
-/*</if slicer>*/
 /* */
 /* line 500, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-neutral/sass/src/window/Window.scss */
 .x-window-header-default .x-window-header-icon {
@@ -24048,23 +23512,7 @@ a.x-monthpicker-yearnav-button:hover {
   margin-top: 8px;
 }
 
-/*<if slicer>*/
-/* line 83, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-base/sass/etc/mixins/slicer.scss */
-.x-cmd-slicer.x-datepicker-header:before {
-  display: none;
-  content: "x-slicer:stretch:bottom" !important;
-}
-
-/*</if slicer>*/
 /* */
-/*<if slicer>*/
-/* line 83, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-base/sass/etc/mixins/slicer.scss */
-.x-cmd-slicer.x-datepicker-footer:before {
-  display: none;
-  content: "x-slicer:stretch:bottom" !important;
-}
-
-/*</if slicer>*/
 /* */
 /* line 1, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-neutral/sass/src/form/field/Date.scss */
 .x-form-date-trigger {
@@ -24939,14 +24387,6 @@ a.x-monthpicker-yearnav-button:hover {
   padding: 1px 1px 1px 1px;
 }
 
-/*<if slicer>*/
-/* line 83, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-base/sass/etc/mixins/slicer.scss */
-.x-cmd-slicer.x-btn-plain-toolbar-small:before {
-  display: none;
-  content: "x-slicer:frame:3px 3px 3px 3px" !important;
-}
-
-/*</if slicer>*/
 /* */
 /* line 423, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-neutral/sass/src/button/Button.scss */
 .x-btn-plain-toolbar-small {
@@ -25341,59 +24781,11 @@ a.x-monthpicker-yearnav-button:hover {
   border-color: #4196d4;
 }
 
-/*<if slicer>*/
-/* line 83, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-base/sass/etc/mixins/slicer.scss */
-.x-cmd-slicer.x-btn-focus.x-btn-plain-toolbar-small:before {
-  display: none;
-  content: "x-slicer:stretch:bottom, frame:3px 3px 3px 3px, corners:url(images/btn/btn-plain-toolbar-small-focus-corners.gif), sides:url(images/btn/btn-plain-toolbar-small-focus-sides.gif)" !important;
-}
-
-/*</if slicer>*/
 /* */
-/*<if slicer>*/
-/* line 83, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-base/sass/etc/mixins/slicer.scss */
-.x-cmd-slicer.x-btn-over.x-btn-plain-toolbar-small:before {
-  display: none;
-  content: "x-slicer:stretch:bottom, frame:3px 3px 3px 3px, corners:url(images/btn/btn-plain-toolbar-small-over-corners.gif), sides:url(images/btn/btn-plain-toolbar-small-over-sides.gif)" !important;
-}
-
-/*</if slicer>*/
 /* */
-/*<if slicer>*/
-/* line 83, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-base/sass/etc/mixins/slicer.scss */
-.x-cmd-slicer.x-btn-focus.x-btn-over.x-btn-plain-toolbar-small:before {
-  display: none;
-  content: "x-slicer:stretch:bottom, frame:3px 3px 3px 3px, corners:url(images/btn/btn-plain-toolbar-small-focus-over-corners.gif), sides:url(images/btn/btn-plain-toolbar-small-focus-over-sides.gif)" !important;
-}
-
-/*</if slicer>*/
 /* */
-/*<if slicer>*/
-/* line 83, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-base/sass/etc/mixins/slicer.scss */
-.x-cmd-slicer.x-btn-pressed.x-btn-plain-toolbar-small:before {
-  display: none;
-  content: "x-slicer:stretch:bottom, frame:3px 3px 3px 3px, corners:url(images/btn/btn-plain-toolbar-small-pressed-corners.gif), sides:url(images/btn/btn-plain-toolbar-small-pressed-sides.gif)" !important;
-}
-
-/*</if slicer>*/
 /* */
-/*<if slicer>*/
-/* line 83, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-base/sass/etc/mixins/slicer.scss */
-.x-cmd-slicer.x-btn-focus.x-btn-pressed.x-btn-plain-toolbar-small:before {
-  display: none;
-  content: "x-slicer:stretch:bottom, frame:3px 3px 3px 3px, corners:url(images/btn/btn-plain-toolbar-small-focus-pressed-corners.gif), sides:url(images/btn/btn-plain-toolbar-small-focus-pressed-sides.gif)" !important;
-}
-
-/*</if slicer>*/
 /* */
-/*<if slicer>*/
-/* line 83, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-base/sass/etc/mixins/slicer.scss */
-.x-cmd-slicer.x-btn-disabled.x-btn-plain-toolbar-small:before {
-  display: none;
-  content: "x-slicer:stretch:bottom, frame:3px 3px 3px 3px, corners:url(images/btn/btn-plain-toolbar-small-disabled-corners.gif), sides:url(images/btn/btn-plain-toolbar-small-disabled-sides.gif)" !important;
-}
-
-/*</if slicer>*/
 /* */
 /* line 187, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-base/sass/etc/mixins/frame.scss */
 .x-btn-plain-toolbar-medium {
@@ -25500,14 +24892,6 @@ a.x-monthpicker-yearnav-button:hover {
   padding: 1px 1px 1px 1px;
 }
 
-/*<if slicer>*/
-/* line 83, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-base/sass/etc/mixins/slicer.scss */
-.x-cmd-slicer.x-btn-plain-toolbar-medium:before {
-  display: none;
-  content: "x-slicer:frame:3px 3px 3px 3px" !important;
-}
-
-/*</if slicer>*/
 /* */
 /* line 423, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-neutral/sass/src/button/Button.scss */
 .x-btn-plain-toolbar-medium {
@@ -25902,59 +25286,11 @@ a.x-monthpicker-yearnav-button:hover {
   border-color: #4196d4;
 }
 
-/*<if slicer>*/
-/* line 83, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-base/sass/etc/mixins/slicer.scss */
-.x-cmd-slicer.x-btn-focus.x-btn-plain-toolbar-medium:before {
-  display: none;
-  content: "x-slicer:stretch:bottom, frame:3px 3px 3px 3px, corners:url(images/btn/btn-plain-toolbar-medium-focus-corners.gif), sides:url(images/btn/btn-plain-toolbar-medium-focus-sides.gif)" !important;
-}
-
-/*</if slicer>*/
 /* */
-/*<if slicer>*/
-/* line 83, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-base/sass/etc/mixins/slicer.scss */
-.x-cmd-slicer.x-btn-over.x-btn-plain-toolbar-medium:before {
-  display: none;
-  content: "x-slicer:stretch:bottom, frame:3px 3px 3px 3px, corners:url(images/btn/btn-plain-toolbar-medium-over-corners.gif), sides:url(images/btn/btn-plain-toolbar-medium-over-sides.gif)" !important;
-}
-
-/*</if slicer>*/
 /* */
-/*<if slicer>*/
-/* line 83, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-base/sass/etc/mixins/slicer.scss */
-.x-cmd-slicer.x-btn-focus.x-btn-over.x-btn-plain-toolbar-medium:before {
-  display: none;
-  content: "x-slicer:stretch:bottom, frame:3px 3px 3px 3px, corners:url(images/btn/btn-plain-toolbar-medium-focus-over-corners.gif), sides:url(images/btn/btn-plain-toolbar-medium-focus-over-sides.gif)" !important;
-}
-
-/*</if slicer>*/
 /* */
-/*<if slicer>*/
-/* line 83, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-base/sass/etc/mixins/slicer.scss */
-.x-cmd-slicer.x-btn-pressed.x-btn-plain-toolbar-medium:before {
-  display: none;
-  content: "x-slicer:stretch:bottom, frame:3px 3px 3px 3px, corners:url(images/btn/btn-plain-toolbar-medium-pressed-corners.gif), sides:url(images/btn/btn-plain-toolbar-medium-pressed-sides.gif)" !important;
-}
-
-/*</if slicer>*/
 /* */
-/*<if slicer>*/
-/* line 83, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-base/sass/etc/mixins/slicer.scss */
-.x-cmd-slicer.x-btn-focus.x-btn-pressed.x-btn-plain-toolbar-medium:before {
-  display: none;
-  content: "x-slicer:stretch:bottom, frame:3px 3px 3px 3px, corners:url(images/btn/btn-plain-toolbar-medium-focus-pressed-corners.gif), sides:url(images/btn/btn-plain-toolbar-medium-focus-pressed-sides.gif)" !important;
-}
-
-/*</if slicer>*/
 /* */
-/*<if slicer>*/
-/* line 83, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-base/sass/etc/mixins/slicer.scss */
-.x-cmd-slicer.x-btn-disabled.x-btn-plain-toolbar-medium:before {
-  display: none;
-  content: "x-slicer:stretch:bottom, frame:3px 3px 3px 3px, corners:url(images/btn/btn-plain-toolbar-medium-disabled-corners.gif), sides:url(images/btn/btn-plain-toolbar-medium-disabled-sides.gif)" !important;
-}
-
-/*</if slicer>*/
 /* */
 /* line 187, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-base/sass/etc/mixins/frame.scss */
 .x-btn-plain-toolbar-large {
@@ -26061,14 +25397,6 @@ a.x-monthpicker-yearnav-button:hover {
   padding: 1px 1px 1px 1px;
 }
 
-/*<if slicer>*/
-/* line 83, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-base/sass/etc/mixins/slicer.scss */
-.x-cmd-slicer.x-btn-plain-toolbar-large:before {
-  display: none;
-  content: "x-slicer:frame:3px 3px 3px 3px" !important;
-}
-
-/*</if slicer>*/
 /* */
 /* line 423, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-neutral/sass/src/button/Button.scss */
 .x-btn-plain-toolbar-large {
@@ -26463,59 +25791,11 @@ a.x-monthpicker-yearnav-button:hover {
   border-color: #4196d4;
 }
 
-/*<if slicer>*/
-/* line 83, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-base/sass/etc/mixins/slicer.scss */
-.x-cmd-slicer.x-btn-focus.x-btn-plain-toolbar-large:before {
-  display: none;
-  content: "x-slicer:stretch:bottom, frame:3px 3px 3px 3px, corners:url(images/btn/btn-plain-toolbar-large-focus-corners.gif), sides:url(images/btn/btn-plain-toolbar-large-focus-sides.gif)" !important;
-}
-
-/*</if slicer>*/
 /* */
-/*<if slicer>*/
-/* line 83, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-base/sass/etc/mixins/slicer.scss */
-.x-cmd-slicer.x-btn-over.x-btn-plain-toolbar-large:before {
-  display: none;
-  content: "x-slicer:stretch:bottom, frame:3px 3px 3px 3px, corners:url(images/btn/btn-plain-toolbar-large-over-corners.gif), sides:url(images/btn/btn-plain-toolbar-large-over-sides.gif)" !important;
-}
-
-/*</if slicer>*/
 /* */
-/*<if slicer>*/
-/* line 83, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-base/sass/etc/mixins/slicer.scss */
-.x-cmd-slicer.x-btn-focus.x-btn-over.x-btn-plain-toolbar-large:before {
-  display: none;
-  content: "x-slicer:stretch:bottom, frame:3px 3px 3px 3px, corners:url(images/btn/btn-plain-toolbar-large-focus-over-corners.gif), sides:url(images/btn/btn-plain-toolbar-large-focus-over-sides.gif)" !important;
-}
-
-/*</if slicer>*/
 /* */
-/*<if slicer>*/
-/* line 83, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-base/sass/etc/mixins/slicer.scss */
-.x-cmd-slicer.x-btn-pressed.x-btn-plain-toolbar-large:before {
-  display: none;
-  content: "x-slicer:stretch:bottom, frame:3px 3px 3px 3px, corners:url(images/btn/btn-plain-toolbar-large-pressed-corners.gif), sides:url(images/btn/btn-plain-toolbar-large-pressed-sides.gif)" !important;
-}
-
-/*</if slicer>*/
 /* */
-/*<if slicer>*/
-/* line 83, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-base/sass/etc/mixins/slicer.scss */
-.x-cmd-slicer.x-btn-focus.x-btn-pressed.x-btn-plain-toolbar-large:before {
-  display: none;
-  content: "x-slicer:stretch:bottom, frame:3px 3px 3px 3px, corners:url(images/btn/btn-plain-toolbar-large-focus-pressed-corners.gif), sides:url(images/btn/btn-plain-toolbar-large-focus-pressed-sides.gif)" !important;
-}
-
-/*</if slicer>*/
 /* */
-/*<if slicer>*/
-/* line 83, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-base/sass/etc/mixins/slicer.scss */
-.x-cmd-slicer.x-btn-disabled.x-btn-plain-toolbar-large:before {
-  display: none;
-  content: "x-slicer:stretch:bottom, frame:3px 3px 3px 3px, corners:url(images/btn/btn-plain-toolbar-large-disabled-corners.gif), sides:url(images/btn/btn-plain-toolbar-large-disabled-sides.gif)" !important;
-}
-
-/*</if slicer>*/
 /* */
 /* line 220, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-neptune/sass/src/button/Button.scss */
 .x-btn-plain-toolbar-small-disabled .x-btn-icon-el,
@@ -26660,41 +25940,9 @@ a.x-monthpicker-yearnav-button:hover {
   border-right-width: 1px !important;
 }
 
-/*<if slicer>*/
-/* line 83, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-base/sass/etc/mixins/slicer.scss */
-.x-cmd-slicer.x-panel-header-light-top:before {
-  display: none;
-  content: "x-slicer:stretch:bottom" !important;
-}
-
-/*</if slicer>*/
 /* */
-/*<if slicer>*/
-/* line 83, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-base/sass/etc/mixins/slicer.scss */
-.x-cmd-slicer.x-panel-header-light-bottom:before {
-  display: none;
-  content: "x-slicer:stretch:top" !important;
-}
-
-/*</if slicer>*/
 /* */
-/*<if slicer>*/
-/* line 83, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-base/sass/etc/mixins/slicer.scss */
-.x-cmd-slicer.x-panel-header-light-left:before {
-  display: none;
-  content: "x-slicer:stretch:right" !important;
-}
-
-/*</if slicer>*/
 /* */
-/*<if slicer>*/
-/* line 83, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-base/sass/etc/mixins/slicer.scss */
-.x-cmd-slicer.x-panel-header-light-right:before {
-  display: none;
-  content: "x-slicer:stretch:left" !important;
-}
-
-/*</if slicer>*/
 /* */
 /* line 731, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-neutral/sass/src/panel/Panel.scss */
 .x-panel-header-light-horizontal .x-tool-after-title {
@@ -27062,14 +26310,6 @@ a.x-monthpicker-yearnav-button:hover {
   padding: 0 0 0 0;
 }
 
-/*<if slicer>*/
-/* line 83, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-base/sass/etc/mixins/slicer.scss */
-.x-cmd-slicer.x-panel-light-framed:before {
-  display: none;
-  content: "x-slicer:frame:4px 4px 4px 4px, corners:url(images/panel/panel-light-framed-corners.gif), sides:url(images/panel/panel-light-framed-sides.gif)" !important;
-}
-
-/*</if slicer>*/
 /* */
 /* line 187, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-base/sass/etc/mixins/frame.scss */
 .x-panel-header-light-framed-top {
@@ -27202,14 +26442,6 @@ a.x-monthpicker-yearnav-button:hover {
   padding: 0px 7px 2px 0px;
 }
 
-/*<if slicer>*/
-/* line 83, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-base/sass/etc/mixins/slicer.scss */
-.x-cmd-slicer.x-panel-header-light-framed-top:before {
-  display: none;
-  content: "x-slicer:frame:4px 4px 0 4px, corners:url(images/panel-header/panel-header-light-framed-top-corners.gif), sides:url(images/panel-header/panel-header-light-framed-top-sides.gif)" !important;
-}
-
-/*</if slicer>*/
 /* */
 /* line 187, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-base/sass/etc/mixins/frame.scss */
 .x-panel-header-light-framed-right {
@@ -27342,14 +26574,6 @@ a.x-monthpicker-yearnav-button:hover {
   padding: 0px 0px 7px 2px;
 }
 
-/*<if slicer>*/
-/* line 83, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-base/sass/etc/mixins/slicer.scss */
-.x-cmd-slicer.x-panel-header-light-framed-right:before {
-  display: none;
-  content: "x-slicer:frame:4px 4px 4px 0, corners:url(images/panel-header/panel-header-light-framed-right-corners.gif), sides:url(images/panel-header/panel-header-light-framed-right-sides.gif)" !important;
-}
-
-/*</if slicer>*/
 /* */
 /* line 187, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-base/sass/etc/mixins/frame.scss */
 .x-panel-header-light-framed-bottom {
@@ -27482,14 +26706,6 @@ a.x-monthpicker-yearnav-button:hover {
   padding: 3px 7px 0px 0px;
 }
 
-/*<if slicer>*/
-/* line 83, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-base/sass/etc/mixins/slicer.scss */
-.x-cmd-slicer.x-panel-header-light-framed-bottom:before {
-  display: none;
-  content: "x-slicer:frame:0 4px 4px 4px, corners:url(images/panel-header/panel-header-light-framed-bottom-corners.gif), sides:url(images/panel-header/panel-header-light-framed-bottom-sides.gif)" !important;
-}
-
-/*</if slicer>*/
 /* */
 /* line 187, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-base/sass/etc/mixins/frame.scss */
 .x-panel-header-light-framed-left {
@@ -27622,14 +26838,6 @@ a.x-monthpicker-yearnav-button:hover {
   padding: 0px 3px 7px 0px;
 }
 
-/*<if slicer>*/
-/* line 83, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-base/sass/etc/mixins/slicer.scss */
-.x-cmd-slicer.x-panel-header-light-framed-left:before {
-  display: none;
-  content: "x-slicer:frame:4px 0 4px 4px, corners:url(images/panel-header/panel-header-light-framed-left-corners.gif), sides:url(images/panel-header/panel-header-light-framed-left-sides.gif)" !important;
-}
-
-/*</if slicer>*/
 /* */
 /* line 187, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-base/sass/etc/mixins/frame.scss */
 .x-panel-header-light-framed-collapsed-top {
@@ -27762,14 +26970,6 @@ a.x-monthpicker-yearnav-button:hover {
   padding: 0px 7px 0px 0px;
 }
 
-/*<if slicer>*/
-/* line 83, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-base/sass/etc/mixins/slicer.scss */
-.x-cmd-slicer.x-panel-header-light-framed-collapsed-top:before {
-  display: none;
-  content: "x-slicer:frame:4px 4px 4px 4px, corners:url(images/panel-header/panel-header-light-framed-collapsed-top-corners.gif), sides:url(images/panel-header/panel-header-light-framed-collapsed-top-sides.gif)" !important;
-}
-
-/*</if slicer>*/
 /* */
 /* line 187, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-base/sass/etc/mixins/frame.scss */
 .x-panel-header-light-framed-collapsed-right {
@@ -27902,14 +27102,6 @@ a.x-monthpicker-yearnav-button:hover {
   padding: 0px 0px 7px 0px;
 }
 
-/*<if slicer>*/
-/* line 83, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-base/sass/etc/mixins/slicer.scss */
-.x-cmd-slicer.x-panel-header-light-framed-collapsed-right:before {
-  display: none;
-  content: "x-slicer:frame:4px 4px 4px 4px, corners:url(images/panel-header/panel-header-light-framed-collapsed-right-corners.gif), sides:url(images/panel-header/panel-header-light-framed-collapsed-right-sides.gif)" !important;
-}
-
-/*</if slicer>*/
 /* */
 /* line 187, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-base/sass/etc/mixins/frame.scss */
 .x-panel-header-light-framed-collapsed-bottom {
@@ -28042,14 +27234,6 @@ a.x-monthpicker-yearnav-button:hover {
   padding: 0px 7px 0px 0px;
 }
 
-/*<if slicer>*/
-/* line 83, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-base/sass/etc/mixins/slicer.scss */
-.x-cmd-slicer.x-panel-header-light-framed-collapsed-bottom:before {
-  display: none;
-  content: "x-slicer:frame:4px 4px 4px 4px, corners:url(images/panel-header/panel-header-light-framed-collapsed-bottom-corners.gif), sides:url(images/panel-header/panel-header-light-framed-collapsed-bottom-sides.gif)" !important;
-}
-
-/*</if slicer>*/
 /* */
 /* line 187, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-base/sass/etc/mixins/frame.scss */
 .x-panel-header-light-framed-collapsed-left {
@@ -28182,14 +27366,6 @@ a.x-monthpicker-yearnav-button:hover {
   padding: 0px 0px 7px 0px;
 }
 
-/*<if slicer>*/
-/* line 83, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-base/sass/etc/mixins/slicer.scss */
-.x-cmd-slicer.x-panel-header-light-framed-collapsed-left:before {
-  display: none;
-  content: "x-slicer:frame:4px 4px 4px 4px, corners:url(images/panel-header/panel-header-light-framed-collapsed-left-corners.gif), sides:url(images/panel-header/panel-header-light-framed-collapsed-left-sides.gif)" !important;
-}
-
-/*</if slicer>*/
 /* */
 /* line 583, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-neutral/sass/src/panel/Panel.scss */
 .x-panel .x-panel-header-light-framed-top {
@@ -28558,9 +27734,3 @@ a.x-monthpicker-yearnav-button:hover {
   padding: 1px 1px 1px 1px;
 }
 
-/*<if slicer>*/
-/* line 83, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-base/sass/etc/mixins/slicer.scss */
-.x-cmd-slicer.x-btn-emspeedglyph-toolbar-small:before {
-  display: none;
-  content: "x-slicer:frame:3px 3px 3px 3px" !important;
-}

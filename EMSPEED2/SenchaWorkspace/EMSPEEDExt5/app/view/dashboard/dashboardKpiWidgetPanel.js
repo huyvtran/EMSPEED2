@@ -1,8 +1,8 @@
 Ext.define('EMSPEEDExt5.view.dashboard.dashboardKpiWidgetPanel', {
     extend: 'Ext.panel.Panel',
     xtype: 'dashboardkpiwidgetpanel',
-    bodyPadding: '10 0 10 9',
-    height: 50,
+    //bodyPadding: '10 0 10 9',
+    //height: 50,
     layout: 'hbox',
     style: {
         borderBottomStyle: 'none'
@@ -21,7 +21,7 @@ Ext.define('EMSPEEDExt5.view.dashboard.dashboardKpiWidgetPanel', {
             { xtype: 'component', html: me.getHtml('#ffffff', '#5cb85c', 'tasks', '12', 'New Tasks') },
             { xtype: 'component', html: me.getHtml('#ffffff', '#f0ad4e', 'shopping-cart', '124', 'New Orders') },
             { xtype: 'component', html: me.getHtml('#ffffff', '#d9534f', 'support', '13', 'Support Tickets') },
-            { xtype: 'component', html: me.getHtml('#000000', '#ddd', 'truck', '10', 'New Shipments') },
+            { xtype: 'component', html: me.getHtml('#000000', '#ddd', 'truck', '10', 'New Shipments') }
 
 
 

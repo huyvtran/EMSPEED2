@@ -22,12 +22,12 @@ Ext.define("ExtJs5YouTube.view.north.North",{
                 cls: 'northTitle',
                 html: this.title,
                 flex: 1
-            },
-            {
-                xtype: 'component',
-                cls: 'northMenu',
-                margin: '0 5 0 0'
             }
+            //{
+            //    xtype: 'component',
+            //    cls: 'northMenu',
+            //    margin: '0 5 0 0'
+            //}
         ];
 
 

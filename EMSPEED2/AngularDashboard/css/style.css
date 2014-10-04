@@ -26,16 +26,13 @@ body {
 
 .left {
   border-top: 1px solid #e7e7e7;
-  background: #3a3633;
+  background: #f8f8f8;
   color: white;
   float: left;
   top: 51px;
   width: 250px;
   height: 100%;
   overflow: auto; }
-
-.menuItem {
-  color: #a8a8a8; }
 
 .ngview {
   background: #fff;

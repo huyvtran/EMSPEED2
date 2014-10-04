@@ -6,11 +6,25 @@
   position: relative; }
 
 .hover-icon {
-  background-image: url('emspeed/pop_up_arrow.png');
+  background-image: url('emspeed/ContextUpArrow.png');
   background-repeat: no-repeat;
   background-position: center bottom; }
 
 .hover-active {
   text-shadow: -1px 1px 8px #fff, 1px -1px 8px #fff; }
+
+.hoverMenuBase {
+  cursor: pointer;
+  display: block;
+  padding: 3px 5px;
+  color: #4b84c2;
+  text-decoration: none; }
+
+.hoverMenuHover {
+  background-color: #4b84c2;
+  color: #ffffff; }
+
+.hoverMenuDropMenu {
+  border-top: 3px solid #6084A8; }
 
 /*# sourceMappingURL=HoverMenu.css.map */

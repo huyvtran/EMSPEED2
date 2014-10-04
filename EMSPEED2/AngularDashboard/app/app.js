@@ -8,16 +8,15 @@ angular.module('app', ['ngRoute', 'dashboard', 'widgets', 'models', 'ngMockE2E',
 })
 .factory('widgetDefinitions', function () {
     return [
-        { name: 'mjg', directive: 'wt-mjg' },
-        { name: 'another', directive: 'wt-another' }
-    ];
+        { name: 'notification', directive: 'wt-notification' },
+        { name: 'barchart', directive: 'wt-bar-chart' },
+        { name: 'piechart', directive: 'wt-pie-chart' }
+];
 })
 .value('defaultWidgets', [
-    { name: 'mjg', title: 'Notifications1' },
-    { name: 'another', title: 'Another1' },
-    { name: 'mjg', title: 'Notifications3' },
-    { name: 'mjg', title: 'Notifications4' },
-    { name: 'mjg', title: 'Notifications5' }
+    { name: 'notification', title: 'Notifications' },
+    { name: 'barchart', title: 'Bar Chart' },
+    { name: 'piechart', title: 'Pie Chart' }
 ])
 .controller('DashboardController', function ($scope, $interval, $window, widgetDefinitions, defaultWidgets) {
     $scope.dashboardOptions = {
@@ -86,7 +85,6 @@ angular.module('app', ['ngRoute', 'dashboard', 'widgets', 'models', 'ngMockE2E',
 }]);
 
 $.fn.extend({
-
     //pass the options variable to the function
     jarvismenu: function (options) {
 

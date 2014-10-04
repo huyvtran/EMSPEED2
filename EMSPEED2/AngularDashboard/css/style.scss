@@ -41,7 +41,7 @@ body {
  
 .left {
     border-top: 1px solid $darkgray;
-    background: $blackish;
+    background: $lightgray;
     color: white;
     float: left;
     top: ($headsize + 1) + px;
@@ -51,7 +51,7 @@ body {
 }
 
 .menuItem {
-    color: #a8a8a8;
+//    color: #a8a8a8;
 }
 
 .ngview {

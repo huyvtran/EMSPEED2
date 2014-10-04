@@ -22,9 +22,6 @@
     <div class='head' mg-header></div>
     <div class='main'>
         <div class='left' mg-sidenav></div>
-        <!--<div id="left-panel" style="width:200px;height:100%;float:left;">
-            <span data-ng-include="'includes/left-panel.html'"></span>
-        </div>-->
         <div class='ngview' ng-view=""></div>
     </div>
     <div id='foot'></div>
@@ -48,6 +45,18 @@
     <script src="app/viewport.js"></script>
     <script src="app/layoutoptions.js"></script>
     <script src="app/models.js"></script>
+
+    <!-- required to use Google charts -->
+    <script src="https://www.google.com/jsapi" type="text/javascript"></script>
+    <script type="text/javascript">
+        google.load("visualization", "1", { packages: ["corechart", "table"] });
+    </script>
+
+    <!-- required to use Google maps -->
+    <script type="text/javascript"
+            src="https://maps.googleapis.com/maps/api/js?sensor=true">
+    </script>
+
     <script src="app/widgets.js"></script>
     <script src="app/mockNg.js"></script>
     <script src="js/demo.js"></script>
@@ -59,4 +68,3 @@
         $.root_ = $('body');
     })
 </script>
-

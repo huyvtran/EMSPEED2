@@ -13,3 +13,38 @@ position: relative;
 .north {
     background-color: $color;
 }
+
+.iconButtonWhite, .iconButtonBlue {
+    background-color: transparent;
+    border-color: transparent;
+    display: inline-block;
+    outline: 0;
+    cursor: pointer;
+    white-space: nowrap;
+    text-decoration: none;
+    overflow: hidden;
+    position: relative;
+}
+
+
+.iconButtonWhite .x-btn-glyph {
+    color: white;
+    opacity: 1.0;
+}
+
+.iconButtonBlue .x-btn-glyph {
+    color: #003366;
+    opacity: 0.5;
+}
+
+.iconButtonWhite .x-btn-inner {
+    color: white;
+    opacity: 1.0;
+}
+
+.iconButtonBlue .x-btn-inner {
+    color: #4b84c2;
+    opacity: 1.0;
+}
+
+

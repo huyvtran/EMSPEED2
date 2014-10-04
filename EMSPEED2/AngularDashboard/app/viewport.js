@@ -49,7 +49,7 @@
 '                                </div>' +
 '                                <!-- /input-group -->' +
 '                            </li>' +
-'                            <li><a class="menuItem active" href="index.html"><i class="fa fa-dashboard fa-fw"></i> {{name}} Dashboard</a></li>' +
+'                            <li><a class="menuItem active" href="index.html"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a></li>' +
 '                            <li><a class="menuItem" href="#/reporting"><i class="fa fa-dashboard fa-fw"></i> Reporting</a></li>' +
 '                            <li><a class="menuItem" href="#/alerts"><i class="fa fa-dashboard fa-fw"></i> Alerts</a></li>' +
 '                            <li><a class="menuItem" href="#/custom-settings"><i class="fa fa-table fa-fw"></i> Custom Settings</a></li>' +
@@ -88,17 +88,3 @@
         }
     };
 })
-
-//'                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">' +
-//'                        <span class="sr-only">Toggle navigation</span>' +
-//'                        <span class="icon-bar"></span>' +
-//'                        <span class="icon-bar"></span>' +
-//'                        <span class="icon-bar"></span>' +
-//'                    </button>' +
-//'                    <ul class="nav navbar-top-links navbar-left">' +
-//'                        <li class="dropdown" style="color:blue">' +
-//'                            <a id="theMenu" style="cursor:pointer;" class="dropdown-toggle" data-toggle="dropdown" href="#">' +
-//'                                <i class="fa fa-align-justify fa-fw"></i>' +
-//'                            </a>' +
-//'                        </li>' +
-//'                    </ul>' +

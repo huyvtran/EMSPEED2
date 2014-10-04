@@ -16,7 +16,7 @@ Ext.define('EMSPEEDExt5.view.viewport.NavigationController', {
             }
         }
     },
-    doRoute: function (controller, route, projectId) {
+    doRoute: function (controller, projectId, route) {
         //console.log('NavigationController.js - doRoute');
         var me = this;
         com.setProjectId(projectId);
@@ -95,7 +95,8 @@ Ext.define('EMSPEEDExt5.view.viewport.NavigationController', {
         var record = records[0];
         if (record && record.isLeaf()) {
 //            this.redirectTo(record.getId() + '/' + this.projectId);
-            this.redirectTo(record.getId() + '/' + com.getProjectId());
+//            this.redirectTo(record.getId() + '/' + com.getProjectId());
+            this.redirectTo('project/' + com.getProjectId() + '/' + record.getId());
         }
     }
 });

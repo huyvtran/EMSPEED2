@@ -1,4 +1,3 @@
-/*</if slicer>*/
 /* */
 /* line 423, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-neutral/sass/src/button/Button.scss */
 .x-btn-emspeedglyph-toolbar-small {
@@ -391,59 +390,11 @@
   border-color: transparent;
 }
 
-/*<if slicer>*/
-/* line 83, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-base/sass/etc/mixins/slicer.scss */
-.x-cmd-slicer.x-btn-focus.x-btn-emspeedglyph-toolbar-small:before {
-  display: none;
-  content: "x-slicer:stretch:bottom, frame:3px 3px 3px 3px, corners:url(images/btn/btn-emspeedglyph-toolbar-small-focus-corners.gif), sides:url(images/btn/btn-emspeedglyph-toolbar-small-focus-sides.gif)" !important;
-}
-
-/*</if slicer>*/
 /* */
-/*<if slicer>*/
-/* line 83, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-base/sass/etc/mixins/slicer.scss */
-.x-cmd-slicer.x-btn-over.x-btn-emspeedglyph-toolbar-small:before {
-  display: none;
-  content: "x-slicer:stretch:bottom, frame:3px 3px 3px 3px, corners:url(images/btn/btn-emspeedglyph-toolbar-small-over-corners.gif), sides:url(images/btn/btn-emspeedglyph-toolbar-small-over-sides.gif)" !important;
-}
-
-/*</if slicer>*/
 /* */
-/*<if slicer>*/
-/* line 83, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-base/sass/etc/mixins/slicer.scss */
-.x-cmd-slicer.x-btn-focus.x-btn-over.x-btn-emspeedglyph-toolbar-small:before {
-  display: none;
-  content: "x-slicer:stretch:bottom, frame:3px 3px 3px 3px, corners:url(images/btn/btn-emspeedglyph-toolbar-small-focus-over-corners.gif), sides:url(images/btn/btn-emspeedglyph-toolbar-small-focus-over-sides.gif)" !important;
-}
-
-/*</if slicer>*/
 /* */
-/*<if slicer>*/
-/* line 83, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-base/sass/etc/mixins/slicer.scss */
-.x-cmd-slicer.x-btn-pressed.x-btn-emspeedglyph-toolbar-small:before {
-  display: none;
-  content: "x-slicer:stretch:bottom, frame:3px 3px 3px 3px, corners:url(images/btn/btn-emspeedglyph-toolbar-small-pressed-corners.gif), sides:url(images/btn/btn-emspeedglyph-toolbar-small-pressed-sides.gif)" !important;
-}
-
-/*</if slicer>*/
 /* */
-/*<if slicer>*/
-/* line 83, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-base/sass/etc/mixins/slicer.scss */
-.x-cmd-slicer.x-btn-focus.x-btn-pressed.x-btn-emspeedglyph-toolbar-small:before {
-  display: none;
-  content: "x-slicer:stretch:bottom, frame:3px 3px 3px 3px, corners:url(images/btn/btn-emspeedglyph-toolbar-small-focus-pressed-corners.gif), sides:url(images/btn/btn-emspeedglyph-toolbar-small-focus-pressed-sides.gif)" !important;
-}
-
-/*</if slicer>*/
 /* */
-/*<if slicer>*/
-/* line 83, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-base/sass/etc/mixins/slicer.scss */
-.x-cmd-slicer.x-btn-disabled.x-btn-emspeedglyph-toolbar-small:before {
-  display: none;
-  content: "x-slicer:stretch:bottom, frame:3px 3px 3px 3px, corners:url(images/btn/btn-emspeedglyph-toolbar-small-disabled-corners.gif), sides:url(images/btn/btn-emspeedglyph-toolbar-small-disabled-sides.gif)" !important;
-}
-
-/*</if slicer>*/
 /* */
 /* line 187, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-base/sass/etc/mixins/frame.scss */
 .x-btn-emspeed-toolbar-small {
@@ -550,14 +501,6 @@
   padding: 1px 1px 1px 1px;
 }
 
-/*<if slicer>*/
-/* line 83, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-base/sass/etc/mixins/slicer.scss */
-.x-cmd-slicer.x-btn-emspeed-toolbar-small:before {
-  display: none;
-  content: "x-slicer:frame:3px 3px 3px 3px" !important;
-}
-
-/*</if slicer>*/
 /* */
 /* line 423, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-neutral/sass/src/button/Button.scss */
 .x-btn-emspeed-toolbar-small {
@@ -969,59 +912,11 @@
   border-color: #4196d4;
 }
 
-/*<if slicer>*/
-/* line 83, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-base/sass/etc/mixins/slicer.scss */
-.x-cmd-slicer.x-btn-focus.x-btn-emspeed-toolbar-small:before {
-  display: none;
-  content: "x-slicer:stretch:bottom, frame:3px 3px 3px 3px, corners:url(images/btn/btn-emspeed-toolbar-small-focus-corners.gif), sides:url(images/btn/btn-emspeed-toolbar-small-focus-sides.gif)" !important;
-}
-
-/*</if slicer>*/
 /* */
-/*<if slicer>*/
-/* line 83, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-base/sass/etc/mixins/slicer.scss */
-.x-cmd-slicer.x-btn-over.x-btn-emspeed-toolbar-small:before {
-  display: none;
-  content: "x-slicer:stretch:bottom, frame:3px 3px 3px 3px, corners:url(images/btn/btn-emspeed-toolbar-small-over-corners.gif), sides:url(images/btn/btn-emspeed-toolbar-small-over-sides.gif)" !important;
-}
-
-/*</if slicer>*/
 /* */
-/*<if slicer>*/
-/* line 83, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-base/sass/etc/mixins/slicer.scss */
-.x-cmd-slicer.x-btn-focus.x-btn-over.x-btn-emspeed-toolbar-small:before {
-  display: none;
-  content: "x-slicer:stretch:bottom, frame:3px 3px 3px 3px, corners:url(images/btn/btn-emspeed-toolbar-small-focus-over-corners.gif), sides:url(images/btn/btn-emspeed-toolbar-small-focus-over-sides.gif)" !important;
-}
-
-/*</if slicer>*/
 /* */
-/*<if slicer>*/
-/* line 83, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-base/sass/etc/mixins/slicer.scss */
-.x-cmd-slicer.x-btn-pressed.x-btn-emspeed-toolbar-small:before {
-  display: none;
-  content: "x-slicer:stretch:bottom, frame:3px 3px 3px 3px, corners:url(images/btn/btn-emspeed-toolbar-small-pressed-corners.gif), sides:url(images/btn/btn-emspeed-toolbar-small-pressed-sides.gif)" !important;
-}
-
-/*</if slicer>*/
 /* */
-/*<if slicer>*/
-/* line 83, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-base/sass/etc/mixins/slicer.scss */
-.x-cmd-slicer.x-btn-focus.x-btn-pressed.x-btn-emspeed-toolbar-small:before {
-  display: none;
-  content: "x-slicer:stretch:bottom, frame:3px 3px 3px 3px, corners:url(images/btn/btn-emspeed-toolbar-small-focus-pressed-corners.gif), sides:url(images/btn/btn-emspeed-toolbar-small-focus-pressed-sides.gif)" !important;
-}
-
-/*</if slicer>*/
 /* */
-/*<if slicer>*/
-/* line 83, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../ext/packages/ext-theme-base/sass/etc/mixins/slicer.scss */
-.x-cmd-slicer.x-btn-disabled.x-btn-emspeed-toolbar-small:before {
-  display: none;
-  content: "x-slicer:stretch:bottom, frame:3px 3px 3px 3px, corners:url(images/btn/btn-emspeed-toolbar-small-disabled-corners.gif), sides:url(images/btn/btn-emspeed-toolbar-small-disabled-sides.gif)" !important;
-}
-
-/*</if slicer>*/
 /* */
 /* including package sencha-charts */
 /*
@@ -1246,16 +1141,36 @@
   position: relative;
 }
 
-/* line 22, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../EMSPEEDExt5/sass/src/common/hovermenu/HoverMenu.scss */
+/* line 9, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../EMSPEEDExt5/sass/src/common/hovermenu/HoverMenu.scss */
 .hover-icon {
-  background-image: url("emspeed/pop_up_arrow.png");
+  background-image: url("emspeed/ContextUpArrow.png");
   background-repeat: no-repeat;
   background-position: center bottom;
 }
 
-/* line 28, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../EMSPEEDExt5/sass/src/common/hovermenu/HoverMenu.scss */
+/* line 15, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../EMSPEEDExt5/sass/src/common/hovermenu/HoverMenu.scss */
 .hover-active {
   text-shadow: -1px 1px 8px white, 1px -1px 8px white;
+}
+
+/* line 20, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../EMSPEEDExt5/sass/src/common/hovermenu/HoverMenu.scss */
+.hoverMenuBase {
+  cursor: pointer;
+  display: block;
+  padding: 3px 5px;
+  color: #4b84c2;
+  text-decoration: none;
+}
+
+/* line 24, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../EMSPEEDExt5/sass/src/common/hovermenu/HoverMenu.scss */
+.hoverMenuHover {
+  background-color: #4b84c2;
+  color: #ffffff;
+}
+
+/* line 29, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../EMSPEEDExt5/sass/src/common/hovermenu/HoverMenu.scss */
+.hoverMenuDropMenu {
+  border-top: 3px solid #6084A8;
 }
 
 @-webkit-keyframes makeBigger {
@@ -2023,6 +1938,43 @@ h3, h4, h5, h6 {
 /* line 13, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../EMSPEEDExt5/sass/src/view/viewport/North.scss */
 .north {
   background-color: #003366;
+}
+
+/* line 17, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../EMSPEEDExt5/sass/src/view/viewport/North.scss */
+.iconButtonWhite, .iconButtonBlue {
+  background-color: transparent;
+  border-color: transparent;
+  display: inline-block;
+  outline: 0;
+  cursor: pointer;
+  white-space: nowrap;
+  text-decoration: none;
+  overflow: hidden;
+  position: relative;
+}
+
+/* line 30, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../EMSPEEDExt5/sass/src/view/viewport/North.scss */
+.iconButtonWhite .x-btn-glyph {
+  color: white;
+  opacity: 1.0;
+}
+
+/* line 35, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../EMSPEEDExt5/sass/src/view/viewport/North.scss */
+.iconButtonBlue .x-btn-glyph {
+  color: #003366;
+  opacity: 0.5;
+}
+
+/* line 40, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../EMSPEEDExt5/sass/src/view/viewport/North.scss */
+.iconButtonWhite .x-btn-inner {
+  color: white;
+  opacity: 1.0;
+}
+
+/* line 45, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../EMSPEEDExt5/sass/src/view/viewport/North.scss */
+.iconButtonBlue .x-btn-inner {
+  color: #4b84c2;
+  opacity: 1.0;
 }
 
 /* line 4, D:/dev/EMSPEED2/EMSPEED2/SenchaWorkspace/build/temp/testing/EMSPEEDExt5/sass/../../../../../EMSPEEDExt5/sass/src/view/viewport/South.scss */

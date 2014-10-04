@@ -11,9 +11,5 @@ Ext.define('EMSPEEDExt5.view.viewport.Center', {
             xtype: 'projectheader',
             dock: 'top'
         }
-        //{
-        //    xtype: 'projectheaderrootdiv',
-        //    dock: 'top'
-        //}
     ]
 });

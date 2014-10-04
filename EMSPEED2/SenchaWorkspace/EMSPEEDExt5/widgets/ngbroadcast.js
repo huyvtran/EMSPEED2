@@ -11,19 +11,27 @@ Ext.define('widget.ngbroadcast', {
             angular.module('app')
             .factory(service, ['$http', '$q', function ($http, $q) {
             }])
-            .directive(directive, ['$rootScope', function ($rootScope) {
+            .directive(directive, ['mgService', function (mgService) {
                 return {
                     restrict: 'A',
                     scope: { widgetdata: '=' },
                     replace: false,
                     template: '' +
                     '<div ng-init="on=true">' +
-                    '   <button ng-click="onClick()">Broadcast ProjectId 12345</button>' +
+                    '   <button ng-click="onClick()">Broadcast current time</button>' +
                     '</div>' +
                     '',
                     controller: ['$scope', service, function ($scope, service) {
                         $scope.onClick = function () {
-                            $rootScope.$broadcast('projectId', '12345');
+                            var currentdate = new Date();
+                            var datetime = "Current Time: "
+                                            + (currentdate.getMonth() + 1) + "/"
+                                            + currentdate.getDate() + "/"
+                                            + currentdate.getFullYear() + " @ "
+                                            + currentdate.getHours() + ":"
+                                            + currentdate.getMinutes() + ":"
+                                            + currentdate.getSeconds();
+                            mgService.broadcast('currentTime', datetime);
                         }
                     }],
                     link: ['scope', function (scope) {

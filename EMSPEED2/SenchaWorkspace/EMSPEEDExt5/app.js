@@ -4,7 +4,8 @@
  * needed for your application, but these edits will have to be merged by
  * Sencha Cmd when upgrading.
  */
-Ext.application({
+var theApp = Ext.application({
+    extend: 'EMSPEEDExt5.Application',
     name: 'EMSPEEDExt5',
 
     requires: [
@@ -20,9 +21,8 @@ Ext.application({
         'Ext.window.MessageBox',
         'Ext.tip.QuickTipManager',
         'EMSPEEDExt5.*'
-    ],
+    ]
 
-    extend: 'EMSPEEDExt5.Application'
     
     //autoCreateViewport: 'EMSPEEDExt5.view.main.Main'
 	

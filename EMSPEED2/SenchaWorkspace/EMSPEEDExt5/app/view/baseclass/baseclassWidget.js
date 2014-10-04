@@ -2,7 +2,15 @@ Ext.define('EMSPEEDExt5.view.baseclass.baseclassWidget', {
     extend: 'Ext.panel.Panel',
     bodyPadding: 10,
     xtype: 'baseclasswidget',
-
+    broadcast: function(event, parm) {
+        EMSPEEDExt5.eventManager.fireEvent(event, parm);
+        var $rootScope = angular.element(document).scope();
+        $rootScope.$broadcast(event, parm);
+        $rootScope.$apply();
+    },
+    subscribe: function (event, callback) {
+        EMSPEEDExt5.eventManager.on(event, callback);
+    },
     statics: {
         addStyles: function (styles) {
             var style = '';

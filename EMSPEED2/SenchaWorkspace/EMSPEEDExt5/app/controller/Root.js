@@ -31,7 +31,8 @@ Ext.define('EMSPEEDExt5.controller.Root', {
     },
 
     routes: {
-        ':route/:projectId': {
+        //':route/:projectId': {
+        'project/:projectId/:route': {
             before: 'beforeRoute',
             action: 'onRoute'
             //conditions: {
@@ -59,7 +60,7 @@ Ext.define('EMSPEEDExt5.controller.Root', {
         }
     },
 
-    beforeRoute: function (route, projectId, action) {
+    beforeRoute: function (projectId, route, action) {
         //console.log('Root.js - beforeRoute');
         if (project.data === undefined) {
             var me = this;
@@ -134,7 +135,8 @@ Ext.define('EMSPEEDExt5.controller.Root', {
                                 me.viewport = Ext.create('EMSPEEDExt5.view.viewport.Viewport', {});
                                 //console.log('Root.js - Viewport after');
                                 //Ext.getCmp('contextcontrollerBasePanel').setContextData(project);
-                                me.viewport.addCls('viewport-inner');
+
+                                //me.viewport.addCls('viewport-inner');
                                 document.getElementById('divloading').style.visibility = "hidden";
                                 action.resume();
                             }
@@ -170,10 +172,10 @@ Ext.define('EMSPEEDExt5.controller.Root', {
 
         //action.resume();
     },
-    onRoute: function (route, projectId) {
+    onRoute: function (projectId, route) {
         //console.log('Root.js - onRoute');
         //console.log('Root.js - fireEvent');
-        this.fireEvent('route', this, route, projectId); //handled in eastController
+        this.fireEvent('route', this, projectId, route); //handled in navigationController
         this.description = route;
     },
 

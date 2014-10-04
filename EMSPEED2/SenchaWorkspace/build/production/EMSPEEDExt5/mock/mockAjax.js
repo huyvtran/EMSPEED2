@@ -2,6 +2,10 @@ $.mockjax({
     url: /^\/api\/widgets$/,
     response: function (settings) {
         this.responseText = [
+            { "type": "extlisten", "extension": "js", "height": 200, "widgetDataDef": { text: 'text Here' }, title: 'extlisten', description: 'extlisten' },
+            { "type": "extbroadcast", "extension": "js", "height": 200, "widgetDataDef": { text: 'text Here' }, title: 'extbroadcast', description: 'extbroadcast' },
+
+
             { "type": "ionic", "extension": "js", "height": 200, "widgetDataDef": { text: 'text Here' }, title: 'ionic', description: 'ionic' },
             { "type": "ecolist", "extension": "js", "height": 200, "widgetDataDef": { text: 'text Here' }, title: 'ecolist', description: 'ecolist' },
             { "type": "ecosummary", "extension": "js", "height": 200, "widgetDataDef": { text: 'text Here' }, title: 'ecosummary', description: 'ecosummary' },
@@ -59,7 +63,7 @@ $.mockjax({
                             widgets: [
                                 { type: 'ngdirective', widgetData: { title: 'My ole Alerts', name: 'list', age: '8' }, columnIndex: 0, height: 500 },
                                 { type: "risks", "widgetData": { "projectId": "97366" }, columnIndex: 1, height: 500 },
-                                { type: 'basiclinemarker', widgetData: { name: 'basic', age: '8' }, columnIndex: 2, height: 200 }
+                                { type: 'basiclinemarker', widgetData: { name: 'basic', age: '8' }, columnIndex: 2, height: 500 }
                             ]
                         };
                         break;
@@ -149,6 +153,10 @@ $.mockjax({
                         { type: 'nghelloworld', widgetData: { text: 'Marc' }, columnIndex: 0, height: 50 },
                         { type: 'nghelloworld', widgetData: { text: 'Nick' }, columnIndex: 0, height: 50 },
                         { type: 'ngbroadcast', widgetData: { text: 'Nick' }, columnIndex: 0, height: 50 },
+
+                        { type: 'extlisten', widgetData: { text: 'Nick' }, columnIndex: 0, height: 50 },
+                        { type: 'extbroadcast', widgetData: { text: 'Nick' }, columnIndex: 0, height: 50 },
+
                         { type: 'nganimate', widgetData: { text: 'Nick' }, columnIndex: 0, height: 50 },
                         { type: 'ngdirective', widgetData: { title: 'My ole Alerts', name: 'list', age: '8' }, columnIndex: 1, height: 500 },
                     ]

@@ -40,7 +40,7 @@ Ext.define('widget.basiclinemarker', {
             insetPadding: 40,
             sprites: [{
                 type: 'text',
-                text: 'Line Charts - Marked Lines',
+                text: 'Browser Share',
                 fontSize: 22,
                 width: 100,
                 height: 30,

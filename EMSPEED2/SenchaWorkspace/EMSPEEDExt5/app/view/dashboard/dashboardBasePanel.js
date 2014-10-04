@@ -36,79 +36,15 @@ Ext.define('EMSPEEDExt5.view.dashboard.dashboardBasePanel', {
             }
         ];
 
-        //var theToolbarTitle = [
-        //    { ui: 'emspeedglyph-toolbar', style: { fontSize: '22px' }, tooltip: 'favorite', handler: 'onFavorite', glyph: 'xf006@FontAwesome' },
-        //    { text: me.text, xtype: 'label', padding: '5px 0px 0px 0px', cls: 'x-panel-header-title-default' }
-        //];
-
         var theToolbar = [
             { ui: 'emspeedglyph-toolbar', style: {fontSize: '22px' }, tooltip: 'favorite', handler: 'onFavorite', glyph: 'xf006@FontAwesome' },
-            { text: me.text, xtype: 'label', padding: '5px 0px 0px 0px', cls: 'x-panel-header-title-default' },
-
-
-
-            //{ text: 'Get State', handler: 'onGetState', glyph: 'xf083@FontAwesome' },
-            //{ text: 'ng', handler: 'onNg' },
-            //'-',
-            //{ text: 'ClearLS', handler: 'onClearLSClick', glyph: 'xf1b8@FontAwesome' },
-            //{ text: 'Deserial', handler: 'onDeserialClick', glyph: 'xf1c0@FontAwesome' },
+            { xtype: 'button', glyph: 'xf044@FontAwesome', ui: 'emspeedglyph-toolbar', style: { fontSize: '22px' }, margin: '0px 12px 0px 0px', tooltip: 'dashboard editing tools', handler: 'onToggleToolbar' },
+            { text: me.text, xtype: 'label', xwidth: 150, xpadding: '5px 0px 0px 0px', cls: 'x-panel-header-title-default' },
             { xtype: 'tbfill' },
-	        {
-	            xtype: 'combobox',
-	            fieldLabel: 'My Layouts',
-                hidden: false,
-	            listeners: {
-	                select: function (sender, records, eOpts) {
-	                    com.startLoading();
-	                    var panel = this.up('dashboardBasePanel');
-	                    panel.removeAll(true);
-	                    $.getJSON('/api/dashboard/' + project.projectId + '/' + me.itemId + '/' + records[0].id, function (response) {
-	                        panel.add(
-                                {
-                                    xtype: 'dashboard',
-                                    height: '100%',
-                                    reference: 'dashboard',
-                                    columnWidths: response.columnWidths,
-                                    parts: com.parts,
-                                    defaultContent: response.widgets
-                                }
-                            );
-	                        com.endLoading();
-	                    });
-	                }
-	            },
-	            width: 380,
-	            labelWidth: 80,
-	            forceSelection: true,
-	            emptyText: 'Select',
-	            store: Ext.create('Ext.data.Store', {
-	                fields: ['id', 'name'],
-	                data: me.dashboardLayout.savedLayouts
-	            }),
-	            queryMode: 'local',
-	            displayField: 'name',
-	            value: me.dashboardLayout.layoutId,
-	            valueField: 'id'
-	        },
-            { text: 'New', ui: 'emspeed-toolbar', hidden: false, handler: 'onAddLayout', glyph: 'xf055@FontAwesome' },
-            { text: 'Delete', ui: 'emspeed-toolbar', hidden: false, handler: 'onDeleteLayout', margin: '0px 120px 0px 0px', glyph: 'xf00d@FontAwesome' },
-            { text: 'Add Widget', ui: 'emspeed-toolbar', hidden: false, handler: 'onAddWidget', glyph: 'xf067@FontAwesome' },
-            { text: 'Restore', ui: 'emspeed-toolbar', hidden: true, handler: 'onRestore', glyph: 'xf0e2@FontAwesome' },
-            { xtype: 'component', html: '', margin: '0px 0px 0px 30px' },
-            { ui: 'emspeedglyph-toolbar', style: { fontSize: '22px' }, margin: '0px 12px 0px 0px', tooltip: 'dashboard editing tools', handler: 'onToggleToolbar', glyph: 'xf044@FontAwesome' }
-
-            //{ xtype: 'component', html: '<i style="color:#003366;font-size:18px;margin-left: 20px;" class="fa fa-star-o fa-fw"></i>' },
-            //{ xtype: 'component', html: '<i style="color:#003366;font-size:18px;margin-left: 0px;" class="fa fa-star fa-fw"></i>' }
-
+            { xtype: 'dashboardkpiwidgetpanel' },
+            { xtype: 'dashboardwidgeteditbar', hidden: true, dashboardLayout: me.dashboardLayout.savedLayouts }
         ];
         me.dockedItems = [
-            //{
-            //    xtype: 'toolbar',
-            //    dock: 'top',
-            //    reference: 'theToolbarTitle',
-            //    hidden: true,
-            //    items: theToolbarTitle
-            //},
             {
                 xtype: 'toolbar',
                 dock: 'top',
@@ -120,11 +56,12 @@ Ext.define('EMSPEEDExt5.view.dashboard.dashboardBasePanel', {
                 reference: 'theToolbar',
                 items: theToolbar
             },
-            {
-                xtype: 'dashboardkpiwidgetpanel',
-                reference: 'dashboardkpiwidgetpanel',
-                dock: 'top'
-            },
+            //{
+            //    xtype: 'dashboardkpiwidgetpanel',
+            //    bodyPadding: '10 0 10 9',
+            //    reference: 'dashboardkpiwidgetpanel',
+            //    dock: 'top'
+            //},
             {
                 xtype: 'dashboardproperties',
                 reference: 'properties',

@@ -70,19 +70,13 @@ Ext.define('EMSPEEDExt5.view.dashboard.dashboardBasePanelController', {
         //var fa = '';
         if (sender.glyph === 'xf044@FontAwesome') {
             sender.setGlyph('xf040@FontAwesome');
-            toolbar.items.items[7].show();
-            toolbar.items.items[6].show();
-            toolbar.items.items[5].show();
-            toolbar.items.items[4].show();
-            toolbar.items.items[3].show();
+            toolbar.down('dashboardkpiwidgetpanel').hide();
+            toolbar.down('dashboardwidgeteditbar').show();
         }
         else {
             sender.setGlyph('xf044@FontAwesome');
-            toolbar.items.items[7].hide();
-            toolbar.items.items[6].hide();
-            toolbar.items.items[5].hide();
-            toolbar.items.items[4].hide();
-            toolbar.items.items[3].hide();
+            toolbar.down('dashboardkpiwidgetpanel').show();
+            toolbar.down('dashboardwidgeteditbar').hide();
         }
     },
 
